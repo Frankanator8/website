@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://c365xocmjq777"]
+
+[ext_resource type="Script" uid="uid://3xoagtrrqw1d" path="res://scripts/walking_particles.gd" id="1_a2m02"]
+
+[node name="Walking Particles" type="CPUParticles2D" unique_id=1317731350]
+amount = 3
+lifetime = 0.11
+direction = Vector2(0, -1)
+initial_velocity_min = 59.4
+initial_velocity_max = 138.61
+scale_amount_min = 0.1
+scale_amount_max = 0.1
+script = ExtResource("1_a2m02")
