@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpufuqvtc0205"
-path="res://.godot/imported/roadempty.png-b235e204b514417d20a7d079c12d880f.ctex"
+uid="uid://b34spjqk2qu2o"
+path="res://.godot/imported/concrete.png-5229872f9a6bd2e06af362c01f095b03.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/roadempty.png"
-dest_files=["res://.godot/imported/roadempty.png-b235e204b514417d20a7d079c12d880f.ctex"]
+source_file="res://assets/tiles/concrete.png"
+dest_files=["res://.godot/imported/concrete.png-5229872f9a6bd2e06af362c01f095b03.ctex"]
 
 [params]
 

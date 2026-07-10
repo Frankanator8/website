@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpuxhacdh8hws"
-path="res://.godot/imported/roadcorner.png-23a8841066524bfa4ba4c3c80feaa3c5.ctex"
+uid="uid://bm4ubsoc1s5h"
+path="res://.godot/imported/brick.png-95211539c403ec61628b2831c97897d7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/roadcorner.png"
-dest_files=["res://.godot/imported/roadcorner.png-23a8841066524bfa4ba4c3c80feaa3c5.ctex"]
+source_file="res://assets/tiles/brick.png"
+dest_files=["res://.godot/imported/brick.png-95211539c403ec61628b2831c97897d7.ctex"]
 
 [params]
 

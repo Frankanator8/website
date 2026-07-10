@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://dm1nkiwuc7uap"]
+
+[ext_resource type="Texture2D" uid="uid://cy0scbswoig80" path="res://assets/selection-Sheet.png" id="1_hr5i5"]
+[ext_resource type="Script" uid="uid://ce42ml3ghxmo2" path="res://scripts/selection_pointer.gd" id="2_417dg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_417dg"]
+atlas = ExtResource("1_hr5i5")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q85ve"]
+atlas = ExtResource("1_hr5i5")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tdhku"]
+atlas = ExtResource("1_hr5i5")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qn61c"]
+atlas = ExtResource("1_hr5i5")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x80dg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_417dg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q85ve")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tdhku")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qn61c")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="SelectionPointer" type="AnimatedSprite2D" unique_id=246471590]
+sprite_frames = SubResource("SpriteFrames_x80dg")
+script = ExtResource("2_417dg")
