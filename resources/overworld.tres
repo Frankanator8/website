@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://bm4ubsoc1s5h" path="res://assets/tiles/brick.png" id="1_a6ovm"]
 [ext_resource type="Texture2D" uid="uid://b34spjqk2qu2o" path="res://assets/tiles/concrete.png" id="2_dxwp7"]
 [ext_resource type="Texture2D" uid="uid://ch6glwa0t5gkj" path="res://assets/tiles/grass.png" id="3_yw3yr"]
-[ext_resource type="Texture2D" uid="uid://ddxtg3f630jma" path="res://assets/water.png" id="4_a6ovm"]
+[ext_resource type="Texture2D" uid="uid://ddxtg3f630jma" path="res://assets/tiles/water.png" id="4_a6ovm"]
 [ext_resource type="Texture2D" uid="uid://dtvj1htek2xx0" path="res://assets/tiles/path.png" id="5_t4ado"]
 [ext_resource type="Texture2D" uid="uid://r38f8gcbqoh1" path="res://assets/tiles/road.png" id="6_7eurl"]
 [ext_resource type="Texture2D" uid="uid://bpuxhacdh8hws" path="res://assets/tiles/roadcorner.png" id="7_iwxaw"]
