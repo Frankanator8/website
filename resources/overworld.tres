@@ -1,0 +1,69 @@
+[gd_resource type="TileSet" format=3 uid="uid://c72fcjygsogj7"]
+
+[ext_resource type="Texture2D" uid="uid://bm4ubsoc1s5h" path="res://assets/tiles/brick.png" id="1_a6ovm"]
+[ext_resource type="Texture2D" uid="uid://b34spjqk2qu2o" path="res://assets/tiles/concrete.png" id="2_dxwp7"]
+[ext_resource type="Texture2D" uid="uid://ch6glwa0t5gkj" path="res://assets/tiles/grass.png" id="3_yw3yr"]
+[ext_resource type="Texture2D" uid="uid://ddxtg3f630jma" path="res://assets/water.png" id="4_a6ovm"]
+[ext_resource type="Texture2D" uid="uid://dtvj1htek2xx0" path="res://assets/tiles/path.png" id="5_t4ado"]
+[ext_resource type="Texture2D" uid="uid://r38f8gcbqoh1" path="res://assets/tiles/road.png" id="6_7eurl"]
+[ext_resource type="Texture2D" uid="uid://bpuxhacdh8hws" path="res://assets/tiles/roadcorner.png" id="7_iwxaw"]
+[ext_resource type="Texture2D" uid="uid://cpufuqvtc0205" path="res://assets/tiles/roadempty.png" id="8_pyjqf"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4c57u"]
+texture = ExtResource("1_a6ovm")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_efxa6"]
+texture = ExtResource("2_dxwp7")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dg77c"]
+texture = ExtResource("3_yw3yr")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ycdy4"]
+texture = ExtResource("4_a6ovm")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w48qg"]
+texture = ExtResource("5_t4ado")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnppr"]
+texture = ExtResource("6_7eurl")
+0:0/next_alternative_id = 4
+0:0/0 = 0
+0:0/1 = 1
+0:0/1/flip_h = true
+0:0/2 = 2
+0:0/2/transpose = true
+0:0/3 = 3
+0:0/3/flip_v = true
+0:0/3/transpose = true
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yw3yr"]
+texture = ExtResource("7_iwxaw")
+0:0/next_alternative_id = 4
+0:0/0 = 0
+0:0/1 = 1
+0:0/1/flip_h = true
+0:0/2 = 2
+0:0/2/flip_v = true
+0:0/3 = 3
+0:0/3/flip_h = true
+0:0/3/flip_v = true
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t4ado"]
+texture = ExtResource("8_pyjqf")
+0:0/0 = 0
+
+[resource]
+navigation_layer_0/layers = 1
+sources/0 = SubResource("TileSetAtlasSource_4c57u")
+sources/1 = SubResource("TileSetAtlasSource_efxa6")
+sources/2 = SubResource("TileSetAtlasSource_dg77c")
+sources/3 = SubResource("TileSetAtlasSource_ycdy4")
+sources/4 = SubResource("TileSetAtlasSource_w48qg")
+sources/5 = SubResource("TileSetAtlasSource_lnppr")
+sources/6 = SubResource("TileSetAtlasSource_yw3yr")
+sources/7 = SubResource("TileSetAtlasSource_t4ado")
