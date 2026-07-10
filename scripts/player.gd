@@ -1,6 +1,7 @@
 extends Node2D
 
 @export var speed: float = 100.0
+@export var target_tilemap: TileMapLayer
 
 var target_position: Vector2 = Vector2.ZERO
 var is_moving: bool = false
@@ -14,6 +15,7 @@ func _ready():
 	# Initialize target at current position so the player doesn't instantly move
 	target_position = global_position
 	animated_sprite.play("idle")
+	walking_particles.target_tilemap = target_tilemap
 
 func _input(event):
 	# Check for left mouse click
