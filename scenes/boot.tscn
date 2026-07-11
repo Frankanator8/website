@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://33mbfb14xb6u"]
+
+[node name="Boot" type="Control" unique_id=1163630653]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Label" type="Label" parent="." unique_id=1587763982]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "hello!"

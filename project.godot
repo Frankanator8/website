@@ -10,10 +10,15 @@ config_version=5
 
 [application]
 
-config/name="website"
+config/name="Hanyang Liu"
+config/name_localized={
+"zh": "刘瀚扬"
+}
+config/version="0.1.0"
 run/main_scene="uid://bub4dnnltvenp"
 config/features=PackedStringArray("4.7", "GL Compatibility")
-config/icon="res://icon.svg"
+boot_splash/show_image=false
+config/icon="uid://bn11omyrigybu"
 
 [display]
 

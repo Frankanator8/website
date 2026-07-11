@@ -74,3 +74,6 @@ frame_progress = 0.99320835
 position = Vector2(0, 8)
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=965580072]
+
+[node name="AudioListener2D" type="AudioListener2D" parent="." unique_id=1295591201]
+current = true
