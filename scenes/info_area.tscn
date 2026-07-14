@@ -13,4 +13,4 @@ script = ExtResource("1_w2nh6")
 shape = SubResource("RectangleShape2D_0r61b")
 
 [node name="DialogueBox" parent="." unique_id=1478694801 instance=ExtResource("1_p73ki")]
-visible = false
+z_index = 1000

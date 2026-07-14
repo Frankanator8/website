@@ -1,4 +1,4 @@
-extends Control
+extends Node2D
 
 @export var dialogue_text: String = "Default Dialogue Text" : set = set_dialogue_text
 @export var show_one_by_one: bool = true
