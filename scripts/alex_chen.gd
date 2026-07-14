@@ -7,14 +7,9 @@ extends AnimatedSprite2D
 var velocity: Vector2 = Vector2.ZERO
 var direction: float = 1.0
 
-# Tracks the high-precision floating point position
-var precise_position: Vector2
-
 func _ready() -> void:
 	frame_changed.connect(_on_frame_changed)
 	play()
-	# Initialize our high-precision tracker to the starting position
-	precise_position = position
 
 func _process(delta: float) -> void:
 	velocity.x = direction * speed
@@ -25,11 +20,7 @@ func _process(delta: float) -> void:
 		if velocity.y > 0:
 			velocity.y = 0
 
-	# 1. Update the underlying true position with high precision
-	precise_position += velocity * delta
-	
-	# 2. Snap the visual position to whole integer pixels
-	position = precise_position.round()
+	position += velocity * delta
 
 func _on_frame_changed() -> void:
 	# 8th frame (index 7) or 9th frame (index 8)
@@ -42,8 +33,7 @@ func _on_frame_changed() -> void:
 		flip_h = (direction == -1.0)
 
 func is_on_floor() -> bool:
-	# Check against precise position instead of snapped position
-	if precise_position.y >= -15:
-		precise_position.y = -15
+	if position.y >= -15:
+		position.y = -15
 		return true
 	return false
