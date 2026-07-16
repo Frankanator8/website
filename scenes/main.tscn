@@ -35,19 +35,19 @@ texture = ExtResource("2_tbgi4")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_tefeu")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_jkv2x"]
-resource_local_to_scene = true
-size = Vector2(48, 48)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_jbj1t"]
-resource_local_to_scene = true
-size = Vector2(48, 48)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_muem4"]
 resource_local_to_scene = true
 size = Vector2(48, 48)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dp3eg"]
+resource_local_to_scene = true
+size = Vector2(48, 48)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0ld40"]
+resource_local_to_scene = true
+size = Vector2(48, 48)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gqmmt"]
 resource_local_to_scene = true
 size = Vector2(48, 48)
 
@@ -95,7 +95,7 @@ animations = [{
 "speed": 1.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_pibwh"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yc10j"]
 resource_local_to_scene = true
 size = Vector2(48, 48)
 
@@ -297,7 +297,7 @@ animations = [{
 "speed": 8.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_c6pm6"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jscy8"]
 resource_local_to_scene = true
 size = Vector2(48, 48)
 
@@ -509,7 +509,7 @@ info_name = "ADI Edu Committee"
 
 [node name="CollisionShape2D" parent="Columbia Info Areas/ADI" index="0" unique_id=1083559723]
 position = Vector2(0, -1)
-shape = SubResource("RectangleShape2D_jkv2x")
+shape = SubResource("RectangleShape2D_muem4")
 
 [node name="TA" parent="Columbia Info Areas" unique_id=1889179071 instance=ExtResource("6_tefeu")]
 position = Vector2(569, -99)
@@ -517,7 +517,7 @@ info_text = "I've been an SSL (Summer Student Leader) for the summer program SHA
 info_name = "Teaching"
 
 [node name="CollisionShape2D" parent="Columbia Info Areas/TA" index="0" unique_id=1083559723]
-shape = SubResource("RectangleShape2D_jbj1t")
+shape = SubResource("RectangleShape2D_dp3eg")
 
 [node name="Lab" parent="Columbia Info Areas" unique_id=902380975 instance=ExtResource("6_tefeu")]
 position = Vector2(489, -100)
@@ -525,7 +525,7 @@ info_text = "I am a Research Assistant at CEAL (Computer-Enabled Abilities Lab),
 info_name = "CEAL Lab"
 
 [node name="CollisionShape2D" parent="Columbia Info Areas/Lab" index="0" unique_id=1083559723]
-shape = SubResource("RectangleShape2D_muem4")
+shape = SubResource("RectangleShape2D_0ld40")
 
 [node name="WE" parent="Columbia Info Areas" unique_id=270574156 instance=ExtResource("6_tefeu")]
 position = Vector2(409, -180)
@@ -533,7 +533,7 @@ info_text = "I am a first clarinet in CUWE (Columbia Uni Wind Ensemble) as well 
 info_name = "Wind Ensemble"
 
 [node name="CollisionShape2D" parent="Columbia Info Areas/WE" index="0" unique_id=1083559723]
-shape = SubResource("RectangleShape2D_dp3eg")
+shape = SubResource("RectangleShape2D_gqmmt")
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="Columbia Info Areas/WE" unique_id=778969842]
 texture = ExtResource("7_eb6dy")
@@ -557,7 +557,7 @@ position = Vector2(10, 4)
 scale = Vector2(1.3, 1.3)
 sprite_frames = SubResource("SpriteFrames_32gr6")
 autoplay = "default"
-frame_progress = 0.7146415
+frame_progress = 0.42754683
 
 [node name="Wushu" parent="Columbia Info Areas" unique_id=908644531 instance=ExtResource("6_tefeu")]
 position = Vector2(490, -181)
@@ -565,7 +565,7 @@ info_text = "I'm a part of Columbia Wushu! This is something I started in colleg
 info_name = "Wushu"
 
 [node name="CollisionShape2D" parent="Columbia Info Areas/Wushu" index="0" unique_id=1083559723]
-shape = SubResource("RectangleShape2D_pibwh")
+shape = SubResource("RectangleShape2D_yc10j")
 
 [node name="AlexChen" type="AnimatedSprite2D" parent="Columbia Info Areas/Wushu" unique_id=1107926795]
 position = Vector2(-15, -15)
@@ -599,25 +599,25 @@ info_text = "I'm the co-chair of Columbia's Game Dev club under Columbia Gaming.
 info_name = "Game Dev"
 
 [node name="CollisionShape2D" parent="Columbia Info Areas/Game Dev" index="0" unique_id=1083559723]
-shape = SubResource("RectangleShape2D_c6pm6")
+shape = SubResource("RectangleShape2D_jscy8")
 
 [node name="Rimi" type="AnimatedSprite2D" parent="Columbia Info Areas/Game Dev" unique_id=1977454353]
-position = Vector2(-15, -21)
+position = Vector2(-15, -14)
 scale = Vector2(1.2, 1.2)
 sprite_frames = SubResource("SpriteFrames_tlrmy")
 autoplay = "default"
-frame_progress = 0.38083214
+frame_progress = 0.18412414
 
 [node name="John" type="AnimatedSprite2D" parent="Columbia Info Areas/Game Dev" unique_id=1412017826]
-position = Vector2(11.000001, -20.000004)
+position = Vector2(11.000001, -14.000003)
 scale = Vector2(1.7, 1.7)
 sprite_frames = SubResource("SpriteFrames_6snvl")
 autoplay = "default"
-frame_progress = 0.90454775
+frame_progress = 0.33035958
 
 [node name="Lionjam" type="Sprite2D" parent="Columbia Info Areas/Game Dev" unique_id=820636651]
-position = Vector2(0, 10)
-scale = Vector2(0.07048943, 0.07048943)
+position = Vector2(1, 12)
+scale = Vector2(0.045359213, 0.045359213)
 texture = ExtResource("17_dp3eg")
 
 [editable path="Columbia Info Areas/ADI"]
