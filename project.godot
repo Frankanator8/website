@@ -24,7 +24,6 @@ config/icon="uid://bn11omyrigybu"
 
 window/size/mode=3
 window/stretch/mode="canvas_items"
-window/stretch/aspect="expand"
 
 [gui]
 
