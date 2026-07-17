@@ -1,0 +1,111 @@
+[gd_scene format=3 uid="uid://d1hct5j37gbpe"]
+
+[ext_resource type="PackedScene" uid="uid://bn7n8wv10xcvi" path="res://scenes/dialogue_box.tscn" id="1_dbox"]
+[ext_resource type="Script" uid="uid://syamb5uv1wyo" path="res://scripts/floating_book.gd" id="2_fbook"]
+[ext_resource type="Texture2D" uid="uid://bhq6bsy53uvvr" path="res://assets/book-Sheet.png" id="3_sheet"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hover"]
+resource_local_to_scene = true
+size = Vector2(24, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0"]
+atlas = ExtResource("3_sheet")
+region = Rect2(0, 0, 24, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1"]
+atlas = ExtResource("3_sheet")
+region = Rect2(24, 0, 24, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2"]
+atlas = ExtResource("3_sheet")
+region = Rect2(48, 0, 24, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3"]
+atlas = ExtResource("3_sheet")
+region = Rect2(72, 0, 24, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4"]
+atlas = ExtResource("3_sheet")
+region = Rect2(96, 0, 24, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5"]
+atlas = ExtResource("3_sheet")
+region = Rect2(120, 0, 24, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6"]
+atlas = ExtResource("3_sheet")
+region = Rect2(144, 0, 24, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7"]
+atlas = ExtResource("3_sheet")
+region = Rect2(168, 0, 24, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8"]
+atlas = ExtResource("3_sheet")
+region = Rect2(192, 0, 24, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_9"]
+atlas = ExtResource("3_sheet")
+region = Rect2(216, 0, 24, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_book"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_9")
+}],
+"loop": 1,
+"name": &"float",
+"speed": 8.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_prox"]
+radius = 60.0
+
+[node name="FloatingBook" type="Area2D" unique_id=685159395]
+script = ExtResource("2_fbook")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=923172284]
+shape = SubResource("RectangleShape2D_hover")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=741927574]
+sprite_frames = SubResource("SpriteFrames_book")
+animation = &"float"
+
+[node name="ProximityArea" type="Area2D" parent="." unique_id=1909233018]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ProximityArea" unique_id=1658225651]
+shape = SubResource("CircleShape2D_prox")
+
+[node name="DialogueBox" parent="." unique_id=1291246049 instance=ExtResource("1_dbox")]
+visible = false
+z_index = 1000
