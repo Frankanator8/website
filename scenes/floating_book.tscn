@@ -109,3 +109,5 @@ shape = SubResource("CircleShape2D_prox")
 [node name="DialogueBox" parent="." unique_id=1291246049 instance=ExtResource("1_dbox")]
 visible = false
 z_index = 1000
+
+[editable path="DialogueBox"]

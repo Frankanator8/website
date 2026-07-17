@@ -628,83 +628,118 @@ texture = ExtResource("17_dp3eg")
 
 [node name="Fall25_special" parent="Floating Books" unique_id=1085379062 instance=ExtResource("18_book")]
 position = Vector2(282, -4)
-info_text = "A floating book. Come closer to see it flip through its pages!"
+info_text = "Accelerated Physics
+Accelerated Physics has honestly been the hardest course I've ever taken. It forced me to rethink my studying strategy and grow as an academic, and I got to know a lot of people very well from doing the homeworks and studying together.
+Data Structures in Java - the classic CS course. Here I met Professor Borowski, someone I look up to as a professor and have gotten to know through Office Hours a lot."
 info_name = "Fall 25 Highlights"
 
 [node name="Fall25" parent="Floating Books" unique_id=1206571187 instance=ExtResource("18_book")]
 position = Vector2(306, 11)
-info_text = "Another floating book, waiting for a reader to wander near."
+info_text = "GPA: 4.186 (Dean's List) | Credits: 19.5
+Multivariable Calculus - A+ (4 credits)
+General Chem I - A+ (4 credits)
+Data Structures in Java - A+ (3 credits)
+Art of Engineering - A (4 credits)
+Accelerated Physics (Mechanics) - A (4.5 credits)"
 info_name = "Fall 2025"
 
 [node name="Spring26_special" parent="Floating Books" unique_id=685159395 instance=ExtResource("18_book")]
 position = Vector2(330, -4)
-info_text = "A floating book. Come closer to see it flip through its pages!"
+info_text = "Probability for Engineers - I did extremely well in this class, getting the highest score in the class.
+Columbia Build Lab - I worked as a Backup Algorithmic Engineer intern, optimizing many algorithms and working closely with Klee to create faster and stable architecture. I also dipped my toes into real collaborative teamwork, and got to know Docker."
 info_name = "Spr. 26 Highlights"
 
 [node name="Spring26" parent="Floating Books" unique_id=1199785628 instance=ExtResource("18_book")]
 position = Vector2(354, 11)
-info_text = "Another floating book, waiting for a reader to wander near."
+info_text = "GPA: 4.051 (Dean's List) | Credits: 22.5
+Chem Lab - A (3 credits)
+Advanced Programming - A (4 credits)
+Columbia Build Lab - A (3 credits)
+University Writing - A- (3 credits)
+Probability for Engineers - A+ (3 credits)
+Linear Algebra - A (3 credits)
+Physics E&M 1600 - A+ (3.5 credits) 
+"
 info_name = "Spring 2026"
 
 [node name="Fall26_special" parent="Floating Books" unique_id=798268166 instance=ExtResource("18_book")]
 position = Vector2(376, -4)
-info_text = "A floating book. Come closer to see it flip through its pages!"
+info_text = "Hasn't happened yet..."
 info_name = "Fall 26 Highlights"
 
 [node name="Fall26" parent="Floating Books" unique_id=540498555 instance=ExtResource("18_book")]
 position = Vector2(400, 11)
-info_text = "Another floating book, waiting for a reader to wander near."
-info_name = "Spring 2026"
+info_text = "Plan | Credits: 22
+Discrete Math (4 credits)
+Fundamentals of Comp. Sys. (3 credits)
+Intro to Asian American Literature (3 credits)
+Ordinary Diff. Eqs. (3 credits)
+-- May replace with elective --
+Foundations of Optimization (3 credits) 
+Intro to Linguistics (3 credits)
+--Electives--
+Natural Language Processing
+AI
+Computer Graphics"
+info_name = "Fall 2026"
 
 [node name="Spring27_special" parent="Floating Books" unique_id=735415474 instance=ExtResource("18_book")]
 position = Vector2(423, -4)
-info_text = "A floating book. Come closer to see it flip through its pages!"
+info_text = "Hasn't happened yet..."
 info_name = "Spr. 27 Highlights"
 
 [node name="Spring27" parent="Floating Books" unique_id=1710933797 instance=ExtResource("18_book")]
 position = Vector2(447, 11)
-info_text = "Another floating book, waiting for a reader to wander near."
+info_text = "2 Area Foundational Courses
+Partial Diff Eqs
+CS Theory
+Non-Technical Elective"
 info_name = "Spring 2027"
 
-[node name="Fall25_special2" parent="Floating Books" unique_id=949918807 instance=ExtResource("18_book")]
+[node name="Fall27_special" parent="Floating Books" unique_id=949918807 instance=ExtResource("18_book")]
 position = Vector2(530, -3)
-info_text = "A floating book. Come closer to see it flip through its pages!"
-info_name = "Fall 25 Highlights"
+info_text = "Hasn't happened yet..."
+info_name = "Fall 27 Highlights"
 
 [node name="Fall27" parent="Floating Books" unique_id=254686768 instance=ExtResource("18_book")]
 position = Vector2(554, 12)
-info_text = "Another floating book, waiting for a reader to wander near."
-info_name = "Fall 2025"
+info_text = "Global Core
+CS Electives
+Business electives"
+info_name = "Fall 2027"
 
-[node name="Spring26_special2" parent="Floating Books" unique_id=881361768 instance=ExtResource("18_book")]
+[node name="Spring28_special" parent="Floating Books" unique_id=881361768 instance=ExtResource("18_book")]
 position = Vector2(578, -3)
-info_text = "A floating book. Come closer to see it flip through its pages!"
-info_name = "Spr. 26 Highlights"
+info_text = "Hasn't happened yet..."
+info_name = "Spr. 28 Highlights"
 
 [node name="Spring28" parent="Floating Books" unique_id=467965618 instance=ExtResource("18_book")]
 position = Vector2(602, 12)
-info_text = "Another floating book, waiting for a reader to wander near."
-info_name = "Spring 2026"
+info_text = "May graduate this year instead!
+More CS Electives"
+info_name = "Spring 2028"
 
-[node name="Fall26_special2" parent="Floating Books" unique_id=1025842540 instance=ExtResource("18_book")]
+[node name="Fall28_special" parent="Floating Books" unique_id=1025842540 instance=ExtResource("18_book")]
 position = Vector2(624, -3)
-info_text = "A floating book. Come closer to see it flip through its pages!"
-info_name = "Fall 26 Highlights"
+info_text = "Hasn't happened yet..."
+info_name = "Fall 28 Highlights"
 
 [node name="Fall28" parent="Floating Books" unique_id=971606818 instance=ExtResource("18_book")]
 position = Vector2(648, 12)
-info_text = "Another floating book, waiting for a reader to wander near."
-info_name = "Spring 2026"
+info_text = "More APMA + Writing courses
+CS Masters Courses"
+info_name = "Fall 2028"
 
-[node name="Spring27_special2" parent="Floating Books" unique_id=1996952149 instance=ExtResource("18_book")]
+[node name="Spring29_special" parent="Floating Books" unique_id=1996952149 instance=ExtResource("18_book")]
 position = Vector2(671, -3)
-info_text = "A floating book. Come closer to see it flip through its pages!"
-info_name = "Spr. 27 Highlights"
+info_text = "Hasn't happened yet..."
+info_name = "Spr. 29 Highlights"
 
 [node name="Spring29" parent="Floating Books" unique_id=900148765 instance=ExtResource("18_book")]
 position = Vector2(695, 12)
-info_text = "Another floating book, waiting for a reader to wander near."
-info_name = "Spring 2027"
+info_text = "More APMA + Writing courses
+CS Masters Courses"
+info_name = "Spring 2029"
 
 [editable path="Columbia Info Areas/ADI"]
 [editable path="Columbia Info Areas/TA"]
