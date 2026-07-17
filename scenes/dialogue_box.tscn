@@ -2,8 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c38xsnrg2kqp6" path="res://scripts/dialogue_box.gd" id="1_fu8b5"]
 [ext_resource type="Texture2D" uid="uid://bk13vgrxpuaoq" path="res://assets/dialogue.png" id="1_rc1id"]
-[ext_resource type="FontFile" uid="uid://b1lqre3vakwua" path="res://assets/font/Geo-Regular.ttf" id="3_tm68y"]
-[ext_resource type="FontFile" uid="uid://b150v4wkch1jv" path="res://assets/font/Jersey10-Regular.ttf" id="4_hvmm2"]
+[ext_resource type="FontFile" uid="uid://vajrtfrsftm5" path="res://assets/font/Cabin-Bold.ttf" id="3_tm68y"]
 
 [node name="DialogueBox" type="Node2D" unique_id=2011282897]
 script = ExtResource("1_fu8b5")
@@ -24,10 +23,9 @@ offset_top = 12.0
 offset_right = 117.0
 offset_bottom = 78.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("3_tm68y")
-theme_override_fonts/bold_font = ExtResource("4_hvmm2")
-theme_override_font_sizes/normal_font_size = 6
-theme_override_font_sizes/bold_font_size = 16
+theme_override_fonts/bold_font = ExtResource("3_tm68y")
+theme_override_font_sizes/normal_font_size = 4
+theme_override_font_sizes/bold_font_size = 12
 bbcode_enabled = true
 text = "[b]Test[/b]
 hello! my name is frank and i am very cool"
