@@ -629,7 +629,7 @@ texture = ExtResource("17_dp3eg")
 [node name="Fall25_special" parent="Floating Books" unique_id=1085379062 instance=ExtResource("18_book")]
 position = Vector2(282, -4)
 info_text = "Accelerated Physics
-Accelerated Physics has honestly been the hardest course I've ever taken. It forced me to rethink my studying strategy and grow as an academic, and I got to know a lot of people very well from doing the homeworks and studying together.
+Accelerated Physics has honestly been the hardest course I've ever taken. It forced me to rethink my studying strategy and grow as an academic, and I bonded with my comrades from doing the homeworks and studying together.
 Data Structures in Java - the classic CS course. Here I met Professor Borowski, someone I look up to as a professor and have gotten to know through Office Hours a lot."
 info_name = "Fall 25 Highlights"
 
