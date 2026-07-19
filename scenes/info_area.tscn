@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cwwy4ebbrxbxu"]
 
-[ext_resource type="PackedScene" uid="uid://bn7n8wv10xcvi" path="res://scenes/dialogue_box.tscn" id="1_p73ki"]
+[ext_resource type="PackedScene" uid="uid://bn7n8wv10xcvi" path="res://scenes/description_box.tscn" id="1_p73ki"]
 [ext_resource type="Script" uid="uid://dqppqfln7pa52" path="res://scripts/info_area.gd" id="1_w2nh6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0r61b"]
@@ -12,6 +12,6 @@ script = ExtResource("1_w2nh6")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1083559723]
 shape = SubResource("RectangleShape2D_0r61b")
 
-[node name="DialogueBox" parent="." unique_id=1478694801 instance=ExtResource("1_p73ki")]
+[node name="DescriptionBox" parent="." unique_id=1478694801 instance=ExtResource("1_p73ki")]
 visible = false
 z_index = 1000

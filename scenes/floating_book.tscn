@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://d1hct5j37gbpe"]
 
-[ext_resource type="PackedScene" uid="uid://bn7n8wv10xcvi" path="res://scenes/dialogue_box.tscn" id="1_dbox"]
+[ext_resource type="PackedScene" uid="uid://bn7n8wv10xcvi" path="res://scenes/description_box.tscn" id="1_dbox"]
 [ext_resource type="Script" uid="uid://syamb5uv1wyo" path="res://scripts/floating_book.gd" id="2_fbook"]
 [ext_resource type="Texture2D" uid="uid://bhq6bsy53uvvr" path="res://assets/book-Sheet.png" id="3_sheet"]
 
@@ -106,8 +106,8 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ProximityArea" unique_id=1658225651]
 shape = SubResource("CircleShape2D_prox")
 
-[node name="DialogueBox" parent="." unique_id=1291246049 instance=ExtResource("1_dbox")]
+[node name="DescriptionBox" parent="." unique_id=1291246049 instance=ExtResource("1_dbox")]
 visible = false
 z_index = 1000
 
-[editable path="DialogueBox"]
+[editable path="DescriptionBox"]
