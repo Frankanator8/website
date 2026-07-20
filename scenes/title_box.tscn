@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://b2vxgpdgt5t15"]
+
+[ext_resource type="Script" uid="uid://b0etiu1w0yg34" path="res://scripts/title_box.gd" id="1_tbox"]
+[ext_resource type="Texture2D" uid="uid://bk13vgrxpuaoq" path="res://assets/dialogue.png" id="2_dlgtex"]
+[ext_resource type="FontFile" uid="uid://vajrtfrsftm5" path="res://assets/font/Cabin-Bold.ttf" id="3_font"]
+
+[node name="TitleBox" type="Node2D" unique_id=309439255]
+script = ExtResource("1_tbox")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=1760504572]
+offset_right = 266.0
+offset_bottom = 78.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_dlgtex")
+patch_margin_left = 22
+patch_margin_top = 22
+patch_margin_right = 22
+patch_margin_bottom = 22
+
+[node name="Label" type="RichTextLabel" parent="." unique_id=1644577242]
+offset_left = 13.0
+offset_top = 12.0
+offset_right = 121.0
+offset_bottom = 28.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/bold_font = ExtResource("3_font")
+theme_override_font_sizes/normal_font_size = 4
+theme_override_font_sizes/bold_font_size = 12
+bbcode_enabled = true
+text = "[b]Title[/b]"
+scroll_active = false

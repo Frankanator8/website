@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/OpenSans-Variable.woff2') format('woff2-variations');
+  font-weight: 300 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/OpenSans-Italic-Variable.woff2') format('woff2-variations');
+  font-weight: 300 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cabin';
+  src: url('../assets/fonts/Cabin-Variable.woff2') format('woff2-variations');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --bg: #16101c;
+  --surface: #241a26;
+  --border: #3a2a33;
+  --text: #f0e4dc;
+  --muted: #b09a95;
+  --accent: #f0a860;
+  --font-display: 'Cabin', system-ui, sans-serif;
+  --font-body: 'Open Sans', system-ui, sans-serif;
+  --font-mono: 'Menlo', 'Consolas', monospace;
+  --measure: 68ch;
+  --measure-wide: 52rem;
+}

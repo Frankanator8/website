@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://bn7n8wv10xcvi"]
 
-[ext_resource type="Script" uid="uid://c38xsnrg2kqp6" path="res://scripts/dialogue_box.gd" id="1_fu8b5"]
+[ext_resource type="Script" uid="uid://c38xsnrg2kqp6" path="res://scripts/description_box.gd" id="1_fu8b5"]
 [ext_resource type="Texture2D" uid="uid://bk13vgrxpuaoq" path="res://assets/dialogue.png" id="1_rc1id"]
 [ext_resource type="FontFile" uid="uid://vajrtfrsftm5" path="res://assets/font/Cabin-Bold.ttf" id="3_tm68y"]
 
-[node name="DialogueBox" type="Node2D" unique_id=2011282897]
+[node name="DescriptionBox" type="Node2D" unique_id=2011282897]
 script = ExtResource("1_fu8b5")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=770534813]
