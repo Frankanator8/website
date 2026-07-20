@@ -317,8 +317,17 @@ main {
 
 .post-body {
   background: rgba(22, 15, 28, 0.74);
-  /* Reading width stays at the narrow measure even though the page is wide. */
-  max-width: var(--measure);
+  /* Same width as the hero above it. */
+  border: 1px solid var(--border);
+  padding: 1.5rem 1.8rem;
+}
+
+.post-body > :first-child {
+  margin-top: 0;
+}
+
+.post-body > :last-child {
+  margin-bottom: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {
