@@ -24,4 +24,5 @@ scale = Vector2(0.039062496, 0.039062493)
 texture = ExtResource("3_452jb")
 
 [node name="TitleBox" parent="." unique_id=11116981 instance=ExtResource("1_tbox")]
+visible = false
 z_index = 1000
