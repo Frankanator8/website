@@ -22,6 +22,8 @@ mono_crash.*.json
 
 # Python
 __pycache__/
+backend/.env
+.env
 
 # Blog (Vite/React)
 blog/node_modules/
