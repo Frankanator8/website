@@ -800,7 +800,7 @@ texture = ExtResource("26_2wyq8")
 
 [node name="Shadow" parent="Shadows" unique_id=2035663866 instance=ExtResource("28_2f3dj")]
 position = Vector2(393, -226)
-polygon = PackedVector2Array(-41, -75, 232, 175, -41, 173)
+polygon = PackedVector2Array(-41, -75, 232, 182, -40, 182)
 
 [editable path="Columbia Info Areas/ADI"]
 [editable path="Columbia Info Areas/TA"]
