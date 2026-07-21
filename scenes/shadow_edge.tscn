@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://0oswrlawk0ha"]
+
+[ext_resource type="Script" uid="uid://cauuqnj02nr35" path="res://scripts/edge_fade_polygon.gd" id="2_jqplm"]
+
+[sub_resource type="Shader" id="Shader_mvpac"]
+code = "shader_type canvas_item;
+render_mode blend_mix;
+
+// Fades alpha out near the polygon outline.
+// Points are the Polygon2D's local-space vertices, pushed by edge_fade_polygon.gd.
+const int MAX_POINTS = 64;
+
+uniform vec2 points[MAX_POINTS];
+uniform int point_count = 0;
+uniform float fade_width : hint_range(0.0, 512.0) = 16.0;
+uniform float fade_curve : hint_range(0.1, 8.0) = 1.0;
+
+varying vec2 local_pos;
+
+void vertex() {
+	local_pos = VERTEX;
+}
+
+// Shortest distance from p to the polygon outline.
+float dist_to_edges(vec2 p) {
+	float d = 1e20;
+	for (int i = 0; i < MAX_POINTS; i++) {
+		if (i >= point_count) {
+			break;
+		}
+		int j = i + 1;
+		if (j >= point_count) {
+			j = 0;
+		}
+		vec2 a = points[i];
+		vec2 b = points[j];
+		vec2 ab = b - a;
+		vec2 ap = p - a;
+		float t = clamp(dot(ap, ab) / max(dot(ab, ab), 0.0001), 0.0, 1.0);
+		d = min(d, length(ap - ab * t));
+	}
+	return d;
+}
+
+void fragment() {
+	if (point_count >= 3 && fade_width > 0.0) {
+		float d = dist_to_edges(local_pos);
+		float a = clamp(d / fade_width, 0.0, 1.0);
+		COLOR.a *= pow(a, fade_curve);
+	}
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5q0nq"]
+shader = SubResource("Shader_mvpac")
+shader_parameter/points = PackedVector2Array(-67.73703, -94.015625, -73.17529, -134.53906, 202, 115, 155.34186, 114, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+shader_parameter/point_count = 4
+shader_parameter/fade_width = 16.0
+shader_parameter/fade_curve = 1.0
+
+[node name="Shadow" type="Polygon2D" unique_id=2035663866]
+material = SubResource("ShaderMaterial_5q0nq")
+color = Color(0, 0, 0, 0.35)
+polygon = PackedVector2Array(-8, 0, -5.66, -2.83, 0, -4, 5.66, -2.83, 8, 0, 5.66, 2.83, 0, 4, -5.66, 2.83)
+script = ExtResource("2_jqplm")

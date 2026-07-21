@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dva554r2d6lym"
-path="res://.godot/imported/cu_building.png-83c793bd385a1efd7c43933689a9f075.ctex"
+uid="uid://m7r0mosdkguu"
+path="res://.godot/imported/tree.png-bf64094b89302dd1be83aa5edf9988ef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/cu_building.png"
-dest_files=["res://.godot/imported/cu_building.png-83c793bd385a1efd7c43933689a9f075.ctex"]
+source_file="res://assets/tree.png"
+dest_files=["res://.godot/imported/tree.png-bf64094b89302dd1be83aa5edf9988ef.ctex"]
 
 [params]
 

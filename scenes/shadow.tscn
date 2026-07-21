@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://cej01pxa1fbgi"]
+
+[node name="Shadow" type="Polygon2D" unique_id=2035663866]
+color = Color(0, 0, 0, 0.48235294)
+polygon = PackedVector2Array(-8, 0, -5.66, -2.83, 0, -4, 5.66, -2.83, 8, 0, 5.66, 2.83, 0, 4, -5.66, 2.83)

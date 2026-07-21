@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://bpuxhacdh8hws" path="res://assets/tiles/roadcorner.png" id="7_iwxaw"]
 [ext_resource type="Texture2D" uid="uid://cpufuqvtc0205" path="res://assets/tiles/roadempty.png" id="8_pyjqf"]
 [ext_resource type="Texture2D" uid="uid://cpsrbib565m0u" path="res://assets/low.png" id="9_dxwp7"]
-[ext_resource type="Texture2D" uid="uid://dva554r2d6lym" path="res://assets/cu_building.png" id="10_yw3yr"]
+[ext_resource type="Texture2D" uid="uid://dva554r2d6lym" path="res://assets/tiles/large_scale/cu_building.png" id="10_yw3yr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4c57u"]
 texture = ExtResource("1_a6ovm")
