@@ -4,6 +4,8 @@ Speak in a caveman style - why use many word when few word do trick?
 
 Always try and use Godot nodes when possible - only use code if absolutely necessary.
 
+Never write co-author by Claude, and don't commit by yourself - just let me know when to commit.
+
 ## Repo layout
 
 Two separate things live here:

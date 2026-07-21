@@ -14,6 +14,7 @@ import { useEffect, useRef } from 'react';
 const W = 192; // internal canvas size, in fat pixels
 const H = 108;
 const FPS = 16; // stepped, game-like motion — still held frames, just more of them
+const WATER_SPEED = 0.22; // water's own clock, slower than sky/window time
 
 // Golden hour. Water is lit → shadowed; index 0 is the sun catching a crest.
 const WATER = [
@@ -157,15 +158,18 @@ function draw(img, frame) {
         const wz = Math.min(1.2 / v, 46);
 
         // Sideways spread widens with distance, and the whole surface slides
-        // downstream past the bank (left to right) over time.
-        const wx = (x - W / 2) * wz * 0.045 + t * 3.2;
+        // downstream past the bank (left to right) over time. Water runs on
+        // its own slowed clock — WATER_SPEED — separate from t, which still
+        // drives the sky (sun, window flicker) at normal pace.
+        const wt = t * WATER_SPEED;
+        const wx = (x - W / 2) * wz * 0.045 + wt * 3.2;
 
         let h =
-          Math.sin(wz * 2.6 + t * 1.2) +
-          0.7 * Math.sin(wz * 1.3 + wx * 0.6 - t * 0.9) +
-          0.45 * Math.sin(wx * 1.5 - wz * 0.8 + t * 2.4) +
+          Math.sin(wz * 2.6 + wt * 1.2) +
+          0.7 * Math.sin(wz * 1.3 + wx * 0.6 - wt * 0.9) +
+          0.45 * Math.sin(wx * 1.5 - wz * 0.8 + wt * 2.4) +
           // fine chop, only close in — far water is too small to resolve it
-          0.3 * v * Math.sin(wx * 4.1 + wz * 2.7 - t * 3.6);
+          0.3 * v * Math.sin(wx * 4.1 + wz * 2.7 - wt * 3.6);
 
         // Distance haze: far water flattens toward a single mid tone (and
         // keeps the compressed rows near the horizon from aliasing).
@@ -185,7 +189,7 @@ function draw(img, frame) {
 
         // Sparkle only where the sun actually reaches.
         if (glitter > 0.25 && h > 2.3) idx = 0;
-        if (idx <= 2 && glitter > 0.3 && hash(x, y + Math.floor(t * 24), Math.floor(t * 8)) > 0.99) {
+        if (idx <= 2 && glitter > 0.3 && hash(x, y + Math.floor(wt * 24), Math.floor(wt * 8)) > 0.99) {
           idx = 0;
         }
 

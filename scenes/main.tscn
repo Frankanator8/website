@@ -21,7 +21,10 @@
 [ext_resource type="Texture2D" uid="uid://dgebofglmugrm" path="res://assets/lionjam.png" id="17_dp3eg"]
 [ext_resource type="PackedScene" uid="uid://d1hct5j37gbpe" path="res://scenes/floating_book.tscn" id="18_book"]
 [ext_resource type="PackedScene" uid="uid://da355ya84e0x4" path="res://scenes/mailbox.tscn" id="19_mailbox"]
-[ext_resource type="Texture2D" uid="uid://cviwvsj43ir6x" path="res://icon.svg" id="21_yc10j"]
+[ext_resource type="Texture2D" uid="uid://bpglt5tk5yjam" path="res://assets/icons/linkedin.webp" id="22_jscy8"]
+[ext_resource type="Texture2D" uid="uid://8crgdakxrngy" path="res://assets/icons/email.webp" id="22_og1vs"]
+[ext_resource type="Texture2D" uid="uid://brxq403eru4r5" path="res://assets/icons/youtube.png" id="24_og1vs"]
+[ext_resource type="Texture2D" uid="uid://d37ippawu0osa" path="res://assets/icons/discord.jpg" id="25_2wyq8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tefeu"]
 texture = ExtResource("2_tbgi4")
@@ -32,19 +35,19 @@ texture = ExtResource("2_tbgi4")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_tefeu")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_jscy8"]
-resource_local_to_scene = true
-size = Vector2(48, 48)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_pm3ni"]
-resource_local_to_scene = true
-size = Vector2(48, 48)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_y6deb"]
-resource_local_to_scene = true
-size = Vector2(48, 48)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_og1vs"]
+resource_local_to_scene = true
+size = Vector2(48, 48)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2wyq8"]
+resource_local_to_scene = true
+size = Vector2(48, 48)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vxglm"]
+resource_local_to_scene = true
+size = Vector2(48, 48)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2f3dj"]
 resource_local_to_scene = true
 size = Vector2(48, 48)
 
@@ -92,7 +95,7 @@ animations = [{
 "speed": 1.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_2wyq8"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yq6so"]
 resource_local_to_scene = true
 size = Vector2(48, 48)
 
@@ -294,7 +297,7 @@ animations = [{
 "speed": 8.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_vxglm"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fv21b"]
 resource_local_to_scene = true
 size = Vector2(48, 48)
 
@@ -485,7 +488,7 @@ tile_set = SubResource("TileSet_tbgi4")
 y_sort_origin = -100
 
 [node name="Player" parent="." unique_id=617040172 node_paths=PackedStringArray("target_tilemap") instance=ExtResource("6_ya4ey")]
-position = Vector2(421, -25)
+position = Vector2(107, -27)
 target_tilemap = NodePath("../NavigationRegion2D/Map")
 metadata/_edit_group_ = true
 
@@ -508,7 +511,7 @@ info_name = "ADI Edu Committee"
 
 [node name="CollisionShape2D" parent="Columbia Info Areas/ADI" index="0" unique_id=1083559723]
 position = Vector2(0, -1)
-shape = SubResource("RectangleShape2D_jscy8")
+shape = SubResource("RectangleShape2D_og1vs")
 
 [node name="TA" parent="Columbia Info Areas" unique_id=1889179071 instance=ExtResource("6_tefeu")]
 position = Vector2(569, -99)
@@ -516,7 +519,7 @@ info_text = "I've been an SSL (Summer Student Leader) for the summer program SHA
 info_name = "Teaching"
 
 [node name="CollisionShape2D" parent="Columbia Info Areas/TA" index="0" unique_id=1083559723]
-shape = SubResource("RectangleShape2D_pm3ni")
+shape = SubResource("RectangleShape2D_2wyq8")
 
 [node name="Lab" parent="Columbia Info Areas" unique_id=902380975 instance=ExtResource("6_tefeu")]
 position = Vector2(489, -100)
@@ -524,7 +527,7 @@ info_text = "I am a Research Assistant at CEAL (Computer-Enabled Abilities Lab),
 info_name = "CEAL Lab"
 
 [node name="CollisionShape2D" parent="Columbia Info Areas/Lab" index="0" unique_id=1083559723]
-shape = SubResource("RectangleShape2D_y6deb")
+shape = SubResource("RectangleShape2D_vxglm")
 
 [node name="WE" parent="Columbia Info Areas" unique_id=270574156 instance=ExtResource("6_tefeu")]
 position = Vector2(409, -180)
@@ -532,7 +535,7 @@ info_text = "I am a first clarinet in CUWE (Columbia Uni Wind Ensemble) as well 
 info_name = "Wind Ensemble"
 
 [node name="CollisionShape2D" parent="Columbia Info Areas/WE" index="0" unique_id=1083559723]
-shape = SubResource("RectangleShape2D_og1vs")
+shape = SubResource("RectangleShape2D_2f3dj")
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="Columbia Info Areas/WE" unique_id=778969842]
 texture = ExtResource("7_eb6dy")
@@ -564,7 +567,7 @@ info_text = "I'm a part of Columbia Wushu! This is something I started in colleg
 info_name = "Wushu"
 
 [node name="CollisionShape2D" parent="Columbia Info Areas/Wushu" index="0" unique_id=1083559723]
-shape = SubResource("RectangleShape2D_2wyq8")
+shape = SubResource("RectangleShape2D_yq6so")
 
 [node name="AlexChen" type="AnimatedSprite2D" parent="Columbia Info Areas/Wushu" unique_id=1107926795]
 position = Vector2(-15, -15)
@@ -598,7 +601,7 @@ info_text = "I'm the co-chair of Columbia's Game Dev club under Columbia Gaming.
 info_name = "Game Dev"
 
 [node name="CollisionShape2D" parent="Columbia Info Areas/Game Dev" index="0" unique_id=1083559723]
-shape = SubResource("RectangleShape2D_vxglm")
+shape = SubResource("RectangleShape2D_fv21b")
 
 [node name="Rimi" type="AnimatedSprite2D" parent="Columbia Info Areas/Game Dev" unique_id=1977454353]
 position = Vector2(-15, -14)
@@ -735,14 +738,40 @@ info_text = "More APMA + Writing courses
 CS Masters Courses"
 info_name = "Spring 2029"
 
-[node name="Mailbox" parent="." unique_id=56664111 instance=ExtResource("19_mailbox")]
-position = Vector2(126, -70)
-logo_texture = ExtResource("21_yc10j")
-
 [node name="CameraArea" type="Area2D" parent="." unique_id=1032836737]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CameraArea" unique_id=338173594]
 polygon = PackedVector2Array(851, -124, 852, 273, 14, 279, 14, 91, -125, 90, -125, -125, 352, -125, 351, -365, 626, -361, 629, -121)
+
+[node name="Contact" type="Node2D" parent="." unique_id=243520510]
+
+[node name="Email" parent="Contact" unique_id=1070089648 instance=ExtResource("19_mailbox")]
+position = Vector2(121, -4)
+collision_layer = 1
+collision_mask = 1
+link_url = "mailto:hanyangfliu@gmail.com"
+logo_texture = ExtResource("22_og1vs")
+
+[node name="LinkedIn" parent="Contact" unique_id=56664111 instance=ExtResource("19_mailbox")]
+position = Vector2(106, 12)
+collision_layer = 1
+collision_mask = 1
+link_url = "https://linkedin.com/in/hanyangfliu/"
+logo_texture = ExtResource("22_jscy8")
+
+[node name="Youtube" parent="Contact" unique_id=1930147434 instance=ExtResource("19_mailbox")]
+position = Vector2(89, 27)
+collision_layer = 1
+collision_mask = 1
+link_url = "https://youtube.com/@frankanator"
+logo_texture = ExtResource("24_og1vs")
+
+[node name="Discord" parent="Contact" unique_id=297738317 instance=ExtResource("19_mailbox")]
+position = Vector2(73, 43)
+collision_layer = 1
+collision_mask = 1
+link_url = "https://discord.com/users/695290142721572935"
+logo_texture = ExtResource("25_2wyq8")
 
 [editable path="Columbia Info Areas/ADI"]
 [editable path="Columbia Info Areas/TA"]
