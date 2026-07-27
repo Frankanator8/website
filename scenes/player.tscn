@@ -62,6 +62,7 @@ gravity_scale = 0.0
 script = ExtResource("1_g2els")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2010453194]
+position = Vector2(0, -8)
 shape = SubResource("RectangleShape2D_3vyb7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=288486248]
@@ -69,9 +70,9 @@ sprite_frames = SubResource("SpriteFrames_u8vuu")
 animation = &"walking"
 autoplay = "idle"
 frame_progress = 0.99320835
+offset = Vector2(0, -8)
 
 [node name="WalkingParticles" parent="." unique_id=1317731350 instance=ExtResource("3_qhqgy")]
-position = Vector2(0, 8)
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=965580072]
 
