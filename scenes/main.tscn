@@ -518,6 +518,28 @@ size = Vector2(15, 31)
 resource_local_to_scene = true
 size = Vector2(115, 88)
 
+[sub_resource type="Animation" id="Animation_cycle"]
+resource_name = "cycle"
+length = 120.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DayNight:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 30, 60, 90, 120),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 0.72, 0.5, 1), Color(0.28, 0.33, 0.58, 1), Color(0.86, 0.72, 0.78, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_daynight"]
+_data = {
+&"cycle": SubResource("Animation_cycle")
+}
+
 [node name="Node2D" type="Node2D" unique_id=424931416]
 y_sort_enabled = true
 
@@ -949,6 +971,15 @@ info_name = "Under Construction"
 [node name="CollisionShape2D" parent="Arcade/InfoAreas/Construction!" index="0" unique_id=1083559723]
 position = Vector2(2.5, 6)
 shape = SubResource("RectangleShape2D_5poiv")
+
+[node name="DayNight" type="CanvasModulate" parent="." unique_id=1681358783]
+
+[node name="DayNightPlayer" type="AnimationPlayer" parent="." unique_id=1959344197]
+libraries/ = SubResource("AnimationLibrary_daynight")
+autoplay = &"cycle"
+
+[node name="Lights" type="Node2D" parent="." unique_id=1778123778]
+y_sort_enabled = true
 
 [editable path="Columbia Info Areas/ADI"]
 [editable path="Columbia Info Areas/TA"]
