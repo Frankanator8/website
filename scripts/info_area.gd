@@ -3,6 +3,9 @@ extends Area2D
 @export_multiline var info_text: String = "Default Info Text"
 @export var info_name: String = "Info Area"
 
+# Optional - leave empty for no link
+@export var link: String = ""
+
 # Manually define the size of your Node2D description box for boundary calculations
 @export var description_box_size: Vector2 = Vector2(200, 100)
 
@@ -12,6 +15,7 @@ extends Area2D
 func _ready() -> void:
 	mouse_entered.connect(_on_mouse_entered)
 	mouse_exited.connect(_on_mouse_exited)
+	input_event.connect(_on_input_event)
 
 	description_box.hide()
 	description_box.top_level = true
@@ -33,8 +37,19 @@ func _on_mouse_entered() -> void:
 	_place_description_box()
 	description_box.show()
 
+	if not link.is_empty():
+		Input.set_default_cursor_shape(Input.CURSOR_POINTING_HAND)
+
 func _on_mouse_exited() -> void:
 	description_box.hide()
+	if not link.is_empty():
+		Input.set_default_cursor_shape(Input.CURSOR_ARROW)
+
+func _on_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
+	if link.is_empty():
+		return
+	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		OS.shell_open(link)
 
 func _place_description_box() -> void:
 	var canvas_transform = get_viewport().get_canvas_transform()
