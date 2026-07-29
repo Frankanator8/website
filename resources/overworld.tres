@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://dnntnqypu1jqp" path="res://assets/tiles/large_scale/arcade.png" id="8_j554x"]
 [ext_resource type="Texture2D" uid="uid://cpufuqvtc0205" path="res://assets/tiles/roadempty.png" id="8_pyjqf"]
 [ext_resource type="Texture2D" uid="uid://2p6ysehgq156" path="res://assets/tiles/cushion.png" id="9_itqqf"]
+[ext_resource type="Texture2D" uid="uid://bh8p5ssgw3ddr" path="res://assets/tiles/window.png" id="10_7c6qh"]
 [ext_resource type="Texture2D" uid="uid://dva554r2d6lym" path="res://assets/tiles/large_scale/cu_building.png" id="10_yw3yr"]
 [ext_resource type="Texture2D" uid="uid://cpsrbib565m0u" path="res://assets/tiles/large_scale/low.png" id="15_itqqf"]
 
@@ -40,7 +41,10 @@ texture = ExtResource("5_iwxaw")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_itqqf"]
 texture = ExtResource("6_pyjqf")
+0:0/next_alternative_id = 2
 0:0/0 = 0
+0:0/1 = 1
+0:0/1/flip_h = true
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7c6qh"]
 texture = ExtResource("7_0mj56")
@@ -68,6 +72,14 @@ texture = ExtResource("9_itqqf")
 0:0/2/modulate = Color(0.29839122, 0.6378522, 0.9430144, 1)
 0:0/3 = 3
 0:0/3/modulate = Color(0.75483984, 0.7562768, 0.5081627, 1)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_buep7"]
+texture = ExtResource("10_7c6qh")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dg77c"]
 texture = ExtResource("3_yw3yr")
@@ -554,3 +566,4 @@ sources/13 = SubResource("TileSetAtlasSource_itqqf")
 sources/14 = SubResource("TileSetAtlasSource_7c6qh")
 sources/15 = SubResource("TileSetAtlasSource_3i41q")
 sources/16 = SubResource("TileSetAtlasSource_xfk32")
+sources/17 = SubResource("TileSetAtlasSource_buep7")
