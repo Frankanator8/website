@@ -1,5 +1,8 @@
 extends Area2D
 
+
+# TODO: Maybe change this to use player's position instead of mouse position for placement, since the player can be far away from the mouse cursor.
+
 @export_multiline var info_text: String = "Default Info Text"
 @export var info_name: String = "Info Area"
 
