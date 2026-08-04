@@ -20,6 +20,10 @@ config/features=PackedStringArray("4.7", "GL Compatibility")
 boot_splash/show_image=false
 config/icon="uid://bn11omyrigybu"
 
+[autoload]
+
+LinkConfirm="*res://scenes/link_confirm.tscn"
+
 [display]
 
 window/size/mode=3

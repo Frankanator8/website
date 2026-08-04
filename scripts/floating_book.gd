@@ -7,6 +7,9 @@ extends Area2D
 # Hover (bob) motion — applied to the sprite continuously
 @export var bob_amplitude: float = 2.0
 @export var bob_speed: float = 2.0
+# Distance (px) covered by one full wave — phase shifts with the book's x so a
+# row of books ripples instead of bobbing in unison
+@export var bob_wavelength: float = 96.0
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var description_box: Node2D = $DescriptionBox
@@ -16,6 +19,7 @@ var _mouse_inside: bool = false
 var _player_near: bool = false
 var _time: float = 0.0
 var _sprite_base_y: float = 0.0
+var _phase: float = 0.0
 
 func _ready() -> void:
 	mouse_entered.connect(_on_mouse_entered)
@@ -24,6 +28,8 @@ func _ready() -> void:
 	proximity_area.body_exited.connect(_on_body_exited)
 
 	_sprite_base_y = animated_sprite.position.y
+	if bob_wavelength != 0.0:
+		_phase = global_position.x / bob_wavelength * TAU
 
 	description_box.hide()
 	description_box.top_level = true
@@ -36,7 +42,7 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	_time += delta
-	animated_sprite.position.y = _sprite_base_y + sin(_time * bob_speed) * bob_amplitude
+	animated_sprite.position.y = _sprite_base_y + sin(_time * bob_speed - _phase) * bob_amplitude
 	if description_box.visible:
 		_place_description_box()
 
