@@ -88,19 +88,19 @@ shader_parameter/near_distance = 16.0
 shader_parameter/far_distance = 40.0
 shader_parameter/min_alpha = 0.3
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_c6pm6"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cjqg0"]
 resource_local_to_scene = true
 size = Vector2(48, 48)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_5he1u"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vchkt"]
 resource_local_to_scene = true
 size = Vector2(48, 48)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_5poiv"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_txyw0"]
 resource_local_to_scene = true
 size = Vector2(48, 48)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_2cjbq"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vc5cj"]
 resource_local_to_scene = true
 size = Vector2(48, 48)
 
@@ -148,7 +148,7 @@ animations = [{
 "speed": 1.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_chjal"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nvyfr"]
 resource_local_to_scene = true
 size = Vector2(48, 48)
 
@@ -350,7 +350,7 @@ animations = [{
 "speed": 8.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_cjqg0"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ty1g6"]
 resource_local_to_scene = true
 size = Vector2(48, 48)
 
@@ -524,39 +524,39 @@ animations = [{
 "speed": 2.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_vchkt"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j2jfr"]
 resource_local_to_scene = true
 size = Vector2(38, 20.5)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_txyw0"]
-resource_local_to_scene = true
-size = Vector2(15, 31)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_vc5cj"]
-resource_local_to_scene = true
-size = Vector2(15, 31)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_nvyfr"]
-resource_local_to_scene = true
-size = Vector2(15, 31)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ty1g6"]
-resource_local_to_scene = true
-size = Vector2(115, 88)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_j2jfr"]
-resource_local_to_scene = true
-size = Vector2(60, 14)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bjg73"]
 resource_local_to_scene = true
-size = Vector2(68, 20)
+size = Vector2(15, 31)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bu4jf"]
 resource_local_to_scene = true
-size = Vector2(68, 20)
+size = Vector2(15, 31)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o7ddy"]
+resource_local_to_scene = true
+size = Vector2(15, 31)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0loja"]
+resource_local_to_scene = true
+size = Vector2(115, 88)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ids8r"]
+resource_local_to_scene = true
+size = Vector2(60, 14)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dnhof"]
+resource_local_to_scene = true
+size = Vector2(68, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1v6qk"]
+resource_local_to_scene = true
+size = Vector2(68, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_augu2"]
 resource_local_to_scene = true
 size = Vector2(68, 20)
 
@@ -581,6 +581,38 @@ tracks/0/keys = {
 _data = {
 &"cycle": SubResource("Animation_cycle")
 }
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tm6hj"]
+resource_local_to_scene = true
+size = Vector2(76, 33)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kf5aa"]
+resource_local_to_scene = true
+size = Vector2(61, 33)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e755i"]
+resource_local_to_scene = true
+size = Vector2(42, 33)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t5ykj"]
+resource_local_to_scene = true
+size = Vector2(42, 33)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xhfw6"]
+resource_local_to_scene = true
+size = Vector2(36, 33)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1epgm"]
+resource_local_to_scene = true
+size = Vector2(36, 33)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_152kg"]
+resource_local_to_scene = true
+size = Vector2(36, 33)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r4e17"]
+resource_local_to_scene = true
+size = Vector2(36, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kf5aa"]
 atlas = ExtResource("44_cjqg0")
@@ -708,6 +740,14 @@ _data = {
 &"run": SubResource("Animation_vchkt")
 }
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_od4ux"]
+resource_local_to_scene = true
+size = Vector2(201, 33)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ro3en"]
+resource_local_to_scene = true
+size = Vector2(63, 33)
+
 [node name="Node2D" type="Node2D" unique_id=424931416]
 y_sort_enabled = true
 
@@ -781,7 +821,7 @@ info_name = "ADI Edu Committee"
 
 [node name="CollisionShape2D" parent="Columbia Info Areas/ADI" index="0" unique_id=1083559723]
 position = Vector2(0, -1)
-shape = SubResource("RectangleShape2D_c6pm6")
+shape = SubResource("RectangleShape2D_cjqg0")
 
 [node name="TA" parent="Columbia Info Areas" unique_id=1889179071 instance=ExtResource("6_tefeu")]
 position = Vector2(569, -99)
@@ -789,7 +829,7 @@ info_text = "I've been an SSL (Summer Student Leader) for the summer program SHA
 info_name = "Teaching"
 
 [node name="CollisionShape2D" parent="Columbia Info Areas/TA" index="0" unique_id=1083559723]
-shape = SubResource("RectangleShape2D_5he1u")
+shape = SubResource("RectangleShape2D_vchkt")
 
 [node name="Lab" parent="Columbia Info Areas" unique_id=902380975 instance=ExtResource("6_tefeu")]
 position = Vector2(489, -100)
@@ -797,7 +837,7 @@ info_text = "I am a Research Assistant at CEAL (Computer-Enabled Abilities Lab),
 info_name = "CEAL Lab"
 
 [node name="CollisionShape2D" parent="Columbia Info Areas/Lab" index="0" unique_id=1083559723]
-shape = SubResource("RectangleShape2D_5poiv")
+shape = SubResource("RectangleShape2D_txyw0")
 
 [node name="WE" parent="Columbia Info Areas" unique_id=270574156 instance=ExtResource("6_tefeu")]
 position = Vector2(409, -180)
@@ -805,7 +845,7 @@ info_text = "I am a first clarinet in CUWE (Columbia Uni Wind Ensemble) as well 
 info_name = "Wind Ensemble"
 
 [node name="CollisionShape2D" parent="Columbia Info Areas/WE" index="0" unique_id=1083559723]
-shape = SubResource("RectangleShape2D_2cjbq")
+shape = SubResource("RectangleShape2D_vc5cj")
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="Columbia Info Areas/WE" unique_id=778969842]
 texture = ExtResource("7_eb6dy")
@@ -837,7 +877,7 @@ info_text = "I'm a part of Columbia Wushu! This is something I started in colleg
 info_name = "Wushu"
 
 [node name="CollisionShape2D" parent="Columbia Info Areas/Wushu" index="0" unique_id=1083559723]
-shape = SubResource("RectangleShape2D_chjal")
+shape = SubResource("RectangleShape2D_nvyfr")
 
 [node name="AlexChen" type="AnimatedSprite2D" parent="Columbia Info Areas/Wushu" unique_id=1107926795]
 position = Vector2(-15, -15)
@@ -871,7 +911,7 @@ info_text = "I'm the co-chair of Columbia's Game Dev club under Columbia Gaming.
 info_name = "Game Dev"
 
 [node name="CollisionShape2D" parent="Columbia Info Areas/Game Dev" index="0" unique_id=1083559723]
-shape = SubResource("RectangleShape2D_cjqg0")
+shape = SubResource("RectangleShape2D_ty1g6")
 
 [node name="Rimi" type="AnimatedSprite2D" parent="Columbia Info Areas/Game Dev" unique_id=1977454353]
 position = Vector2(-15, -14)
@@ -1113,7 +1153,7 @@ link = "https://youtube.com/@frankanator"
 
 [node name="CollisionShape2D" parent="Arcade/InfoAreas/Yt" index="0" unique_id=1083559723]
 position = Vector2(7, 0.75)
-shape = SubResource("RectangleShape2D_vchkt")
+shape = SubResource("RectangleShape2D_j2jfr")
 
 [node name="FarewellTmrw" parent="Arcade/InfoAreas" unique_id=167318133 instance=ExtResource("6_tefeu")]
 position = Vector2(-55, 154)
@@ -1123,7 +1163,7 @@ link = "https://frankanator8.itch.io/farewell-tomorrow"
 
 [node name="CollisionShape2D" parent="Arcade/InfoAreas/FarewellTmrw" index="0" unique_id=1083559723]
 position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_txyw0")
+shape = SubResource("RectangleShape2D_bjg73")
 
 [node name="RotSq" parent="Arcade/InfoAreas" unique_id=886358357 instance=ExtResource("6_tefeu")]
 position = Vector2(-87, 154)
@@ -1133,7 +1173,7 @@ link = "https://frankanator8.itch.io/rotating-squared"
 
 [node name="CollisionShape2D" parent="Arcade/InfoAreas/RotSq" index="0" unique_id=1083559723]
 position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_vc5cj")
+shape = SubResource("RectangleShape2D_bu4jf")
 
 [node name="Hexicast" parent="Arcade/InfoAreas" unique_id=2001530523 instance=ExtResource("6_tefeu")]
 position = Vector2(-103, 185)
@@ -1143,7 +1183,7 @@ link = "https://github.com/Frankanator8/hexicast"
 
 [node name="CollisionShape2D" parent="Arcade/InfoAreas/Hexicast" index="0" unique_id=1083559723]
 position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_nvyfr")
+shape = SubResource("RectangleShape2D_o7ddy")
 
 [node name="Construction!" parent="Arcade/InfoAreas" unique_id=1420154675 instance=ExtResource("6_tefeu")]
 position = Vector2(-29, 213)
@@ -1152,7 +1192,7 @@ info_name = "Under Construction"
 
 [node name="CollisionShape2D" parent="Arcade/InfoAreas/Construction!" index="0" unique_id=1083559723]
 position = Vector2(2.5, 6)
-shape = SubResource("RectangleShape2D_ty1g6")
+shape = SubResource("RectangleShape2D_0loja")
 
 [node name="Car" type="Sprite2D" parent="Arcade/InfoAreas" unique_id=2022477788 groups=["Obstacles"]]
 modulate = Color(1, 0, 0, 1)
@@ -1179,7 +1219,7 @@ info_name = "Amazon"
 
 [node name="CollisionShape2D" parent="Experiences/Amazon" index="0" unique_id=1083559723]
 position = Vector2(20, -1)
-shape = SubResource("RectangleShape2D_j2jfr")
+shape = SubResource("RectangleShape2D_ids8r")
 
 [node name="Morgan Stanley" parent="Experiences" unique_id=1474829236 instance=ExtResource("6_tefeu")]
 position = Vector2(-407, -277)
@@ -1188,7 +1228,7 @@ info_name = "Morgan Stanley"
 
 [node name="CollisionShape2D" parent="Experiences/Morgan Stanley" index="0" unique_id=1083559723]
 position = Vector2(24, 0)
-shape = SubResource("RectangleShape2D_bjg73")
+shape = SubResource("RectangleShape2D_dnhof")
 
 [node name="Point72" parent="Experiences" unique_id=2131132446 instance=ExtResource("6_tefeu")]
 position = Vector2(-326, -276)
@@ -1197,7 +1237,7 @@ info_name = "Point72"
 
 [node name="CollisionShape2D" parent="Experiences/Point72" index="0" unique_id=1083559723]
 position = Vector2(24, 0)
-shape = SubResource("RectangleShape2D_bu4jf")
+shape = SubResource("RectangleShape2D_1v6qk")
 
 [node name="Ramp" parent="Experiences" unique_id=267498127 instance=ExtResource("6_tefeu")]
 position = Vector2(-360, 75)
@@ -1206,7 +1246,7 @@ info_name = "Ramp"
 
 [node name="CollisionShape2D" parent="Experiences/Ramp" index="0" unique_id=1083559723]
 position = Vector2(24, 0)
-shape = SubResource("RectangleShape2D_o7ddy")
+shape = SubResource("RectangleShape2D_augu2")
 
 [node name="DayNight" type="CanvasModulate" parent="." unique_id=1681358783]
 
@@ -1218,6 +1258,15 @@ autoplay = &"cycle"
 y_sort_enabled = true
 
 [node name="Fun" type="Node2D" parent="." unique_id=1538819696]
+
+[node name="Languages" parent="Fun" unique_id=2004899154 instance=ExtResource("6_tefeu")]
+position = Vector2(148, 216)
+info_text = "I'm fluent in English and Mandarin (can read/write/listen/speak in both)! My parents didn't speak English while they were in China, and as a result I learned to speak Chinese at home. Outside of that, I took AP Spanish in high school and can still read/write/speak/listen but not well. I'm currently learning Japanese as well (on Duolingo, as of writing 968 day streak)!"
+info_name = "Languages!"
+
+[node name="CollisionShape2D" parent="Fun/Languages" index="0" unique_id=1083559723]
+position = Vector2(28, 0.5)
+shape = SubResource("RectangleShape2D_tm6hj")
 
 [node name="Deltarune" type="Node2D" parent="Fun" unique_id=627865634]
 z_index = 1
@@ -1242,6 +1291,15 @@ position = Vector2(282, 211)
 texture = ExtResource("36_pibwh")
 offset = Vector2(0, -8)
 
+[node name="Info" parent="Fun/Deltarune" unique_id=1470782632 instance=ExtResource("6_tefeu")]
+position = Vector2(148, 216)
+info_text = "My favorite game is Deltarune! I love indie games like Hollow Knight, Stardew Valley, etc. in general, I think they have incredible themes and feel so much more personal and have so much more charm. I like Deltarune specifically for its humor, its well-made story (and the incredible community of theories around it),its music, and because the creator is such a cool person."
+info_name = "Fav Game"
+
+[node name="CollisionShape2D" parent="Fun/Deltarune/Info" index="0" unique_id=1083559723]
+position = Vector2(114.5, 0)
+shape = SubResource("RectangleShape2D_kf5aa")
+
 [node name="Steins;Gate" type="Node2D" parent="Fun" unique_id=1091774093]
 z_index = 1
 y_sort_enabled = true
@@ -1259,12 +1317,30 @@ position = Vector2(59, 39)
 texture = ExtResource("38_c6pm6")
 offset = Vector2(0, -8)
 
+[node name="Info" parent="Fun/Steins;Gate" unique_id=2050831234 instance=ExtResource("6_tefeu")]
+position = Vector2(-40, 46)
+info_text = "My favorite show is the anime Steins;Gate! I like anime in general, especially shounen/romance (especially funny ones like Kaguya-Sama), but I loved Steins;Gate for its story, its romance, time travel mechanics, and the fact it doesn't have any real plot holes."
+info_name = "Fav Show"
+
+[node name="CollisionShape2D" parent="Fun/Steins;Gate/Info" index="0" unique_id=1083559723]
+position = Vector2(105, 0)
+shape = SubResource("RectangleShape2D_e755i")
+
 [node name="1984" type="Sprite2D" parent="Fun" unique_id=829963763]
 z_index = 1
 y_sort_enabled = true
 position = Vector2(369, 212)
 texture = ExtResource("39_c6pm6")
 offset = Vector2(0, -8)
+
+[node name="Info" parent="Fun/1984" unique_id=1113041017 instance=ExtResource("6_tefeu")]
+position = Vector2(-105, 4)
+info_text = "My favorite book is 1984. I love dystopian novels - they make me think, and I find they scare me so much more than a horror novel, because they all end up being a commentary of the now. I'm slowly but surely becoming a more habitual reader, and I'll try to update on what good books I find!"
+info_name = "Fav Book"
+
+[node name="CollisionShape2D" parent="Fun/1984/Info" index="0" unique_id=1083559723]
+position = Vector2(105, 0)
+shape = SubResource("RectangleShape2D_t5ykj")
 
 [node name="Music" type="Node2D" parent="Fun" unique_id=74565366]
 
@@ -1275,12 +1351,30 @@ position = Vector2(523, 115)
 texture = ExtResource("40_chjal")
 offset = Vector2(0, -8)
 
+[node name="Info" parent="Fun/Music/Ado" unique_id=1514495994 instance=ExtResource("6_tefeu")]
+position = Vector2(-9, -6)
+info_text = "My favorite Japanese artist is Ado. I love her vocals (and the fact that they're not as high as some other female Japanese artists), and my favorite song of hers is Odo."
+info_name = "Ado"
+
+[node name="CollisionShape2D" parent="Fun/Music/Ado/Info" index="0" unique_id=1083559723]
+position = Vector2(3, 0)
+shape = SubResource("RectangleShape2D_xhfw6")
+
 [node name="Brunomars" type="Sprite2D" parent="Fun/Music" unique_id=1249643727]
 z_index = 1
 y_sort_enabled = true
 position = Vector2(523, 177)
 texture = ExtResource("41_cjqg0")
 offset = Vector2(0, -8)
+
+[node name="Info" parent="Fun/Music/Brunomars" unique_id=2024305905 instance=ExtResource("6_tefeu")]
+position = Vector2(-9, -6)
+info_text = "I listen to American pop occasionally, and I have to say my favorite American artist has to be Bruno Mars. All his songs are good and I can't name a specific one."
+info_name = "Ado"
+
+[node name="CollisionShape2D" parent="Fun/Music/Brunomars/Info" index="0" unique_id=1083559723]
+position = Vector2(3, 0)
+shape = SubResource("RectangleShape2D_1epgm")
 
 [node name="Tobyfox" type="Sprite2D" parent="Fun/Music" unique_id=11155437]
 z_index = 1
@@ -1289,12 +1383,30 @@ position = Vector2(455, 177)
 texture = ExtResource("42_vchkt")
 offset = Vector2(0, -8)
 
+[node name="Info" parent="Fun/Music/Tobyfox" unique_id=1970770324 instance=ExtResource("6_tefeu")]
+position = Vector2(2, -6)
+info_text = "I listen to Toby Fox the most, and he has the most plays on my Spotify. His ability to make  catchy melodies that reflect any sort of mood I'm in is uncanny, and for many of my own music endeavors I take most of my inspiration from him."
+info_name = "Toby Fox"
+
+[node name="CollisionShape2D" parent="Fun/Music/Tobyfox/Info" index="0" unique_id=1083559723]
+position = Vector2(3, 0)
+shape = SubResource("RectangleShape2D_152kg")
+
 [node name="Aespa" type="Sprite2D" parent="Fun/Music" unique_id=718912781]
 z_index = 1
 y_sort_enabled = true
 position = Vector2(446, 118)
 texture = ExtResource("43_txyw0")
 offset = Vector2(0, -8)
+
+[node name="Info" parent="Fun/Music/Aespa" unique_id=504898207 instance=ExtResource("6_tefeu")]
+position = Vector2(12, -8)
+info_text = "I listen to KPop a fair amount, and it's the youngest obsession on this list. Pictured here is a generic girl group that is very, very, very roughly based on Aespa, but I like Le Sserafim equally as well."
+info_name = "KPop"
+
+[node name="CollisionShape2D" parent="Fun/Music/Aespa/Info" index="0" unique_id=1083559723]
+position = Vector2(3, 0)
+shape = SubResource("RectangleShape2D_r4e17")
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="Fun/Music" unique_id=2126570630]
 position = Vector2(459, 123)
@@ -1333,11 +1445,29 @@ initial_velocity_max = 65.57
 position = Vector2(133, 245)
 sprite_frames = SubResource("SpriteFrames_uhl7o")
 autoplay = "default"
-frame_progress = 0.13720563
+frame_progress = 0.2055866
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Fun/Runner" unique_id=759959516]
 libraries/ = SubResource("AnimationLibrary_txyw0")
 autoplay = &"run"
+
+[node name="Runner2" parent="Fun/Runner" unique_id=137529912 instance=ExtResource("6_tefeu")]
+position = Vector2(-108, 10)
+info_text = "I love running along Riverside Park."
+info_name = "Running!"
+
+[node name="CollisionShape2D" parent="Fun/Runner/Runner2" index="0" unique_id=1083559723]
+position = Vector2(106, -7)
+shape = SubResource("RectangleShape2D_od4ux")
+
+[node name="Subway" parent="Fun" unique_id=1661233994 instance=ExtResource("6_tefeu")]
+position = Vector2(584, 215)
+info_text = "I think the NYC Subway is one of the most interesting things in the world. I love learning about the system, despite the connotations it might come with. There's so much engineering and history behind this piece of technology that we use every day, and despite its age and dirtiness, I think that adds to its charm that many other cities in the world with (objectively) better subways can't replicate."
+info_name = "Subway"
+
+[node name="CollisionShape2D" parent="Fun/Subway" index="0" unique_id=1083559723]
+position = Vector2(108, -6)
+shape = SubResource("RectangleShape2D_ro3en")
 
 [editable path="Columbia Info Areas/ADI"]
 [editable path="Columbia Info Areas/TA"]
@@ -1354,3 +1484,13 @@ autoplay = &"run"
 [editable path="Experiences/Morgan Stanley"]
 [editable path="Experiences/Point72"]
 [editable path="Experiences/Ramp"]
+[editable path="Fun/Languages"]
+[editable path="Fun/Deltarune/Info"]
+[editable path="Fun/Steins;Gate/Info"]
+[editable path="Fun/1984/Info"]
+[editable path="Fun/Music/Ado/Info"]
+[editable path="Fun/Music/Brunomars/Info"]
+[editable path="Fun/Music/Tobyfox/Info"]
+[editable path="Fun/Music/Aespa/Info"]
+[editable path="Fun/Runner/Runner2"]
+[editable path="Fun/Subway"]
