@@ -17,7 +17,12 @@
 [ext_resource type="Texture2D" uid="uid://p2psmnqsl7mn" path="res://assets/people/max-Sheet.png" id="9_a8y0u"]
 [ext_resource type="Texture2D" uid="uid://b47qj4o4l66wp" path="res://assets/people/angela-Sheet.png" id="9_ya4ey"]
 [ext_resource type="Script" uid="uid://drtesjskkh7qb" path="res://scripts/angela_he.gd" id="10_eb6dy"]
+[ext_resource type="Texture2D" uid="uid://cyi86i76o743n" path="res://assets/people/rebecca-Sheet.png" id="12_vchkt"]
+[ext_resource type="Texture2D" uid="uid://25wco340t0u" path="res://assets/people/ivanna-Sheet.png" id="13_txyw0"]
+[ext_resource type="Texture2D" uid="uid://wwykinb7y0pr" path="res://assets/shape.png" id="14_ty1g6"]
+[ext_resource type="Texture2D" uid="uid://gpjqygqr02vi" path="res://assets/people/jpjacob.png" id="14_vc5cj"]
 [ext_resource type="Texture2D" uid="uid://bef4csak1im2c" path="res://assets/people/rimi-Sheet.png" id="15_jkv2x"]
+[ext_resource type="Texture2D" uid="uid://sftog0aei16o" path="res://assets/art_board-Sheet.png" id="15_nvyfr"]
 [ext_resource type="Texture2D" uid="uid://beuqb1xhglw21" path="res://assets/people/john-Sheet.png" id="16_muem4"]
 [ext_resource type="Texture2D" uid="uid://dgebofglmugrm" path="res://assets/lionjam.png" id="17_dp3eg"]
 [ext_resource type="PackedScene" uid="uid://d1hct5j37gbpe" path="res://scenes/floating_book.tscn" id="18_book"]
@@ -88,19 +93,85 @@ shader_parameter/near_distance = 16.0
 shader_parameter/far_distance = 40.0
 shader_parameter/min_alpha = 0.3
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_cjqg0"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j2jfr"]
 resource_local_to_scene = true
 size = Vector2(48, 48)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_vchkt"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_r4e17"]
+atlas = ExtResource("12_vchkt")
+region = Rect2(0, 0, 19, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y57op"]
+atlas = ExtResource("12_vchkt")
+region = Rect2(19, 0, 19, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cjqg0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r4e17")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y57op")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mlv25"]
+atlas = ExtResource("13_txyw0")
+region = Rect2(0, 0, 19, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a82wo"]
+atlas = ExtResource("13_txyw0")
+region = Rect2(19, 0, 19, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_t8vo6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mlv25")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a82wo")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bjg73"]
 resource_local_to_scene = true
 size = Vector2(48, 48)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_txyw0"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bu4jf"]
 resource_local_to_scene = true
 size = Vector2(48, 48)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_vc5cj"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_gdvew"]
+atlas = ExtResource("15_nvyfr")
+region = Rect2(0, 0, 32, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kjtvk"]
+atlas = ExtResource("15_nvyfr")
+region = Rect2(32, 0, 32, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nvyfr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gdvew")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kjtvk")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o7ddy"]
 resource_local_to_scene = true
 size = Vector2(48, 48)
 
@@ -148,7 +219,7 @@ animations = [{
 "speed": 1.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_nvyfr"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0loja"]
 resource_local_to_scene = true
 size = Vector2(48, 48)
 
@@ -350,7 +421,7 @@ animations = [{
 "speed": 8.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ty1g6"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ids8r"]
 resource_local_to_scene = true
 size = Vector2(48, 48)
 
@@ -524,39 +595,39 @@ animations = [{
 "speed": 2.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_j2jfr"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dnhof"]
 resource_local_to_scene = true
 size = Vector2(38, 20.5)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_bjg73"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1v6qk"]
 resource_local_to_scene = true
 size = Vector2(15, 31)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_bu4jf"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_augu2"]
 resource_local_to_scene = true
 size = Vector2(15, 31)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_o7ddy"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tm6hj"]
 resource_local_to_scene = true
 size = Vector2(15, 31)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_0loja"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kf5aa"]
 resource_local_to_scene = true
 size = Vector2(115, 88)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ids8r"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t5ykj"]
 resource_local_to_scene = true
 size = Vector2(60, 14)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_dnhof"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e755i"]
 resource_local_to_scene = true
 size = Vector2(68, 20)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_1v6qk"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ro3en"]
 resource_local_to_scene = true
 size = Vector2(68, 20)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_augu2"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_od4ux"]
 resource_local_to_scene = true
 size = Vector2(68, 20)
 
@@ -582,35 +653,35 @@ _data = {
 &"cycle": SubResource("Animation_cycle")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_tm6hj"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xhfw6"]
 resource_local_to_scene = true
 size = Vector2(76, 33)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_kf5aa"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1epgm"]
 resource_local_to_scene = true
 size = Vector2(61, 33)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_e755i"]
-resource_local_to_scene = true
-size = Vector2(42, 33)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_t5ykj"]
-resource_local_to_scene = true
-size = Vector2(42, 33)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_xhfw6"]
-resource_local_to_scene = true
-size = Vector2(36, 33)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_1epgm"]
-resource_local_to_scene = true
-size = Vector2(36, 33)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_152kg"]
 resource_local_to_scene = true
-size = Vector2(36, 33)
+size = Vector2(42, 33)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r4e17"]
+resource_local_to_scene = true
+size = Vector2(42, 33)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y57op"]
+resource_local_to_scene = true
+size = Vector2(36, 33)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mlv25"]
+resource_local_to_scene = true
+size = Vector2(36, 33)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a82wo"]
+resource_local_to_scene = true
+size = Vector2(36, 33)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gdvew"]
 resource_local_to_scene = true
 size = Vector2(36, 33)
 
@@ -740,11 +811,11 @@ _data = {
 &"run": SubResource("Animation_vchkt")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_od4ux"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kjtvk"]
 resource_local_to_scene = true
 size = Vector2(201, 33)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ro3en"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrs0c"]
 resource_local_to_scene = true
 size = Vector2(63, 33)
 
@@ -821,7 +892,18 @@ info_name = "ADI Edu Committee"
 
 [node name="CollisionShape2D" parent="Columbia Info Areas/ADI" index="0" unique_id=1083559723]
 position = Vector2(0, -1)
-shape = SubResource("RectangleShape2D_cjqg0")
+shape = SubResource("RectangleShape2D_j2jfr")
+
+[node name="Rebecca" type="AnimatedSprite2D" parent="Columbia Info Areas/ADI" unique_id=1284817069]
+position = Vector2(-14, 1)
+sprite_frames = SubResource("SpriteFrames_cjqg0")
+autoplay = "default"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Columbia Info Areas/ADI" unique_id=1761047951]
+position = Vector2(12, 1)
+sprite_frames = SubResource("SpriteFrames_t8vo6")
+autoplay = "default"
+flip_h = true
 
 [node name="TA" parent="Columbia Info Areas" unique_id=1889179071 instance=ExtResource("6_tefeu")]
 position = Vector2(569, -99)
@@ -829,7 +911,11 @@ info_text = "I've been an SSL (Summer Student Leader) for the summer program SHA
 info_name = "Teaching"
 
 [node name="CollisionShape2D" parent="Columbia Info Areas/TA" index="0" unique_id=1083559723]
-shape = SubResource("RectangleShape2D_vchkt")
+shape = SubResource("RectangleShape2D_bjg73")
+
+[node name="Sprite2D" type="Sprite2D" parent="Columbia Info Areas/TA" unique_id=676324708]
+position = Vector2(1, -1)
+texture = ExtResource("14_ty1g6")
 
 [node name="Lab" parent="Columbia Info Areas" unique_id=902380975 instance=ExtResource("6_tefeu")]
 position = Vector2(489, -100)
@@ -837,7 +923,20 @@ info_text = "I am a Research Assistant at CEAL (Computer-Enabled Abilities Lab),
 info_name = "CEAL Lab"
 
 [node name="CollisionShape2D" parent="Columbia Info Areas/Lab" index="0" unique_id=1083559723]
-shape = SubResource("RectangleShape2D_txyw0")
+shape = SubResource("RectangleShape2D_bu4jf")
+
+[node name="Jpjacob" type="Sprite2D" parent="Columbia Info Areas/Lab" unique_id=630404924]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(8, 11)
+texture = ExtResource("14_vc5cj")
+
+[node name="Art board" type="AnimatedSprite2D" parent="Columbia Info Areas/Lab" unique_id=1137681956]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(-5, -14)
+sprite_frames = SubResource("SpriteFrames_nvyfr")
+autoplay = "default"
 
 [node name="WE" parent="Columbia Info Areas" unique_id=270574156 instance=ExtResource("6_tefeu")]
 position = Vector2(409, -180)
@@ -845,7 +944,7 @@ info_text = "I am a first clarinet in CUWE (Columbia Uni Wind Ensemble) as well 
 info_name = "Wind Ensemble"
 
 [node name="CollisionShape2D" parent="Columbia Info Areas/WE" index="0" unique_id=1083559723]
-shape = SubResource("RectangleShape2D_vc5cj")
+shape = SubResource("RectangleShape2D_o7ddy")
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="Columbia Info Areas/WE" unique_id=778969842]
 texture = ExtResource("7_eb6dy")
@@ -877,7 +976,7 @@ info_text = "I'm a part of Columbia Wushu! This is something I started in colleg
 info_name = "Wushu"
 
 [node name="CollisionShape2D" parent="Columbia Info Areas/Wushu" index="0" unique_id=1083559723]
-shape = SubResource("RectangleShape2D_nvyfr")
+shape = SubResource("RectangleShape2D_0loja")
 
 [node name="AlexChen" type="AnimatedSprite2D" parent="Columbia Info Areas/Wushu" unique_id=1107926795]
 position = Vector2(-15, -15)
@@ -911,7 +1010,7 @@ info_text = "I'm the co-chair of Columbia's Game Dev club under Columbia Gaming.
 info_name = "Game Dev"
 
 [node name="CollisionShape2D" parent="Columbia Info Areas/Game Dev" index="0" unique_id=1083559723]
-shape = SubResource("RectangleShape2D_ty1g6")
+shape = SubResource("RectangleShape2D_ids8r")
 
 [node name="Rimi" type="AnimatedSprite2D" parent="Columbia Info Areas/Game Dev" unique_id=1977454353]
 position = Vector2(-15, -14)
@@ -1153,7 +1252,7 @@ link = "https://youtube.com/@frankanator"
 
 [node name="CollisionShape2D" parent="Arcade/InfoAreas/Yt" index="0" unique_id=1083559723]
 position = Vector2(7, 0.75)
-shape = SubResource("RectangleShape2D_j2jfr")
+shape = SubResource("RectangleShape2D_dnhof")
 
 [node name="FarewellTmrw" parent="Arcade/InfoAreas" unique_id=167318133 instance=ExtResource("6_tefeu")]
 position = Vector2(-55, 154)
@@ -1163,7 +1262,7 @@ link = "https://frankanator8.itch.io/farewell-tomorrow"
 
 [node name="CollisionShape2D" parent="Arcade/InfoAreas/FarewellTmrw" index="0" unique_id=1083559723]
 position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bjg73")
+shape = SubResource("RectangleShape2D_1v6qk")
 
 [node name="RotSq" parent="Arcade/InfoAreas" unique_id=886358357 instance=ExtResource("6_tefeu")]
 position = Vector2(-87, 154)
@@ -1173,7 +1272,7 @@ link = "https://frankanator8.itch.io/rotating-squared"
 
 [node name="CollisionShape2D" parent="Arcade/InfoAreas/RotSq" index="0" unique_id=1083559723]
 position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bu4jf")
+shape = SubResource("RectangleShape2D_augu2")
 
 [node name="Hexicast" parent="Arcade/InfoAreas" unique_id=2001530523 instance=ExtResource("6_tefeu")]
 position = Vector2(-103, 185)
@@ -1183,7 +1282,7 @@ link = "https://github.com/Frankanator8/hexicast"
 
 [node name="CollisionShape2D" parent="Arcade/InfoAreas/Hexicast" index="0" unique_id=1083559723]
 position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_o7ddy")
+shape = SubResource("RectangleShape2D_tm6hj")
 
 [node name="Construction!" parent="Arcade/InfoAreas" unique_id=1420154675 instance=ExtResource("6_tefeu")]
 position = Vector2(-29, 213)
@@ -1192,7 +1291,7 @@ info_name = "Under Construction"
 
 [node name="CollisionShape2D" parent="Arcade/InfoAreas/Construction!" index="0" unique_id=1083559723]
 position = Vector2(2.5, 6)
-shape = SubResource("RectangleShape2D_0loja")
+shape = SubResource("RectangleShape2D_kf5aa")
 
 [node name="Car" type="Sprite2D" parent="Arcade/InfoAreas" unique_id=2022477788 groups=["Obstacles"]]
 modulate = Color(1, 0, 0, 1)
@@ -1219,7 +1318,7 @@ info_name = "Amazon"
 
 [node name="CollisionShape2D" parent="Experiences/Amazon" index="0" unique_id=1083559723]
 position = Vector2(20, -1)
-shape = SubResource("RectangleShape2D_ids8r")
+shape = SubResource("RectangleShape2D_t5ykj")
 
 [node name="Morgan Stanley" parent="Experiences" unique_id=1474829236 instance=ExtResource("6_tefeu")]
 position = Vector2(-407, -277)
@@ -1228,7 +1327,7 @@ info_name = "Morgan Stanley"
 
 [node name="CollisionShape2D" parent="Experiences/Morgan Stanley" index="0" unique_id=1083559723]
 position = Vector2(24, 0)
-shape = SubResource("RectangleShape2D_dnhof")
+shape = SubResource("RectangleShape2D_e755i")
 
 [node name="Point72" parent="Experiences" unique_id=2131132446 instance=ExtResource("6_tefeu")]
 position = Vector2(-326, -276)
@@ -1237,7 +1336,7 @@ info_name = "Point72"
 
 [node name="CollisionShape2D" parent="Experiences/Point72" index="0" unique_id=1083559723]
 position = Vector2(24, 0)
-shape = SubResource("RectangleShape2D_1v6qk")
+shape = SubResource("RectangleShape2D_ro3en")
 
 [node name="Ramp" parent="Experiences" unique_id=267498127 instance=ExtResource("6_tefeu")]
 position = Vector2(-360, 75)
@@ -1246,7 +1345,7 @@ info_name = "Ramp"
 
 [node name="CollisionShape2D" parent="Experiences/Ramp" index="0" unique_id=1083559723]
 position = Vector2(24, 0)
-shape = SubResource("RectangleShape2D_augu2")
+shape = SubResource("RectangleShape2D_od4ux")
 
 [node name="DayNight" type="CanvasModulate" parent="." unique_id=1681358783]
 
@@ -1266,7 +1365,7 @@ info_name = "Languages!"
 
 [node name="CollisionShape2D" parent="Fun/Languages" index="0" unique_id=1083559723]
 position = Vector2(28, 0.5)
-shape = SubResource("RectangleShape2D_tm6hj")
+shape = SubResource("RectangleShape2D_xhfw6")
 
 [node name="Deltarune" type="Node2D" parent="Fun" unique_id=627865634]
 z_index = 1
@@ -1298,7 +1397,7 @@ info_name = "Fav Game"
 
 [node name="CollisionShape2D" parent="Fun/Deltarune/Info" index="0" unique_id=1083559723]
 position = Vector2(114.5, 0)
-shape = SubResource("RectangleShape2D_kf5aa")
+shape = SubResource("RectangleShape2D_1epgm")
 
 [node name="Steins;Gate" type="Node2D" parent="Fun" unique_id=1091774093]
 z_index = 1
@@ -1324,7 +1423,7 @@ info_name = "Fav Show"
 
 [node name="CollisionShape2D" parent="Fun/Steins;Gate/Info" index="0" unique_id=1083559723]
 position = Vector2(105, 0)
-shape = SubResource("RectangleShape2D_e755i")
+shape = SubResource("RectangleShape2D_152kg")
 
 [node name="1984" type="Sprite2D" parent="Fun" unique_id=829963763]
 z_index = 1
@@ -1340,7 +1439,7 @@ info_name = "Fav Book"
 
 [node name="CollisionShape2D" parent="Fun/1984/Info" index="0" unique_id=1083559723]
 position = Vector2(105, 0)
-shape = SubResource("RectangleShape2D_t5ykj")
+shape = SubResource("RectangleShape2D_r4e17")
 
 [node name="Music" type="Node2D" parent="Fun" unique_id=74565366]
 
@@ -1358,7 +1457,7 @@ info_name = "Ado"
 
 [node name="CollisionShape2D" parent="Fun/Music/Ado/Info" index="0" unique_id=1083559723]
 position = Vector2(3, 0)
-shape = SubResource("RectangleShape2D_xhfw6")
+shape = SubResource("RectangleShape2D_y57op")
 
 [node name="Brunomars" type="Sprite2D" parent="Fun/Music" unique_id=1249643727]
 z_index = 1
@@ -1374,7 +1473,7 @@ info_name = "Ado"
 
 [node name="CollisionShape2D" parent="Fun/Music/Brunomars/Info" index="0" unique_id=1083559723]
 position = Vector2(3, 0)
-shape = SubResource("RectangleShape2D_1epgm")
+shape = SubResource("RectangleShape2D_mlv25")
 
 [node name="Tobyfox" type="Sprite2D" parent="Fun/Music" unique_id=11155437]
 z_index = 1
@@ -1390,7 +1489,7 @@ info_name = "Toby Fox"
 
 [node name="CollisionShape2D" parent="Fun/Music/Tobyfox/Info" index="0" unique_id=1083559723]
 position = Vector2(3, 0)
-shape = SubResource("RectangleShape2D_152kg")
+shape = SubResource("RectangleShape2D_a82wo")
 
 [node name="Aespa" type="Sprite2D" parent="Fun/Music" unique_id=718912781]
 z_index = 1
@@ -1406,7 +1505,7 @@ info_name = "KPop"
 
 [node name="CollisionShape2D" parent="Fun/Music/Aespa/Info" index="0" unique_id=1083559723]
 position = Vector2(3, 0)
-shape = SubResource("RectangleShape2D_r4e17")
+shape = SubResource("RectangleShape2D_gdvew")
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="Fun/Music" unique_id=2126570630]
 position = Vector2(459, 123)
@@ -1458,7 +1557,7 @@ info_name = "Running!"
 
 [node name="CollisionShape2D" parent="Fun/Runner/Runner2" index="0" unique_id=1083559723]
 position = Vector2(106, -7)
-shape = SubResource("RectangleShape2D_od4ux")
+shape = SubResource("RectangleShape2D_kjtvk")
 
 [node name="Subway" parent="Fun" unique_id=1661233994 instance=ExtResource("6_tefeu")]
 position = Vector2(584, 215)
@@ -1467,7 +1566,7 @@ info_name = "Subway"
 
 [node name="CollisionShape2D" parent="Fun/Subway" index="0" unique_id=1083559723]
 position = Vector2(108, -6)
-shape = SubResource("RectangleShape2D_ro3en")
+shape = SubResource("RectangleShape2D_xrs0c")
 
 [editable path="Columbia Info Areas/ADI"]
 [editable path="Columbia Info Areas/TA"]
