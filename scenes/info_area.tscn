@@ -7,10 +7,17 @@
 resource_local_to_scene = true
 
 [node name="InfoArea" type="Area2D" unique_id=1997803310]
+collision_mask = 2
 script = ExtResource("1_w2nh6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1083559723]
 shape = SubResource("RectangleShape2D_0r61b")
+
+[node name="RangeIndicator" type="Line2D" parent="." unique_id=1083559726]
+modulate = Color(1, 1, 1, 0.2)
+z_index = -1
+width = 1.0
+joint_mode = 2
 
 [node name="DescriptionBox" parent="." unique_id=1478694801 instance=ExtResource("1_p73ki")]
 visible = false
