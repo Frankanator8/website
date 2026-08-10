@@ -1,6 +1,6 @@
 extends Node2D
 
-@export var dialogue_text: String = "Default Dialogue Text" : set = set_dialogue_text
+@export_multiline var dialogue_text: String = "Default Dialogue Text" : set = set_dialogue_text
 @export var show_one_by_one: bool = true
 @export var type_speed: float = 0.05 # Time in seconds per character
 
