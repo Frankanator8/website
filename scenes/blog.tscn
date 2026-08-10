@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://cb3glxlav7q2n"]
+
+[ext_resource type="Script" uid="uid://c6v6aqb3187o7" path="res://scripts/mailbox.gd" id="2_mbox"]
+[ext_resource type="Texture2D" uid="uid://ccacfrbf5o1xi" path="res://assets/lectern.png" id="3_lectern"]
+[ext_resource type="FontFile" uid="uid://vajrtfrsftm5" path="res://assets/font/Cabin-Bold.ttf" id="4_font"]
+[ext_resource type="Texture2D" uid="uid://bk13vgrxpuaoq" path="res://assets/dialogue.png" id="5_dlgtex"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_blog"]
+resource_local_to_scene = true
+radius = 28.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tip"]
+content_margin_left = 26.0
+content_margin_top = 20.0
+content_margin_right = 26.0
+content_margin_bottom = 20.0
+texture = ExtResource("5_dlgtex")
+texture_margin_left = 22.0
+texture_margin_top = 22.0
+texture_margin_right = 22.0
+texture_margin_bottom = 22.0
+
+[node name="Blog" type="Area2D" unique_id=1689162470]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("2_mbox")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1689162471]
+shape = SubResource("CircleShape2D_blog")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1689162472]
+texture = ExtResource("3_lectern")
+offset = Vector2(0, -8)
+
+[node name="Hover" type="Control" parent="." unique_id=1689162473]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -8.0
+offset_top = -16.0
+offset_right = 8.0
+offset_bottom = 0.0
+mouse_default_cursor_shape = 2
+
+[node name="Tooltip" type="Node2D" parent="." unique_id=1689162474]
+visible = false
+z_index = 1000
+position = Vector2(0, -19)
+scale = Vector2(0.25, 0.25)
+
+[node name="Panel" type="PanelContainer" parent="Tooltip" unique_id=1689162475]
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_tip")
+
+[node name="Label" type="Label" parent="Tooltip/Panel" unique_id=1689162476]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_font")
+theme_override_font_sizes/font_size = 24
+text = "https://example.com"
