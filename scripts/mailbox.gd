@@ -4,7 +4,7 @@ extends Area2D
 @export var link_url: String = "https://example.com" : set = set_link_url
 @export var logo_texture: Texture2D : set = set_logo_texture
 
-@onready var logo: TextureRect = $Logo
+@onready var logo: TextureRect = get_node_or_null("Logo")
 @onready var hover: Control = $Hover
 @onready var tooltip: Node2D = $Tooltip
 @onready var tooltip_label: Label = $Tooltip/Panel/Label
@@ -13,7 +13,8 @@ var _mouse_over: bool = false
 var _player_near: bool = false
 
 func _ready() -> void:
-	logo.texture = logo_texture
+	if logo:
+		logo.texture = logo_texture
 	tooltip_label.text = link_url
 
 	if Engine.is_editor_hint():
