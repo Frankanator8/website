@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c6v6aqb3187o7" path="res://scripts/mailbox.gd" id="2_mbox"]
 [ext_resource type="Texture2D" uid="uid://cxnoyy42sknfg" path="res://assets/mailbox.png" id="3_mbtex"]
-[ext_resource type="FontFile" uid="uid://vajrtfrsftm5" path="res://assets/font/Cabin-Bold.ttf" id="4_font"]
+[ext_resource type="FontFile" uid="uid://b7vhfkhcmfpoa" path="res://assets/font/Jersey15-Regular.ttf" id="4_452jb"]
 [ext_resource type="Texture2D" uid="uid://bk13vgrxpuaoq" path="res://assets/dialogue.png" id="5_dlgtex"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_452jb"]
@@ -64,6 +64,6 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_tip")
 [node name="Label" type="Label" parent="Tooltip/Panel" unique_id=1770856745]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("4_font")
+theme_override_fonts/font = ExtResource("4_452jb")
 theme_override_font_sizes/font_size = 24
 text = "https://example.com"

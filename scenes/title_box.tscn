@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://b0etiu1w0yg34" path="res://scripts/title_box.gd" id="1_tbox"]
 [ext_resource type="Texture2D" uid="uid://bk13vgrxpuaoq" path="res://assets/dialogue.png" id="2_dlgtex"]
-[ext_resource type="FontFile" uid="uid://vajrtfrsftm5" path="res://assets/font/Cabin-Bold.ttf" id="3_font"]
+[ext_resource type="FontFile" uid="uid://b7vhfkhcmfpoa" path="res://assets/font/Jersey15-Regular.ttf" id="3_3a3ib"]
 
 [node name="TitleBox" type="Node2D" unique_id=309439255]
 script = ExtResource("1_tbox")
@@ -23,9 +23,9 @@ offset_top = 12.0
 offset_right = 121.0
 offset_bottom = 28.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/bold_font = ExtResource("3_font")
+theme_override_fonts/bold_font = ExtResource("3_3a3ib")
 theme_override_font_sizes/normal_font_size = 4
-theme_override_font_sizes/bold_font_size = 12
+theme_override_font_sizes/bold_font_size = 15
 bbcode_enabled = true
 text = "[b]Title[/b]"
 scroll_active = false

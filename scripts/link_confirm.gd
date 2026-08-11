@@ -4,9 +4,9 @@ extends CanvasLayer
 # instead of OS.shell_open, so the user gets a yes/no prompt first.
 
 @onready var blocker: Control = $Blocker
-@onready var url_label: Label = $Blocker/Panel/VBox/Url
-@onready var yes_button: Button = $Blocker/Panel/VBox/HBox/Yes
-@onready var no_button: Button = $Blocker/Panel/VBox/HBox/No
+@onready var url_label: Label = $Blocker/Panel/MarginContainer/VBox/Url
+@onready var yes_button: Button = $Blocker/Panel/MarginContainer/VBox/HBox/Yes
+@onready var no_button: Button = $Blocker/Panel/MarginContainer/VBox/HBox/No
 
 var _pending_link: String = ""
 

@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://ck1nfrmb0x1lc"]
 
-[ext_resource type="Script" path="res://scripts/link_confirm.gd" id="1_lcscr"]
+[ext_resource type="Script" uid="uid://c1m60fc4ep6sm" path="res://scripts/link_confirm.gd" id="1_lcscr"]
 [ext_resource type="Texture2D" uid="uid://bk13vgrxpuaoq" path="res://assets/dialogue.png" id="2_dlgtex"]
-[ext_resource type="FontFile" uid="uid://vajrtfrsftm5" path="res://assets/font/Cabin-Bold.ttf" id="3_font"]
+[ext_resource type="FontFile" uid="uid://b7vhfkhcmfpoa" path="res://assets/font/Jersey15-Regular.ttf" id="3_j2hac"]
+[ext_resource type="FontFile" uid="uid://ud3epr0pr2u4" path="res://assets/font/Jersey25-Regular.ttf" id="4_j2hac"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_confirm"]
 content_margin_left = 40.0
@@ -15,11 +16,11 @@ texture_margin_top = 22.0
 texture_margin_right = 22.0
 texture_margin_bottom = 22.0
 
-[node name="LinkConfirm" type="CanvasLayer"]
+[node name="LinkConfirm" type="CanvasLayer" unique_id=478915366]
 layer = 100
 script = ExtResource("1_lcscr")
 
-[node name="Blocker" type="Control" parent="."]
+[node name="Blocker" type="Control" parent="." unique_id=1902064146]
 visible = false
 layout_mode = 3
 anchors_preset = 15
@@ -28,7 +29,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Dim" type="ColorRect" parent="Blocker"]
+[node name="Dim" type="ColorRect" parent="Blocker" unique_id=1064866969]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -38,7 +39,7 @@ grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 0.5)
 
-[node name="Panel" type="PanelContainer" parent="Blocker"]
+[node name="Panel" type="PanelContainer" parent="Blocker" unique_id=1359789914]
 custom_minimum_size = Vector2(520, 0)
 layout_mode = 1
 anchors_preset = 8
@@ -50,42 +51,48 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_confirm")
 
-[node name="VBox" type="VBoxContainer" parent="Blocker/Panel"]
+[node name="MarginContainer" type="MarginContainer" parent="Blocker/Panel" unique_id=1687827786]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBox" type="VBoxContainer" parent="Blocker/Panel/MarginContainer" unique_id=890091244]
 layout_mode = 2
 theme_override_constants/separation = 16
 
-[node name="Prompt" type="Label" parent="Blocker/Panel/VBox"]
+[node name="Prompt" type="Label" parent="Blocker/Panel/MarginContainer/VBox" unique_id=996325540]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_font")
-theme_override_font_sizes/font_size = 32
+theme_override_fonts/font = ExtResource("3_j2hac")
+theme_override_font_sizes/font_size = 60
 text = "Open this link?"
 horizontal_alignment = 1
 
-[node name="Url" type="Label" parent="Blocker/Panel/VBox"]
+[node name="Url" type="Label" parent="Blocker/Panel/MarginContainer/VBox" unique_id=1706518915]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.2, 0.2, 0.2, 1)
-theme_override_fonts/font = ExtResource("3_font")
-theme_override_font_sizes/font_size = 20
+theme_override_fonts/font = ExtResource("3_j2hac")
+theme_override_font_sizes/font_size = 42
 text = "https://example.com"
 horizontal_alignment = 1
-autowrap_mode = 3
 
-[node name="HBox" type="HBoxContainer" parent="Blocker/Panel/VBox"]
+[node name="HBox" type="HBoxContainer" parent="Blocker/Panel/MarginContainer/VBox" unique_id=810108864]
 layout_mode = 2
 theme_override_constants/separation = 24
 alignment = 1
 
-[node name="Yes" type="Button" parent="Blocker/Panel/VBox/HBox"]
+[node name="Yes" type="Button" parent="Blocker/Panel/MarginContainer/VBox/HBox" unique_id=1020986607]
 custom_minimum_size = Vector2(160, 48)
 layout_mode = 2
-theme_override_fonts/font = ExtResource("3_font")
+theme_override_fonts/font = ExtResource("4_j2hac")
 theme_override_font_sizes/font_size = 24
 text = "Open"
 
-[node name="No" type="Button" parent="Blocker/Panel/VBox/HBox"]
+[node name="No" type="Button" parent="Blocker/Panel/MarginContainer/VBox/HBox" unique_id=237145834]
 custom_minimum_size = Vector2(160, 48)
 layout_mode = 2
-theme_override_fonts/font = ExtResource("3_font")
+theme_override_fonts/font = ExtResource("4_j2hac")
 theme_override_font_sizes/font_size = 24
 text = "Cancel"
