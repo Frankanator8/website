@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://dupyaax2oowlu"]
+
+[ext_resource type="Script" path="res://scripts/day_night_sync.gd" id="1_dnsync"]
+[ext_resource type="Script" path="res://scripts/light.gd" id="2_light"]
+
+[sub_resource type="Gradient" id="Gradient_glow"]
+offsets = PackedFloat32Array(0, 0.45, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0.55, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_glow"]
+gradient = SubResource("Gradient_glow")
+width = 256
+height = 256
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 0.5)
+
+[sub_resource type="Animation" id="Animation_lamp"]
+resource_name = "cycle"
+length = 120.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Light:enabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 30, 92),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Light:energy")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 30, 42, 80, 92, 120),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 1.15, 1.15, 0.0, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lamp"]
+_data = {
+&"cycle": SubResource("Animation_lamp")
+}
+
+[node name="Light" type="Node2D" unique_id=1651266315]
+script = ExtResource("2_light")
+light_color = Color(1, 0.88, 0.66, 1)
+
+[node name="Light" type="PointLight2D" parent="." unique_id=528924477]
+position = Vector2(0, -24)
+enabled = false
+color = Color(1, 0.88, 0.66, 1)
+energy = 0.0
+shadow_enabled = true
+shadow_filter = 1
+shadow_filter_smooth = 2.0
+texture = SubResource("GradientTexture2D_glow")
+texture_scale = 0.55
+
+[node name="Cycle" type="AnimationPlayer" parent="." unique_id=265296910]
+script = ExtResource("1_dnsync")
+libraries/ = SubResource("AnimationLibrary_lamp")
