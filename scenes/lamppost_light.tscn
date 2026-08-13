@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://dfnx58c54xfff"]
+
+[ext_resource type="Texture2D" uid="uid://du5g83iyfpu61" path="res://assets/lamppost-Sheet.png" id="1_sheet"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_off"]
+atlas = ExtResource("1_sheet")
+region = Rect2(16, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_on"]
+atlas = ExtResource("1_sheet")
+region = Rect2(0, 0, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lamp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_off")
+}],
+"loop": 1,
+"name": &"off",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_on")
+}],
+"loop": 1,
+"name": &"on",
+"speed": 1.0
+}]
+
+[node name="LamppostLight" type="Node2D" unique_id=1833693611]
+
+[node name="Lamppost" type="AnimatedSprite2D" parent="." unique_id=1295120641]
+z_index = 2
+y_sort_enabled = true
+position = Vector2(0, -16)
+sprite_frames = SubResource("SpriteFrames_lamp")
+animation = &"off"

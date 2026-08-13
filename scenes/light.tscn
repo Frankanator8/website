@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://7oi2v7cx5o1a"]
+
+[ext_resource type="Script" path="res://scripts/light.gd" id="2_light"]
+[ext_resource type="Texture2D" uid="uid://bh2sga43gaj5" path="res://resources/light_glow.tres" id="3_glow"]
+
+[node name="Light" type="Node2D" unique_id=1651266315]
+script = ExtResource("2_light")
+
+[node name="Light" type="PointLight2D" parent="." unique_id=528924477]
+position = Vector2(0, -24)
+enabled = false
+color = Color(1, 0.88, 0.66, 1)
+energy = 0.0
+texture = ExtResource("3_glow")
+texture_scale = 1.1

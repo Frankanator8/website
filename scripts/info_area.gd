@@ -9,15 +9,22 @@ extends Area2D
 # Manually define the size of your Node2D description box for boundary calculations
 @export var description_box_size: Vector2 = Vector2(200, 100)
 
-const RING_ALPHA_IDLE: float = 0.2
-const RING_ALPHA_ACTIVE: float = 0.6
+const RANGE_ALPHA_IDLE: float = 0.6
+const RANGE_ALPHA_ACTIVE: float = 1.0
+
+# One spark seed every few pixels, so density follows the area's size
+const EDGE_POINT_SPACING: float = 2.0
 
 # Every area the player currently stands in - only the closest one shows its box
 static var _areas_in_range: Array = []
 
 @onready var description_box: Node2D = $DescriptionBox
 @onready var base_shape: CollisionShape2D = $CollisionShape2D
-@onready var range_indicator: Line2D = $RangeIndicator
+@onready var border: Node2D = $Border
+@onready var range_indicator: Line2D = $Border/RangeIndicator
+@onready var pulse: AnimationPlayer = $Pulse
+@onready var sparks_idle: CPUParticles2D = $EdgeSparksIdle
+@onready var sparks_active: CPUParticles2D = $EdgeSparksActive
 
 var _player_in_range: bool = false
 var _mouse_over: bool = false
@@ -47,24 +54,61 @@ func _process(_delta: float) -> void:
 	if description_box.visible:
 		_place_description_box()
 
-# Outline traces the area's own collision shape, so it shows the real range
+# Sparks trace the area's own collision shape, so they show the real range
 func _setup_indicator() -> void:
 	var shape: Shape2D = base_shape.shape
 	if not shape is RectangleShape2D:
 		push_warning("InfoArea %s needs a RectangleShape2D to draw its range" % name)
-		range_indicator.hide()
+		border.hide()
+		sparks_idle.emitting = false
+		sparks_active.emitting = false
 		return
 
 	var half: Vector2 = shape.size / 2.0
-	range_indicator.points = PackedVector2Array([
+	var corners := PackedVector2Array([
 		Vector2(-half.x, -half.y),
 		Vector2(half.x, -half.y),
 		Vector2(half.x, half.y),
-		Vector2(-half.x, half.y),
-		Vector2(-half.x, -half.y), # close the loop
+		Vector2(-half.x, half.y), # the line is closed, no repeated point
 	])
-	range_indicator.position = base_shape.position
-	range_indicator.modulate.a = RING_ALPHA_IDLE
+	range_indicator.points = corners
+	border.position = base_shape.position
+	border.modulate.a = RANGE_ALPHA_IDLE
+
+	# 27 areas breathing in lockstep looks mechanical - scatter the phase
+	pulse.seek(randf() * pulse.get_animation("pulse").length, true)
+
+	var emission := _edge_emission(shape.size)
+	var perimeter: float = 2.0 * (shape.size.x + shape.size.y)
+	for emitter in [sparks_idle, sparks_active]:
+		emitter.position = base_shape.position
+		emitter.emission_points = emission[0]
+		emitter.emission_normals = emission[1]
+	# Overlap is what makes the additive glow read as light, so keep it dense.
+	# Still scaled by size - small areas would otherwise look as busy as big ones
+	sparks_idle.amount = clampi(int(perimeter / 5.0), 12, 48)
+	sparks_active.amount = clampi(int(perimeter / 2.5), 24, 90)
+	sparks_idle.self_modulate.a = RANGE_ALPHA_IDLE
+
+# Seeds sit on the outline with the outward normal of the edge they sit on, so
+# DIRECTED_POINTS throws every spark away from the border it was born on
+func _edge_emission(size: Vector2) -> Array:
+	var half := size / 2.0
+	var pts := PackedVector2Array()
+	var normals := PackedVector2Array()
+	# start corner, direction along edge, outward normal, edge length
+	for e in [
+		[Vector2(-half.x, -half.y), Vector2(1, 0), Vector2(0, -1), size.x],
+		[Vector2(half.x, -half.y), Vector2(0, 1), Vector2(1, 0), size.y],
+		[Vector2(half.x, half.y), Vector2(-1, 0), Vector2(0, 1), size.x],
+		[Vector2(-half.x, half.y), Vector2(0, -1), Vector2(-1, 0), size.y],
+	]:
+		var count: int = maxi(2, int(e[3] / EDGE_POINT_SPACING))
+		for i in count:
+			# stops short of the next corner, so corners never double up
+			pts.append(e[0] + e[1] * (e[3] * float(i) / float(count)))
+			normals.append(e[2])
+	return [pts, normals]
 
 func _on_body_entered(body: Node2D) -> void:
 	if not body.is_in_group("player"):
@@ -72,21 +116,25 @@ func _on_body_entered(body: Node2D) -> void:
 	_player_in_range = true
 	if not _areas_in_range.has(self):
 		_areas_in_range.append(self)
-	_fade_ring(RING_ALPHA_ACTIVE)
+	_fade_ring(RANGE_ALPHA_ACTIVE)
+	sparks_active.emitting = true
 
 func _on_body_exited(body: Node2D) -> void:
 	if not body.is_in_group("player"):
 		return
 	_player_in_range = false
 	_areas_in_range.erase(self)
-	_fade_ring(RING_ALPHA_IDLE)
+	_fade_ring(RANGE_ALPHA_IDLE)
+	sparks_active.emitting = false
 	_set_link_cursor(false)
 
+# Border and idle glow brighten together, so entering reads as one change
 func _fade_ring(alpha: float) -> void:
 	if _ring_tween and _ring_tween.is_running():
 		_ring_tween.kill()
-	_ring_tween = create_tween()
-	_ring_tween.tween_property(range_indicator, "modulate:a", alpha, 0.2)
+	_ring_tween = create_tween().set_parallel()
+	_ring_tween.tween_property(border, "modulate:a", alpha, 0.2)
+	_ring_tween.tween_property(sparks_idle, "self_modulate:a", alpha, 0.2)
 
 # Overlapping ranges would stack description boxes - closest area wins
 func _is_closest_in_range() -> bool:
