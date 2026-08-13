@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://dfnx58c54xfff"]
 
 [ext_resource type="Texture2D" uid="uid://du5g83iyfpu61" path="res://assets/lamppost-Sheet.png" id="1_sheet"]
-[ext_resource type="Texture2D" path="res://resources/light_glow.tres" id="2_glow"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_off"]
 atlas = ExtResource("1_sheet")
@@ -38,11 +37,3 @@ y_sort_enabled = true
 position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_lamp")
 animation = &"off"
-
-[node name="Light" type="PointLight2D" parent="." unique_id=457701385]
-position = Vector2(0, -24)
-enabled = false
-color = Color(1, 0.88, 0.66, 1)
-energy = 0.0
-texture = ExtResource("2_glow")
-texture_scale = 1.1
