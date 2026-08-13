@@ -34,6 +34,8 @@
 [ext_resource type="Texture2D" uid="uid://cwqhdtfy64k2j" path="res://assets/tiles/fence.png" id="26_y5683"]
 [ext_resource type="Texture2D" uid="uid://co0afgiomeyfw" path="res://assets/tiles/citywall.png" id="27_81l1k"]
 [ext_resource type="Texture2D" uid="uid://c6lgdmc1sg77i" path="res://assets/tiles/clay-fountain.png" id="28_rbyrm"]
+[ext_resource type="Texture2D" uid="uid://y6s33i6bsaj2" path="res://assets/tiles/large_scale/ferriswheel.png" id="29_6mmqx"]
+[ext_resource type="Texture2D" uid="uid://bsi04xcoutx8t" path="res://assets/tiles/large_scale/circus.png" id="30_1f4is"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4c57u"]
 texture = ExtResource("1_a6ovm")
@@ -425,6 +427,66 @@ texture = ExtResource("27_81l1k")
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yghtx"]
 texture = ExtResource("28_rbyrm")
 0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uhcwa"]
+texture = ExtResource("29_6mmqx")
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x4jgr"]
+texture = ExtResource("30_1f4is")
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w48qg"]
 texture = ExtResource("5_t4ado")
@@ -920,3 +982,5 @@ sources/30 = SubResource("TileSetAtlasSource_rbyrm")
 sources/31 = SubResource("TileSetAtlasSource_6mmqx")
 sources/32 = SubResource("TileSetAtlasSource_1f4is")
 sources/33 = SubResource("TileSetAtlasSource_yghtx")
+sources/34 = SubResource("TileSetAtlasSource_uhcwa")
+sources/35 = SubResource("TileSetAtlasSource_x4jgr")

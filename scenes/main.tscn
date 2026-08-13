@@ -51,6 +51,7 @@
 [ext_resource type="Texture2D" uid="uid://b6awrlhy5grig" path="res://assets/running-Sheet.png" id="44_cjqg0"]
 [ext_resource type="PackedScene" uid="uid://cb3glxlav7q2n" path="res://scenes/blog.tscn" id="50_j2jfr"]
 [ext_resource type="Texture2D" uid="uid://c6yub8422fwgi" path="res://assets/frankanator.png" id="51_bjg73"]
+[ext_resource type="Texture2D" uid="uid://dy1ybwu7a6j6w" path="res://assets/rollercoaster-Sheet.png" id="51_xhfw6"]
 [ext_resource type="Texture2D" uid="uid://fq8cpywrwtxx" path="res://assets/hanyangliu.png" id="52_bu4jf"]
 [ext_resource type="Texture2D" uid="uid://dmpytggoifdkv" path="res://assets/people/frank.png" id="53_o7ddy"]
 [ext_resource type="Script" uid="uid://bfr4nk8w2tqy3" path="res://scripts/frank.gd" id="54_frnk1"]
@@ -63,10 +64,7 @@
 [ext_resource type="Texture2D" uid="uid://b000clpt1d6y8" path="res://assets/ripple-mask-pool.png" id="59_rplmk"]
 [ext_resource type="PackedScene" uid="uid://dfnx58c54xfff" path="res://scenes/lamppost_light.tscn" id="62_e755i"]
 [ext_resource type="Script" uid="uid://7b7sc8t32b1q" path="res://scripts/lights.gd" id="64_lights"]
-[ext_resource type="Texture2D" path="res://resources/light_glow.tres" id="65_glow"]
-
-[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_glow"]
-blend_mode = 1
+[ext_resource type="Texture2D" uid="uid://bh2sga43gaj5" path="res://resources/light_glow.tres" id="65_glow"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_yq6so"]
 vertices = PackedVector2Array(726, 10, 474, 10, 102, -10, 154, -10, 621.7578, 218, 594.14844, 218, 502, 214, 502, 186, -218, 106, -246, 106, -330, 102, -326, 102, 502, 122, 474, 122, -10, 102, 10, 102, -166, 10, -166, 170, -170, 102, -170, 74, -406, -54, -394, -170, -262, -186, -186, -186, -170, -54, 26, -58, 22, -54, -22, -54, -26, -58, -26, -86, 26, -86, 566, -102, 506, -102, 406, -122, 426, -122, 26, 172.89844, 42, 173.1875, 42, 246, -74, 198, -74, 179.21875, -166, -250, -166, -10, -170, -26, 566, -122, 566, -182, 586, -202, 586, -10, -186, -204.78125, 745.53906, -10, 745.03906, 282, 726, 54, -221.85156, 170, -222.03125, 198, -226.0625, 182, -226.15625, 166, -226.0625, 166, 102, -38, 74, -38, 54, -58, 54, -86, 326, -202, 506, -182, 694, 246, 694, 227.21875, 186, 10, 186, 54, 166, 38, 166, 10, -218, 134, -189.85156, 170, -246, 102, -266, 102, 54, 22, 54, -22, 74, 10, 74, 38, -74, -10, -74, -38, -54, -22, -54, 22, -26, -202, -26, -230, 26, -230, 26, -202, 54, -202, 54, -230, 154, -250, -146.71094, -250, -54, -230, -146.50781, -234, -442, -250, -202, -204.78125, 502, 102, 502, 74, 474, 54, 474, 74, -394, -198, -262, -204.63281, -422, -170, -422, -38, 410, 74, 410, 102, 54, 86, 54, 58, -146.65625, 138, -146.71094, 134, -146.50781, 134, -10, 138, -146.50781, -10, -146.71094, -26, -146.50781, -26, -146.71094, -42, -146.50781, -42, -146.71094, -58, -146.50781, -58, -146.71094, -74, -146.50781, -74, -146.71094, -90, -146.50781, -90, -146.71094, -106, -146.50781, -106, -146.71094, -122, -146.50781, -122, -146.71094, -138, -146.50781, -138, -146.71094, -154, -146.50781, -154, -146.71094, -170, -146.50781, -170, -146.71094, -186, -146.50781, -186, -146.71094, -202, -146.50781, -202, -146.71094, -218, -146.50781, -218, -54, -202, -146.71094, -234, -146.71094, 118, -146.50781, 118, -146.71094, 102, -146.50781, 102, -146.71094, 86, -146.50781, 86, -146.71094, 70, -146.50781, 70, -146.71094, 54, -146.50781, 54, -146.71094, 38, -146.50781, 38, -190.03125, 198, -189.92969, 198, -190.03125, 214, -194.0625, 214, -254.03125, 166, -253.92969, 166, -254.03125, 182, -221.92969, 198, -222.03125, 214, -194.15625, 198, -194.0625, 198, -202, -204.6875, -218, -204.6875, -218, -204.78125, -234, -204.6875, -234, -204.78125, -422, -198, -442, 282, 438, 131.21875, 422, 131.29688, 422, 131.21875, 678, 227.29688, 678, 227.21875, 502, 150, 662, 227.29688, 662, 227.21875, 646, 227.29688, 646, 227.21875, 582, 227.21875, 566, 227.29688, 566, 227.21875, 358, 227.21875, 342, 227.29688, 342, 227.21875, 278, 227.21875, 262, 227.29688, 262, 227.21875, 282, 218, 246, 227.29688, 246, 227.21875, 182, 227.21875, 166, 227.29688, 166, 227.21875, 186, 218, 150, 227.29688, 150, 227.21875, 134, 227.29688, 134, 227.21875, 42, 266, 42, 298.82813, -138, 298.53125, -138, 266, -406, -38, -394, -10, -394, -26, 438, 54, 438, 10, 378, 10, 378, 26, 374, 26, 374, 10, 138, 10, 138, 38, 102, 38, 102, 10, 74, -10, 38, -38, 38, -22, 22, -38, -22, -38, -38, -38, -54, -58, -38, -22, -38, 22, -38, 38, -74, 38, -22, 38, -22, 54, -74, 10, -102, -10, -102, 10, 26, 58, 22, 54, 22, 38, 38, 38, 38, 22, 438, 74, 474, 102, 438, 102, 26, 74, 10, 74, 38, 102, 38, 86, -10, 74, -26, 74, -26, 58, -54, 86, -38, 86, -38, 102, 474, 150, 438, 150, 394, 131.36719, 474, 186, 474, 214, 438, 214, 438, 186, 593.96875, 246, 582, 246, 538, 227.36719, 10, 138, 10, 166, -10, 166, -246, 74, -266, 74, -166, 214, -166, 246, -138, 246, -138, 230, -122, 230, 26, 166, -138, 166, -102, 179.36719, -106, 179.21875, 70, 282, 70, 266, -346, 246, -342, 246, -166, 266, -166, 282, -422, 246, 621.8203, 227.34375, -194.24219, 170, -226.24219, 138, -246, 134, -253.85156, 138, 394, 150, 410, 186, 538, 246, 502, 218, 410, 214, 506, -42, 566, -42, 486, -42, 486, -102, 426, -102, 346, -122, -146.85938, 10, -422, -10, -422, 102, -250, 246, -250, 218, -54, -86, -102, -38, -326, 74, 506, -122, 486, -122, 486, -182, 426, -182, -422, 218, -102, 198, -122, 211.21875, -106, 198, -134, 179.36719, -138, 211.29688, -134, 198, -346, 218, 426, -42, 406, -42, 326, -10, 406, -102, 346, -102, -102, 38, -54, 58, 406, -182, 346, -182, 346, -42, 502, 246, 474, 218, 474, 246, 438, 218, 438, 246, 410, 218, 70, 138, 410, 246, 358, 246, 314, 246, 310, 246, 314, 227.36719, 310, 218, -330, 74, -422, 74, 282, 246, 278, 246, 218, 227.36719, 214, 218, 218, 246, 214, 246, 186, 246, 182, 246, 106, 227.36719, 106, 246, 70, 246, -342, 218)
@@ -856,6 +854,98 @@ size = Vector2(201, 33)
 resource_local_to_scene = true
 size = Vector2(63, 33)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_11yus"]
+atlas = ExtResource("51_xhfw6")
+region = Rect2(0, 0, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b6ruc"]
+atlas = ExtResource("51_xhfw6")
+region = Rect2(192, 0, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_155or"]
+atlas = ExtResource("51_xhfw6")
+region = Rect2(384, 0, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vtx2l"]
+atlas = ExtResource("51_xhfw6")
+region = Rect2(576, 0, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_63lxy"]
+atlas = ExtResource("51_xhfw6")
+region = Rect2(768, 0, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fjhjs"]
+atlas = ExtResource("51_xhfw6")
+region = Rect2(960, 0, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bfu41"]
+atlas = ExtResource("51_xhfw6")
+region = Rect2(1152, 0, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r4ag1"]
+atlas = ExtResource("51_xhfw6")
+region = Rect2(1344, 0, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v0wtd"]
+atlas = ExtResource("51_xhfw6")
+region = Rect2(1536, 0, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sgvw8"]
+atlas = ExtResource("51_xhfw6")
+region = Rect2(1728, 0, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6nfnn"]
+atlas = ExtResource("51_xhfw6")
+region = Rect2(1920, 0, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ue30"]
+atlas = ExtResource("51_xhfw6")
+region = Rect2(2112, 0, 192, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_od4ux"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_11yus")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b6ruc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_155or")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vtx2l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_63lxy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fjhjs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bfu41")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r4ag1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v0wtd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sgvw8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6nfnn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ue30")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_bfu41"]
 resource_local_to_scene = true
 radius = 28.0
@@ -989,6 +1079,9 @@ shader_parameter/alpha_steps = 3
 resource_local_to_scene = true
 size = Vector2(30, 29)
 
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_glow"]
+blend_mode = 1
+
 [node name="Node2D" type="Node2D" unique_id=424931416]
 y_sort_enabled = true
 
@@ -1017,14 +1110,14 @@ tile_set = ExtResource("1_0wfyh")
 z_index = 1
 y_sort_enabled = true
 position = Vector2(33, -28)
-tile_map_data = PackedByteArray("AAD2/wkACwAAAAAAAAD3/wkACwAAAAAAAAD4/wkACwAAAAAAAAD5/wkACwAAAAAAAAD6/wkACwAAAAAAAAD7/wkACwAAAAAAAAD8/wkACwAAAAAAAAD9/wkACwAAAAAAAAD+/wkACwAAAAAAAAABAAkACwAAAAAAAAACAAkACwAAAAAAAAADAAkACwAAAAAAAAADAAoADQAAAAAAAAADAAsADQAAAAAAAAADAAwADQAAAAAAAAADABEADQAAAAAAAAADABIADQAAAAAAAAADAA0ADQAAAAAAAAADAA4ADQAAAAAAAAD3/w0ADwABAAEAAAD6/wsADwACAAEAAAD4/wsADwAAAAEAAAD2/woADQAAAAAAAQD2/wsADQAAAAAAAQD2/wwADQAAAAAAAQD2/w0ADQAAAAAAAQD2/w4ADQAAAAAAAQD2/xEADQAAAAAAAQD2/xIADQAAAAAAAQDr/w0AFAAAAAQAAADs/w0AFAABAAQAAADt/w0AFAACAAQAAADu/w0AFAADAAQAAADk/+//FQAAAAUAAADl/+//FQABAAUAAADm/+//FQACAAUAAADn/+//FQADAAUAAADp/+//FgAAAAUAAADq/+//FgABAAUAAADr/+//FgACAAUAAADs/+//FgADAAUAAADn//3/FwAAAAQAAADo//3/FwABAAQAAADp//3/FwACAAQAAADq//3/GAAAAAcAAADr//3/GAABAAcAAADs//3/GAACAAcAAADt//3/GAADAAcAAADu//3/GQAAAAsAAADv//3/GQABAAsAAADw//3/GQACAAsAAADx//3/GQADAAsAAADy//3/FwAAAAQAAADz//3/FwABAAQAAAD0//3/FwACAAQAAADu/+//GAAAAAcAAADv/+//GAABAAcAAADw/+//GAACAAcAAADx/+//GAADAAcAAADy/+//GAAAAAcAAADz/+//GAABAAcAAAD0/+//GAACAAcAAAD1/+//GAADAAcAAADn/wUAGgAAAAQAAADo/wUAGgABAAQAAADp/wUAGgACAAQAAADq/wUAGgADAAQAAADs/wUAGwAAAAUAAADt/wUAGwABAAUAAADu/wUAGwACAAUAAADx/wUAHAAAAAQAAADy/wUAHAABAAQAAADz/wUAHAACAAQAAAD0/wUAHAADAAQAAADn/w4AEwAAAAUAAADo/w4AEwABAAUAAADp/w4AEwACAAUAAADr/w4AFAAAAAQAAADs/w4AFAABAAQAAADt/w4AFAACAAQAAADu/w4AFAADAAQAAAAHAA4AHQAAAAEAAAAIAA4AHQABAAEAAAAJAA4AHQACAAEAAAAKAA4AHQADAAEAAAAnAA4AHgAAAAEAAAAoAA4AHgABAAEAAAApAA4AHgACAAEAAAAqAA4AHgADAAEAAADw//P/HgAAAAEAAADx//P/HgABAAEAAADy//P/HgACAAEAAADz//P/HgADAAEAAAD2/+7/HwAAAAAAAAD3/+7/HwAAAAAAAAD4/+7/HwAAAAAAAAD5/+7/HwAAAAAAAAD6/+7/HwAAAAAAAAD7/+7/HwAAAAAAAAD8/+7/HwAAAAAAAAD9/+7/HwAAAAAAAAD+/+7/HwAAAAAAAAD//+7/HwAAAAAAAAAAAO7/HwAAAAAAAAABAO7/HwAAAAAAAAACAO7/HwAAAAAAAAADAO7/HwAAAAAAAAAEAO7/HwAAAAAAAAAFAO7/HwAAAAAAAAAGAO7/HwAAAAAAAAAHAO7/HwAAAAAAAAAIAO7/HwAAAAAAAAAJAO7/HwAAAAAAAAAEABIAHwAAAAAAAAAFABIAHwAAAAAAAAAGABIAHwAAAAAAAAAHABIAHwAAAAAAAAAIABIAHwAAAAAAAAAJABIAHwAAAAAAAAAKABIAHwAAAAAAAAALABIAHwAAAAAAAAAMABIAHwAAAAAAAAANABIAHwAAAAAAAAAOABIAHwAAAAAAAAAPABIAHwAAAAAAAAAQABIAHwAAAAAAAAARABIAHwAAAAAAAAASABIAHwAAAAAAAAATABIAHwAAAAAAAAAUABIAHwAAAAAAAAAVABIAHwAAAAAAAAAWABIAHwAAAAAAAAAXABIAHwAAAAAAAAAYABIAHwAAAAAAAAAZABIAHwAAAAAAAAAaABIAHwAAAAAAAAAbABIAHwAAAAAAAAAcABIAHwAAAAAAAAAdABIAHwAAAAAAAAAeABIAHwAAAAAAAAAfABIAHwAAAAAAAAAgABIAHwAAAAAAAAAhABIAHwAAAAAAAAAiABIAHwAAAAAAAAAjABIAHwAAAAAAAAAkABIAHwAAAAAAAAAlABIAHwAAAAAAAAAmABIAHwAAAAAAAAAnABIAHwAAAAAAAAAoABIAHwAAAAAAAAApABIAHwAAAAAAAAAqABIAHwAAAAAAAAArABIAHwAAAAAAAAAsABIAHwAAAAAAAAAtABIAHwAAAAAAAAAuABIAHwAAAAAAAAD2//z/IAAAAAAAAAD2//v/IAAAAAAAAAD2//r/IAAAAAAAAAD2/+//IAAAAAAAAAD2//D/IAAAAAAAAAD2//H/IAAAAAAAAAD2//L/IAAAAAAAAAD2//P/IAAAAAAAAAD2//T/IAAAAAAAAAD2//X/IAAAAAAAAAD2//b/IAAAAAAAAAD2//f/IAAAAAAAAAD2//j/IAAAAAAAAAD2//n/IAAAAAAAAAD2/wEAIAAAAAAAAAD2/wIAIAAAAAAAAAD2/wMAIAAAAAAAAAD2/wQAIAAAAAAAAAD2/wUAIAAAAAAAAAD2/wYAIAAAAAAAAAD2/wcAIAAAAAAAAAD2/wgAIAAAAAAAAAD2//3/IAAAAAAAAAD2//7/IAAAAAAAAAA=")
+tile_map_data = PackedByteArray("AAD2/wkACwAAAAAAAAD3/wkACwAAAAAAAAD4/wkACwAAAAAAAAD5/wkACwAAAAAAAAD6/wkACwAAAAAAAAD7/wkACwAAAAAAAAD8/wkACwAAAAAAAAD9/wkACwAAAAAAAAD+/wkACwAAAAAAAAABAAkACwAAAAAAAAACAAkACwAAAAAAAAADAAkACwAAAAAAAAADAAoADQAAAAAAAAADAAsADQAAAAAAAAADAAwADQAAAAAAAAADABEADQAAAAAAAAADABIADQAAAAAAAAADAA0ADQAAAAAAAAADAA4ADQAAAAAAAAD3/w0ADwABAAEAAAD6/wsADwACAAEAAAD4/wsADwAAAAEAAAD2/woADQAAAAAAAQD2/wsADQAAAAAAAQD2/wwADQAAAAAAAQD2/w0ADQAAAAAAAQD2/w4ADQAAAAAAAQD2/xEADQAAAAAAAQD2/xIADQAAAAAAAQDr/w0AFAAAAAQAAADs/w0AFAABAAQAAADt/w0AFAACAAQAAADu/w0AFAADAAQAAADk/+//FQAAAAUAAADl/+//FQABAAUAAADm/+//FQACAAUAAADn/+//FQADAAUAAADp/+//FgAAAAUAAADq/+//FgABAAUAAADr/+//FgACAAUAAADs/+//FgADAAUAAADn//3/FwAAAAQAAADo//3/FwABAAQAAADp//3/FwACAAQAAADq//3/GAAAAAcAAADr//3/GAABAAcAAADs//3/GAACAAcAAADt//3/GAADAAcAAADu//3/GQAAAAsAAADv//3/GQABAAsAAADw//3/GQACAAsAAADx//3/GQADAAsAAADy//3/FwAAAAQAAADz//3/FwABAAQAAAD0//3/FwACAAQAAADu/+//GAAAAAcAAADv/+//GAABAAcAAADw/+//GAACAAcAAADx/+//GAADAAcAAADy/+//GAAAAAcAAADz/+//GAABAAcAAAD0/+//GAACAAcAAAD1/+//GAADAAcAAADn/wUAGgAAAAQAAADo/wUAGgABAAQAAADp/wUAGgACAAQAAADq/wUAGgADAAQAAADs/wUAGwAAAAUAAADt/wUAGwABAAUAAADu/wUAGwACAAUAAADx/wUAHAAAAAQAAADy/wUAHAABAAQAAADz/wUAHAACAAQAAAD0/wUAHAADAAQAAADn/w4AEwAAAAUAAADo/w4AEwABAAUAAADp/w4AEwACAAUAAADr/w4AFAAAAAQAAADs/w4AFAABAAQAAADt/w4AFAACAAQAAADu/w4AFAADAAQAAAAHAA4AHQAAAAEAAAAIAA4AHQABAAEAAAAJAA4AHQACAAEAAAAKAA4AHQADAAEAAADw//P/HgAAAAEAAADx//P/HgABAAEAAADy//P/HgACAAEAAADz//P/HgADAAEAAAD2/+7/HwAAAAAAAAD3/+7/HwAAAAAAAAD4/+7/HwAAAAAAAAD5/+7/HwAAAAAAAAD6/+7/HwAAAAAAAAD7/+7/HwAAAAAAAAD8/+7/HwAAAAAAAAD9/+7/HwAAAAAAAAD+/+7/HwAAAAAAAAD//+7/HwAAAAAAAAAAAO7/HwAAAAAAAAABAO7/HwAAAAAAAAACAO7/HwAAAAAAAAADAO7/HwAAAAAAAAAEAO7/HwAAAAAAAAAFAO7/HwAAAAAAAAAGAO7/HwAAAAAAAAAHAO7/HwAAAAAAAAAIAO7/HwAAAAAAAAAJAO7/HwAAAAAAAAAEABIAHwAAAAAAAAAFABIAHwAAAAAAAAAGABIAHwAAAAAAAAAHABIAHwAAAAAAAAAIABIAHwAAAAAAAAAJABIAHwAAAAAAAAAKABIAHwAAAAAAAAALABIAHwAAAAAAAAAMABIAHwAAAAAAAAANABIAHwAAAAAAAAAOABIAHwAAAAAAAAAPABIAHwAAAAAAAAAQABIAHwAAAAAAAAARABIAHwAAAAAAAAASABIAHwAAAAAAAAATABIAHwAAAAAAAAAUABIAHwAAAAAAAAAVABIAHwAAAAAAAAAWABIAHwAAAAAAAAAXABIAHwAAAAAAAAAYABIAHwAAAAAAAAAZABIAHwAAAAAAAAAaABIAHwAAAAAAAAAbABIAHwAAAAAAAAAcABIAHwAAAAAAAAAdABIAHwAAAAAAAAAeABIAHwAAAAAAAAAfABIAHwAAAAAAAAAgABIAHwAAAAAAAAAhABIAHwAAAAAAAAAiABIAHwAAAAAAAAAjABIAHwAAAAAAAAAkABIAHwAAAAAAAAAlABIAHwAAAAAAAAAmABIAHwAAAAAAAAAnABIAHwAAAAAAAAAoABIAHwAAAAAAAAApABIAHwAAAAAAAAAqABIAHwAAAAAAAAArABIAHwAAAAAAAAAsABIAHwAAAAAAAAAtABIAHwAAAAAAAAAuABIAHwAAAAAAAAD2//z/IAAAAAAAAAD2//v/IAAAAAAAAAD2//r/IAAAAAAAAAD2/+//IAAAAAAAAAD2//D/IAAAAAAAAAD2//H/IAAAAAAAAAD2//L/IAAAAAAAAAD2//P/IAAAAAAAAAD2//T/IAAAAAAAAAD2//X/IAAAAAAAAAD2//b/IAAAAAAAAAD2//f/IAAAAAAAAAD2//j/IAAAAAAAAAD2//n/IAAAAAAAAAD2/wEAIAAAAAAAAAD2/wIAIAAAAAAAAAD2/wMAIAAAAAAAAAD2/wQAIAAAAAAAAAD2/wUAIAAAAAAAAAD2/wYAIAAAAAAAAAD2/wcAIAAAAAAAAAD2/wgAIAAAAAAAAAD2//3/IAAAAAAAAAD2//7/IAAAAAAAAAATAAwAIgABAAUAAAAUAAwAIgACAAUAAAAVAAwAIgADAAUAAAAWAAwAIgAEAAUAAAAnAA4AHgAAAAEAAAAoAA4AHgABAAEAAAApAA4AHgACAAEAAAAqAA4AHgADAAEAAAAIAAsAIwAAAAMAAAAJAAsAIwABAAMAAAAKAAsAIwACAAMAAAALAAsAIwADAAMAAAAMAAsAIwAEAAMAAAANAAsAIwAFAAMAAAA=")
 tile_set = ExtResource("1_0wfyh")
 
 [node name="Overhead" type="TileMapLayer" parent="." unique_id=311070429 node_paths=PackedStringArray("player")]
 z_index = 2
 material = SubResource("ShaderMaterial_ovhfd")
 position = Vector2(33, -28)
-tile_map_data = PackedByteArray("AAD2/wgADAAAAAAAAAD3/wgADAAAAAAAAAD4/wgADAAAAAAAAAD5/wgADAAAAAAAAAD6/wgADAAAAAAAAAD7/wgADAAAAAAAAAD8/wgADAAAAAAAAAD9/wgADAAAAAAAAAD+/wgADAAAAAAAAAD//wgADgAAAAAAAAAAAAgADgAAAAAAAQABAAgADAAAAAAAAAACAAgADAAAAAAAAAADAAgADAAAAAAAAAD6/woADwACAAAAAAD3/wwADwABAAAAAAD4/woADwAAAAAAAADn/wkAEwAAAAAAAADn/woAEwAAAAEAAADn/wsAEwAAAAIAAADn/wwAEwAAAAMAAADo/wkAEwABAAAAAADo/woAEwABAAEAAADo/wsAEwABAAIAAADo/wwAEwABAAMAAADp/wkAEwACAAAAAADp/woAEwACAAEAAADp/wsAEwACAAIAAADp/wwAEwACAAMAAADr/woAFAAAAAAAAADr/wsAFAAAAAEAAADr/wwAFAAAAAIAAADs/woAFAABAAAAAADs/wsAFAABAAEAAADs/wwAFAABAAIAAADt/woAFAACAAAAAADt/wsAFAACAAEAAADt/wwAFAACAAIAAADu/woAFAADAAAAAADu/wsAFAADAAEAAADu/wwAFAADAAIAAADk/+r/FQAAAAAAAADk/+v/FQAAAAEAAADk/+z/FQAAAAIAAADk/+3/FQAAAAMAAADk/+7/FQAAAAQAAADl/+r/FQABAAAAAADl/+v/FQABAAEAAADl/+z/FQABAAIAAADl/+3/FQABAAMAAADl/+7/FQABAAQAAADm/+r/FQACAAAAAADm/+v/FQACAAEAAADm/+z/FQACAAIAAADm/+3/FQACAAMAAADm/+7/FQACAAQAAADn/+r/FQADAAAAAADn/+v/FQADAAEAAADn/+z/FQADAAIAAADn/+3/FQADAAMAAADn/+7/FQADAAQAAADp/+r/FgAAAAAAAADp/+v/FgAAAAEAAADp/+z/FgAAAAIAAADp/+3/FgAAAAMAAADp/+7/FgAAAAQAAADq/+r/FgABAAAAAADq/+v/FgABAAEAAADq/+z/FgABAAIAAADq/+3/FgABAAMAAADq/+7/FgABAAQAAADr/+r/FgACAAAAAADr/+v/FgACAAEAAADr/+z/FgACAAIAAADr/+3/FgACAAMAAADr/+7/FgACAAQAAADs/+r/FgADAAAAAADs/+v/FgADAAEAAADs/+z/FgADAAIAAADs/+3/FgADAAMAAADs/+7/FgADAAQAAADn//n/FwAAAAAAAADn//r/FwAAAAEAAADn//v/FwAAAAIAAADn//z/FwAAAAMAAADo//n/FwABAAAAAADo//r/FwABAAEAAADo//v/FwABAAIAAADo//z/FwABAAMAAADp//n/FwACAAAAAADp//r/FwACAAEAAADp//v/FwACAAIAAADp//z/FwACAAMAAADr//b/GAABAAAAAADr//f/GAABAAEAAADr//j/GAABAAIAAADr//n/GAABAAMAAADr//r/GAABAAQAAADr//v/GAABAAUAAADr//z/GAABAAYAAADs//b/GAACAAAAAADs//f/GAACAAEAAADs//j/GAACAAIAAADs//n/GAACAAMAAADs//r/GAACAAQAAADs//v/GAACAAUAAADs//z/GAACAAYAAADt//b/GAADAAAAAADt//f/GAADAAEAAADt//j/GAADAAIAAADt//n/GAADAAMAAADt//r/GAADAAQAAADt//v/GAADAAUAAADt//z/GAADAAYAAADq//b/GAAAAAAAAADq//f/GAAAAAEAAADq//j/GAAAAAIAAADq//n/GAAAAAMAAADq//r/GAAAAAQAAADq//v/GAAAAAUAAADq//z/GAAAAAYAAADu//P/GQAAAAEAAADu//T/GQAAAAIAAADu//X/GQAAAAMAAADu//b/GQAAAAQAAADu//f/GQAAAAUAAADu//j/GQAAAAYAAADu//n/GQAAAAcAAADu//r/GQAAAAgAAADu//v/GQAAAAkAAADu//z/GQAAAAoAAADv//L/GQABAAAAAADv//P/GQABAAEAAADv//T/GQABAAIAAADv//X/GQABAAMAAADv//b/GQABAAQAAADv//f/GQABAAUAAADv//j/GQABAAYAAADv//n/GQABAAcAAADv//r/GQABAAgAAADv//v/GQABAAkAAADv//z/GQABAAoAAADw//L/HgAAAAAAAADw//P/GQACAAEAAADw//T/GQACAAIAAADw//X/GQACAAMAAADw//b/GQACAAQAAADw//f/GQACAAUAAADw//j/GQACAAYAAADw//n/GQACAAcAAADw//r/GQACAAgAAADw//v/GQACAAkAAADw//z/GQACAAoAAADx//P/GQADAAEAAADx//T/GQADAAIAAADx//X/GQADAAMAAADx//b/GQADAAQAAADx//f/GQADAAUAAADx//j/GQADAAYAAADx//n/GQADAAcAAADx//r/GQADAAgAAADx//v/GQADAAkAAADx//z/GQADAAoAAADy//n/FwAAAAAAAADy//r/FwAAAAEAAADy//v/FwAAAAIAAADy//z/FwAAAAMAAADz//n/FwABAAAAAADz//r/FwABAAEAAADz//v/FwABAAIAAADz//z/FwABAAMAAAD0//n/FwACAAAAAAD0//r/FwACAAEAAAD0//v/FwACAAIAAAD0//z/FwACAAMAAADu/+j/GAAAAAAAAADu/+n/GAAAAAEAAADu/+r/GAAAAAIAAADu/+v/GAAAAAMAAADu/+z/GAAAAAQAAADu/+3/GAAAAAUAAADu/+7/GAAAAAYAAADv/+j/GAABAAAAAADv/+n/GAABAAEAAADv/+r/GAABAAIAAADv/+v/GAABAAMAAADv/+z/GAABAAQAAADv/+3/GAABAAUAAADv/+7/GAABAAYAAADw/+j/GAACAAAAAADw/+n/GAACAAEAAADw/+r/GAACAAIAAADw/+v/GAACAAMAAADw/+z/GAACAAQAAADw/+3/GAACAAUAAADw/+7/GAACAAYAAADx/+j/GAADAAAAAADx/+n/GAADAAEAAADx/+r/GAADAAIAAADx/+v/GAADAAMAAADx/+z/GAADAAQAAADx/+3/GAADAAUAAADx/+7/GAADAAYAAADy/+j/GAAAAAAAAADy/+n/GAAAAAEAAADy/+r/GAAAAAIAAADy/+v/GAAAAAMAAADy/+z/GAAAAAQAAADy/+3/GAAAAAUAAADy/+7/GAAAAAYAAADz/+j/GAABAAAAAADz/+n/GAABAAEAAADz/+r/GAABAAIAAADz/+v/GAABAAMAAADz/+z/GAABAAQAAADz/+3/GAABAAUAAADz/+7/GAABAAYAAAD0/+j/GAACAAAAAAD0/+n/GAACAAEAAAD0/+r/GAACAAIAAAD0/+v/GAACAAMAAAD0/+z/GAACAAQAAAD0/+3/GAACAAUAAAD0/+7/GAACAAYAAAD1/+j/GAADAAAAAAD1/+n/GAADAAEAAAD1/+r/GAADAAIAAAD1/+v/GAADAAMAAAD1/+z/GAADAAQAAAD1/+3/GAADAAUAAAD1/+7/GAADAAYAAADn/wEAGgAAAAAAAADn/wIAGgAAAAEAAADn/wMAGgAAAAIAAADn/wQAGgAAAAMAAADo/wEAGgABAAAAAADo/wIAGgABAAEAAADo/wMAGgABAAIAAADo/wQAGgABAAMAAADp/wEAGgACAAAAAADp/wIAGgACAAEAAADp/wMAGgACAAIAAADp/wQAGgACAAMAAADq/wEAGgADAAAAAADq/wIAGgADAAEAAADq/wMAGgADAAIAAADq/wQAGgADAAMAAADs/wAAGwAAAAAAAADs/wEAGwAAAAEAAADs/wIAGwAAAAIAAADs/wMAGwAAAAMAAADs/wQAGwAAAAQAAADt/wAAGwABAAAAAADt/wEAGwABAAEAAADt/wIAGwABAAIAAADt/wMAGwABAAMAAADt/wQAGwABAAQAAADu/wAAGwACAAAAAADu/wEAGwACAAEAAADu/wIAGwACAAIAAADu/wMAGwACAAMAAADu/wQAGwACAAQAAADx/wEAHAAAAAAAAADx/wIAHAAAAAEAAADx/wMAHAAAAAIAAADx/wQAHAAAAAMAAADy/wEAHAABAAAAAADy/wIAHAABAAEAAADy/wMAHAABAAIAAADy/wQAHAABAAMAAADz/wEAHAACAAAAAADz/wIAHAACAAEAAADz/wMAHAACAAIAAADz/wQAHAACAAMAAAD0/wEAHAADAAAAAAD0/wIAHAADAAEAAAD0/wMAHAADAAIAAAD0/wQAHAADAAMAAADn/w0AEwAAAAQAAADo/w0AEwABAAQAAADp/w0AEwACAAQAAADr/w0AFAAAAAMAAADs/w0AFAABAAMAAADt/w0AFAACAAMAAADu/w0AFAADAAMAAAAHAA0AHQAAAAAAAAAIAA0AHQABAAAAAAAJAA0AHQACAAAAAAAKAA0AHQADAAAAAAAnAA0AHgAAAAAAAAAqAA0AHgADAAAAAADz//L/HgADAAAAAAA=")
+tile_map_data = PackedByteArray("AAD2/wgADAAAAAAAAAD3/wgADAAAAAAAAAD4/wgADAAAAAAAAAD5/wgADAAAAAAAAAD6/wgADAAAAAAAAAD7/wgADAAAAAAAAAD8/wgADAAAAAAAAAD9/wgADAAAAAAAAAD+/wgADAAAAAAAAAD//wgADgAAAAAAAAAAAAgADgAAAAAAAQABAAgADAAAAAAAAAACAAgADAAAAAAAAAADAAgADAAAAAAAAAD6/woADwACAAAAAAD3/wwADwABAAAAAAD4/woADwAAAAAAAADn/wkAEwAAAAAAAADn/woAEwAAAAEAAADn/wsAEwAAAAIAAADn/wwAEwAAAAMAAADo/wkAEwABAAAAAADo/woAEwABAAEAAADo/wsAEwABAAIAAADo/wwAEwABAAMAAADp/wkAEwACAAAAAADp/woAEwACAAEAAADp/wsAEwACAAIAAADp/wwAEwACAAMAAADr/woAFAAAAAAAAADr/wsAFAAAAAEAAADr/wwAFAAAAAIAAADs/woAFAABAAAAAADs/wsAFAABAAEAAADs/wwAFAABAAIAAADt/woAFAACAAAAAADt/wsAFAACAAEAAADt/wwAFAACAAIAAADu/woAFAADAAAAAADu/wsAFAADAAEAAADu/wwAFAADAAIAAADk/+r/FQAAAAAAAADk/+v/FQAAAAEAAADk/+z/FQAAAAIAAADk/+3/FQAAAAMAAADk/+7/FQAAAAQAAADl/+r/FQABAAAAAADl/+v/FQABAAEAAADl/+z/FQABAAIAAADl/+3/FQABAAMAAADl/+7/FQABAAQAAADm/+r/FQACAAAAAADm/+v/FQACAAEAAADm/+z/FQACAAIAAADm/+3/FQACAAMAAADm/+7/FQACAAQAAADn/+r/FQADAAAAAADn/+v/FQADAAEAAADn/+z/FQADAAIAAADn/+3/FQADAAMAAADn/+7/FQADAAQAAADp/+r/FgAAAAAAAADp/+v/FgAAAAEAAADp/+z/FgAAAAIAAADp/+3/FgAAAAMAAADp/+7/FgAAAAQAAADq/+r/FgABAAAAAADq/+v/FgABAAEAAADq/+z/FgABAAIAAADq/+3/FgABAAMAAADq/+7/FgABAAQAAADr/+r/FgACAAAAAADr/+v/FgACAAEAAADr/+z/FgACAAIAAADr/+3/FgACAAMAAADr/+7/FgACAAQAAADs/+r/FgADAAAAAADs/+v/FgADAAEAAADs/+z/FgADAAIAAADs/+3/FgADAAMAAADs/+7/FgADAAQAAADn//n/FwAAAAAAAADn//r/FwAAAAEAAADn//v/FwAAAAIAAADn//z/FwAAAAMAAADo//n/FwABAAAAAADo//r/FwABAAEAAADo//v/FwABAAIAAADo//z/FwABAAMAAADp//n/FwACAAAAAADp//r/FwACAAEAAADp//v/FwACAAIAAADp//z/FwACAAMAAADr//b/GAABAAAAAADr//f/GAABAAEAAADr//j/GAABAAIAAADr//n/GAABAAMAAADr//r/GAABAAQAAADr//v/GAABAAUAAADr//z/GAABAAYAAADs//b/GAACAAAAAADs//f/GAACAAEAAADs//j/GAACAAIAAADs//n/GAACAAMAAADs//r/GAACAAQAAADs//v/GAACAAUAAADs//z/GAACAAYAAADt//b/GAADAAAAAADt//f/GAADAAEAAADt//j/GAADAAIAAADt//n/GAADAAMAAADt//r/GAADAAQAAADt//v/GAADAAUAAADt//z/GAADAAYAAADq//b/GAAAAAAAAADq//f/GAAAAAEAAADq//j/GAAAAAIAAADq//n/GAAAAAMAAADq//r/GAAAAAQAAADq//v/GAAAAAUAAADq//z/GAAAAAYAAADu//P/GQAAAAEAAADu//T/GQAAAAIAAADu//X/GQAAAAMAAADu//b/GQAAAAQAAADu//f/GQAAAAUAAADu//j/GQAAAAYAAADu//n/GQAAAAcAAADu//r/GQAAAAgAAADu//v/GQAAAAkAAADu//z/GQAAAAoAAADv//L/GQABAAAAAADv//P/GQABAAEAAADv//T/GQABAAIAAADv//X/GQABAAMAAADv//b/GQABAAQAAADv//f/GQABAAUAAADv//j/GQABAAYAAADv//n/GQABAAcAAADv//r/GQABAAgAAADv//v/GQABAAkAAADv//z/GQABAAoAAADw//L/HgAAAAAAAADw//P/GQACAAEAAADw//T/GQACAAIAAADw//X/GQACAAMAAADw//b/GQACAAQAAADw//f/GQACAAUAAADw//j/GQACAAYAAADw//n/GQACAAcAAADw//r/GQACAAgAAADw//v/GQACAAkAAADw//z/GQACAAoAAADx//P/GQADAAEAAADx//T/GQADAAIAAADx//X/GQADAAMAAADx//b/GQADAAQAAADx//f/GQADAAUAAADx//j/GQADAAYAAADx//n/GQADAAcAAADx//r/GQADAAgAAADx//v/GQADAAkAAADx//z/GQADAAoAAADy//n/FwAAAAAAAADy//r/FwAAAAEAAADy//v/FwAAAAIAAADy//z/FwAAAAMAAADz//n/FwABAAAAAADz//r/FwABAAEAAADz//v/FwABAAIAAADz//z/FwABAAMAAAD0//n/FwACAAAAAAD0//r/FwACAAEAAAD0//v/FwACAAIAAAD0//z/FwACAAMAAADu/+j/GAAAAAAAAADu/+n/GAAAAAEAAADu/+r/GAAAAAIAAADu/+v/GAAAAAMAAADu/+z/GAAAAAQAAADu/+3/GAAAAAUAAADu/+7/GAAAAAYAAADv/+j/GAABAAAAAADv/+n/GAABAAEAAADv/+r/GAABAAIAAADv/+v/GAABAAMAAADv/+z/GAABAAQAAADv/+3/GAABAAUAAADv/+7/GAABAAYAAADw/+j/GAACAAAAAADw/+n/GAACAAEAAADw/+r/GAACAAIAAADw/+v/GAACAAMAAADw/+z/GAACAAQAAADw/+3/GAACAAUAAADw/+7/GAACAAYAAADx/+j/GAADAAAAAADx/+n/GAADAAEAAADx/+r/GAADAAIAAADx/+v/GAADAAMAAADx/+z/GAADAAQAAADx/+3/GAADAAUAAADx/+7/GAADAAYAAADy/+j/GAAAAAAAAADy/+n/GAAAAAEAAADy/+r/GAAAAAIAAADy/+v/GAAAAAMAAADy/+z/GAAAAAQAAADy/+3/GAAAAAUAAADy/+7/GAAAAAYAAADz/+j/GAABAAAAAADz/+n/GAABAAEAAADz/+r/GAABAAIAAADz/+v/GAABAAMAAADz/+z/GAABAAQAAADz/+3/GAABAAUAAADz/+7/GAABAAYAAAD0/+j/GAACAAAAAAD0/+n/GAACAAEAAAD0/+r/GAACAAIAAAD0/+v/GAACAAMAAAD0/+z/GAACAAQAAAD0/+3/GAACAAUAAAD0/+7/GAACAAYAAAD1/+j/GAADAAAAAAD1/+n/GAADAAEAAAD1/+r/GAADAAIAAAD1/+v/GAADAAMAAAD1/+z/GAADAAQAAAD1/+3/GAADAAUAAAD1/+7/GAADAAYAAADn/wEAGgAAAAAAAADn/wIAGgAAAAEAAADn/wMAGgAAAAIAAADn/wQAGgAAAAMAAADo/wEAGgABAAAAAADo/wIAGgABAAEAAADo/wMAGgABAAIAAADo/wQAGgABAAMAAADp/wEAGgACAAAAAADp/wIAGgACAAEAAADp/wMAGgACAAIAAADp/wQAGgACAAMAAADq/wEAGgADAAAAAADq/wIAGgADAAEAAADq/wMAGgADAAIAAADq/wQAGgADAAMAAADs/wAAGwAAAAAAAADs/wEAGwAAAAEAAADs/wIAGwAAAAIAAADs/wMAGwAAAAMAAADs/wQAGwAAAAQAAADt/wAAGwABAAAAAADt/wEAGwABAAEAAADt/wIAGwABAAIAAADt/wMAGwABAAMAAADt/wQAGwABAAQAAADu/wAAGwACAAAAAADu/wEAGwACAAEAAADu/wIAGwACAAIAAADu/wMAGwACAAMAAADu/wQAGwACAAQAAADx/wEAHAAAAAAAAADx/wIAHAAAAAEAAADx/wMAHAAAAAIAAADx/wQAHAAAAAMAAADy/wEAHAABAAAAAADy/wIAHAABAAEAAADy/wMAHAABAAIAAADy/wQAHAABAAMAAADz/wEAHAACAAAAAADz/wIAHAACAAEAAADz/wMAHAACAAIAAADz/wQAHAACAAMAAAD0/wEAHAADAAAAAAD0/wIAHAADAAEAAAD0/wMAHAADAAIAAAD0/wQAHAADAAMAAADn/w0AEwAAAAQAAADo/w0AEwABAAQAAADp/w0AEwACAAQAAADr/w0AFAAAAAMAAADs/w0AFAABAAMAAADt/w0AFAACAAMAAADu/w0AFAADAAMAAAAHAA0AHQAAAAAAAAAIAA0AHQABAAAAAAAJAA0AHQACAAAAAAAKAA0AHQADAAAAAADz//L/HgADAAAAAAASAAgAIgAAAAEAAAASAAkAIgAAAAIAAAASAAoAIgAAAAMAAAASAAsAIgAAAAQAAAATAAcAIgABAAAAAAATAAgAIgABAAEAAAATAAkAIgABAAIAAAATAAoAIgABAAMAAAATAAsAIgABAAQAAAAUAAcAIgACAAAAAAAUAAgAIgACAAEAAAAUAAkAIgACAAIAAAAUAAoAIgACAAMAAAAUAAsAIgACAAQAAAAVAAcAIgADAAAAAAAVAAgAIgADAAEAAAAVAAkAIgADAAIAAAAVAAoAIgADAAMAAAAVAAsAIgADAAQAAAAWAAcAIgAEAAAAAAAWAAgAIgAEAAEAAAAWAAkAIgAEAAIAAAAWAAoAIgAEAAMAAAAWAAsAIgAEAAQAAAAXAAgAIgAFAAEAAAAXAAkAIgAFAAIAAAAXAAoAIgAFAAMAAAAXAAsAIgAFAAQAAAAnAA0AHgAAAAAAAAAqAA0AHgADAAAAAAAIAAkAIwAAAAEAAAAIAAoAIwAAAAIAAAAJAAgAIwABAAAAAAAJAAkAIwABAAEAAAAJAAoAIwABAAIAAAAKAAgAIwACAAAAAAAKAAkAIwACAAEAAAAKAAoAIwACAAIAAAALAAgAIwADAAAAAAALAAkAIwADAAEAAAALAAoAIwADAAIAAAAMAAgAIwAEAAAAAAAMAAkAIwAEAAEAAAAMAAoAIwAEAAIAAAANAAkAIwAFAAEAAAANAAoAIwAFAAIAAAA=")
 tile_set = ExtResource("1_0wfyh")
 script = ExtResource("29_ovhfd")
 player = NodePath("../Player")
@@ -2065,6 +2158,12 @@ emission_colors = PackedColorArray()
 [node name="Pulse" parent="Fun/Subway" index="4" unique_id=1083559734]
 autoplay = &"pulse"
 
+[node name="RollerCoaster" type="AnimatedSprite2D" parent="Fun" unique_id=1104581129]
+z_index = 2
+position = Vector2(688, 141)
+sprite_frames = SubResource("SpriteFrames_od4ux")
+autoplay = "default"
+
 [node name="Intro" type="Node2D" parent="." unique_id=418661911]
 
 [node name="Blog" parent="Intro" unique_id=1689162469 instance=ExtResource("50_j2jfr")]
@@ -2232,10 +2331,10 @@ position = Vector2(458, 64)
 [node name="LamppostLight20" parent="Lights" unique_id=1938643133 instance=ExtResource("62_e755i")]
 position = Vector2(186, -2)
 
-[node name="GlowLayer" type="CanvasLayer" parent="Lights"]
+[node name="GlowLayer" type="CanvasLayer" parent="Lights" unique_id=1069157483]
 follow_viewport_enabled = true
 
-[node name="Glow1" type="Sprite2D" parent="Lights/GlowLayer"]
+[node name="Glow1" type="Sprite2D" parent="Lights/GlowLayer" unique_id=1163160489]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(1, 0.88, 0.66, 1)
@@ -2244,7 +2343,7 @@ position = Vector2(-6, -259)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("65_glow")
 
-[node name="Glow2" type="Sprite2D" parent="Lights/GlowLayer"]
+[node name="Glow2" type="Sprite2D" parent="Lights/GlowLayer" unique_id=414251358]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(1, 0.88, 0.66, 1)
@@ -2253,7 +2352,7 @@ position = Vector2(71, -259)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("65_glow")
 
-[node name="Glow3" type="Sprite2D" parent="Lights/GlowLayer"]
+[node name="Glow3" type="Sprite2D" parent="Lights/GlowLayer" unique_id=213454146]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(1, 0.88, 0.66, 1)
@@ -2262,7 +2361,7 @@ position = Vector2(-5, -120)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("65_glow")
 
-[node name="Glow4" type="Sprite2D" parent="Lights/GlowLayer"]
+[node name="Glow4" type="Sprite2D" parent="Lights/GlowLayer" unique_id=726516228]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(1, 0.88, 0.66, 1)
@@ -2271,7 +2370,7 @@ position = Vector2(72, -120)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("65_glow")
 
-[node name="Glow5" type="Sprite2D" parent="Lights/GlowLayer"]
+[node name="Glow5" type="Sprite2D" parent="Lights/GlowLayer" unique_id=1809521679]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(1, 0.88, 0.66, 1)
@@ -2280,7 +2379,7 @@ position = Vector2(-6, 27)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("65_glow")
 
-[node name="Glow6" type="Sprite2D" parent="Lights/GlowLayer"]
+[node name="Glow6" type="Sprite2D" parent="Lights/GlowLayer" unique_id=224122579]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(1, 0.88, 0.66, 1)
@@ -2289,7 +2388,7 @@ position = Vector2(71, 27)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("65_glow")
 
-[node name="Glow7" type="Sprite2D" parent="Lights/GlowLayer"]
+[node name="Glow7" type="Sprite2D" parent="Lights/GlowLayer" unique_id=2076544134]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(1, 0, 0.9666667, 1)
@@ -2298,7 +2397,7 @@ position = Vector2(-64, 161)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("65_glow")
 
-[node name="Glow8" type="Sprite2D" parent="Lights/GlowLayer"]
+[node name="Glow8" type="Sprite2D" parent="Lights/GlowLayer" unique_id=333923951]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(1, 0.88, 0.66, 1)
@@ -2307,7 +2406,7 @@ position = Vector2(-230, 186)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("65_glow")
 
-[node name="Glow9" type="Sprite2D" parent="Lights/GlowLayer"]
+[node name="Glow9" type="Sprite2D" parent="Lights/GlowLayer" unique_id=509501571]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(1, 0, 0.016666412, 1)
@@ -2316,7 +2415,7 @@ position = Vector2(30, 134)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("65_glow")
 
-[node name="Glow10" type="Sprite2D" parent="Lights/GlowLayer"]
+[node name="Glow10" type="Sprite2D" parent="Lights/GlowLayer" unique_id=1444770710]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(1, 0, 0.7666664, 1)
@@ -2325,7 +2424,7 @@ position = Vector2(14, 204)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("65_glow")
 
-[node name="Glow11" type="Sprite2D" parent="Lights/GlowLayer"]
+[node name="Glow11" type="Sprite2D" parent="Lights/GlowLayer" unique_id=872671800]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(1, 0.88, 0.66, 1)
@@ -2334,7 +2433,7 @@ position = Vector2(-376, 38)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("65_glow")
 
-[node name="Glow12" type="Sprite2D" parent="Lights/GlowLayer"]
+[node name="Glow12" type="Sprite2D" parent="Lights/GlowLayer" unique_id=712014211]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(1, 0.88, 0.66, 1)
@@ -2343,7 +2442,7 @@ position = Vector2(-376, 184)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("65_glow")
 
-[node name="Glow13" type="Sprite2D" parent="Lights/GlowLayer"]
+[node name="Glow13" type="Sprite2D" parent="Lights/GlowLayer" unique_id=556291369]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(1, 0.88, 0.66, 1)
@@ -2352,7 +2451,7 @@ position = Vector2(-198, 75)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("65_glow")
 
-[node name="Glow14" type="Sprite2D" parent="Lights/GlowLayer"]
+[node name="Glow14" type="Sprite2D" parent="Lights/GlowLayer" unique_id=342658322]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(1, 0.88, 0.66, 1)
@@ -2361,7 +2460,7 @@ position = Vector2(-374, -74)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("65_glow")
 
-[node name="Glow15" type="Sprite2D" parent="Lights/GlowLayer"]
+[node name="Glow15" type="Sprite2D" parent="Lights/GlowLayer" unique_id=216621911]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(1, 0.88, 0.66, 1)
@@ -2370,7 +2469,7 @@ position = Vector2(-374, -228)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("65_glow")
 
-[node name="Glow16" type="Sprite2D" parent="Lights/GlowLayer"]
+[node name="Glow16" type="Sprite2D" parent="Lights/GlowLayer" unique_id=25596573]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(1, 0.88, 0.66, 1)
@@ -2379,7 +2478,7 @@ position = Vector2(-169, -270)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("65_glow")
 
-[node name="Glow17" type="Sprite2D" parent="Lights/GlowLayer"]
+[node name="Glow17" type="Sprite2D" parent="Lights/GlowLayer" unique_id=1872371740]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(1, 0.88, 0.66, 1)
@@ -2388,7 +2487,7 @@ position = Vector2(-213, -271)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("65_glow")
 
-[node name="Glow18" type="Sprite2D" parent="Lights/GlowLayer"]
+[node name="Glow18" type="Sprite2D" parent="Lights/GlowLayer" unique_id=1481695427]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(1, 0.88, 0.66, 1)
@@ -2397,7 +2496,7 @@ position = Vector2(232, 186)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("65_glow")
 
-[node name="Glow19" type="Sprite2D" parent="Lights/GlowLayer"]
+[node name="Glow19" type="Sprite2D" parent="Lights/GlowLayer" unique_id=589863771]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(1, 0.88, 0.66, 1)
@@ -2406,7 +2505,7 @@ position = Vector2(330, 187)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("65_glow")
 
-[node name="Glow20" type="Sprite2D" parent="Lights/GlowLayer"]
+[node name="Glow20" type="Sprite2D" parent="Lights/GlowLayer" unique_id=208464645]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(1, 0.88, 0.66, 1)
@@ -2415,7 +2514,7 @@ position = Vector2(460, 188)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("65_glow")
 
-[node name="Glow21" type="Sprite2D" parent="Lights/GlowLayer"]
+[node name="Glow21" type="Sprite2D" parent="Lights/GlowLayer" unique_id=1349383239]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(1, 0.88, 0.66, 1)
@@ -2424,7 +2523,7 @@ position = Vector2(520, 188)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("65_glow")
 
-[node name="Glow22" type="Sprite2D" parent="Lights/GlowLayer"]
+[node name="Glow22" type="Sprite2D" parent="Lights/GlowLayer" unique_id=421392092]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(1, 0.88, 0.66, 1)
@@ -2433,7 +2532,7 @@ position = Vector2(640, 189)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("65_glow")
 
-[node name="Glow23" type="Sprite2D" parent="Lights/GlowLayer"]
+[node name="Glow23" type="Sprite2D" parent="Lights/GlowLayer" unique_id=1082692551]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(1, 0.88, 0.66, 1)
@@ -2442,7 +2541,7 @@ position = Vector2(521, 41)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("65_glow")
 
-[node name="Glow24" type="Sprite2D" parent="Lights/GlowLayer"]
+[node name="Glow24" type="Sprite2D" parent="Lights/GlowLayer" unique_id=1341400321]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(1, 0.88, 0.66, 1)
@@ -2451,7 +2550,7 @@ position = Vector2(458, 40)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("65_glow")
 
-[node name="Glow25" type="Sprite2D" parent="Lights/GlowLayer"]
+[node name="Glow25" type="Sprite2D" parent="Lights/GlowLayer" unique_id=1097460912]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(1, 0.88, 0.66, 1)
@@ -2460,7 +2559,7 @@ position = Vector2(186, -26)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("65_glow")
 
-[node name="Glow26" type="Sprite2D" parent="Lights/GlowLayer"]
+[node name="Glow26" type="Sprite2D" parent="Lights/GlowLayer" unique_id=1523654235]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(1, 0.88, 0.66, 1)
@@ -2469,7 +2568,7 @@ position = Vector2(409, -122)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("65_glow")
 
-[node name="Glow27" type="Sprite2D" parent="Lights/GlowLayer"]
+[node name="Glow27" type="Sprite2D" parent="Lights/GlowLayer" unique_id=1729559718]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(1, 0.88, 0.66, 1)
@@ -2478,7 +2577,7 @@ position = Vector2(488, -123)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("65_glow")
 
-[node name="Glow28" type="Sprite2D" parent="Lights/GlowLayer"]
+[node name="Glow28" type="Sprite2D" parent="Lights/GlowLayer" unique_id=2141404963]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(1, 0.88, 0.66, 1)
@@ -2487,7 +2586,7 @@ position = Vector2(568, -123)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("65_glow")
 
-[node name="Glow29" type="Sprite2D" parent="Lights/GlowLayer"]
+[node name="Glow29" type="Sprite2D" parent="Lights/GlowLayer" unique_id=1829237404]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(1, 0.88, 0.66, 1)
@@ -2496,7 +2595,7 @@ position = Vector2(568, -203)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("65_glow")
 
-[node name="Glow30" type="Sprite2D" parent="Lights/GlowLayer"]
+[node name="Glow30" type="Sprite2D" parent="Lights/GlowLayer" unique_id=1111851810]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(1, 0.88, 0.66, 1)
@@ -2505,7 +2604,7 @@ position = Vector2(489, -204)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("65_glow")
 
-[node name="Glow31" type="Sprite2D" parent="Lights/GlowLayer"]
+[node name="Glow31" type="Sprite2D" parent="Lights/GlowLayer" unique_id=1085053421]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(1, 0.88, 0.66, 1)
