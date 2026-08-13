@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dfnx58c54xfff"]
 
 [ext_resource type="Texture2D" uid="uid://du5g83iyfpu61" path="res://assets/lamppost-Sheet.png" id="1_sheet"]
-[ext_resource type="Script" uid="uid://cwlkfbcv0h7nd" path="res://scripts/day_night_sync.gd" id="2_2ecce"]
+[ext_resource type="Texture2D" path="res://resources/light_glow.tres" id="2_glow"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_off"]
 atlas = ExtResource("1_sheet")
@@ -30,64 +30,6 @@ animations = [{
 "speed": 1.0
 }]
 
-[sub_resource type="Gradient" id="Gradient_glow"]
-offsets = PackedFloat32Array(0, 0.45, 1)
-colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0.55, 1, 1, 1, 0)
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_glow"]
-gradient = SubResource("Gradient_glow")
-width = 256
-height = 256
-fill = 1
-fill_from = Vector2(0.5, 0.5)
-fill_to = Vector2(1, 0.5)
-
-[sub_resource type="Animation" id="Animation_lamp"]
-resource_name = "cycle"
-length = 120.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Light:enabled")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 30, 92),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [false, true, false]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Light:energy")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 30, 42, 80, 92, 120),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
-"update": 0,
-"values": [0.0, 0.0, 1.15, 1.15, 0.0, 0.0]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Lamppost:animation")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 30, 92),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [&"off", &"on", &"off"]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_lamp"]
-_data = {
-&"cycle": SubResource("Animation_lamp")
-}
-
 [node name="LamppostLight" type="Node2D" unique_id=1833693611]
 
 [node name="Lamppost" type="AnimatedSprite2D" parent="." unique_id=1295120641]
@@ -102,13 +44,5 @@ position = Vector2(0, -24)
 enabled = false
 color = Color(1, 0.88, 0.66, 1)
 energy = 0.0
-shadow_enabled = true
-shadow_filter = 1
-shadow_filter_smooth = 2.0
-texture = SubResource("GradientTexture2D_glow")
-texture_scale = 0.55
-
-[node name="Cycle" type="AnimationPlayer" parent="." unique_id=187288832]
-libraries/ = SubResource("AnimationLibrary_lamp")
-autoplay = &"cycle"
-script = ExtResource("2_2ecce")
+texture = ExtResource("2_glow")
+texture_scale = 1.1

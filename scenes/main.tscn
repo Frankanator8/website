@@ -63,6 +63,7 @@
 [ext_resource type="Texture2D" uid="uid://b000clpt1d6y8" path="res://assets/ripple-mask-pool.png" id="59_rplmk"]
 [ext_resource type="PackedScene" uid="uid://dfnx58c54xfff" path="res://scenes/lamppost_light.tscn" id="62_e755i"]
 [ext_resource type="PackedScene" uid="uid://dupyaax2oowlu" path="res://scenes/light.tscn" id="63_ro3en"]
+[ext_resource type="Script" path="res://scripts/lights.gd" id="64_lights"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_yq6so"]
 vertices = PackedVector2Array(726, 10, 474, 10, 102, -10, 154, -10, 621.7578, 218, 594.14844, 218, 502, 214, 502, 186, -218, 106, -246, 106, -330, 102, -326, 102, 502, 122, 474, 122, -10, 102, 10, 102, -166, 10, -166, 170, -170, 102, -170, 74, -406, -54, -394, -170, -262, -186, -186, -186, -170, -54, 26, -58, 22, -54, -22, -54, -26, -58, -26, -86, 26, -86, 566, -102, 506, -102, 406, -122, 426, -122, 26, 172.89844, 42, 173.1875, 42, 246, -74, 198, -74, 179.21875, -166, -250, -166, -10, -170, -26, 566, -122, 566, -182, 586, -202, 586, -10, -186, -204.78125, 745.53906, -10, 745.03906, 282, 726, 54, -221.85156, 170, -222.03125, 198, -226.0625, 182, -226.15625, 166, -226.0625, 166, 102, -38, 74, -38, 54, -58, 54, -86, 326, -202, 506, -182, 694, 246, 694, 227.21875, 186, 10, 186, 54, 166, 38, 166, 10, -218, 134, -189.85156, 170, -246, 102, -266, 102, 54, 22, 54, -22, 74, 10, 74, 38, -74, -10, -74, -38, -54, -22, -54, 22, -26, -202, -26, -230, 26, -230, 26, -202, 54, -202, 54, -230, 154, -250, -146.71094, -250, -54, -230, -146.50781, -234, -442, -250, -202, -204.78125, 502, 102, 502, 74, 474, 54, 474, 74, -394, -198, -262, -204.63281, -422, -170, -422, -38, 410, 74, 410, 102, 54, 86, 54, 58, -146.65625, 138, -146.71094, 134, -146.50781, 134, -10, 138, -146.50781, -10, -146.71094, -26, -146.50781, -26, -146.71094, -42, -146.50781, -42, -146.71094, -58, -146.50781, -58, -146.71094, -74, -146.50781, -74, -146.71094, -90, -146.50781, -90, -146.71094, -106, -146.50781, -106, -146.71094, -122, -146.50781, -122, -146.71094, -138, -146.50781, -138, -146.71094, -154, -146.50781, -154, -146.71094, -170, -146.50781, -170, -146.71094, -186, -146.50781, -186, -146.71094, -202, -146.50781, -202, -146.71094, -218, -146.50781, -218, -54, -202, -146.71094, -234, -146.71094, 118, -146.50781, 118, -146.71094, 102, -146.50781, 102, -146.71094, 86, -146.50781, 86, -146.71094, 70, -146.50781, 70, -146.71094, 54, -146.50781, 54, -146.71094, 38, -146.50781, 38, -190.03125, 198, -189.92969, 198, -190.03125, 214, -194.0625, 214, -254.03125, 166, -253.92969, 166, -254.03125, 182, -221.92969, 198, -222.03125, 214, -194.15625, 198, -194.0625, 198, -202, -204.6875, -218, -204.6875, -218, -204.78125, -234, -204.6875, -234, -204.78125, -422, -198, -442, 282, 438, 131.21875, 422, 131.29688, 422, 131.21875, 678, 227.29688, 678, 227.21875, 502, 150, 662, 227.29688, 662, 227.21875, 646, 227.29688, 646, 227.21875, 582, 227.21875, 566, 227.29688, 566, 227.21875, 358, 227.21875, 342, 227.29688, 342, 227.21875, 278, 227.21875, 262, 227.29688, 262, 227.21875, 282, 218, 246, 227.29688, 246, 227.21875, 182, 227.21875, 166, 227.29688, 166, 227.21875, 186, 218, 150, 227.29688, 150, 227.21875, 134, 227.29688, 134, 227.21875, 42, 266, 42, 298.82813, -138, 298.53125, -138, 266, -406, -38, -394, -10, -394, -26, 438, 54, 438, 10, 378, 10, 378, 26, 374, 26, 374, 10, 138, 10, 138, 38, 102, 38, 102, 10, 74, -10, 38, -38, 38, -22, 22, -38, -22, -38, -38, -38, -54, -58, -38, -22, -38, 22, -38, 38, -74, 38, -22, 38, -22, 54, -74, 10, -102, -10, -102, 10, 26, 58, 22, 54, 22, 38, 38, 38, 38, 22, 438, 74, 474, 102, 438, 102, 26, 74, 10, 74, 38, 102, 38, 86, -10, 74, -26, 74, -26, 58, -54, 86, -38, 86, -38, 102, 474, 150, 438, 150, 394, 131.36719, 474, 186, 474, 214, 438, 214, 438, 186, 593.96875, 246, 582, 246, 538, 227.36719, 10, 138, 10, 166, -10, 166, -246, 74, -266, 74, -166, 214, -166, 246, -138, 246, -138, 230, -122, 230, 26, 166, -138, 166, -102, 179.36719, -106, 179.21875, 70, 282, 70, 266, -346, 246, -342, 246, -166, 266, -166, 282, -422, 246, 621.8203, 227.34375, -194.24219, 170, -226.24219, 138, -246, 134, -253.85156, 138, 394, 150, 410, 186, 538, 246, 502, 218, 410, 214, 506, -42, 566, -42, 486, -42, 486, -102, 426, -102, 346, -122, -146.85938, 10, -422, -10, -422, 102, -250, 246, -250, 218, -54, -86, -102, -38, -326, 74, 506, -122, 486, -122, 486, -182, 426, -182, -422, 218, -102, 198, -122, 211.21875, -106, 198, -134, 179.36719, -138, 211.29688, -134, 198, -346, 218, 426, -42, 406, -42, 326, -10, 406, -102, 346, -102, -102, 38, -54, 58, 406, -182, 346, -182, 346, -42, 502, 246, 474, 218, 474, 246, 438, 218, 438, 246, 410, 218, 70, 138, 410, 246, 358, 246, 314, 246, 310, 246, 314, 227.36719, 310, 218, -330, 74, -422, 74, 282, 246, 278, 246, 218, 227.36719, 214, 218, 218, 246, 214, 246, 186, 246, 182, 246, 106, 227.36719, 106, 246, 70, 246, -342, 218)
@@ -73,64 +74,35 @@ source_geometry_mode = 2
 source_geometry_group_name = &"Obstacles"
 agent_radius = 6.0
 
-[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_full"]
-polygon = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tefeu"]
 texture = ExtResource("2_tbgi4")
 0:0/0 = 0
-0:0/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_full")
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-
-[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_halfb0"]
-polygon = PackedVector2Array(-8, 1.3453407, 8, 1.246418, 8, 8, -8, 8)
-
-[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_halfb1"]
-polygon = PackedVector2Array(-8, -8, 8, -8, 8, -0.6924572, -8, -0.9892235)
-
-[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_halfb2"]
-polygon = PackedVector2Array(1.187067, -8, 8, -8, 8, 8, 0.9892235, 8)
-
-[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_halfb3"]
-polygon = PackedVector2Array(-8, -8, -0.791378, -8, -0.59353447, 8, -8, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tel4y"]
 texture = ExtResource("4_fv21b")
 0:0/next_alternative_id = 4
 0:0/0 = 0
-0:0/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_halfb0")
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 1.3453407, 8, 1.246418, 8, 8, -8, 8)
 0:0/1 = 1
 0:0/1/flip_v = true
-0:0/1/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_halfb1")
 0:0/1/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -0.6924572, -8, -0.9892235)
 0:0/2 = 2
 0:0/2/transpose = true
-0:0/2/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_halfb2")
 0:0/2/physics_layer_0/polygon_0/points = PackedVector2Array(1.187067, -8, 8, -8, 8, 8, 0.9892235, 8)
 0:0/3 = 3
 0:0/3/flip_h = true
 0:0/3/transpose = true
-0:0/3/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_halfb3")
 0:0/3/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -0.791378, -8, -0.59353447, 8, -8, 8)
-
-[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_halfs0"]
-polygon = PackedVector2Array(0.10683632, -8, 8, -8, 8, 8, 0.0114889145, 8)
-
-[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_halfs1"]
-polygon = PackedVector2Array(-8, -8, -0.19784546, -8, -0.09892273, 8, -8, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dgi5k"]
 texture = ExtResource("4_5q0nq")
 0:0/0 = 0
-0:0/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_halfs0")
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(0.10683632, -8, 8, -8, 8, 8, 0.0114889145, 8)
 1:0/0 = 0
-1:0/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_halfs1")
 1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -0.19784546, -8, -0.09892273, 8, -8, 8)
 
 [sub_resource type="TileSet" id="TileSet_tbgi4"]
-occlusion_layer_0/light_mask = 1
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_tefeu")
 sources/1 = SubResource("TileSetAtlasSource_tel4y")
@@ -696,6 +668,18 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 1), Color(1, 0.72, 0.5, 1), Color(0.28, 0.33, 0.58, 1), Color(0.86, 0.72, 0.78, 1), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Lights:night")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 30, 42, 80, 92, 120),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 1.15, 1.15, 0.0, 0.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_daynight"]
@@ -2183,6 +2167,7 @@ emission_colors = PackedColorArray()
 autoplay = &"pulse"
 
 [node name="Lights" type="Node2D" parent="." unique_id=1916616372]
+script = ExtResource("64_lights")
 
 [node name="LamppostLight" parent="Lights" unique_id=1833693611 instance=ExtResource("62_e755i")]
 position = Vector2(-6, -235)
