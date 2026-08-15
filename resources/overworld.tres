@@ -36,6 +36,7 @@
 [ext_resource type="Texture2D" uid="uid://c6lgdmc1sg77i" path="res://assets/tiles/clay-fountain.png" id="28_rbyrm"]
 [ext_resource type="Texture2D" uid="uid://y6s33i6bsaj2" path="res://assets/tiles/large_scale/ferriswheel.png" id="29_6mmqx"]
 [ext_resource type="Texture2D" uid="uid://bsi04xcoutx8t" path="res://assets/tiles/large_scale/circus.png" id="30_1f4is"]
+[ext_resource type="Texture2D" uid="uid://bss4d5bhjx64g" path="res://assets/tiles/bush.png" id="31_yghtx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4c57u"]
 texture = ExtResource("1_a6ovm")
@@ -487,6 +488,14 @@ texture = ExtResource("30_1f4is")
 3:3/0 = 0
 4:3/0 = 0
 5:3/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_771k7"]
+texture = ExtResource("31_yghtx")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w48qg"]
 texture = ExtResource("5_t4ado")
@@ -984,3 +993,4 @@ sources/32 = SubResource("TileSetAtlasSource_1f4is")
 sources/33 = SubResource("TileSetAtlasSource_yghtx")
 sources/34 = SubResource("TileSetAtlasSource_uhcwa")
 sources/35 = SubResource("TileSetAtlasSource_x4jgr")
+sources/36 = SubResource("TileSetAtlasSource_771k7")
