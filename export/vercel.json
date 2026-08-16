@@ -1,0 +1,6 @@
+{
+  "buildCommand": "cp ../media/Resume.pdf ./resume.pdf",
+  "outputDirectory": ".",
+  "framework": null,
+  "installCommand": "echo no install"
+}
