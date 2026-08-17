@@ -1,5 +1,9 @@
 extends Control
 
+# Loads main.tscn in the background and swaps to it as soon as it is ready.
+# On the web the shell has already downloaded everything before booting the game,
+# and its overlay covers this step, so nothing here waits on the visitor.
+
 const MAIN_SCENE := "res://scenes/main.tscn"
 
 @onready var progress_bar: ProgressBar = $ProgressBar
