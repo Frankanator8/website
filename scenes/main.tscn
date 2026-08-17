@@ -130,9 +130,9 @@ shader_parameter/near_distance = 16.0
 shader_parameter/far_distance = 40.0
 shader_parameter/min_alpha = 0.3
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ygd8o"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2s0kr"]
 resource_local_to_scene = true
-size = Vector2(48, 48)
+size = Vector2(62, 62)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_r4e17"]
 atlas = ExtResource("12_vchkt")
@@ -178,13 +178,13 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_2s0kr"]
-resource_local_to_scene = true
-size = Vector2(48, 48)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xaipn"]
 resource_local_to_scene = true
-size = Vector2(48, 48)
+size = Vector2(62, 62)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ndrjj"]
+resource_local_to_scene = true
+size = Vector2(62, 62)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gdvew"]
 atlas = ExtResource("15_nvyfr")
@@ -208,9 +208,9 @@ animations = [{
 "speed": 1.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ndrjj"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ih3m7"]
 resource_local_to_scene = true
-size = Vector2(48, 48)
+size = Vector2(62, 62)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dgi5k"]
 atlas = ExtResource("8_trceg")
@@ -256,9 +256,9 @@ animations = [{
 "speed": 1.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ih3m7"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_11yus"]
 resource_local_to_scene = true
-size = Vector2(48, 48)
+size = Vector2(62, 62)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tipki"]
 atlas = ExtResource("7_o6xl0")
@@ -458,9 +458,9 @@ animations = [{
 "speed": 8.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_11yus"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b6ruc"]
 resource_local_to_scene = true
-size = Vector2(48, 48)
+size = Vector2(62, 62)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pibwh"]
 atlas = ExtResource("15_jkv2x")
@@ -632,39 +632,39 @@ animations = [{
 "speed": 2.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_b6ruc"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_155or"]
 resource_local_to_scene = true
 size = Vector2(38, 20.5)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_155or"]
-resource_local_to_scene = true
-size = Vector2(15, 31)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vtx2l"]
 resource_local_to_scene = true
-size = Vector2(15, 31)
+size = Vector2(25, 34.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_63lxy"]
 resource_local_to_scene = true
-size = Vector2(15, 31)
+size = Vector2(25, 30.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fjhjs"]
 resource_local_to_scene = true
-size = Vector2(115, 88)
+size = Vector2(24.5, 31)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bfu41"]
 resource_local_to_scene = true
-size = Vector2(60, 14)
+size = Vector2(115, 88)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r4ag1"]
 resource_local_to_scene = true
-size = Vector2(68, 20)
+size = Vector2(60, 14)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v0wtd"]
 resource_local_to_scene = true
 size = Vector2(68, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sgvw8"]
+resource_local_to_scene = true
+size = Vector2(68, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6nfnn"]
 resource_local_to_scene = true
 size = Vector2(68, 20)
 
@@ -702,25 +702,21 @@ _data = {
 &"cycle": SubResource("Animation_cycle")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6nfnn"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4ue30"]
 resource_local_to_scene = true
 size = Vector2(76, 30)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4ue30"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k42av"]
 resource_local_to_scene = true
 size = Vector2(61, 30.5)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_k42av"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gr8w0"]
 resource_local_to_scene = true
 size = Vector2(42, 25.5)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_gr8w0"]
-resource_local_to_scene = true
-size = Vector2(42, 30.5)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_673bd"]
 resource_local_to_scene = true
-size = Vector2(36, 33)
+size = Vector2(42, 30.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_akjxb"]
 resource_local_to_scene = true
@@ -731,6 +727,10 @@ resource_local_to_scene = true
 size = Vector2(36, 33)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1uevf"]
+resource_local_to_scene = true
+size = Vector2(36, 33)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tc087"]
 resource_local_to_scene = true
 size = Vector2(36, 33)
 
@@ -860,11 +860,11 @@ _data = {
 &"run": SubResource("Animation_vchkt")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_tc087"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_73205"]
 resource_local_to_scene = true
 size = Vector2(201, 33)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_73205"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0tljd"]
 resource_local_to_scene = true
 size = Vector2(63, 33)
 
@@ -960,7 +960,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_0tljd"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_mgpkq"]
 resource_local_to_scene = true
 radius = 28.0
 
@@ -1078,7 +1078,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_mgpkq"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xmrkg"]
 resource_local_to_scene = true
 shader = ExtResource("59_kf5aa")
 shader_parameter/ring_color = Color(0.663, 0.835, 1, 1)
@@ -1107,11 +1107,11 @@ shader_parameter/far_distance = 64.0
 shader_parameter/max_block = 1.0
 shader_parameter/softness = 1.0
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_xmrkg"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wvlrk"]
 resource_local_to_scene = true
 size = Vector2(30, 29)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_wvlrk"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_engxj"]
 resource_local_to_scene = true
 size = Vector2(32, 32)
 
@@ -1187,6 +1187,7 @@ player = NodePath("../Player")
 selection_pointer_scene = ExtResource("4_jyhfs")
 
 [node name="Columbia" type="Node2D" parent="." unique_id=885501867]
+y_sort_enabled = true
 
 [node name="Columbia Info Areas" type="Node2D" parent="Columbia" unique_id=470338605]
 y_sort_enabled = true
@@ -1198,7 +1199,7 @@ info_name = "ADI Edu Committee"
 
 [node name="CollisionShape2D" parent="Columbia/Columbia Info Areas/ADI" index="0" unique_id=1083559723]
 position = Vector2(0, -1)
-shape = SubResource("RectangleShape2D_ygd8o")
+shape = SubResource("RectangleShape2D_2s0kr")
 
 [node name="EdgeSparksIdle" parent="Columbia/Columbia Info Areas/ADI" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -1214,11 +1215,13 @@ emission_colors = PackedColorArray()
 autoplay = &"pulse"
 
 [node name="Rebecca" type="AnimatedSprite2D" parent="Columbia/Columbia Info Areas/ADI" unique_id=1284817069]
+z_index = 1
 position = Vector2(-14, 1)
 sprite_frames = SubResource("SpriteFrames_cjqg0")
 autoplay = "default"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Columbia/Columbia Info Areas/ADI" unique_id=1761047951]
+z_index = 1
 position = Vector2(12, 1)
 sprite_frames = SubResource("SpriteFrames_t8vo6")
 autoplay = "default"
@@ -1230,7 +1233,8 @@ info_text = "I've been an SSL (Summer Student Leader) for the summer program SHA
 info_name = "Teaching"
 
 [node name="CollisionShape2D" parent="Columbia/Columbia Info Areas/TA" index="0" unique_id=1083559723]
-shape = SubResource("RectangleShape2D_2s0kr")
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_xaipn")
 
 [node name="EdgeSparksIdle" parent="Columbia/Columbia Info Areas/TA" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -1246,6 +1250,7 @@ emission_colors = PackedColorArray()
 autoplay = &"pulse"
 
 [node name="Sprite2D" type="Sprite2D" parent="Columbia/Columbia Info Areas/TA" unique_id=676324708]
+z_index = 1
 position = Vector2(1, -1)
 texture = ExtResource("14_ty1g6")
 
@@ -1255,7 +1260,7 @@ info_text = "I am a Research Assistant at CEAL (Computer-Enabled Abilities Lab),
 info_name = "CEAL Lab"
 
 [node name="CollisionShape2D" parent="Columbia/Columbia Info Areas/Lab" index="0" unique_id=1083559723]
-shape = SubResource("RectangleShape2D_xaipn")
+shape = SubResource("RectangleShape2D_ndrjj")
 
 [node name="EdgeSparksIdle" parent="Columbia/Columbia Info Areas/Lab" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -1289,7 +1294,7 @@ info_text = "I am a first clarinet in CUWE (Columbia Uni Wind Ensemble) as well 
 info_name = "Wind Ensemble"
 
 [node name="CollisionShape2D" parent="Columbia/Columbia Info Areas/WE" index="0" unique_id=1083559723]
-shape = SubResource("RectangleShape2D_ndrjj")
+shape = SubResource("RectangleShape2D_ih3m7")
 
 [node name="EdgeSparksIdle" parent="Columbia/Columbia Info Areas/WE" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -1305,6 +1310,7 @@ emission_colors = PackedColorArray()
 autoplay = &"pulse"
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="Columbia/Columbia Info Areas/WE" unique_id=778969842]
+z_index = 1
 texture = ExtResource("7_eb6dy")
 emission_shape = 3
 emission_rect_extents = Vector2(10.59, 13.82)
@@ -1315,6 +1321,7 @@ initial_velocity_min = 32.79
 initial_velocity_max = 65.57
 
 [node name="Sophia" type="AnimatedSprite2D" parent="Columbia/Columbia Info Areas/WE" unique_id=779897920]
+z_index = 1
 position = Vector2(-11, -11)
 scale = Vector2(1.2, 1.2)
 sprite_frames = SubResource("SpriteFrames_pbjbi")
@@ -1322,6 +1329,7 @@ autoplay = "default"
 frame_progress = 0.36937574
 
 [node name="Max" type="AnimatedSprite2D" parent="Columbia/Columbia Info Areas/WE" unique_id=2107119572]
+z_index = 1
 position = Vector2(10, 4)
 scale = Vector2(1.3, 1.3)
 sprite_frames = SubResource("SpriteFrames_32gr6")
@@ -1334,7 +1342,8 @@ info_text = "I'm a part of Columbia Wushu! This is something I started in colleg
 info_name = "Wushu"
 
 [node name="CollisionShape2D" parent="Columbia/Columbia Info Areas/Wushu" index="0" unique_id=1083559723]
-shape = SubResource("RectangleShape2D_ih3m7")
+position = Vector2(-1, 1)
+shape = SubResource("RectangleShape2D_11yus")
 
 [node name="EdgeSparksIdle" parent="Columbia/Columbia Info Areas/Wushu" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -1350,6 +1359,7 @@ emission_colors = PackedColorArray()
 autoplay = &"pulse"
 
 [node name="AlexChen" type="AnimatedSprite2D" parent="Columbia/Columbia Info Areas/Wushu" unique_id=1107926795]
+z_index = 1
 position = Vector2(-15, -15)
 scale = Vector2(1.5, 1.5)
 sprite_frames = SubResource("SpriteFrames_dxwp7")
@@ -1361,6 +1371,7 @@ jump_force = -150.0
 gravity = 600.0
 
 [node name="AngelaHe" type="AnimatedSprite2D" parent="Columbia/Columbia Info Areas/Wushu" unique_id=1905889791]
+z_index = 1
 position = Vector2(7, 14)
 scale = Vector2(1.2, 1.2)
 sprite_frames = SubResource("SpriteFrames_0r61b")
@@ -1372,6 +1383,7 @@ JUMP_FORCE = -200.0
 UPWARD_NUDGE = -100.0
 
 [node name="Sprite2D" type="Sprite2D" parent="Columbia/Columbia Info Areas/Wushu" unique_id=1029182158]
+z_index = 1
 position = Vector2(-15, 10)
 texture = ExtResource("9_85g3d")
 
@@ -1381,7 +1393,7 @@ info_text = "I'm the co-chair of Columbia's Game Dev club under Columbia Gaming.
 info_name = "Game Dev"
 
 [node name="CollisionShape2D" parent="Columbia/Columbia Info Areas/Game Dev" index="0" unique_id=1083559723]
-shape = SubResource("RectangleShape2D_11yus")
+shape = SubResource("RectangleShape2D_b6ruc")
 
 [node name="EdgeSparksIdle" parent="Columbia/Columbia Info Areas/Game Dev" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -1397,6 +1409,7 @@ emission_colors = PackedColorArray()
 autoplay = &"pulse"
 
 [node name="Rimi" type="AnimatedSprite2D" parent="Columbia/Columbia Info Areas/Game Dev" unique_id=1977454353]
+z_index = 1
 position = Vector2(-15, -14)
 scale = Vector2(1.2, 1.2)
 sprite_frames = SubResource("SpriteFrames_tlrmy")
@@ -1404,6 +1417,7 @@ autoplay = "default"
 frame_progress = 0.18412414
 
 [node name="John" type="AnimatedSprite2D" parent="Columbia/Columbia Info Areas/Game Dev" unique_id=1412017826]
+z_index = 1
 position = Vector2(11.000001, -14.000003)
 scale = Vector2(1.7, 1.7)
 sprite_frames = SubResource("SpriteFrames_6snvl")
@@ -1411,11 +1425,13 @@ autoplay = "default"
 frame_progress = 0.33035958
 
 [node name="Lionjam" type="Sprite2D" parent="Columbia/Columbia Info Areas/Game Dev" unique_id=820636651]
+z_index = 1
 position = Vector2(1, 12)
 scale = Vector2(0.045359213, 0.045359213)
 texture = ExtResource("17_dp3eg")
 
 [node name="Floating Books" type="Node2D" parent="Columbia" unique_id=114509376]
+z_index = 1
 y_sort_enabled = true
 
 [node name="Fall25_special" parent="Columbia/Floating Books" unique_id=1085379062 instance=ExtResource("18_book")]
@@ -1533,6 +1549,7 @@ CS Masters Courses"
 info_name = "Spring 2029"
 
 [node name="Trees" type="Node2D" parent="Columbia" unique_id=1514192632]
+z_index = 1
 y_sort_enabled = true
 
 [node name="Tree" type="Sprite2D" parent="Columbia/Trees" unique_id=432159892]
@@ -1568,46 +1585,53 @@ offset = Vector2(0, -16)
 [node name="Ethan" type="Sprite2D" parent="Columbia" unique_id=511533567]
 z_index = 1
 y_sort_enabled = true
-position = Vector2(229.00002, -46.000004)
+position = Vector2(229, -35.9925)
 scale = Vector2(1.2509379, 1.2509379)
 texture = ExtResource("30_gdvew")
+offset = Vector2(0, -8)
 
 [node name="Eian" type="Sprite2D" parent="Columbia" unique_id=1075052665]
 z_index = 1
 y_sort_enabled = true
-position = Vector2(466.00003, -49)
+position = Vector2(466, -38.9925)
 scale = Vector2(1.2509379, 1.2509379)
 texture = ExtResource("31_ksmap")
+offset = Vector2(0, -8)
 
 [node name="Chris" type="Sprite2D" parent="Columbia" unique_id=868555399]
 z_index = 1
 y_sort_enabled = true
-position = Vector2(450, -151)
+position = Vector2(450, -140.992)
 scale = Vector2(1.2509379, 1.2509379)
 texture = ExtResource("32_ygd8o")
+offset = Vector2(0, -8)
 
 [node name="Jason" type="Sprite2D" parent="Columbia" unique_id=819650447]
 z_index = 1
 y_sort_enabled = true
-position = Vector2(623, -45)
+position = Vector2(623, -34.9925)
 scale = Vector2(1.2509379, 1.2509379)
 texture = ExtResource("33_2s0kr")
+offset = Vector2(0, -8)
 
 [node name="Nathan" type="Sprite2D" parent="Columbia" unique_id=515079075]
 z_index = 1
 y_sort_enabled = true
-position = Vector2(508.00003, 51)
+position = Vector2(508, 61.0075)
 scale = Vector2(1.2509379, 1.2509379)
 texture = ExtResource("34_xaipn")
+offset = Vector2(0, -8)
 
 [node name="Jayden" type="Sprite2D" parent="Columbia" unique_id=1286044639]
 z_index = 1
 y_sort_enabled = true
-position = Vector2(282, 44.999996)
+position = Vector2(282, 55.0075)
 scale = Vector2(1.2509379, 1.2509379)
 texture = ExtResource("35_ndrjj")
+offset = Vector2(0, -8)
 
 [node name="CustomPerson" parent="Columbia" unique_id=1165735229 instance=ExtResource("36_ygd8o")]
+z_index = 1
 position = Vector2(134, -124)
 skin_color = Color(1, 0.908, 0.31, 1)
 hair_color = Color(0, 0, 0, 1)
@@ -1615,6 +1639,7 @@ shirt_color = Color(1, 0, 0, 1)
 pants_color = Color(0, 0.4500003, 1, 1)
 
 [node name="Contact" type="Node2D" parent="." unique_id=243520510]
+z_index = 1
 y_sort_enabled = true
 
 [node name="School Email" parent="Contact" unique_id=1070089648 instance=ExtResource("19_mailbox")]
@@ -1660,6 +1685,7 @@ link_url = "https://discord.com/users/695290142721572935"
 logo_texture = ExtResource("25_2wyq8")
 
 [node name="Arcade" type="Node2D" parent="." unique_id=54294915]
+y_sort_enabled = true
 
 [node name="Tv" type="Sprite2D" parent="Arcade" unique_id=969707999]
 z_index = 2
@@ -1676,6 +1702,7 @@ scale = Vector2(0.013669386, 0.013762949)
 texture = ExtResource("31_tel4y")
 
 [node name="InfoAreas" type="Node2D" parent="Arcade" unique_id=1932251845]
+y_sort_enabled = true
 
 [node name="Yt" parent="Arcade/InfoAreas" unique_id=249884853 instance=ExtResource("6_tefeu")]
 position = Vector2(63, 125)
@@ -1685,7 +1712,7 @@ link = "https://youtube.com/@frankanator"
 
 [node name="CollisionShape2D" parent="Arcade/InfoAreas/Yt" index="0" unique_id=1083559723]
 position = Vector2(7, 0.75)
-shape = SubResource("RectangleShape2D_b6ruc")
+shape = SubResource("RectangleShape2D_155or")
 
 [node name="EdgeSparksIdle" parent="Arcade/InfoAreas/Yt" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -1707,8 +1734,8 @@ info_name = "Farewell Tomorrow"
 link = "https://frankanator8.itch.io/farewell-tomorrow"
 
 [node name="CollisionShape2D" parent="Arcade/InfoAreas/FarewellTmrw" index="0" unique_id=1083559723]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_155or")
+position = Vector2(-0.5, -3.25)
+shape = SubResource("RectangleShape2D_vtx2l")
 
 [node name="EdgeSparksIdle" parent="Arcade/InfoAreas/FarewellTmrw" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -1730,8 +1757,8 @@ info_name = "Rotation Squared"
 link = "https://frankanator8.itch.io/rotating-squared"
 
 [node name="CollisionShape2D" parent="Arcade/InfoAreas/RotSq" index="0" unique_id=1083559723]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_vtx2l")
+position = Vector2(-0.5, -5.25)
+shape = SubResource("RectangleShape2D_63lxy")
 
 [node name="EdgeSparksIdle" parent="Arcade/InfoAreas/RotSq" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -1753,8 +1780,8 @@ info_name = "Hexicast"
 link = "https://github.com/Frankanator8/hexicast"
 
 [node name="CollisionShape2D" parent="Arcade/InfoAreas/Hexicast" index="0" unique_id=1083559723]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_63lxy")
+position = Vector2(4.75, -5)
+shape = SubResource("RectangleShape2D_fjhjs")
 
 [node name="EdgeSparksIdle" parent="Arcade/InfoAreas/Hexicast" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -1776,7 +1803,7 @@ info_name = "Under Construction"
 
 [node name="CollisionShape2D" parent="Arcade/InfoAreas/Construction!" index="0" unique_id=1083559723]
 position = Vector2(2.5, 6)
-shape = SubResource("RectangleShape2D_fjhjs")
+shape = SubResource("RectangleShape2D_bfu41")
 
 [node name="EdgeSparksIdle" parent="Arcade/InfoAreas/Construction!" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -1793,21 +1820,25 @@ autoplay = &"pulse"
 
 [node name="Car" type="Sprite2D" parent="Arcade/InfoAreas" unique_id=2022477788 groups=["Obstacles"]]
 modulate = Color(1, 0, 0, 1)
+z_index = 1
 position = Vector2(-206, 129)
 texture = ExtResource("32_qkpxi")
 
 [node name="Car2" type="Sprite2D" parent="Arcade/InfoAreas" unique_id=1367184126 groups=["Obstacles"]]
 modulate = Color(0.3941159, 0.3941159, 0.3941159, 1)
+z_index = 1
 position = Vector2(-175, 164)
 rotation = -3.1415925
 texture = ExtResource("32_qkpxi")
 
 [node name="Car3" type="Sprite2D" parent="Arcade/InfoAreas" unique_id=1612762978 groups=["Obstacles"]]
+z_index = 1
 position = Vector2(-142, 164)
 rotation = -3.1415925
 texture = ExtResource("32_qkpxi")
 
 [node name="Experiences" type="Node2D" parent="." unique_id=41596695]
+y_sort_enabled = true
 
 [node name="Amazon" parent="Experiences" unique_id=1283709579 instance=ExtResource("6_tefeu")]
 position = Vector2(-308, -52)
@@ -1816,7 +1847,7 @@ info_name = "Amazon"
 
 [node name="CollisionShape2D" parent="Experiences/Amazon" index="0" unique_id=1083559723]
 position = Vector2(20, -1)
-shape = SubResource("RectangleShape2D_bfu41")
+shape = SubResource("RectangleShape2D_r4ag1")
 
 [node name="EdgeSparksIdle" parent="Experiences/Amazon" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -1838,7 +1869,7 @@ info_name = "Morgan Stanley"
 
 [node name="CollisionShape2D" parent="Experiences/Morgan Stanley" index="0" unique_id=1083559723]
 position = Vector2(24, 0)
-shape = SubResource("RectangleShape2D_r4ag1")
+shape = SubResource("RectangleShape2D_v0wtd")
 
 [node name="EdgeSparksIdle" parent="Experiences/Morgan Stanley" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -1860,7 +1891,7 @@ info_name = "Point72"
 
 [node name="CollisionShape2D" parent="Experiences/Point72" index="0" unique_id=1083559723]
 position = Vector2(24, 0)
-shape = SubResource("RectangleShape2D_v0wtd")
+shape = SubResource("RectangleShape2D_sgvw8")
 
 [node name="EdgeSparksIdle" parent="Experiences/Point72" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -1882,7 +1913,7 @@ info_name = "Ramp"
 
 [node name="CollisionShape2D" parent="Experiences/Ramp" index="0" unique_id=1083559723]
 position = Vector2(24, 0)
-shape = SubResource("RectangleShape2D_sgvw8")
+shape = SubResource("RectangleShape2D_6nfnn")
 
 [node name="EdgeSparksIdle" parent="Experiences/Ramp" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -1904,6 +1935,7 @@ libraries/ = SubResource("AnimationLibrary_daynight")
 script = ExtResource("59_dnsync")
 
 [node name="Fun" type="Node2D" parent="." unique_id=1538819696]
+y_sort_enabled = true
 
 [node name="Languages" parent="Fun" unique_id=2004899154 instance=ExtResource("6_tefeu")]
 position = Vector2(148, 216)
@@ -1912,7 +1944,7 @@ info_name = "Languages!"
 
 [node name="CollisionShape2D" parent="Fun/Languages" index="0" unique_id=1083559723]
 position = Vector2(28, -1)
-shape = SubResource("RectangleShape2D_6nfnn")
+shape = SubResource("RectangleShape2D_4ue30")
 
 [node name="EdgeSparksIdle" parent="Fun/Languages" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -1957,7 +1989,7 @@ info_name = "Fav Game"
 
 [node name="CollisionShape2D" parent="Fun/Deltarune/Info" index="0" unique_id=1083559723]
 position = Vector2(114.5, -1.25)
-shape = SubResource("RectangleShape2D_4ue30")
+shape = SubResource("RectangleShape2D_k42av")
 
 [node name="EdgeSparksIdle" parent="Fun/Deltarune/Info" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -1996,7 +2028,7 @@ info_name = "Fav Show"
 
 [node name="CollisionShape2D" parent="Fun/Steins;Gate/Info" index="0" unique_id=1083559723]
 position = Vector2(105, -5.75)
-shape = SubResource("RectangleShape2D_k42av")
+shape = SubResource("RectangleShape2D_gr8w0")
 
 [node name="EdgeSparksIdle" parent="Fun/Steins;Gate/Info" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -2025,7 +2057,7 @@ info_name = "Fav Book"
 
 [node name="CollisionShape2D" parent="Fun/1984/Info" index="0" unique_id=1083559723]
 position = Vector2(105, -1.25)
-shape = SubResource("RectangleShape2D_gr8w0")
+shape = SubResource("RectangleShape2D_673bd")
 
 [node name="EdgeSparksIdle" parent="Fun/1984/Info" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -2041,6 +2073,7 @@ emission_colors = PackedColorArray()
 autoplay = &"pulse"
 
 [node name="Music" type="Node2D" parent="Fun" unique_id=74565366]
+y_sort_enabled = true
 
 [node name="Ado" type="Sprite2D" parent="Fun/Music" unique_id=566928563]
 z_index = 1
@@ -2056,7 +2089,7 @@ info_name = "Ado"
 
 [node name="CollisionShape2D" parent="Fun/Music/Ado/Info" index="0" unique_id=1083559723]
 position = Vector2(3, 0)
-shape = SubResource("RectangleShape2D_673bd")
+shape = SubResource("RectangleShape2D_akjxb")
 
 [node name="EdgeSparksIdle" parent="Fun/Music/Ado/Info" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -2085,7 +2118,7 @@ info_name = "Ado"
 
 [node name="CollisionShape2D" parent="Fun/Music/Brunomars/Info" index="0" unique_id=1083559723]
 position = Vector2(3, 0)
-shape = SubResource("RectangleShape2D_akjxb")
+shape = SubResource("RectangleShape2D_vrx01")
 
 [node name="EdgeSparksIdle" parent="Fun/Music/Brunomars/Info" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -2114,7 +2147,7 @@ info_name = "Toby Fox"
 
 [node name="CollisionShape2D" parent="Fun/Music/Tobyfox/Info" index="0" unique_id=1083559723]
 position = Vector2(3, 0)
-shape = SubResource("RectangleShape2D_vrx01")
+shape = SubResource("RectangleShape2D_1uevf")
 
 [node name="EdgeSparksIdle" parent="Fun/Music/Tobyfox/Info" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -2143,7 +2176,7 @@ info_name = "KPop"
 
 [node name="CollisionShape2D" parent="Fun/Music/Aespa/Info" index="0" unique_id=1083559723]
 position = Vector2(3, 0)
-shape = SubResource("RectangleShape2D_1uevf")
+shape = SubResource("RectangleShape2D_tc087")
 
 [node name="EdgeSparksIdle" parent="Fun/Music/Aespa/Info" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -2159,6 +2192,7 @@ emission_colors = PackedColorArray()
 autoplay = &"pulse"
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="Fun/Music" unique_id=2126570630]
+z_index = 1
 position = Vector2(459, 123)
 texture = ExtResource("7_eb6dy")
 emission_shape = 3
@@ -2170,6 +2204,7 @@ initial_velocity_min = 32.79
 initial_velocity_max = 65.57
 
 [node name="CPUParticles2D2" type="CPUParticles2D" parent="Fun/Music" unique_id=933745677]
+z_index = 1
 position = Vector2(502, 144)
 texture = ExtResource("7_eb6dy")
 emission_shape = 3
@@ -2181,6 +2216,7 @@ initial_velocity_min = 32.79
 initial_velocity_max = 65.57
 
 [node name="CPUParticles2D3" type="CPUParticles2D" parent="Fun/Music" unique_id=1624194913]
+z_index = 1
 position = Vector2(477, 192)
 texture = ExtResource("7_eb6dy")
 emission_shape = 3
@@ -2192,6 +2228,7 @@ initial_velocity_min = 32.79
 initial_velocity_max = 65.57
 
 [node name="Runner" type="AnimatedSprite2D" parent="Fun" unique_id=579689137]
+z_index = 1
 position = Vector2(133, 245)
 sprite_frames = SubResource("SpriteFrames_uhl7o")
 autoplay = "default"
@@ -2208,7 +2245,7 @@ info_name = "Running!"
 
 [node name="CollisionShape2D" parent="Fun/Runner/Runner2" index="0" unique_id=1083559723]
 position = Vector2(106, -7)
-shape = SubResource("RectangleShape2D_tc087")
+shape = SubResource("RectangleShape2D_73205")
 
 [node name="EdgeSparksIdle" parent="Fun/Runner/Runner2" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -2230,7 +2267,7 @@ info_name = "Subway"
 
 [node name="CollisionShape2D" parent="Fun/Subway" index="0" unique_id=1083559723]
 position = Vector2(108, -6)
-shape = SubResource("RectangleShape2D_73205")
+shape = SubResource("RectangleShape2D_0tljd")
 
 [node name="EdgeSparksIdle" parent="Fun/Subway" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -2252,6 +2289,7 @@ sprite_frames = SubResource("SpriteFrames_od4ux")
 autoplay = "default"
 
 [node name="Intro" type="Node2D" parent="." unique_id=418661911]
+y_sort_enabled = true
 
 [node name="Blog" parent="Intro" unique_id=1689162469 instance=ExtResource("50_j2jfr")]
 z_index = 1
@@ -2262,7 +2300,7 @@ collision_mask = 1
 link_url = "https://blog.hanyangliu.dev"
 
 [node name="CollisionShape2D" parent="Intro/Blog" index="0" unique_id=1689162471]
-shape = SubResource("CircleShape2D_0tljd")
+shape = SubResource("CircleShape2D_mgpkq")
 
 [node name="Sprite" parent="Intro/Blog" index="1" unique_id=1689162472]
 y_sort_enabled = true
@@ -2329,7 +2367,7 @@ frame_progress = 0.9171081
 
 [node name="Ripples" parent="Intro" unique_id=1586471006 instance=ExtResource("58_rippl")]
 z_index = -1
-material = SubResource("ShaderMaterial_mgpkq")
+material = SubResource("ShaderMaterial_xmrkg")
 position = Vector2(33, -27)
 texture = ExtResource("59_rplmk")
 
@@ -2358,7 +2396,7 @@ info_name = "About Me"
 
 [node name="CollisionShape2D" parent="Intro/About Me" index="0" unique_id=1083559723]
 position = Vector2(-5, 4.5)
-shape = SubResource("RectangleShape2D_xmrkg")
+shape = SubResource("RectangleShape2D_wvlrk")
 
 [node name="EdgeSparksIdle" parent="Intro/About Me" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -2392,7 +2430,7 @@ info_name = "Skills"
 
 [node name="CollisionShape2D" parent="Intro/Skills/InfoArea" index="0" unique_id=1083559723]
 position = Vector2(6, 6)
-shape = SubResource("RectangleShape2D_wvlrk")
+shape = SubResource("RectangleShape2D_engxj")
 
 [node name="EdgeSparksIdle" parent="Intro/Skills/InfoArea" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -2753,6 +2791,7 @@ scale = Vector2(1.1, 1.1)
 texture = ExtResource("65_glow")
 
 [node name="Crowds" type="Node2D" parent="." unique_id=963053711]
+y_sort_enabled = true
 
 [node name="Crowd" parent="Crowds" unique_id=443385305 instance=ExtResource("79_2s0kr")]
 position = Vector2(-419, -32)

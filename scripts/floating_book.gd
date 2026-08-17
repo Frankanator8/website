@@ -15,15 +15,15 @@ extends Area2D
 @onready var description_box: Node2D = $DescriptionBox
 @onready var proximity_area: Area2D = $ProximityArea
 
-var _mouse_inside: bool = false
+var _selector_on: bool = false
 var _player_near: bool = false
 var _time: float = 0.0
 var _sprite_base_y: float = 0.0
 var _phase: float = 0.0
 
 func _ready() -> void:
-	mouse_entered.connect(_on_mouse_entered)
-	mouse_exited.connect(_on_mouse_exited)
+	area_entered.connect(_on_area_entered)
+	area_exited.connect(_on_area_exited)
 	proximity_area.body_entered.connect(_on_body_entered)
 	proximity_area.body_exited.connect(_on_body_exited)
 
@@ -36,7 +36,7 @@ func _ready() -> void:
 	if "type_speed" in description_box:
 		description_box.type_speed = 0.01
 
-	# Start still: hover only, no frame animation until hovered or the player is close
+	# Start still: bob only, no frame animation until selected or the player is close
 	animated_sprite.stop()
 	animated_sprite.frame = 0
 
@@ -46,19 +46,35 @@ func _process(delta: float) -> void:
 	if description_box.visible:
 		_place_description_box()
 
-func _on_mouse_entered() -> void:
-	_mouse_inside = true
-	# Description shows on hover only
-	var formatted_text = "[b]" + info_name + "[/b]\n" + info_text
-	if description_box.has_method("set_dialogue_text"):
-		description_box.set_dialogue_text(formatted_text)
-	_place_description_box()
-	description_box.show()
-	_update_animation()
+# The click marker (selection pointer) landing on the book is what opens it -
+# works the same with a mouse or a tap
+func _on_area_entered(area: Area2D) -> void:
+	if not area.is_in_group("selector"):
+		return
+	_selector_on = true
+	_refresh_box()
 
-func _on_mouse_exited() -> void:
-	_mouse_inside = false
-	description_box.hide()
+func _on_area_exited(area: Area2D) -> void:
+	if not area.is_in_group("selector"):
+		return
+	_selector_on = false
+	_refresh_box()
+
+# Description shows while the selector sits on the book
+func _refresh_box() -> void:
+	var should_show := _selector_on
+	if should_show == description_box.visible:
+		_update_animation()
+		return
+
+	if should_show:
+		var formatted_text := "[b]" + info_name + "[/b]\n" + info_text
+		if description_box.has_method("set_dialogue_text"):
+			description_box.set_dialogue_text(formatted_text)
+		_place_description_box()
+		description_box.show()
+	else:
+		description_box.hide()
 	_update_animation()
 
 func _on_body_entered(body: Node) -> void:
@@ -73,9 +89,9 @@ func _on_body_exited(body: Node) -> void:
 	_player_near = false
 	_update_animation()
 
-# Frame animation plays on hover OR proximity; otherwise the book just bobs on frame 0
+# Frame animation plays on selector OR proximity; otherwise the book just bobs on frame 0
 func _update_animation() -> void:
-	if _mouse_inside or _player_near:
+	if _selector_on or _player_near:
 		animated_sprite.play("float")
 	else:
 		animated_sprite.stop()
@@ -83,10 +99,14 @@ func _update_animation() -> void:
 
 # Reused verbatim from scripts/info_area.gd
 func _place_description_box() -> void:
-	var canvas_transform = get_viewport().get_canvas_transform()
+	var inverse := get_viewport().get_canvas_transform().affine_inverse()
 	var view_size = get_viewport_rect().size
-	var min_pos = canvas_transform.affine_inverse() * Vector2.ZERO
-	var max_pos = canvas_transform.affine_inverse() * view_size
+	var min_pos: Vector2 = inverse * Vector2.ZERO
+	var max_pos: Vector2 = min_pos
+	for corner in [Vector2(view_size.x, 0.0), view_size, Vector2(0.0, view_size.y)]:
+		var world: Vector2 = inverse * corner
+		min_pos = min_pos.min(world)
+		max_pos = max_pos.max(world)
 	var desired_pos = self.global_position + Vector2(0, -description_box_size.y - 10)
 	var clamped_x = clamp(desired_pos.x, min_pos.x, max_pos.x - description_box_size.x)
 	var clamped_y = clamp(desired_pos.y, min_pos.y, max_pos.y - description_box_size.y)

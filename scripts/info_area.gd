@@ -196,11 +196,18 @@ func _on_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> voi
 		get_viewport().set_input_as_handled()
 
 func _place_description_box() -> void:
-	var canvas_transform = get_viewport().get_canvas_transform()
+	var inverse := get_viewport().get_canvas_transform().affine_inverse()
 	var view_size = get_viewport_rect().size
 
-	var min_pos = canvas_transform.affine_inverse() * Vector2.ZERO
-	var max_pos = canvas_transform.affine_inverse() * view_size
+	# Portrait phones run the camera at 90 degrees, so two opposite screen
+	# corners are no longer the world min/max - box all four instead, or the
+	# clamp below runs backwards and throws the box off screen
+	var min_pos: Vector2 = inverse * Vector2.ZERO
+	var max_pos: Vector2 = min_pos
+	for corner in [Vector2(view_size.x, 0.0), view_size, Vector2(0.0, view_size.y)]:
+		var world: Vector2 = inverse * corner
+		min_pos = min_pos.min(world)
+		max_pos = max_pos.max(world)
 
 	# Use the manually defined description_box_size instead of .size
 	var desired_pos = self.global_position + Vector2(0, -description_box_size.y - 10)

@@ -39,6 +39,17 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_hit"]
+radius = 4.0
+
 [node name="SelectionPointer" type="AnimatedSprite2D" unique_id=246471590]
 sprite_frames = SubResource("SpriteFrames_x80dg")
 script = ExtResource("2_417dg")
+
+[node name="SelectorArea" type="Area2D" parent="." groups=["selector"] unique_id=246471591]
+collision_layer = 8
+collision_mask = 0
+monitoring = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SelectorArea" unique_id=246471592]
+shape = SubResource("CircleShape2D_hit")
