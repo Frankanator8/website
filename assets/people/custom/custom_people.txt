@@ -1,8 +1,14 @@
-there are 5 16x16 frames in each.
+face, hair and shirt are 5 16x16 frames: one per variant.
+pants and shirtskin are 15 16x16 frames: 5 variants x 3 walk poses, so variant v
+sits at frames v, v+5, v+10.
 
 each should render in the same spot, as the relative locations are correct.
 the only restriction on rendering is that hair should render on top of player
 
-you can mix and match between all the files, except that pants and pantskin + shirt and shirtskin should be one to one (e.g. if pants is on sprite 1, so should pantskin)
+you can mix and match between all the files, except that shirt and shirtskin
+should be one to one (e.g. if shirt is on sprite 1, so should shirtskin)
 
 all sprites can be modulated to any color
+
+scripts/custom_person.gd is the renderer, and web/shell.html reproduces it in
+canvas for the character creator -- both need updating if the sheets change.

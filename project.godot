@@ -23,11 +23,13 @@ config/icon="uid://bn11omyrigybu"
 [autoload]
 
 LinkConfirm="*res://scenes/link_confirm.tscn"
+Appearance="*res://scripts/appearance.gd"
 
 [display]
 
 window/size/mode=3
 window/stretch/mode="canvas_items"
+window/size/mode.web=0
 
 [gui]
 

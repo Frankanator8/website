@@ -11,6 +11,10 @@ var last_tile_coords: Vector2i = Vector2i(-999, -999)
 @onready var nav_agent: NavigationAgent2D = $NavigationAgent2D
 
 func _ready():
+	Appearance.apply_to(person)
+	# The world is on screen now, so the web shell can drop its creator overlay.
+	Appearance.notify_world_ready()
+
 	person.walking = false
 	walking_particles.target_tilemap = target_tilemap
 	
