@@ -90,6 +90,7 @@ animations = [{
 radius = 60.0
 
 [node name="FloatingBook" type="Area2D" unique_id=685159395]
+collision_mask = 9
 script = ExtResource("2_fbook")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=923172284]

@@ -15,6 +15,21 @@ func _ready() -> void:
 	yes_button.pressed.connect(_on_yes)
 	no_button.pressed.connect(_on_no)
 
+	get_viewport().size_changed.connect(_match_screen)
+	_match_screen()
+
+# Portrait phones turn the camera 90 degrees so the world stays landscape.
+# A plain CanvasLayer ignores that, so this popup has to turn with it - and
+# then it is sized by hand, since its rect no longer matches the window rect
+func _match_screen() -> void:
+	var view: Vector2 = get_viewport().get_visible_rect().size
+	if view.y > view.x:
+		transform = Transform2D(-PI / 2.0, Vector2(0.0, view.y))
+		blocker.size = Vector2(view.y, view.x)
+	else:
+		transform = Transform2D()
+		blocker.size = view
+
 func is_open() -> bool:
 	return blocker.visible
 

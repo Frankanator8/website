@@ -88,6 +88,14 @@ body {
 	color: #8a8a96;
 }
 
+/* Phone screens have no room beside the creator, so the corner name would land
+   on top of it. Drop it there. */
+@media (max-width: 600px), (max-height: 640px) {
+	#brand {
+		display: none;
+	}
+}
+
 #prompt {
 	font-size: 1.5rem;
 	letter-spacing: 0.06em;
