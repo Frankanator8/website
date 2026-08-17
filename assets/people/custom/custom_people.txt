@@ -1,0 +1,8 @@
+there are 5 16x16 frames in each.
+
+each should render in the same spot, as the relative locations are correct.
+the only restriction on rendering is that hair should render on top of player
+
+you can mix and match between all the files, except that pants and pantskin + shirt and shirtskin should be one to one (e.g. if pants is on sprite 1, so should pantskin)
+
+all sprites can be modulated to any color

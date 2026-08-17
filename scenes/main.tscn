@@ -35,12 +35,19 @@
 [ext_resource type="Texture2D" uid="uid://dk5v08nh3sy8" path="res://assets/icons/github.svg" id="28_5q0nq"]
 [ext_resource type="Script" uid="uid://dldlpxoaco0ec" path="res://scripts/overhead_fade.gd" id="29_ovhfd"]
 [ext_resource type="Texture2D" uid="uid://cmddnsw4v7sjf" path="res://assets/tv.png" id="30_fv21b"]
+[ext_resource type="Texture2D" uid="uid://cub7kavu0ncux" path="res://assets/people/ethan.png" id="30_gdvew"]
 [ext_resource type="Shader" uid="uid://bbpe1ybw8xe7p" path="res://shaders/overhead_fade.gdshader" id="30_ovhsh"]
+[ext_resource type="Texture2D" uid="uid://cc4g5fc0b3j5b" path="res://assets/people/eian.png" id="31_ksmap"]
 [ext_resource type="Texture2D" uid="uid://dc4nmome5dx88" path="res://assets/yt.png" id="31_tel4y"]
 [ext_resource type="Texture2D" uid="uid://qrynyf8koypr" path="res://assets/car.png" id="32_qkpxi"]
+[ext_resource type="Texture2D" uid="uid://b8c6gp4g8mj30" path="res://assets/people/chris.png" id="32_ygd8o"]
+[ext_resource type="Texture2D" uid="uid://c46u2n4wbm48g" path="res://assets/people/jason.png" id="33_2s0kr"]
 [ext_resource type="Texture2D" uid="uid://bywwow3a73518" path="res://assets/susie.png" id="34_kmb1v"]
+[ext_resource type="Texture2D" uid="uid://diph50jttxw1g" path="res://assets/people/nathan.png" id="34_xaipn"]
 [ext_resource type="Texture2D" uid="uid://ca5piofpwu1su" path="res://assets/kris.png" id="35_fuf3a"]
+[ext_resource type="Texture2D" uid="uid://cxlgvf1125ha5" path="res://assets/people/jayden.png" id="35_ndrjj"]
 [ext_resource type="Texture2D" uid="uid://don405v6tx8er" path="res://assets/ralsei.png" id="36_pibwh"]
+[ext_resource type="PackedScene" uid="uid://bqx7n2custper" path="res://scenes/custom_person.tscn" id="36_ygd8o"]
 [ext_resource type="Texture2D" uid="uid://cgmmdd2wri40i" path="res://assets/kurisu.png" id="37_pibwh"]
 [ext_resource type="Texture2D" uid="uid://dx6hefl6gwk6w" path="res://assets/okabe.png" id="38_c6pm6"]
 [ext_resource type="Texture2D" uid="uid://dm3m16oi8fbl6" path="res://assets/1984.png" id="39_c6pm6"]
@@ -69,11 +76,13 @@
 [ext_resource type="Shader" uid="uid://c0tuwssg5pj0q" path="res://shaders/pixel_focus.gdshader" id="64_pxfoc"]
 [ext_resource type="Script" uid="uid://dl8wijihu1m8n" path="res://scripts/pixel_focus.gd" id="64_pxscr"]
 [ext_resource type="Texture2D" uid="uid://bh2sga43gaj5" path="res://resources/light_glow.tres" id="65_glow"]
+[ext_resource type="PackedScene" uid="uid://dq7n4vs2xkp1w" path="res://scenes/scroll.tscn" id="67_mlv25"]
+[ext_resource type="Texture2D" uid="uid://yrkk5whpm6d3" path="res://assets/chest.png" id="68_a82wo"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_yq6so"]
-vertices = PackedVector2Array(621.7578, 218, 594.14844, 218, 374, 214, 410, 214, 726, 10, 474, 10, 102, -10, 154, -10, -218, 106, -246, 106, -330, 102, -326, 102, 502, 122, 474, 122, -10, 102, 10, 102, -166, 10, -166, 170, -170, 102, -170, 74, -406, -54, -394, -170, -262, -186, -186, -186, -170, -54, 26, -58, 22, -54, -22, -54, -26, -58, -26, -86, 26, -86, 566, -102, 506, -102, 406, -122, 426, -122, 726, 54, 745.21094, 186, 554, 186, 502, 150, 74, 10, 74, 26, 58, 26, 54, 22, 54, -22, 26, 172.89844, 42, 173.1875, 42, 246, -74, 198, -74, 179.21875, -166, -250, -166, -10, -170, -26, 566, -122, 566, -182, 586, -202, 586, -10, -186, -204.78125, 745.53906, -10, -221.85156, 170, -222.03125, 198, -226.0625, 182, -226.15625, 166, -226.0625, 166, 102, -38, 74, -38, 54, -58, 54, -86, 326, -202, 506, -182, 186, 10, 186, 54, 166, 38, 166, 10, -218, 134, -189.85156, 170, -246, 102, -266, 102, 745.14844, 214, 745.03906, 282, 694, 246, 694, 227.21875, -74, -10, -74, -38, -54, -22, -54, 22, -442, -250, -202, -204.78125, 502, 102, 502, 74, 474, 54, 474, 74, 230, 198, 230, 170, 298, 186, 298, 214, -394, -198, -262, -204.63281, -422, -170, -422, -38, 410, 74, 410, 102, 54, 86, 54, 58, 86, 54, -146.65625, 138, -146.71094, 134, -146.50781, 134, -10, 138, -146.50781, -10, -146.71094, -26, -146.50781, -26, -146.71094, -42, -146.50781, -42, -146.71094, -58, -146.50781, -58, -146.71094, -74, -146.50781, -74, -146.71094, -90, -146.50781, -90, -146.71094, -106, -146.50781, -106, -146.71094, -122, -146.50781, -122, -146.71094, -138, -146.50781, -138, -146.71094, -154, -146.50781, -154, -146.71094, -170, -146.50781, -170, -146.71094, -186, -146.50781, -186, -70, -170, -146.71094, -202, -146.50781, -202, -146.71094, -218, -146.50781, -218, -70, -214, -146.71094, -234, -146.50781, -234, -54, -230, -54, -214, -146.71094, -250, -22, -250, -38, -246, -146.71094, 118, -146.50781, 118, -146.71094, 102, -146.50781, 102, -146.71094, 86, -146.50781, 86, -146.71094, 70, -146.50781, 70, -146.71094, 54, -146.50781, 54, -146.71094, 38, -146.50781, 38, -190.03125, 198, -189.92969, 198, -190.03125, 214, -194.0625, 214, -254.03125, 166, -253.92969, 166, -254.03125, 182, -221.92969, 198, -222.03125, 214, -194.15625, 198, -194.0625, 198, -202, -204.6875, -218, -204.6875, -218, -204.78125, -234, -204.6875, -234, -204.78125, -422, -198, -442, 282, 438, 131.21875, 422, 131.29688, 422, 131.21875, 678, 227.29688, 678, 227.21875, 662, 227.29688, 662, 227.21875, 646, 227.29688, 646, 227.21875, 582, 227.21875, 566, 227.29688, 566, 227.21875, 358, 227.21875, 342, 227.29688, 342, 227.21875, 278, 227.21875, 262, 227.29688, 262, 227.21875, 246, 227.29688, 246, 227.21875, 182, 227.21875, 166, 227.29688, 166, 227.21875, 150, 227.29688, 150, 227.21875, 134, 227.29688, 134, 227.21875, 42, 266, 42, 298.82813, -138, 298.53125, -138, 266, -406, -38, -394, -10, -394, -26, -22, -246, -38, -230, -42, -170, -42, -186, -26, -186, -26, -218, -10, -218, -10, -234, 10, -234, 10, -218, 26, -218, 26, -186, 42, -186, 42, -170, 70, -214, 54, -214, 54, -230, 154, -250, 38, -230, 38, -246, 22, -246, 22, -250, 70, -170, 438, 54, 438, 10, 378, 10, 378, 26, 374, 26, 374, 10, 138, 10, 102, 38, 138, 38, 102, 10, 74, -10, 38, -38, 38, -22, 22, -38, -22, -38, -38, -38, -54, -58, -38, -22, -38, 22, -38, 38, -74, 38, -22, 38, -22, 54, -74, 10, -102, -10, -102, 10, 22, 54, 22, 38, 38, 38, 58, 54, 26, 58, 38, 22, 86, 38, 438, 74, 474, 102, 438, 102, 26, 74, 10, 74, 38, 102, 38, 86, -10, 74, -26, 74, -26, 58, -54, 86, -38, 86, -38, 102, 474, 150, 438, 150, 394, 131.36719, 554, 214, 502, 214, 502, 186, 474, 186, 593.96875, 246, 582, 246, 10, 138, 10, 166, -10, 166, -246, 74, -266, 74, -166, 214, -166, 246, -138, 246, -138, 230, -122, 230, 26, 166, -138, 166, -102, 179.36719, -106, 179.21875, 70, 282, 70, 266, -346, 246, -342, 246, -166, 266, -166, 282, -422, 246, 621.8203, 227.34375, -194.24219, 170, -226.24219, 138, -246, 134, -253.85156, 138, 70, 138, 394, 150, 374, 186, 506, -42, 566, -42, 486, -42, 486, -102, 426, -102, 346, -122, -146.85938, 10, -422, -10, -422, 102, -250, 246, -250, 218, -54, -86, -102, -38, 474, 214, 438, 186, -326, 74, 506, -122, 486, -122, 486, -182, 426, -182, -422, 218, -102, 198, -122, 211.21875, -106, 198, -134, 179.36719, -138, 211.29688, -134, 198, -342, 218, 538, 227.36719, 502, 218, 426, -42, 406, -42, 326, -10, 406, -102, 346, -102, -102, 38, -54, 58, 406, -182, 346, -182, 346, -42, 282, 218, 122, 198, 310, 218, 538, 246, 502, 246, 474, 218, 474, 246, 438, 246, 438, 218, 410, 218, 410, 246, 358, 246, 314, 246, 310, 246, 314, 227.36719, -330, 74, -422, 74, 282, 246, 278, 246, 214, 218, 218, 246, 214, 246, 218, 227.36719, 186, 218, 186, 246, 182, 246, 106, 227.36719, 122, 170, 70, 246, 106, 246, -346, 218, 410, 186, 438, 214)
-polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 5, 6, 7), PackedInt32Array(8, 9, 10, 11), PackedInt32Array(12, 13, 14, 15), PackedInt32Array(16, 17, 18, 19), PackedInt32Array(20, 21, 22, 23, 24), PackedInt32Array(25, 26, 27, 28, 29, 30), PackedInt32Array(31, 32, 33, 34), PackedInt32Array(35, 36, 37, 38, 12), PackedInt32Array(39, 40, 41, 42, 43), PackedInt32Array(44, 45, 46, 47, 48), PackedInt32Array(49, 50, 51, 24), PackedInt32Array(52, 53, 54, 55), PackedInt32Array(49, 24, 23, 56), PackedInt32Array(57, 36, 35, 4), PackedInt32Array(58, 59, 60, 61, 62), PackedInt32Array(63, 64, 65, 66), PackedInt32Array(67, 54, 53, 68), PackedInt32Array(55, 57, 4), PackedInt32Array(69, 70, 71, 72), PackedInt32Array(73, 8, 18, 17, 74), PackedInt32Array(75, 18, 8), PackedInt32Array(75, 8, 76), PackedInt32Array(77, 78, 79, 80), PackedInt32Array(81, 82, 83, 84), PackedInt32Array(85, 49, 56, 86), PackedInt32Array(87, 35, 12), PackedInt32Array(35, 87, 88), PackedInt32Array(89, 35, 88, 90), PackedInt32Array(91, 92, 93, 94), PackedInt32Array(22, 21, 95, 96), PackedInt32Array(97, 21, 20, 98), PackedInt32Array(70, 99, 100, 101, 102, 103), PackedInt32Array(104, 105, 106, 107), PackedInt32Array(108, 109, 110), PackedInt32Array(110, 111, 112), PackedInt32Array(112, 113, 114), PackedInt32Array(114, 115, 116), PackedInt32Array(116, 117, 118), PackedInt32Array(118, 119, 120), PackedInt32Array(120, 121, 122), PackedInt32Array(122, 123, 124), PackedInt32Array(124, 125, 126), PackedInt32Array(126, 127, 128), PackedInt32Array(128, 129, 130, 131), PackedInt32Array(130, 132, 133, 131), PackedInt32Array(133, 134, 135, 136, 131), PackedInt32Array(135, 137, 138, 139, 140, 136), PackedInt32Array(138, 141, 142, 143), PackedInt32Array(106, 144, 145, 107), PackedInt32Array(145, 146, 147, 107), PackedInt32Array(147, 148, 149, 107), PackedInt32Array(149, 150, 151, 107), PackedInt32Array(151, 152, 153, 107), PackedInt32Array(153, 154, 155, 107), PackedInt32Array(156, 157, 158, 159), PackedInt32Array(160, 161, 162), PackedInt32Array(59, 163, 164), PackedInt32Array(159, 165, 166), PackedInt32Array(56, 167, 86), PackedInt32Array(86, 168, 169), PackedInt32Array(85, 86, 169), PackedInt32Array(169, 170, 171), PackedInt32Array(85, 169, 171), PackedInt32Array(85, 171, 96), PackedInt32Array(85, 96, 95, 172), PackedInt32Array(173, 85, 172, 97), PackedInt32Array(174, 175, 176), PackedInt32Array(80, 177, 178, 77), PackedInt32Array(178, 179, 180), PackedInt32Array(180, 181, 182), PackedInt32Array(183, 184, 185, 1), PackedInt32Array(186, 187, 188), PackedInt32Array(189, 190, 191), PackedInt32Array(191, 192, 193), PackedInt32Array(194, 195, 196), PackedInt32Array(196, 197, 198), PackedInt32Array(198, 199, 200), PackedInt32Array(201, 202, 203, 204), PackedInt32Array(20, 205, 98), PackedInt32Array(206, 207, 51, 50, 16), PackedInt32Array(142, 208, 143), PackedInt32Array(138, 143, 209, 139), PackedInt32Array(126, 128, 131), PackedInt32Array(210, 211, 212), PackedInt32Array(212, 213, 214), PackedInt32Array(214, 215, 216, 217), PackedInt32Array(212, 217, 218, 219, 210), PackedInt32Array(219, 220, 221, 210), PackedInt32Array(222, 223, 224, 225), PackedInt32Array(224, 226, 227, 225), PackedInt32Array(227, 228, 229, 225), PackedInt32Array(222, 225, 7, 230), PackedInt32Array(5, 89, 231, 232), PackedInt32Array(6, 5, 232), PackedInt32Array(6, 232, 233), PackedInt32Array(233, 234, 235, 236), PackedInt32Array(6, 233, 236), PackedInt32Array(6, 236, 69), PackedInt32Array(6, 69, 72), PackedInt32Array(6, 72, 237), PackedInt32Array(238, 237, 239, 103), PackedInt32Array(237, 238, 240), PackedInt32Array(6, 237, 240, 241), PackedInt32Array(241, 240, 39, 43), PackedInt32Array(25, 65, 64, 241, 43, 242), PackedInt32Array(43, 243, 242), PackedInt32Array(25, 242, 244, 26), PackedInt32Array(28, 27, 245, 246, 247), PackedInt32Array(247, 246, 248, 83, 82), PackedInt32Array(84, 249, 250, 251), PackedInt32Array(250, 252, 253), PackedInt32Array(250, 253, 251), PackedInt32Array(84, 251, 254), PackedInt32Array(81, 84, 254, 255), PackedInt32Array(255, 254, 256, 108), PackedInt32Array(257, 258, 259, 260, 102, 261), PackedInt32Array(259, 262, 42, 41, 260), PackedInt32Array(103, 263, 238), PackedInt32Array(231, 89, 90, 264), PackedInt32Array(90, 265, 266, 264), PackedInt32Array(70, 231, 264, 99), PackedInt32Array(257, 261, 267, 268, 253), PackedInt32Array(269, 270, 101, 100, 12), PackedInt32Array(265, 87, 12), PackedInt32Array(271, 272, 273, 253), PackedInt32Array(274, 275, 276), PackedInt32Array(13, 277, 278, 174), PackedInt32Array(14, 13, 174, 176), PackedInt32Array(14, 176, 279), PackedInt32Array(37, 280, 281, 282), PackedInt32Array(38, 37, 282, 277), PackedInt32Array(277, 282, 283, 278), PackedInt32Array(284, 285, 183, 1), PackedInt32Array(286, 287, 288, 107), PackedInt32Array(289, 75, 76, 290), PackedInt32Array(158, 291, 292), PackedInt32Array(158, 292, 159), PackedInt32Array(156, 159, 166, 74), PackedInt32Array(293, 294, 295, 46), PackedInt32Array(287, 296, 44, 48), PackedInt32Array(288, 287, 48), PackedInt32Array(297, 288, 48, 298, 299), PackedInt32Array(78, 300, 301), PackedInt32Array(78, 301, 302, 303), PackedInt32Array(302, 301, 201), PackedInt32Array(302, 201, 204), PackedInt32Array(302, 204, 304), PackedInt32Array(302, 304, 305, 173, 306), PackedInt32Array(182, 307, 0), PackedInt32Array(74, 166, 308), PackedInt32Array(73, 74, 308), PackedInt32Array(73, 308, 58, 62, 309), PackedInt32Array(310, 73, 309, 311), PackedInt32Array(10, 9, 310, 311), PackedInt32Array(16, 19, 289), PackedInt32Array(312, 276, 14, 279, 313, 314, 92), PackedInt32Array(124, 126, 131), PackedInt32Array(162, 60, 59, 164), PackedInt32Array(122, 124, 131), PackedInt32Array(10, 311, 160), PackedInt32Array(212, 214, 217), PackedInt32Array(221, 230, 7), PackedInt32Array(315, 316, 55), PackedInt32Array(315, 55, 317), PackedInt32Array(32, 315, 317, 318), PackedInt32Array(33, 32, 318), PackedInt32Array(33, 318, 319, 320), PackedInt32Array(120, 122, 131), PackedInt32Array(107, 155, 321, 276), PackedInt32Array(173, 97, 98), PackedInt32Array(173, 98, 322), PackedInt32Array(118, 120, 131, 210), PackedInt32Array(10, 160, 162, 323), PackedInt32Array(164, 159, 292, 324, 325), PackedInt32Array(116, 118, 210), PackedInt32Array(114, 116, 210), PackedInt32Array(210, 221, 7, 66), PackedInt32Array(326, 247, 82, 327), PackedInt32Array(313, 278, 283, 328, 329), PackedInt32Array(112, 114, 210), PackedInt32Array(110, 112, 210), PackedInt32Array(239, 71, 70, 103), PackedInt32Array(16, 289, 290), PackedInt32Array(108, 110, 210, 326, 327), PackedInt32Array(260, 103, 102), PackedInt32Array(253, 268, 15, 271), PackedInt32Array(266, 265, 12), PackedInt32Array(284, 79, 78), PackedInt32Array(16, 290, 330), PackedInt32Array(55, 316, 31), PackedInt32Array(52, 55, 31), PackedInt32Array(331, 52, 31), PackedInt32Array(331, 31, 332), PackedInt32Array(68, 331, 332, 333), PackedInt32Array(67, 68, 333), PackedInt32Array(67, 333, 334), PackedInt32Array(335, 306, 173), PackedInt32Array(336, 47, 46), PackedInt32Array(337, 338, 336, 46, 295), PackedInt32Array(298, 336, 338, 299), PackedInt32Array(297, 299, 339), PackedInt32Array(340, 297, 339, 341), PackedInt32Array(337, 340, 341, 338), PackedInt32Array(180, 182, 0), PackedInt32Array(323, 162, 164, 325, 342), PackedInt32Array(1, 185, 343, 344), PackedInt32Array(345, 317, 55), PackedInt32Array(346, 345, 55, 347), PackedInt32Array(319, 345, 346, 348), PackedInt32Array(320, 319, 348), PackedInt32Array(320, 348, 349), PackedInt32Array(100, 266, 12), PackedInt32Array(350, 251, 253, 273, 351), PackedInt32Array(34, 332, 31), PackedInt32Array(334, 34, 33, 352), PackedInt32Array(67, 334, 352), PackedInt32Array(67, 352, 353), PackedInt32Array(347, 67, 353, 320), PackedInt32Array(347, 320, 349), PackedInt32Array(347, 349, 354), PackedInt32Array(347, 354, 346), PackedInt32Array(285, 284, 78), PackedInt32Array(314, 93, 92), PackedInt32Array(355, 356, 91, 94, 357), PackedInt32Array(178, 180, 0, 77), PackedInt32Array(280, 77, 0), PackedInt32Array(358, 285, 78), PackedInt32Array(358, 78, 359), PackedInt32Array(343, 358, 359, 344), PackedInt32Array(2, 1, 344), PackedInt32Array(2, 344, 360), PackedInt32Array(361, 359, 78), PackedInt32Array(361, 78, 362), PackedInt32Array(360, 361, 362, 363), PackedInt32Array(2, 360, 363), PackedInt32Array(2, 363, 364), PackedInt32Array(2, 364, 365, 366, 186), PackedInt32Array(347, 55, 4), PackedInt32Array(365, 362, 78), PackedInt32Array(365, 78, 366), PackedInt32Array(94, 2, 186, 188, 357), PackedInt32Array(367, 366, 78), PackedInt32Array(367, 78, 368), PackedInt32Array(369, 367, 368, 357), PackedInt32Array(188, 369, 357), PackedInt32Array(11, 76, 8), PackedInt32Array(330, 11, 10, 370), PackedInt32Array(16, 330, 370), PackedInt32Array(16, 370, 371, 322, 206), PackedInt32Array(372, 368, 78), PackedInt32Array(372, 78, 373), PackedInt32Array(355, 372, 373, 189), PackedInt32Array(356, 355, 189, 191, 374), PackedInt32Array(375, 373, 78), PackedInt32Array(375, 78, 376), PackedInt32Array(377, 375, 376, 374), PackedInt32Array(193, 377, 374), PackedInt32Array(191, 193, 374), PackedInt32Array(356, 374, 378), PackedInt32Array(379, 376, 78), PackedInt32Array(379, 78, 380), PackedInt32Array(378, 379, 380, 194), PackedInt32Array(356, 378, 194, 196), PackedInt32Array(356, 196, 198), PackedInt32Array(356, 198, 200), PackedInt32Array(356, 200, 381), PackedInt32Array(312, 382, 356, 381, 383), PackedInt32Array(384, 380, 78), PackedInt32Array(384, 78, 383), PackedInt32Array(381, 384, 383), PackedInt32Array(92, 382, 312), PackedInt32Array(281, 280, 0), PackedInt32Array(46, 383, 78), PackedInt32Array(293, 46, 78), PackedInt32Array(7, 347, 4), PackedInt32Array(7, 6, 63), PackedInt32Array(7, 63, 66), PackedInt32Array(210, 66, 30), PackedInt32Array(210, 30, 29), PackedInt32Array(210, 29, 326), PackedInt32Array(108, 327, 255), PackedInt32Array(108, 256, 350, 50), PackedInt32Array(15, 269, 12), PackedInt32Array(15, 14, 271), PackedInt32Array(350, 351, 274), PackedInt32Array(50, 350, 274), PackedInt32Array(50, 274, 276, 321), PackedInt32Array(292, 293, 78), PackedInt32Array(292, 78, 324), PackedInt32Array(303, 324, 78), PackedInt32Array(342, 303, 302, 385), PackedInt32Array(323, 342, 385), PackedInt32Array(323, 385, 335), PackedInt32Array(323, 335, 173), PackedInt32Array(371, 323, 173), PackedInt32Array(371, 173, 322), PackedInt32Array(321, 16, 50), PackedInt32Array(286, 107, 276), PackedInt32Array(312, 286, 276), PackedInt32Array(2, 314, 313, 386, 3), PackedInt32Array(328, 281, 0), PackedInt32Array(328, 0, 387), PackedInt32Array(328, 387, 329), PackedInt32Array(313, 329, 386), PackedInt32Array(0, 3, 387)])
-outlines = Array[PackedVector2Array]([PackedVector2Array(-470, -268, 752, -285, 751, 306, -464, 304)])
+vertices = PackedVector2Array(474, 54, 502, 74, 474, 74, 70, 70, 438, 54, 621.7578, 218, 594.14844, 218, 374, 214, 410, 214, 726, 10, 474, 10, 102, -10, 154, -10, -218, 106, -246, 106, -330, 102, -326, 102, 502, 122, 474, 122, -10, 102, 10, 102, -166, 10, -166, 170, -170, 102, -170, 74, -406, -54, -394, -170, -262, -186, -186, -186, -170, -54, 26, -58, 22, -54, -22, -54, -26, -58, -26, -86, 26, -86, 566, -102, 506, -102, 406, -122, 426, -122, -42, 42, -70, 42, -74, 38, -74, 10, -54, 22, -38, 38, 726, 54, 744.59375, 186, 554, 186, 502, 150, 26, 172.89844, 42, 173.1875, 42, 246, -74, 198, -74, 179.21875, -166, -250, -166, -10, -170, -26, 566, -122, 566, -182, 586, -202, 586, -10, 743.90625, -10, -186, -204.78125, -221.85156, 170, -222.03125, 198, -226.0625, 182, -226.15625, 166, -226.0625, 166, 102, -38, 74, -38, 54, -58, 54, -86, 326, -202, 506, -182, 186, 10, 186, 54, 166, 38, 166, 10, -218, 134, -189.85156, 170, -246, 102, -266, 102, 694, 246, 694, 227.21875, 744.6797, 214, 744.9219, 282, 54, 22, 54, -22, 74, 10, 74, 38, 70, 42, -54, -22, -74, -10, -74, -38, -70, -42, -442, -250, -202, -204.78125, 502, 102, 138, 38, 102, 38, 138, 10, 230, 198, 230, 170, 298, 186, 298, 214, -394, -198, -262, -204.63281, 38, 22, 42, 42, 38, 38, -422, -170, -422, -38, -146.65625, 138, -146.71094, 134, -146.50781, 134, -10, 138, -146.50781, -10, -146.71094, -26, -146.50781, -26, -146.71094, -42, -146.50781, -42, -146.71094, -58, -146.50781, -58, -146.71094, -74, -146.50781, -74, -146.71094, -90, -146.50781, -90, -146.71094, -106, -146.50781, -106, -146.71094, -122, -146.50781, -122, -146.71094, -138, -146.50781, -138, -146.71094, -154, -146.50781, -154, -146.71094, -170, -146.50781, -170, -146.71094, -186, -146.50781, -186, -70, -170, -146.71094, -202, -146.50781, -202, -146.71094, -218, -146.50781, -218, -70, -214, -146.71094, -234, -146.50781, -234, -54, -230, -54, -214, -146.71094, -250, -22, -250, -38, -246, -146.71094, 118, -146.50781, 118, -146.71094, 102, -146.50781, 102, -146.71094, 86, -146.50781, 86, -146.71094, 70, -146.50781, 70, -146.71094, 54, -146.50781, 54, -146.71094, 38, -146.50781, 38, -190.03125, 198, -189.92969, 198, -190.03125, 214, -194.0625, 214, -254.03125, 166, -253.92969, 166, -254.03125, 182, -221.92969, 198, -222.03125, 214, -194.15625, 198, -194.0625, 198, -202, -204.6875, -218, -204.6875, -218, -204.78125, -234, -204.6875, -234, -204.78125, -422, -198, -442, 282, 438, 131.21875, 422, 131.29688, 422, 131.21875, 678, 227.29688, 678, 227.21875, 662, 227.29688, 662, 227.21875, 646, 227.29688, 646, 227.21875, 582, 227.21875, 566, 227.29688, 566, 227.21875, 358, 227.21875, 342, 227.29688, 342, 227.21875, 278, 227.21875, 262, 227.29688, 262, 227.21875, 246, 227.29688, 246, 227.21875, 182, 227.21875, 166, 227.29688, 166, 227.21875, 150, 227.29688, 150, 227.21875, 134, 227.29688, 134, 227.21875, 42, 266, 42, 298.82813, -138, 298.53125, -138, 266, -406, -38, -394, -10, -394, -26, -22, -246, -38, -230, -42, -170, -42, -186, -26, -186, -26, -218, -10, -218, -10, -234, 10, -234, 10, -218, 26, -218, 26, -186, 42, -186, 42, -170, 70, -214, 54, -214, 54, -230, 154, -250, 38, -230, 38, -246, 22, -246, 22, -250, 70, -170, 438, 10, 378, 10, 378, 26, 374, 26, 374, 10, 102, 10, 74, -10, 38, -38, 38, -22, 22, -38, -54, -86, -54, -70, -70, -70, -42, -42, -42, -58, -22, -38, -38, -38, -38, -22, -38, 22, -22, 38, -22, 54, -26, 58, -42, 58, 22, 54, 22, 38, 42, 58, 26, 58, 26, 74, 10, 74, 38, 102, 38, 86, 54, 86, 410, 102, 54, 70, 410, 74, 474, 102, 438, 102, 438, 74, -10, 74, -26, 74, -70, 70, -54, 70, -54, 86, -38, 86, -38, 102, 474, 150, 438, 150, 394, 131.36719, 554, 214, 502, 214, 502, 186, 474, 186, 593.96875, 246, 582, 246, 10, 138, 10, 166, -10, 166, -246, 74, -266, 74, -166, 214, -166, 246, -138, 246, -138, 230, -122, 230, 26, 166, -138, 166, -102, 179.36719, -106, 179.21875, 70, 282, 70, 266, -346, 246, -342, 246, -166, 266, -166, 282, -422, 246, 621.8203, 227.34375, -194.24219, 170, -226.24219, 138, -246, 134, -253.85156, 138, 70, 138, 394, 150, 374, 186, 506, -42, 566, -42, 486, -42, 486, -102, 426, -102, 346, -122, -102, -10, -146.85938, 10, -422, -10, -422, 102, -250, 246, -250, 218, -102, -38, -102, 38, 474, 214, 438, 186, -326, 74, 506, -122, 486, -122, 486, -182, 426, -182, -422, 218, -102, 198, -122, 211.21875, -106, 198, -134, 179.36719, -138, 211.29688, -134, 198, -342, 218, 538, 227.36719, 502, 218, 426, -42, 406, -42, 326, -10, 406, -102, 346, -102, 406, -182, 346, -182, 346, -42, 282, 218, 122, 198, 310, 218, 538, 246, 502, 246, 474, 218, 474, 246, 438, 246, 438, 218, 410, 218, 410, 246, 358, 246, 314, 246, 310, 246, 314, 227.36719, -330, 74, -422, 74, 282, 246, 278, 246, 214, 218, 218, 246, 214, 246, 218, 227.36719, 186, 218, 186, 246, 182, 246, 106, 227.36719, 122, 170, 70, 246, 106, 246, -102, 10, -346, 218, 410, 186, 438, 214)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4), PackedInt32Array(5, 6, 7, 8), PackedInt32Array(9, 10, 11, 12), PackedInt32Array(13, 14, 15, 16), PackedInt32Array(17, 18, 19, 20), PackedInt32Array(21, 22, 23, 24), PackedInt32Array(25, 26, 27, 28, 29), PackedInt32Array(30, 31, 32, 33, 34, 35), PackedInt32Array(36, 37, 38, 39), PackedInt32Array(40, 41, 42, 43, 44, 45), PackedInt32Array(46, 47, 48, 49, 17), PackedInt32Array(50, 51, 52, 53, 54), PackedInt32Array(55, 56, 57, 29), PackedInt32Array(58, 59, 60, 61), PackedInt32Array(46, 9, 62, 47), PackedInt32Array(55, 29, 28, 63), PackedInt32Array(64, 65, 66, 67, 68), PackedInt32Array(69, 70, 71, 72), PackedInt32Array(73, 60, 59, 74), PackedInt32Array(61, 62, 9), PackedInt32Array(75, 76, 77, 78), PackedInt32Array(79, 13, 23, 22, 80), PackedInt32Array(81, 23, 13), PackedInt32Array(81, 13, 82), PackedInt32Array(83, 84, 85, 86), PackedInt32Array(87, 88, 89, 90, 91), PackedInt32Array(92, 44, 93, 94, 95), PackedInt32Array(96, 55, 63, 97), PackedInt32Array(98, 46, 17), PackedInt32Array(46, 98, 1), PackedInt32Array(0, 46, 1), PackedInt32Array(76, 4, 3), PackedInt32Array(77, 76, 3, 99), PackedInt32Array(99, 3, 100, 101), PackedInt32Array(90, 100, 3, 91), PackedInt32Array(102, 103, 104, 105), PackedInt32Array(27, 26, 106, 107), PackedInt32Array(108, 87, 91, 109, 110), PackedInt32Array(111, 26, 25, 112), PackedInt32Array(113, 114, 115, 116), PackedInt32Array(117, 118, 119), PackedInt32Array(119, 120, 121), PackedInt32Array(121, 122, 123), PackedInt32Array(123, 124, 125), PackedInt32Array(125, 126, 127), PackedInt32Array(127, 128, 129), PackedInt32Array(129, 130, 131), PackedInt32Array(131, 132, 133), PackedInt32Array(133, 134, 135), PackedInt32Array(135, 136, 137), PackedInt32Array(137, 138, 139, 140), PackedInt32Array(139, 141, 142, 140), PackedInt32Array(142, 143, 144, 145, 140), PackedInt32Array(144, 146, 147, 148, 149, 145), PackedInt32Array(147, 150, 151, 152), PackedInt32Array(115, 153, 154, 116), PackedInt32Array(154, 155, 156, 116), PackedInt32Array(156, 157, 158, 116), PackedInt32Array(158, 159, 160, 116), PackedInt32Array(160, 161, 162, 116), PackedInt32Array(162, 163, 164, 116), PackedInt32Array(165, 166, 167, 168), PackedInt32Array(169, 170, 171), PackedInt32Array(65, 172, 173), PackedInt32Array(168, 174, 175), PackedInt32Array(63, 176, 97), PackedInt32Array(97, 177, 178), PackedInt32Array(96, 97, 178), PackedInt32Array(178, 179, 180), PackedInt32Array(96, 178, 180), PackedInt32Array(96, 180, 107), PackedInt32Array(96, 107, 106, 181), PackedInt32Array(182, 96, 181, 111), PackedInt32Array(183, 184, 185), PackedInt32Array(84, 186, 187, 85), PackedInt32Array(187, 188, 189), PackedInt32Array(189, 190, 191), PackedInt32Array(192, 193, 194, 6), PackedInt32Array(195, 196, 197), PackedInt32Array(198, 199, 200), PackedInt32Array(200, 201, 202), PackedInt32Array(203, 204, 205), PackedInt32Array(205, 206, 207), PackedInt32Array(207, 208, 209), PackedInt32Array(210, 211, 212, 213), PackedInt32Array(25, 214, 112), PackedInt32Array(215, 216, 57, 56, 21), PackedInt32Array(151, 217, 152), PackedInt32Array(147, 152, 218, 148), PackedInt32Array(135, 137, 140), PackedInt32Array(219, 220, 221), PackedInt32Array(221, 222, 223), PackedInt32Array(223, 224, 225, 226), PackedInt32Array(221, 226, 227, 228, 219), PackedInt32Array(228, 229, 230, 219), PackedInt32Array(231, 232, 233, 234), PackedInt32Array(233, 235, 236, 234), PackedInt32Array(236, 237, 238, 234), PackedInt32Array(231, 234, 12, 239), PackedInt32Array(10, 0, 4, 240), PackedInt32Array(11, 10, 240), PackedInt32Array(11, 240, 241), PackedInt32Array(241, 242, 243, 244), PackedInt32Array(11, 241, 244), PackedInt32Array(11, 244, 75), PackedInt32Array(11, 75, 78), PackedInt32Array(11, 78, 101), PackedInt32Array(101, 100, 245), PackedInt32Array(11, 101, 245, 246), PackedInt32Array(246, 245, 89, 88), PackedInt32Array(30, 71, 70, 246, 88, 247), PackedInt32Array(88, 248, 247), PackedInt32Array(30, 247, 249, 31), PackedInt32Array(250, 251, 252), PackedInt32Array(253, 254, 33, 32, 255, 256), PackedInt32Array(253, 256, 257, 92, 95), PackedInt32Array(44, 258, 45), PackedInt32Array(40, 45, 259, 260, 261, 262), PackedInt32Array(263, 264, 110, 109, 265, 266), PackedInt32Array(263, 266, 267, 268, 260), PackedInt32Array(269, 270, 271, 272, 17), PackedInt32Array(272, 271, 273, 3, 274), PackedInt32Array(2, 275, 276, 277), PackedInt32Array(3, 2, 277), PackedInt32Array(3, 277, 274), PackedInt32Array(275, 98, 17), PackedInt32Array(278, 279, 261, 260), PackedInt32Array(280, 281, 282), PackedInt32Array(282, 283, 284), PackedInt32Array(18, 285, 286, 183), PackedInt32Array(19, 18, 183, 185), PackedInt32Array(19, 185, 287), PackedInt32Array(48, 288, 289, 290), PackedInt32Array(49, 48, 290, 285), PackedInt32Array(285, 290, 291, 286), PackedInt32Array(292, 293, 192, 6), PackedInt32Array(294, 295, 296, 116), PackedInt32Array(297, 81, 82, 298), PackedInt32Array(167, 299, 300), PackedInt32Array(167, 300, 168), PackedInt32Array(165, 168, 175, 80), PackedInt32Array(301, 302, 303, 52), PackedInt32Array(295, 304, 50, 54), PackedInt32Array(296, 295, 54), PackedInt32Array(305, 296, 54, 306, 307), PackedInt32Array(86, 308, 309), PackedInt32Array(86, 309, 310, 311), PackedInt32Array(310, 309, 210), PackedInt32Array(310, 210, 213), PackedInt32Array(310, 213, 312), PackedInt32Array(310, 312, 313, 182, 314), PackedInt32Array(191, 315, 5), PackedInt32Array(80, 175, 316), PackedInt32Array(79, 80, 316), PackedInt32Array(79, 316, 64, 68, 317), PackedInt32Array(318, 79, 317, 319), PackedInt32Array(15, 14, 318, 319), PackedInt32Array(21, 24, 297), PackedInt32Array(320, 284, 19, 287, 321, 322, 103), PackedInt32Array(133, 135, 140), PackedInt32Array(171, 66, 65, 173), PackedInt32Array(131, 133, 140), PackedInt32Array(15, 319, 169), PackedInt32Array(221, 223, 226), PackedInt32Array(230, 239, 12), PackedInt32Array(323, 324, 61), PackedInt32Array(323, 61, 325), PackedInt32Array(37, 323, 325, 326), PackedInt32Array(38, 37, 326), PackedInt32Array(38, 326, 327, 328), PackedInt32Array(329, 93, 44, 43), PackedInt32Array(260, 268, 20, 278), PackedInt32Array(129, 131, 140), PackedInt32Array(116, 164, 330, 284), PackedInt32Array(182, 111, 112), PackedInt32Array(182, 112, 331), PackedInt32Array(127, 129, 140, 219), PackedInt32Array(15, 169, 171, 332), PackedInt32Array(173, 168, 300, 333, 334), PackedInt32Array(125, 127, 219), PackedInt32Array(123, 125, 219), PackedInt32Array(219, 230, 12, 72), PackedInt32Array(252, 95, 94, 335), PackedInt32Array(336, 42, 41, 280), PackedInt32Array(321, 286, 291, 337, 338), PackedInt32Array(121, 123, 219), PackedInt32Array(119, 121, 219), PackedInt32Array(21, 297, 298), PackedInt32Array(117, 119, 219, 250, 252), PackedInt32Array(276, 275, 17), PackedInt32Array(292, 83, 86), PackedInt32Array(21, 298, 339), PackedInt32Array(61, 324, 36), PackedInt32Array(58, 61, 36), PackedInt32Array(340, 58, 36), PackedInt32Array(340, 36, 341), PackedInt32Array(74, 340, 341, 342), PackedInt32Array(73, 74, 342), PackedInt32Array(73, 342, 343), PackedInt32Array(344, 314, 182), PackedInt32Array(345, 53, 52), PackedInt32Array(346, 347, 345, 52, 303), PackedInt32Array(306, 345, 347, 307), PackedInt32Array(305, 307, 348), PackedInt32Array(349, 305, 348, 350), PackedInt32Array(346, 349, 350, 347), PackedInt32Array(189, 191, 5), PackedInt32Array(332, 171, 173, 334, 351), PackedInt32Array(6, 194, 352, 353), PackedInt32Array(354, 325, 61), PackedInt32Array(355, 354, 61, 356), PackedInt32Array(327, 354, 355, 357), PackedInt32Array(328, 327, 357), PackedInt32Array(328, 357, 358), PackedInt32Array(272, 276, 17), PackedInt32Array(39, 341, 36), PackedInt32Array(343, 39, 38, 359), PackedInt32Array(73, 343, 359), PackedInt32Array(73, 359, 360), PackedInt32Array(356, 73, 360, 328), PackedInt32Array(356, 328, 358), PackedInt32Array(356, 358, 361), PackedInt32Array(356, 361, 355), PackedInt32Array(293, 292, 86), PackedInt32Array(322, 104, 103), PackedInt32Array(362, 363, 102, 105, 364), PackedInt32Array(187, 189, 5, 85), PackedInt32Array(288, 85, 5), PackedInt32Array(365, 293, 86), PackedInt32Array(365, 86, 366), PackedInt32Array(352, 365, 366, 353), PackedInt32Array(7, 6, 353), PackedInt32Array(7, 353, 367), PackedInt32Array(368, 366, 86), PackedInt32Array(368, 86, 369), PackedInt32Array(367, 368, 369, 370), PackedInt32Array(7, 367, 370), PackedInt32Array(7, 370, 371), PackedInt32Array(7, 371, 372, 373, 195), PackedInt32Array(356, 61, 9), PackedInt32Array(372, 369, 86), PackedInt32Array(372, 86, 373), PackedInt32Array(105, 7, 195, 197, 364), PackedInt32Array(374, 373, 86), PackedInt32Array(374, 86, 375), PackedInt32Array(376, 374, 375, 364), PackedInt32Array(197, 376, 364), PackedInt32Array(16, 82, 13), PackedInt32Array(339, 16, 15, 377), PackedInt32Array(21, 339, 377), PackedInt32Array(21, 377, 378, 331, 215), PackedInt32Array(379, 375, 86), PackedInt32Array(379, 86, 380), PackedInt32Array(362, 379, 380, 198), PackedInt32Array(363, 362, 198, 200, 381), PackedInt32Array(382, 380, 86), PackedInt32Array(382, 86, 383), PackedInt32Array(384, 382, 383, 381), PackedInt32Array(202, 384, 381), PackedInt32Array(200, 202, 381), PackedInt32Array(363, 381, 385), PackedInt32Array(386, 383, 86), PackedInt32Array(386, 86, 387), PackedInt32Array(385, 386, 387, 203), PackedInt32Array(363, 385, 203, 205), PackedInt32Array(363, 205, 207), PackedInt32Array(363, 207, 209), PackedInt32Array(363, 209, 388), PackedInt32Array(320, 389, 363, 388, 390), PackedInt32Array(391, 387, 86), PackedInt32Array(391, 86, 390), PackedInt32Array(388, 391, 390), PackedInt32Array(103, 389, 320), PackedInt32Array(289, 288, 5), PackedInt32Array(52, 390, 86), PackedInt32Array(301, 52, 86), PackedInt32Array(12, 356, 9), PackedInt32Array(12, 11, 69), PackedInt32Array(12, 69, 72), PackedInt32Array(219, 72, 35), PackedInt32Array(219, 35, 34), PackedInt32Array(219, 34, 250), PackedInt32Array(117, 252, 335), PackedInt32Array(117, 335, 329), PackedInt32Array(20, 269, 17), PackedInt32Array(20, 19, 278), PackedInt32Array(329, 43, 392, 117), PackedInt32Array(117, 392, 336, 56), PackedInt32Array(56, 336, 280), PackedInt32Array(56, 280, 282), PackedInt32Array(56, 282, 284, 330), PackedInt32Array(300, 301, 86), PackedInt32Array(300, 86, 333), PackedInt32Array(311, 333, 86), PackedInt32Array(351, 311, 310, 393), PackedInt32Array(332, 351, 393), PackedInt32Array(332, 393, 344), PackedInt32Array(332, 344, 182), PackedInt32Array(378, 332, 182), PackedInt32Array(378, 182, 331), PackedInt32Array(330, 21, 56), PackedInt32Array(294, 116, 284), PackedInt32Array(320, 294, 284), PackedInt32Array(7, 322, 321, 394, 8), PackedInt32Array(337, 289, 5), PackedInt32Array(337, 5, 395), PackedInt32Array(337, 395, 338), PackedInt32Array(321, 338, 394), PackedInt32Array(5, 8, 395)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-467, -272, 749, -273, 751, 306, -464, 304)])
 parsed_collision_mask = 4294901761
 source_geometry_mode = 2
 source_geometry_group_name = &"Obstacles"
@@ -120,7 +129,7 @@ shader_parameter/near_distance = 16.0
 shader_parameter/far_distance = 40.0
 shader_parameter/min_alpha = 0.3
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_y57op"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ygd8o"]
 resource_local_to_scene = true
 size = Vector2(48, 48)
 
@@ -168,11 +177,11 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mlv25"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2s0kr"]
 resource_local_to_scene = true
 size = Vector2(48, 48)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_a82wo"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xaipn"]
 resource_local_to_scene = true
 size = Vector2(48, 48)
 
@@ -198,7 +207,7 @@ animations = [{
 "speed": 1.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_gdvew"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ndrjj"]
 resource_local_to_scene = true
 size = Vector2(48, 48)
 
@@ -246,7 +255,7 @@ animations = [{
 "speed": 1.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_kjtvk"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ih3m7"]
 resource_local_to_scene = true
 size = Vector2(48, 48)
 
@@ -448,7 +457,7 @@ animations = [{
 "speed": 8.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrs0c"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_11yus"]
 resource_local_to_scene = true
 size = Vector2(48, 48)
 
@@ -622,39 +631,39 @@ animations = [{
 "speed": 2.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_xljpf"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b6ruc"]
 resource_local_to_scene = true
 size = Vector2(38, 20.5)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_j4bwh"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_155or"]
 resource_local_to_scene = true
 size = Vector2(15, 31)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ksmap"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vtx2l"]
 resource_local_to_scene = true
 size = Vector2(15, 31)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ygd8o"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_63lxy"]
 resource_local_to_scene = true
 size = Vector2(15, 31)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_2s0kr"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fjhjs"]
 resource_local_to_scene = true
 size = Vector2(115, 88)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_xaipn"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bfu41"]
 resource_local_to_scene = true
 size = Vector2(60, 14)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ndrjj"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r4ag1"]
 resource_local_to_scene = true
 size = Vector2(68, 20)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ih3m7"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v0wtd"]
 resource_local_to_scene = true
 size = Vector2(68, 20)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_11yus"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sgvw8"]
 resource_local_to_scene = true
 size = Vector2(68, 20)
 
@@ -692,35 +701,35 @@ _data = {
 &"cycle": SubResource("Animation_cycle")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_b6ruc"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6nfnn"]
 resource_local_to_scene = true
 size = Vector2(76, 30)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_155or"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4ue30"]
 resource_local_to_scene = true
 size = Vector2(61, 30.5)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_vtx2l"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k42av"]
 resource_local_to_scene = true
 size = Vector2(42, 25.5)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_63lxy"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gr8w0"]
 resource_local_to_scene = true
 size = Vector2(42, 30.5)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_fjhjs"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_673bd"]
 resource_local_to_scene = true
 size = Vector2(36, 33)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_bfu41"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_akjxb"]
 resource_local_to_scene = true
 size = Vector2(36, 33)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_r4ag1"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vrx01"]
 resource_local_to_scene = true
 size = Vector2(36, 33)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_v0wtd"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1uevf"]
 resource_local_to_scene = true
 size = Vector2(36, 33)
 
@@ -850,11 +859,11 @@ _data = {
 &"run": SubResource("Animation_vchkt")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_sgvw8"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tc087"]
 resource_local_to_scene = true
 size = Vector2(201, 33)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6nfnn"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_73205"]
 resource_local_to_scene = true
 size = Vector2(63, 33)
 
@@ -950,7 +959,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_4ue30"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_0tljd"]
 resource_local_to_scene = true
 radius = 28.0
 
@@ -1068,7 +1077,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_k42av"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mgpkq"]
 resource_local_to_scene = true
 shader = ExtResource("59_kf5aa")
 shader_parameter/ring_color = Color(0.663, 0.835, 1, 1)
@@ -1097,9 +1106,13 @@ shader_parameter/far_distance = 64.0
 shader_parameter/max_block = 1.0
 shader_parameter/softness = 1.0
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_gr8w0"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xmrkg"]
 resource_local_to_scene = true
 size = Vector2(30, 29)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wvlrk"]
+resource_local_to_scene = true
+size = Vector2(32, 32)
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_glow"]
 blend_mode = 1
@@ -1117,7 +1130,7 @@ tile_map_data = PackedByteArray("AAD4//r/AgAAAAAAAAD4//v/AgAAAAAAAAD4//z/AgAAAAA
 tile_set = ExtResource("1_0wfyh")
 
 [node name="Colliders" type="TileMapLayer" parent="NavigationRegion2D" unique_id=2064573167 groups=["Obstacles"]]
-tile_map_data = PackedByteArray("AAD9////AAAAAAAAAAD9/wAAAAAAAAAAAAD+/wEAAAAAAAAAAAD//wIAAAAAAAAAAAAAAAIAAAAAAAAAAAABAAEAAAAAAAAAAAACAP//AAAAAAAAAAACAAAAAAAAAAAAAAABAP7/AAAAAAAAAAD///3/AAAAAAAAAAAAAP3/AAAAAAAAAAD+//7/AAAAAAAAAAD+////AAAAAAAAAAD+/wAAAAAAAAAAAAD//wAAAAAAAAAAAAD/////AAAAAAAAAAAAAP//AAAAAAAAAAD///7/AAAAAAAAAAAAAP7/AAAAAAAAAAABAP//AAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAD//wEAAAAAAAAAAAAXAPX/AAAAAAAAAAAXAPb/AAAAAAAAAAAWAPb/AAAAAAAAAAAWAPf/AAAAAAAAAAAWAPX/AAAAAAAAAAAXAPf/AAAAAAAAAAAYAPf/AAAAAAAAAAAYAPb/AAAAAAAAAAAYAPX/AAAAAAAAAAAbAPX/AAAAAAAAAAAbAPb/AAAAAAAAAAAcAPb/AAAAAAAAAAAcAPX/AAAAAAAAAAAdAPX/AAAAAAAAAAAdAPb/AAAAAAAAAAAdAPf/AAAAAAAAAAAcAPf/AAAAAAAAAAAbAPf/AAAAAAAAAAAgAPX/AAAAAAAAAAAhAPX/AAAAAAAAAAAiAPX/AAAAAAAAAAAiAPb/AAAAAAAAAAAhAPb/AAAAAAAAAAAgAPb/AAAAAAAAAAAgAPf/AAAAAAAAAAAhAPf/AAAAAAAAAAAiAPf/AAAAAAAAAAAgAPr/AAAAAAAAAAAgAPv/AAAAAAAAAAAgAPz/AAAAAAAAAAAhAPz/AAAAAAAAAAAhAPv/AAAAAAAAAAAhAPr/AAAAAAAAAAAiAPr/AAAAAAAAAAAiAPv/AAAAAAAAAAAiAPz/AAAAAAAAAAAbAPr/AAAAAAAAAAAcAPr/AAAAAAAAAAAdAPr/AAAAAAAAAAAdAPv/AAAAAAAAAAAcAPv/AAAAAAAAAAAbAPv/AAAAAAAAAAAbAPz/AAAAAAAAAAAcAPz/AAAAAAAAAAAdAPz/AAAAAAAAAAAWAPr/AAAAAAAAAAAXAPr/AAAAAAAAAAAYAPr/AAAAAAAAAAAYAPv/AAAAAAAAAAAXAPv/AAAAAAAAAAAWAPv/AAAAAAAAAAAWAPz/AAAAAAAAAAAXAPz/AAAAAAAAAAAYAPz/AAAAAAAAAAAVAPL/AAAAAAAAAAAWAPL/AAAAAAAAAAAXAPL/AAAAAAAAAAAYAPL/AAAAAAAAAAAZAPL/AAAAAAAAAAAaAPL/AAAAAAAAAAAbAPL/AAAAAAAAAAAcAPL/AAAAAAAAAAAdAPL/AAAAAAAAAAAeAPL/AAAAAAAAAAAfAPL/AAAAAAAAAAAgAPL/AAAAAAAAAAAhAPL/AAAAAAAAAAAiAPL/AAAAAAAAAAAjAPL/AAAAAAAAAAAkAPL/AAAAAAAAAAAUAPL/AAAAAAAAAAAkAOv/AAAAAAAAAAAkAOz/AAAAAAAAAAAkAO3/AAAAAAAAAAAkAO7/AAAAAAAAAAAkAO//AAAAAAAAAAAkAPD/AAAAAAAAAAAkAPH/AAAAAAAAAAAUAOv/AAAAAAAAAAAUAOz/AAAAAAAAAAAUAO3/AAAAAAAAAAAUAO7/AAAAAAAAAAAUAO//AAAAAAAAAAAUAPD/AAAAAAAAAAAUAPH/AAAAAAAAAAAVAOv/AAAAAAAAAAAWAOv/AAAAAAAAAAAXAOv/AAAAAAAAAAAYAOv/AAAAAAAAAAAZAOv/AAAAAAAAAAAaAOv/AAAAAAAAAAAbAOv/AAAAAAAAAAAcAOv/AAAAAAAAAAAdAOv/AAAAAAAAAAAeAOv/AAAAAAAAAAAfAOv/AAAAAAAAAAAgAOv/AAAAAAAAAAAhAOv/AAAAAAAAAAAiAOv/AAAAAAAAAAAjAOv/AAAAAAAAAAAdAO//AAAAAAAAAAAdAO7/AAAAAAAAAAAdAO3/AAAAAAAAAAAdAOz/AAAAAAAAAAAcAOz/AAAAAAAAAAAbAOz/AAAAAAAAAAAaAOz/AAAAAAAAAAAZAOz/AAAAAAAAAAAYAOz/AAAAAAAAAAAXAOz/AAAAAAAAAAAWAOz/AAAAAAAAAAAVAOz/AAAAAAAAAAAVAO3/AAAAAAAAAAAVAO7/AAAAAAAAAAAVAO//AAAAAAAAAAAVAPD/AAAAAAAAAAAVAPH/AAAAAAAAAAAWAPH/AAAAAAAAAAAWAPD/AAAAAAAAAAAWAO//AAAAAAAAAAAWAO7/AAAAAAAAAAAWAO3/AAAAAAAAAAAXAO3/AAAAAAAAAAAXAO7/AAAAAAAAAAAXAO//AAAAAAAAAAAXAPD/AAAAAAAAAAAXAPH/AAAAAAAAAAAYAPH/AAAAAAAAAAAYAPD/AAAAAAAAAAAYAO//AAAAAAAAAAAYAO7/AAAAAAAAAAAYAO3/AAAAAAAAAAAZAO3/AAAAAAAAAAAZAO7/AAAAAAAAAAAZAO//AAAAAAAAAAAZAPD/AAAAAAAAAAAZAPH/AAAAAAAAAAAaAPH/AAAAAAAAAAAaAPD/AAAAAAAAAAAaAO//AAAAAAAAAAAaAO7/AAAAAAAAAAAaAO3/AAAAAAAAAAAbAO3/AAAAAAAAAAAbAO7/AAAAAAAAAAAbAO//AAAAAAAAAAAbAPD/AAAAAAAAAAAbAPH/AAAAAAAAAAAcAPH/AAAAAAAAAAAcAPD/AAAAAAAAAAAcAO//AAAAAAAAAAAcAO7/AAAAAAAAAAAcAO3/AAAAAAAAAAAdAPD/AAAAAAAAAAAdAPH/AAAAAAAAAAAeAPH/AAAAAAAAAAAeAPD/AAAAAAAAAAAeAO//AAAAAAAAAAAeAO7/AAAAAAAAAAAeAO3/AAAAAAAAAAAeAOz/AAAAAAAAAAAfAOz/AAAAAAAAAAAfAO3/AAAAAAAAAAAfAO7/AAAAAAAAAAAfAO//AAAAAAAAAAAfAPD/AAAAAAAAAAAfAPH/AAAAAAAAAAAgAPH/AAAAAAAAAAAgAPD/AAAAAAAAAAAgAO//AAAAAAAAAAAgAO7/AAAAAAAAAAAgAO3/AAAAAAAAAAAgAOz/AAAAAAAAAAAhAOz/AAAAAAAAAAAhAO3/AAAAAAAAAAAhAO7/AAAAAAAAAAAhAO//AAAAAAAAAAAhAPD/AAAAAAAAAAAhAPH/AAAAAAAAAAAiAPH/AAAAAAAAAAAiAPD/AAAAAAAAAAAiAO//AAAAAAAAAAAiAO7/AAAAAAAAAAAiAO3/AAAAAAAAAAAiAOz/AAAAAAAAAAAjAOz/AAAAAAAAAAAjAO3/AAAAAAAAAAAjAO7/AAAAAAAAAAAjAO//AAAAAAAAAAAjAPD/AAAAAAAAAAAjAPH/AAAAAAAAAAAMAAEAAAAAAAAAAAANAAEAAAAAAAAAAAANAAIAAAAAAAAAAAAMAAIAAAAAAAAAAAAOAAIAAAAAAAAAAAAPAAIAAAAAAAAAAAAPAAEAAAAAAAAAAAAOAAEAAAAAAAAAAAAQAAEAAAAAAAAAAAARAAEAAAAAAAAAAAARAAIAAAAAAAAAAAASAAIAAAAAAAAAAAASAAEAAAAAAAAAAAAQAAIAAAAAAAAAAAATAAIAAAAAAAAAAAAUAAIAAAAAAAAAAAAUAAEAAAAAAAAAAAATAAEAAAAAAAAAAAAVAAIAAAAAAAAAAAAVAAEAAAAAAAAAAAAWAAEAAAAAAAAAAAAWAAIAAAAAAAAAAAAXAAIAAAAAAAAAAAAYAAIAAAAAAAAAAAAZAAIAAAAAAAAAAAAZAAEAAAAAAAAAAAAYAAEAAAAAAAAAAAAaAAIAAAAAAAAAAAAaAAEAAAAAAAAAAAAeAAEAAAAAAAAAAAAeAAIAAAAAAAAAAAAfAAEAAAAAAAAAAAAfAAIAAAAAAAAAAAAgAAIAAAAAAAAAAAAgAAEAAAAAAAAAAAAhAAEAAAAAAAAAAAAhAAIAAAAAAAAAAAAiAAIAAAAAAAAAAAAiAAEAAAAAAAAAAAAjAAIAAAAAAAAAAAAkAAIAAAAAAAAAAAAlAAIAAAAAAAAAAAAmAAIAAAAAAAAAAAAnAAIAAAAAAAAAAAAoAAIAAAAAAAAAAAApAAIAAAAAAAAAAAAqAAIAAAAAAAAAAAArAAIAAAAAAAAAAAAqAAEAAAAAAAAAAAArAAEAAAAAAAAAAAAsAAIAAAAAAAAAAAAsAAEAAAAAAAAAAAApAAEAAAAAAAAAAAAoAAEAAAAAAAAAAAAnAAEAAAAAAAAAAAAmAAEAAAAAAAAAAAAlAAEAAAAAAAAAAAAkAAEAAAAAAAAAAAAjAAEAAAAAAAAAAAAKAOv/AAAAAAAAAAAKAOz/AAAAAAAAAAAKAO3/AAAAAAAAAAAKAO7/AAAAAAAAAAAKAO//AAAAAAAAAAAKAPD/AAAAAAAAAAAKAPH/AAAAAAAAAAAKAPL/AAAAAAAAAAAKAPP/AAAAAAAAAAAKAPT/AAAAAAAAAAAKAPX/AAAAAAAAAAAKAPb/AAAAAAAAAAAKAPf/AAAAAAAAAAAKAPj/AAAAAAAAAAAKAPn/AAAAAAAAAAAKAPr/AAAAAAAAAAAKAPv/AAAAAAAAAAAKAPz/AAAAAAAAAAAKAP3/AAAAAAAAAAAKAP7/AAAAAAAAAAALAOv/AAAAAAAAAAALAOz/AAAAAAAAAAALAO3/AAAAAAAAAAALAO7/AAAAAAAAAAALAO//AAAAAAAAAAALAPD/AAAAAAAAAAALAPH/AAAAAAAAAAALAPL/AAAAAAAAAAALAPP/AAAAAAAAAAALAPT/AAAAAAAAAAALAPX/AAAAAAAAAAALAPb/AAAAAAAAAAALAPf/AAAAAAAAAAALAPj/AAAAAAAAAAALAPn/AAAAAAAAAAALAPr/AAAAAAAAAAALAPv/AAAAAAAAAAALAPz/AAAAAAAAAAALAP3/AAAAAAAAAAALAP7/AAAAAAAAAAAMAOv/AAAAAAAAAAAMAOz/AAAAAAAAAAAMAO3/AAAAAAAAAAAMAO7/AAAAAAAAAAAMAO//AAAAAAAAAAAMAPD/AAAAAAAAAAAMAPH/AAAAAAAAAAAMAPL/AAAAAAAAAAAMAPP/AAAAAAAAAAAMAPT/AAAAAAAAAAAMAPX/AAAAAAAAAAAMAPb/AAAAAAAAAAAMAPf/AAAAAAAAAAAMAPj/AAAAAAAAAAAMAPn/AAAAAAAAAAAMAPr/AAAAAAAAAAAMAPv/AAAAAAAAAAAMAPz/AAAAAAAAAAAMAP3/AAAAAAAAAAAMAP7/AAAAAAAAAAANAOv/AAAAAAAAAAANAOz/AAAAAAAAAAANAO3/AAAAAAAAAAANAO7/AAAAAAAAAAANAO//AAAAAAAAAAANAPD/AAAAAAAAAAANAPH/AAAAAAAAAAANAPL/AAAAAAAAAAANAPP/AAAAAAAAAAANAPT/AAAAAAAAAAANAPX/AAAAAAAAAAANAPb/AAAAAAAAAAANAPf/AAAAAAAAAAANAPj/AAAAAAAAAAANAPn/AAAAAAAAAAANAPr/AAAAAAAAAAANAPv/AAAAAAAAAAANAPz/AAAAAAAAAAANAP3/AAAAAAAAAAANAP7/AAAAAAAAAAAOAOv/AAAAAAAAAAAOAOz/AAAAAAAAAAAOAO3/AAAAAAAAAAAOAO7/AAAAAAAAAAAOAO//AAAAAAAAAAAOAPD/AAAAAAAAAAAOAPH/AAAAAAAAAAAOAPL/AAAAAAAAAAAOAPP/AAAAAAAAAAAOAPT/AAAAAAAAAAAOAPX/AAAAAAAAAAAOAPb/AAAAAAAAAAAOAPf/AAAAAAAAAAAOAPj/AAAAAAAAAAAOAPn/AAAAAAAAAAAOAPr/AAAAAAAAAAAOAPv/AAAAAAAAAAAOAPz/AAAAAAAAAAAOAP3/AAAAAAAAAAAOAP7/AAAAAAAAAAAPAOv/AAAAAAAAAAAPAOz/AAAAAAAAAAAPAO3/AAAAAAAAAAAPAO7/AAAAAAAAAAAPAO//AAAAAAAAAAAPAPD/AAAAAAAAAAAPAPH/AAAAAAAAAAAPAPL/AAAAAAAAAAAPAPP/AAAAAAAAAAAPAPT/AAAAAAAAAAAPAPX/AAAAAAAAAAAPAPb/AAAAAAAAAAAPAPf/AAAAAAAAAAAPAPj/AAAAAAAAAAAPAPn/AAAAAAAAAAAPAPr/AAAAAAAAAAAPAPv/AAAAAAAAAAAPAPz/AAAAAAAAAAAPAP3/AAAAAAAAAAAPAP7/AAAAAAAAAAAQAOv/AAAAAAAAAAAQAOz/AAAAAAAAAAAQAO3/AAAAAAAAAAAQAO7/AAAAAAAAAAAQAO//AAAAAAAAAAAQAPD/AAAAAAAAAAAQAPH/AAAAAAAAAAAQAPL/AAAAAAAAAAAQAPP/AAAAAAAAAAAQAPT/AAAAAAAAAAAQAPX/AAAAAAAAAAAQAPb/AAAAAAAAAAAQAPf/AAAAAAAAAAAQAPj/AAAAAAAAAAAQAPn/AAAAAAAAAAAQAPr/AAAAAAAAAAAQAPv/AAAAAAAAAAAQAPz/AAAAAAAAAAAQAP3/AAAAAAAAAAAQAP7/AAAAAAAAAAARAOv/AAAAAAAAAAARAOz/AAAAAAAAAAARAO3/AAAAAAAAAAARAO7/AAAAAAAAAAARAO//AAAAAAAAAAARAPD/AAAAAAAAAAARAPH/AAAAAAAAAAARAPL/AAAAAAAAAAARAPP/AAAAAAAAAAARAPT/AAAAAAAAAAARAPX/AAAAAAAAAAARAPb/AAAAAAAAAAARAPf/AAAAAAAAAAARAPj/AAAAAAAAAAARAPn/AAAAAAAAAAARAPr/AAAAAAAAAAARAPv/AAAAAAAAAAARAPz/AAAAAAAAAAARAP3/AAAAAAAAAAARAP7/AAAAAAAAAAASAOv/AAAAAAAAAAASAOz/AAAAAAAAAAASAO3/AAAAAAAAAAASAO7/AAAAAAAAAAASAO//AAAAAAAAAAASAPD/AAAAAAAAAAASAPH/AAAAAAAAAAASAPL/AAAAAAAAAAASAPP/AAAAAAAAAAASAPT/AAAAAAAAAAASAPX/AAAAAAAAAAASAPb/AAAAAAAAAAASAPf/AAAAAAAAAAASAPj/AAAAAAAAAAASAPn/AAAAAAAAAAASAPr/AAAAAAAAAAASAPv/AAAAAAAAAAASAPz/AAAAAAAAAAASAP3/AAAAAAAAAAASAP7/AAAAAAAAAAATAOv/AAAAAAAAAAATAOz/AAAAAAAAAAATAO3/AAAAAAAAAAATAO7/AAAAAAAAAAATAO//AAAAAAAAAAATAPD/AAAAAAAAAAATAPH/AAAAAAAAAAATAPL/AAAAAAAAAAATAPP/AAAAAAAAAAATAPT/AAAAAAAAAAATAPX/AAAAAAAAAAATAPb/AAAAAAAAAAATAPf/AAAAAAAAAAATAPj/AAAAAAAAAAATAPn/AAAAAAAAAAATAPr/AAAAAAAAAAATAPv/AAAAAAAAAAATAPz/AAAAAAAAAAATAP3/AAAAAAAAAAATAP7/AAAAAAAAAAAlAOr/AAAAAAAAAAAlAOv/AAAAAAAAAAAlAOz/AAAAAAAAAAAlAO3/AAAAAAAAAAAlAO7/AAAAAAAAAAAlAO//AAAAAAAAAAAlAPD/AAAAAAAAAAAlAPH/AAAAAAAAAAAlAPL/AAAAAAAAAAAlAPP/AAAAAAAAAAAlAPT/AAAAAAAAAAAlAPX/AAAAAAAAAAAlAPb/AAAAAAAAAAAlAPf/AAAAAAAAAAAlAPj/AAAAAAAAAAAlAPn/AAAAAAAAAAAlAPr/AAAAAAAAAAAlAPv/AAAAAAAAAAAlAPz/AAAAAAAAAAAlAP3/AAAAAAAAAAAlAP7/AAAAAAAAAAAmAOr/AAAAAAAAAAAmAOv/AAAAAAAAAAAmAOz/AAAAAAAAAAAmAO3/AAAAAAAAAAAmAO7/AAAAAAAAAAAmAO//AAAAAAAAAAAmAPD/AAAAAAAAAAAmAPH/AAAAAAAAAAAmAPL/AAAAAAAAAAAmAPP/AAAAAAAAAAAmAPT/AAAAAAAAAAAmAPX/AAAAAAAAAAAmAPb/AAAAAAAAAAAmAPf/AAAAAAAAAAAmAPj/AAAAAAAAAAAmAPn/AAAAAAAAAAAmAPr/AAAAAAAAAAAmAPv/AAAAAAAAAAAmAPz/AAAAAAAAAAAmAP3/AAAAAAAAAAAmAP7/AAAAAAAAAAAnAOr/AAAAAAAAAAAnAOv/AAAAAAAAAAAnAOz/AAAAAAAAAAAnAO3/AAAAAAAAAAAnAO7/AAAAAAAAAAAnAO//AAAAAAAAAAAnAPD/AAAAAAAAAAAnAPH/AAAAAAAAAAAnAPL/AAAAAAAAAAAnAPP/AAAAAAAAAAAnAPT/AAAAAAAAAAAnAPX/AAAAAAAAAAAnAPb/AAAAAAAAAAAnAPf/AAAAAAAAAAAnAPj/AAAAAAAAAAAnAPn/AAAAAAAAAAAnAPr/AAAAAAAAAAAnAPv/AAAAAAAAAAAnAPz/AAAAAAAAAAAnAP3/AAAAAAAAAAAnAP7/AAAAAAAAAAAoAOr/AAAAAAAAAAAoAOv/AAAAAAAAAAAoAOz/AAAAAAAAAAAoAO3/AAAAAAAAAAAoAO7/AAAAAAAAAAAoAO//AAAAAAAAAAAoAPD/AAAAAAAAAAAoAPH/AAAAAAAAAAAoAPL/AAAAAAAAAAAoAPP/AAAAAAAAAAAoAPT/AAAAAAAAAAAoAPX/AAAAAAAAAAAoAPb/AAAAAAAAAAAoAPf/AAAAAAAAAAAoAPj/AAAAAAAAAAAoAPn/AAAAAAAAAAAoAPr/AAAAAAAAAAAoAPv/AAAAAAAAAAAoAPz/AAAAAAAAAAAoAP3/AAAAAAAAAAAoAP7/AAAAAAAAAAApAOr/AAAAAAAAAAApAOv/AAAAAAAAAAApAOz/AAAAAAAAAAApAO3/AAAAAAAAAAApAO7/AAAAAAAAAAApAO//AAAAAAAAAAApAPD/AAAAAAAAAAApAPH/AAAAAAAAAAApAPL/AAAAAAAAAAApAPP/AAAAAAAAAAApAPT/AAAAAAAAAAApAPX/AAAAAAAAAAApAPb/AAAAAAAAAAApAPf/AAAAAAAAAAApAPj/AAAAAAAAAAApAPn/AAAAAAAAAAApAPr/AAAAAAAAAAApAPv/AAAAAAAAAAApAPz/AAAAAAAAAAApAP3/AAAAAAAAAAApAP7/AAAAAAAAAAAqAOr/AAAAAAAAAAAqAOv/AAAAAAAAAAAqAOz/AAAAAAAAAAAqAO3/AAAAAAAAAAAqAO7/AAAAAAAAAAAqAO//AAAAAAAAAAAqAPD/AAAAAAAAAAAqAPH/AAAAAAAAAAAqAPL/AAAAAAAAAAAqAPP/AAAAAAAAAAAqAPT/AAAAAAAAAAAqAPX/AAAAAAAAAAAqAPb/AAAAAAAAAAAqAPf/AAAAAAAAAAAqAPj/AAAAAAAAAAAqAPn/AAAAAAAAAAAqAPr/AAAAAAAAAAAqAPv/AAAAAAAAAAAqAPz/AAAAAAAAAAAqAP3/AAAAAAAAAAAqAP7/AAAAAAAAAAArAOr/AAAAAAAAAAArAOv/AAAAAAAAAAArAOz/AAAAAAAAAAArAO3/AAAAAAAAAAArAO7/AAAAAAAAAAArAO//AAAAAAAAAAArAPD/AAAAAAAAAAArAPH/AAAAAAAAAAArAPL/AAAAAAAAAAArAPP/AAAAAAAAAAArAPT/AAAAAAAAAAArAPX/AAAAAAAAAAArAPb/AAAAAAAAAAArAPf/AAAAAAAAAAArAPj/AAAAAAAAAAArAPn/AAAAAAAAAAArAPr/AAAAAAAAAAArAPv/AAAAAAAAAAArAPz/AAAAAAAAAAArAP3/AAAAAAAAAAArAP7/AAAAAAAAAAAsAOr/AAAAAAAAAAAsAOv/AAAAAAAAAAAsAOz/AAAAAAAAAAAsAO3/AAAAAAAAAAAsAO7/AAAAAAAAAAAsAO//AAAAAAAAAAAsAPD/AAAAAAAAAAAsAPH/AAAAAAAAAAAsAPL/AAAAAAAAAAAsAPP/AAAAAAAAAAAsAPT/AAAAAAAAAAAsAPX/AAAAAAAAAAAsAPb/AAAAAAAAAAAsAPf/AAAAAAAAAAAsAPj/AAAAAAAAAAAsAPn/AAAAAAAAAAAsAPr/AAAAAAAAAAAsAPv/AAAAAAAAAAAsAPz/AAAAAAAAAAAsAP3/AAAAAAAAAAAsAP7/AAAAAAAAAAAtAOr/AAAAAAAAAAAtAOv/AAAAAAAAAAAtAOz/AAAAAAAAAAAtAO3/AAAAAAAAAAAtAO7/AAAAAAAAAAAtAO//AAAAAAAAAAAtAPD/AAAAAAAAAAAtAPH/AAAAAAAAAAAtAPL/AAAAAAAAAAAtAPP/AAAAAAAAAAAtAPT/AAAAAAAAAAAtAPX/AAAAAAAAAAAtAPb/AAAAAAAAAAAtAPf/AAAAAAAAAAAtAPj/AAAAAAAAAAAtAPn/AAAAAAAAAAAtAPr/AAAAAAAAAAAtAPv/AAAAAAAAAAAtAPz/AAAAAAAAAAAtAP3/AAAAAAAAAAAtAP7/AAAAAAAAAAAuAOr/AAAAAAAAAAAuAOv/AAAAAAAAAAAuAOz/AAAAAAAAAAAuAO3/AAAAAAAAAAAuAO7/AAAAAAAAAAAuAO//AAAAAAAAAAAuAPD/AAAAAAAAAAAuAPH/AAAAAAAAAAAuAPL/AAAAAAAAAAAuAPP/AAAAAAAAAAAuAPT/AAAAAAAAAAAuAPX/AAAAAAAAAAAuAPb/AAAAAAAAAAAuAPf/AAAAAAAAAAAuAPj/AAAAAAAAAAAuAPn/AAAAAAAAAAAuAPr/AAAAAAAAAAAuAPv/AAAAAAAAAAAuAPz/AAAAAAAAAAAuAP3/AAAAAAAAAAAuAP7/AAAAAAAAAAABAAUAAAAAAAAAAAD+/wUAAAAAAAAAAAAFAAEAAAAAAAAAAAAFAP7/AAAAAAAAAAD2/wkAAQAAAAAAAwD3/wkAAAAAAAAAAAD4/wkAAAAAAAAAAAD5/wkAAAAAAAAAAAD6/wkAAAAAAAAAAAD7/wkAAAAAAAAAAAD8/wkAAAAAAAAAAAD9/wkAAAAAAAAAAAD+/wkAAAAAAAAAAAABAAkAAAAAAAAAAAACAAkAAAAAAAAAAAADAAkAAAAAAAAAAAADAAoAAAAAAAAAAAADAAsAAAAAAAAAAAADAAwAAAAAAAAAAAADAA0AAAAAAAAAAAADAA4AAAAAAAAAAAADABEAAAAAAAAAAAADABIAAAAAAAAAAAD3/w0AAQAAAAAAAAD4/wsAAQAAAAAAAAD6/wsAAQAAAAAAAAD2/woAAAAAAAAAAAD2/wsAAAAAAAAAAAD2/wwAAAAAAAAAAAD2/w0AAAAAAAAAAAD2/w4AAAAAAAAAAAD2/xEAAAAAAAAAAAD2/xIAAAAAAAAAAADw/wkAAgAAAAAAAADx/wkAAgABAAAAAADw/woAAgAAAAAAAADx/woAAgABAAAAAADy/wsAAgAAAAAAAADz/wsAAgABAAAAAADy/wwAAgAAAAAAAADz/wwAAgABAAAAAAD0/wsAAgAAAAAAAAD1/wsAAgABAAAAAAD0/wwAAgAAAAAAAAD1/wwAAgABAAAAAADj/+//AAAAAAAAAADk/+//AAAAAAAAAADl/+//AAAAAAAAAADm/+//AAAAAAAAAADn/+//AAAAAAAAAADo/+//AAAAAAAAAADp/+//AAAAAAAAAADq/+//AAAAAAAAAADr/+//AAAAAAAAAADs/+//AAAAAAAAAADt/+//AAAAAAAAAADu/+//AAAAAAAAAADv/+//AAAAAAAAAADw/+//AAAAAAAAAADx/+//AAAAAAAAAADy/+//AAAAAAAAAADz/+//AAAAAAAAAAD0/+//AAAAAAAAAAD1/+//AAAAAAAAAAD2/+//AAAAAAAAAAD3/+//AAAAAAAAAAD4/+//AAAAAAAAAAD5/+//AAAAAAAAAAD6/+//AAAAAAAAAAD7/+//AAAAAAAAAAD8/+//AAAAAAAAAAD9/+//AAAAAAAAAAD+/+//AAAAAAAAAAD//+//AAAAAAAAAAAAAO//AAAAAAAAAAABAO//AAAAAAAAAAACAO//AAAAAAAAAAADAO//AAAAAAAAAAAEAO//AAAAAAAAAAAFAO//AAAAAAAAAAAGAO//AAAAAAAAAAAHAO//AAAAAAAAAAAIAO//AAAAAAAAAAAJAO//AAAAAAAAAAAvAO//AAAAAAAAAAAwAO//AAAAAAAAAAAxAO//AAAAAAAAAAAyAO//AAAAAAAAAAAyAPD/AAAAAAAAAAAyAPH/AAAAAAAAAAAyAPL/AAAAAAAAAAAyAPP/AAAAAAAAAAAyAPT/AAAAAAAAAAAyAPX/AAAAAAAAAAAyAPb/AAAAAAAAAAAyAPf/AAAAAAAAAAAyAPj/AAAAAAAAAAAyAPn/AAAAAAAAAAAyAPr/AAAAAAAAAAAyAPv/AAAAAAAAAAAyAPz/AAAAAAAAAAAyAP3/AAAAAAAAAAAyAP7/AAAAAAAAAAAyAP//AAAAAAAAAAAyAAAAAAAAAAAAAAAyAAEAAAAAAAAAAAAyAAIAAAAAAAAAAAAyAAMAAAAAAAAAAAAyAAQAAAAAAAAAAAAyAAUAAAAAAAAAAAAyAAYAAAAAAAAAAAAyAAcAAAAAAAAAAAAyAAgAAAAAAAAAAAAyAAkAAAAAAAAAAAAyAAoAAAAAAAAAAAAyAAsAAAAAAAAAAAAyAAwAAAAAAAAAAAAyAA0AAAAAAAAAAAAyAA4AAAAAAAAAAAAyAA8AAAAAAAAAAAAyABAAAAAAAAAAAAAyABEAAAAAAAAAAAAyABIAAAAAAAAAAAAEABIAAAAAAAAAAAAFABIAAAAAAAAAAAAGABIAAAAAAAAAAAAHABIAAAAAAAAAAAAIABIAAAAAAAAAAAAJABIAAAAAAAAAAAAKABIAAAAAAAAAAAALABIAAAAAAAAAAAAMABIAAAAAAAAAAAANABIAAAAAAAAAAAAOABIAAAAAAAAAAAAPABIAAAAAAAAAAAAQABIAAAAAAAAAAAARABIAAAAAAAAAAAASABIAAAAAAAAAAAATABIAAAAAAAAAAAAUABIAAAAAAAAAAAAVABIAAAAAAAAAAAAWABIAAAAAAAAAAAAXABIAAAAAAAAAAAAYABIAAAAAAAAAAAAZABIAAAAAAAAAAAAaABIAAAAAAAAAAAAbABIAAAAAAAAAAAAcABIAAAAAAAAAAAAdABIAAAAAAAAAAAAeABIAAAAAAAAAAAAfABIAAAAAAAAAAAAgABIAAAAAAAAAAAAhABIAAAAAAAAAAAAiABIAAAAAAAAAAAAjABIAAAAAAAAAAAAkABIAAAAAAAAAAAAlABIAAAAAAAAAAAAmABIAAAAAAAAAAAAnABIAAAAAAAAAAAAoABIAAAAAAAAAAAApABIAAAAAAAAAAAAqABIAAAAAAAAAAAArABIAAAAAAAAAAAAsABIAAAAAAAAAAAAtABIAAAAAAAAAAAAuABIAAAAAAAAAAAAvABIAAAAAAAAAAAAwABIAAAAAAAAAAAAxABIAAAAAAAAAAADj/xIAAAAAAAAAAADk/xIAAAAAAAAAAADl/xIAAAAAAAAAAADm/xIAAAAAAAAAAADn/xIAAAAAAAAAAADo/xIAAAAAAAAAAADp/xIAAAAAAAAAAADq/xIAAAAAAAAAAADr/xIAAAAAAAAAAADs/xIAAAAAAAAAAADt/xIAAAAAAAAAAADu/xIAAAAAAAAAAADv/xIAAAAAAAAAAADw/xIAAAAAAAAAAADx/xIAAAAAAAAAAADy/xIAAAAAAAAAAADz/xIAAAAAAAAAAAD0/xIAAAAAAAAAAAD1/xIAAAAAAAAAAADj/+T/AAAAAAAAAADj/+X/AAAAAAAAAADj/+b/AAAAAAAAAADj/+f/AAAAAAAAAADj/+j/AAAAAAAAAADj/+n/AAAAAAAAAADj/+r/AAAAAAAAAADj/+v/AAAAAAAAAADj/+z/AAAAAAAAAADj/+3/AAAAAAAAAADj/+7/AAAAAAAAAADj//D/AAAAAAAAAADj//H/AAAAAAAAAADj//L/AAAAAAAAAADj//P/AAAAAAAAAADj//T/AAAAAAAAAADj//X/AAAAAAAAAADj//b/AAAAAAAAAADj//f/AAAAAAAAAADj//j/AAAAAAAAAADj//n/AAAAAAAAAADj//r/AAAAAAAAAADj//v/AAAAAAAAAADj//z/AAAAAAAAAADj//3/AAAAAAAAAADj//7/AAAAAAAAAADj////AAAAAAAAAADj/wAAAAAAAAAAAADj/wEAAAAAAAAAAADj/wIAAAAAAAAAAADj/wMAAAAAAAAAAADj/wQAAAAAAAAAAADj/wUAAAAAAAAAAADj/wYAAAAAAAAAAADj/wcAAAAAAAAAAADj/wgAAAAAAAAAAADj/wkAAAAAAAAAAADj/woAAAAAAAAAAADj/wsAAAAAAAAAAADj/wwAAAAAAAAAAADj/w0AAAAAAAAAAADj/w4AAAAAAAAAAADj/w8AAAAAAAAAAADj/xAAAAAAAAAAAADj/xEAAAAAAAAAAADk/+T/AAAAAAAAAADl/+T/AAAAAAAAAADm/+T/AAAAAAAAAADn/+T/AAAAAAAAAADo/+T/AAAAAAAAAADp/+T/AAAAAAAAAADq/+T/AAAAAAAAAADr/+T/AAAAAAAAAADs/+T/AAAAAAAAAADt/+T/AAAAAAAAAADu/+T/AAAAAAAAAADv/+T/AAAAAAAAAADw/+T/AAAAAAAAAADx/+T/AAAAAAAAAADy/+T/AAAAAAAAAADz/+T/AAAAAAAAAAD0/+T/AAAAAAAAAAD1/+T/AAAAAAAAAAD2/+T/AAAAAAAAAAD3/+T/AAAAAAAAAAD4/+T/AAAAAAAAAAD5/+T/AAAAAAAAAAD6/+T/AAAAAAAAAAD7/+T/AAAAAAAAAAD8/+T/AAAAAAAAAAD9/+T/AAAAAAAAAAD+/+T/AAAAAAAAAAD//+T/AAAAAAAAAAAAAOT/AAAAAAAAAAABAOT/AAAAAAAAAAACAOT/AAAAAAAAAAADAOT/AAAAAAAAAAAEAOT/AAAAAAAAAAAFAOT/AAAAAAAAAAAGAOT/AAAAAAAAAAAHAOT/AAAAAAAAAAAIAOT/AAAAAAAAAAAJAOT/AAAAAAAAAAAKAOT/AAAAAAAAAAALAOT/AAAAAAAAAAAMAOT/AAAAAAAAAAANAOT/AAAAAAAAAAAOAOT/AAAAAAAAAAAPAOT/AAAAAAAAAAAQAOT/AAAAAAAAAAARAOT/AAAAAAAAAAASAOT/AAAAAAAAAAATAOT/AAAAAAAAAAAUAOT/AAAAAAAAAAAVAOT/AAAAAAAAAAAWAOT/AAAAAAAAAAAXAOT/AAAAAAAAAAAYAOT/AAAAAAAAAAAZAOT/AAAAAAAAAAAaAOT/AAAAAAAAAAAbAOT/AAAAAAAAAAAcAOT/AAAAAAAAAAAdAOT/AAAAAAAAAAAeAOT/AAAAAAAAAAAfAOT/AAAAAAAAAAAgAOT/AAAAAAAAAAAhAOT/AAAAAAAAAAAiAOT/AAAAAAAAAAAjAOT/AAAAAAAAAAAkAOT/AAAAAAAAAAAlAOT/AAAAAAAAAAAmAOT/AAAAAAAAAAAnAOT/AAAAAAAAAAAoAOT/AAAAAAAAAAApAOT/AAAAAAAAAAAqAOT/AAAAAAAAAAArAOT/AAAAAAAAAAAsAOT/AAAAAAAAAAAtAOT/AAAAAAAAAAAuAOT/AAAAAAAAAAAvAOT/AAAAAAAAAAAwAOT/AAAAAAAAAAAxAOT/AAAAAAAAAAAyAOT/AAAAAAAAAAAyAOX/AAAAAAAAAAAyAOb/AAAAAAAAAAAyAOf/AAAAAAAAAAAyAOj/AAAAAAAAAAAyAOn/AAAAAAAAAAAyAOr/AAAAAAAAAAAyAOv/AAAAAAAAAAAyAOz/AAAAAAAAAAAyAO3/AAAAAAAAAAAyAO7/AAAAAAAAAADn//3/AAAAAAAAAADo//3/AAAAAAAAAADp//3/AAAAAAAAAADq//3/AAAAAAAAAADr//3/AAAAAAAAAADs//3/AAAAAAAAAADt//3/AAAAAAAAAADu//3/AAAAAAAAAADv//3/AAAAAAAAAADw//3/AAAAAAAAAADx//3/AAAAAAAAAADy//3/AAAAAAAAAADz//3/AAAAAAAAAAD0//3/AAAAAAAAAADn/wUAAAAAAAAAAADo/wUAAAAAAAAAAADp/wUAAAAAAAAAAADq/wUAAAAAAAAAAADs/wUAAAAAAAAAAADt/wUAAAAAAAAAAADu/wUAAAAAAAAAAADx/wUAAAAAAAAAAADy/wUAAAAAAAAAAADz/wUAAAAAAAAAAAD0/wUAAAAAAAAAAADn/w4AAAAAAAAAAADo/w4AAAAAAAAAAADp/w4AAAAAAAAAAADr/w4AAAAAAAAAAADs/w4AAAAAAAAAAADt/w4AAAAAAAAAAADu/w4AAAAAAAAAAAD6//7/AAAAAAAAAAD6/wEAAAAAAAAAAAAHAA4AAQAAAAAAAAAIAA4AAQAAAAAAAAAJAA4AAQAAAAAAAAAKAA4AAQAAAAAAAAACAAoAAQAAAAAAAQAOAA4AAQAAAAAAAAAPAA4AAQAAAAAAAAAUAA4AAQAAAAAAAAAVAA4AAQAAAAAAAAAQAA4AAQAAAAAAAAAiAA4AAQAAAAAAAAAjAA4AAQAAAAAAAAAnAA4AAQAAAAAAAAAoAA4AAQAAAAAAAAApAA4AAQAAAAAAAAAqAA4AAQAAAAAAAAAeAAgAAAAAAAAAAAAaAAgAAQAAAAAAAADw//P/AQAAAAAAAADx//P/AQAAAAAAAADy//P/AQAAAAAAAADz//P/AQAAAAAAAAAaAAwAAAAAAAAAAAAeAAwAAAAAAAAAAAAZAAgAAQAAAAAAAAD2//7/AQAAAAAAAwD2//3/AQAAAAAAAwD2//z/AQAAAAAAAwD2//v/AQAAAAAAAwD2//D/AQAAAAAAAwD2//H/AQAAAAAAAwD2//L/AQAAAAAAAwD2//P/AQAAAAAAAwD2//T/AQAAAAAAAwD2//X/AQAAAAAAAwD2//b/AQAAAAAAAwD2//f/AQAAAAAAAwD2//j/AQAAAAAAAwD2//n/AQAAAAAAAwD2//r/AQAAAAAAAwD2/wEAAQAAAAAAAwD2/wIAAQAAAAAAAwD2/wMAAQAAAAAAAwD2/wQAAQAAAAAAAwD2/wUAAQAAAAAAAwD2/wYAAQAAAAAAAwD2/wcAAQAAAAAAAwD2/wgAAQAAAAAAAwAeAA4AAAAAAAAAAAAaAA4AAAAAAAAAAAAlAA4AAgAAAAAAAAAmAA4AAgABAAAAAAASAA4AAAAAAAAAAAAMAA4AAAAAAAAAAAAeAAUAAAAAAAAAAAAaAAUAAAAAAAAAAAAJAAEAAAAAAAAAAAACAAQAAAAAAAAAAAD9/wQAAAAAAAAAAAD9//v/AAAAAAAAAAACAPv/AAAAAAAAAAACAPL/AAAAAAAAAAD9//L/AAAAAAAAAADx/wcAAAAAAAAAAADm/wUAAAAAAAAAAADm/w4AAAAAAAAAAADv/w4AAAAAAAAAAADm//7/AAAAAAAAAADm//T/AAAAAAAAAAAIAAsAAAAAAAAAAAAJAAsAAAAAAAAAAAAKAAsAAAAAAAAAAAALAAsAAAAAAAAAAAAMAAsAAAAAAAAAAAANAAsAAAAAAAAAAAATAAwAAAAAAAAAAAAWAAwAAAAAAAAAAAAUAAwAAAAAAAAAAAAVAAwAAAAAAAAAAAAjAAwAAAAAAAAAAAAkAAwAAAAAAAAAAAAlAAwAAAAAAAAAAAAmAAwAAAAAAAAAAAAnAAwAAAAAAAAAAAAoAAwAAAAAAAAAAAApAAwAAAAAAAAAAAAqAAwAAAAAAAAAAAArAAwAAAAAAAAAAAAsAAwAAAAAAAAAAAAtAAwAAAAAAAAAAAAuAAwAAAAAAAAAAAD+//H/AAAAAAAAAAD///D/AAAAAAAAAAAAAPD/AAAAAAAAAAABAPH/AAAAAAAAAAD9//P/AAAAAAAAAAACAPP/AAAAAAAAAAD8//P/AAAAAAAAAAD8//T/AAAAAAAAAAADAPP/AAAAAAAAAAADAPT/AAAAAAAAAAAEAAIAAAAAAAAAAAA=")
+tile_map_data = PackedByteArray("AAD9////AAAAAAAAAAD9/wAAAAAAAAAAAAD+/wEAAAAAAAAAAAD//wIAAAAAAAAAAAAAAAIAAAAAAAAAAAABAAEAAAAAAAAAAAACAP//AAAAAAAAAAACAAAAAAAAAAAAAAABAP7/AAAAAAAAAAD///3/AAAAAAAAAAAAAP3/AAAAAAAAAAD+//7/AAAAAAAAAAD+////AAAAAAAAAAD+/wAAAAAAAAAAAAD//wAAAAAAAAAAAAD/////AAAAAAAAAAAAAP//AAAAAAAAAAD///7/AAAAAAAAAAAAAP7/AAAAAAAAAAABAP//AAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAD//wEAAAAAAAAAAAAXAPX/AAAAAAAAAAAXAPb/AAAAAAAAAAAWAPb/AAAAAAAAAAAWAPf/AAAAAAAAAAAWAPX/AAAAAAAAAAAXAPf/AAAAAAAAAAAYAPf/AAAAAAAAAAAYAPb/AAAAAAAAAAAYAPX/AAAAAAAAAAAbAPX/AAAAAAAAAAAbAPb/AAAAAAAAAAAcAPb/AAAAAAAAAAAcAPX/AAAAAAAAAAAdAPX/AAAAAAAAAAAdAPb/AAAAAAAAAAAdAPf/AAAAAAAAAAAcAPf/AAAAAAAAAAAbAPf/AAAAAAAAAAAgAPX/AAAAAAAAAAAhAPX/AAAAAAAAAAAiAPX/AAAAAAAAAAAiAPb/AAAAAAAAAAAhAPb/AAAAAAAAAAAgAPb/AAAAAAAAAAAgAPf/AAAAAAAAAAAhAPf/AAAAAAAAAAAiAPf/AAAAAAAAAAAgAPr/AAAAAAAAAAAgAPv/AAAAAAAAAAAgAPz/AAAAAAAAAAAhAPz/AAAAAAAAAAAhAPv/AAAAAAAAAAAhAPr/AAAAAAAAAAAiAPr/AAAAAAAAAAAiAPv/AAAAAAAAAAAiAPz/AAAAAAAAAAAbAPr/AAAAAAAAAAAcAPr/AAAAAAAAAAAdAPr/AAAAAAAAAAAdAPv/AAAAAAAAAAAcAPv/AAAAAAAAAAAbAPv/AAAAAAAAAAAbAPz/AAAAAAAAAAAcAPz/AAAAAAAAAAAdAPz/AAAAAAAAAAAWAPr/AAAAAAAAAAAXAPr/AAAAAAAAAAAYAPr/AAAAAAAAAAAYAPv/AAAAAAAAAAAXAPv/AAAAAAAAAAAWAPv/AAAAAAAAAAAWAPz/AAAAAAAAAAAXAPz/AAAAAAAAAAAYAPz/AAAAAAAAAAAVAPL/AAAAAAAAAAAWAPL/AAAAAAAAAAAXAPL/AAAAAAAAAAAYAPL/AAAAAAAAAAAZAPL/AAAAAAAAAAAaAPL/AAAAAAAAAAAbAPL/AAAAAAAAAAAcAPL/AAAAAAAAAAAdAPL/AAAAAAAAAAAeAPL/AAAAAAAAAAAfAPL/AAAAAAAAAAAgAPL/AAAAAAAAAAAhAPL/AAAAAAAAAAAiAPL/AAAAAAAAAAAjAPL/AAAAAAAAAAAkAPL/AAAAAAAAAAAUAPL/AAAAAAAAAAAkAOv/AAAAAAAAAAAkAOz/AAAAAAAAAAAkAO3/AAAAAAAAAAAkAO7/AAAAAAAAAAAkAO//AAAAAAAAAAAkAPD/AAAAAAAAAAAkAPH/AAAAAAAAAAAUAOv/AAAAAAAAAAAUAOz/AAAAAAAAAAAUAO3/AAAAAAAAAAAUAO7/AAAAAAAAAAAUAO//AAAAAAAAAAAUAPD/AAAAAAAAAAAUAPH/AAAAAAAAAAAVAOv/AAAAAAAAAAAWAOv/AAAAAAAAAAAXAOv/AAAAAAAAAAAYAOv/AAAAAAAAAAAZAOv/AAAAAAAAAAAaAOv/AAAAAAAAAAAbAOv/AAAAAAAAAAAcAOv/AAAAAAAAAAAdAOv/AAAAAAAAAAAeAOv/AAAAAAAAAAAfAOv/AAAAAAAAAAAgAOv/AAAAAAAAAAAhAOv/AAAAAAAAAAAiAOv/AAAAAAAAAAAjAOv/AAAAAAAAAAAdAO//AAAAAAAAAAAdAO7/AAAAAAAAAAAdAO3/AAAAAAAAAAAdAOz/AAAAAAAAAAAcAOz/AAAAAAAAAAAbAOz/AAAAAAAAAAAaAOz/AAAAAAAAAAAZAOz/AAAAAAAAAAAYAOz/AAAAAAAAAAAXAOz/AAAAAAAAAAAWAOz/AAAAAAAAAAAVAOz/AAAAAAAAAAAVAO3/AAAAAAAAAAAVAO7/AAAAAAAAAAAVAO//AAAAAAAAAAAVAPD/AAAAAAAAAAAVAPH/AAAAAAAAAAAWAPH/AAAAAAAAAAAWAPD/AAAAAAAAAAAWAO//AAAAAAAAAAAWAO7/AAAAAAAAAAAWAO3/AAAAAAAAAAAXAO3/AAAAAAAAAAAXAO7/AAAAAAAAAAAXAO//AAAAAAAAAAAXAPD/AAAAAAAAAAAXAPH/AAAAAAAAAAAYAPH/AAAAAAAAAAAYAPD/AAAAAAAAAAAYAO//AAAAAAAAAAAYAO7/AAAAAAAAAAAYAO3/AAAAAAAAAAAZAO3/AAAAAAAAAAAZAO7/AAAAAAAAAAAZAO//AAAAAAAAAAAZAPD/AAAAAAAAAAAZAPH/AAAAAAAAAAAaAPH/AAAAAAAAAAAaAPD/AAAAAAAAAAAaAO//AAAAAAAAAAAaAO7/AAAAAAAAAAAaAO3/AAAAAAAAAAAbAO3/AAAAAAAAAAAbAO7/AAAAAAAAAAAbAO//AAAAAAAAAAAbAPD/AAAAAAAAAAAbAPH/AAAAAAAAAAAcAPH/AAAAAAAAAAAcAPD/AAAAAAAAAAAcAO//AAAAAAAAAAAcAO7/AAAAAAAAAAAcAO3/AAAAAAAAAAAdAPD/AAAAAAAAAAAdAPH/AAAAAAAAAAAeAPH/AAAAAAAAAAAeAPD/AAAAAAAAAAAeAO//AAAAAAAAAAAeAO7/AAAAAAAAAAAeAO3/AAAAAAAAAAAeAOz/AAAAAAAAAAAfAOz/AAAAAAAAAAAfAO3/AAAAAAAAAAAfAO7/AAAAAAAAAAAfAO//AAAAAAAAAAAfAPD/AAAAAAAAAAAfAPH/AAAAAAAAAAAgAPH/AAAAAAAAAAAgAPD/AAAAAAAAAAAgAO//AAAAAAAAAAAgAO7/AAAAAAAAAAAgAO3/AAAAAAAAAAAgAOz/AAAAAAAAAAAhAOz/AAAAAAAAAAAhAO3/AAAAAAAAAAAhAO7/AAAAAAAAAAAhAO//AAAAAAAAAAAhAPD/AAAAAAAAAAAhAPH/AAAAAAAAAAAiAPH/AAAAAAAAAAAiAPD/AAAAAAAAAAAiAO//AAAAAAAAAAAiAO7/AAAAAAAAAAAiAO3/AAAAAAAAAAAiAOz/AAAAAAAAAAAjAOz/AAAAAAAAAAAjAO3/AAAAAAAAAAAjAO7/AAAAAAAAAAAjAO//AAAAAAAAAAAjAPD/AAAAAAAAAAAjAPH/AAAAAAAAAAAMAAEAAAAAAAAAAAANAAEAAAAAAAAAAAANAAIAAAAAAAAAAAAMAAIAAAAAAAAAAAAOAAIAAAAAAAAAAAAPAAIAAAAAAAAAAAAPAAEAAAAAAAAAAAAOAAEAAAAAAAAAAAAQAAEAAAAAAAAAAAARAAEAAAAAAAAAAAARAAIAAAAAAAAAAAASAAIAAAAAAAAAAAASAAEAAAAAAAAAAAAQAAIAAAAAAAAAAAATAAIAAAAAAAAAAAAUAAIAAAAAAAAAAAAUAAEAAAAAAAAAAAATAAEAAAAAAAAAAAAVAAIAAAAAAAAAAAAVAAEAAAAAAAAAAAAWAAEAAAAAAAAAAAAWAAIAAAAAAAAAAAAXAAIAAAAAAAAAAAAYAAIAAAAAAAAAAAAZAAIAAAAAAAAAAAAZAAEAAAAAAAAAAAAYAAEAAAAAAAAAAAAaAAIAAAAAAAAAAAAaAAEAAAAAAAAAAAAeAAEAAAAAAAAAAAAeAAIAAAAAAAAAAAAfAAEAAAAAAAAAAAAfAAIAAAAAAAAAAAAgAAIAAAAAAAAAAAAgAAEAAAAAAAAAAAAhAAEAAAAAAAAAAAAhAAIAAAAAAAAAAAAiAAIAAAAAAAAAAAAiAAEAAAAAAAAAAAAjAAIAAAAAAAAAAAAkAAIAAAAAAAAAAAAlAAIAAAAAAAAAAAAmAAIAAAAAAAAAAAAnAAIAAAAAAAAAAAAoAAIAAAAAAAAAAAApAAIAAAAAAAAAAAAqAAIAAAAAAAAAAAArAAIAAAAAAAAAAAAqAAEAAAAAAAAAAAArAAEAAAAAAAAAAAAsAAIAAAAAAAAAAAAsAAEAAAAAAAAAAAApAAEAAAAAAAAAAAAoAAEAAAAAAAAAAAAnAAEAAAAAAAAAAAAmAAEAAAAAAAAAAAAlAAEAAAAAAAAAAAAkAAEAAAAAAAAAAAAjAAEAAAAAAAAAAAAKAOv/AAAAAAAAAAAKAOz/AAAAAAAAAAAKAO3/AAAAAAAAAAAKAO7/AAAAAAAAAAAKAO//AAAAAAAAAAAKAPD/AAAAAAAAAAAKAPH/AAAAAAAAAAAKAPL/AAAAAAAAAAAKAPP/AAAAAAAAAAAKAPT/AAAAAAAAAAAKAPX/AAAAAAAAAAAKAPb/AAAAAAAAAAAKAPf/AAAAAAAAAAAKAPj/AAAAAAAAAAAKAPn/AAAAAAAAAAAKAPr/AAAAAAAAAAAKAPv/AAAAAAAAAAAKAPz/AAAAAAAAAAAKAP3/AAAAAAAAAAAKAP7/AAAAAAAAAAALAOv/AAAAAAAAAAALAOz/AAAAAAAAAAALAO3/AAAAAAAAAAALAO7/AAAAAAAAAAALAO//AAAAAAAAAAALAPD/AAAAAAAAAAALAPH/AAAAAAAAAAALAPL/AAAAAAAAAAALAPP/AAAAAAAAAAALAPT/AAAAAAAAAAALAPX/AAAAAAAAAAALAPb/AAAAAAAAAAALAPf/AAAAAAAAAAALAPj/AAAAAAAAAAALAPn/AAAAAAAAAAALAPr/AAAAAAAAAAALAPv/AAAAAAAAAAALAPz/AAAAAAAAAAALAP3/AAAAAAAAAAALAP7/AAAAAAAAAAAMAOv/AAAAAAAAAAAMAOz/AAAAAAAAAAAMAO3/AAAAAAAAAAAMAO7/AAAAAAAAAAAMAO//AAAAAAAAAAAMAPD/AAAAAAAAAAAMAPH/AAAAAAAAAAAMAPL/AAAAAAAAAAAMAPP/AAAAAAAAAAAMAPT/AAAAAAAAAAAMAPX/AAAAAAAAAAAMAPb/AAAAAAAAAAAMAPf/AAAAAAAAAAAMAPj/AAAAAAAAAAAMAPn/AAAAAAAAAAAMAPr/AAAAAAAAAAAMAPv/AAAAAAAAAAAMAPz/AAAAAAAAAAAMAP3/AAAAAAAAAAAMAP7/AAAAAAAAAAANAOv/AAAAAAAAAAANAOz/AAAAAAAAAAANAO3/AAAAAAAAAAANAO7/AAAAAAAAAAANAO//AAAAAAAAAAANAPD/AAAAAAAAAAANAPH/AAAAAAAAAAANAPL/AAAAAAAAAAANAPP/AAAAAAAAAAANAPT/AAAAAAAAAAANAPX/AAAAAAAAAAANAPb/AAAAAAAAAAANAPf/AAAAAAAAAAANAPj/AAAAAAAAAAANAPn/AAAAAAAAAAANAPr/AAAAAAAAAAANAPv/AAAAAAAAAAANAPz/AAAAAAAAAAANAP3/AAAAAAAAAAANAP7/AAAAAAAAAAAOAOv/AAAAAAAAAAAOAOz/AAAAAAAAAAAOAO3/AAAAAAAAAAAOAO7/AAAAAAAAAAAOAO//AAAAAAAAAAAOAPD/AAAAAAAAAAAOAPH/AAAAAAAAAAAOAPL/AAAAAAAAAAAOAPP/AAAAAAAAAAAOAPT/AAAAAAAAAAAOAPX/AAAAAAAAAAAOAPb/AAAAAAAAAAAOAPf/AAAAAAAAAAAOAPj/AAAAAAAAAAAOAPn/AAAAAAAAAAAOAPr/AAAAAAAAAAAOAPv/AAAAAAAAAAAOAPz/AAAAAAAAAAAOAP3/AAAAAAAAAAAOAP7/AAAAAAAAAAAPAOv/AAAAAAAAAAAPAOz/AAAAAAAAAAAPAO3/AAAAAAAAAAAPAO7/AAAAAAAAAAAPAO//AAAAAAAAAAAPAPD/AAAAAAAAAAAPAPH/AAAAAAAAAAAPAPL/AAAAAAAAAAAPAPP/AAAAAAAAAAAPAPT/AAAAAAAAAAAPAPX/AAAAAAAAAAAPAPb/AAAAAAAAAAAPAPf/AAAAAAAAAAAPAPj/AAAAAAAAAAAPAPn/AAAAAAAAAAAPAPr/AAAAAAAAAAAPAPv/AAAAAAAAAAAPAPz/AAAAAAAAAAAPAP3/AAAAAAAAAAAPAP7/AAAAAAAAAAAQAOv/AAAAAAAAAAAQAOz/AAAAAAAAAAAQAO3/AAAAAAAAAAAQAO7/AAAAAAAAAAAQAO//AAAAAAAAAAAQAPD/AAAAAAAAAAAQAPH/AAAAAAAAAAAQAPL/AAAAAAAAAAAQAPP/AAAAAAAAAAAQAPT/AAAAAAAAAAAQAPX/AAAAAAAAAAAQAPb/AAAAAAAAAAAQAPf/AAAAAAAAAAAQAPj/AAAAAAAAAAAQAPn/AAAAAAAAAAAQAPr/AAAAAAAAAAAQAPv/AAAAAAAAAAAQAPz/AAAAAAAAAAAQAP3/AAAAAAAAAAAQAP7/AAAAAAAAAAARAOv/AAAAAAAAAAARAOz/AAAAAAAAAAARAO3/AAAAAAAAAAARAO7/AAAAAAAAAAARAO//AAAAAAAAAAARAPD/AAAAAAAAAAARAPH/AAAAAAAAAAARAPL/AAAAAAAAAAARAPP/AAAAAAAAAAARAPT/AAAAAAAAAAARAPX/AAAAAAAAAAARAPb/AAAAAAAAAAARAPf/AAAAAAAAAAARAPj/AAAAAAAAAAARAPn/AAAAAAAAAAARAPr/AAAAAAAAAAARAPv/AAAAAAAAAAARAPz/AAAAAAAAAAARAP3/AAAAAAAAAAARAP7/AAAAAAAAAAASAOv/AAAAAAAAAAASAOz/AAAAAAAAAAASAO3/AAAAAAAAAAASAO7/AAAAAAAAAAASAO//AAAAAAAAAAASAPD/AAAAAAAAAAASAPH/AAAAAAAAAAASAPL/AAAAAAAAAAASAPP/AAAAAAAAAAASAPT/AAAAAAAAAAASAPX/AAAAAAAAAAASAPb/AAAAAAAAAAASAPf/AAAAAAAAAAASAPj/AAAAAAAAAAASAPn/AAAAAAAAAAASAPr/AAAAAAAAAAASAPv/AAAAAAAAAAASAPz/AAAAAAAAAAASAP3/AAAAAAAAAAASAP7/AAAAAAAAAAATAOv/AAAAAAAAAAATAOz/AAAAAAAAAAATAO3/AAAAAAAAAAATAO7/AAAAAAAAAAATAO//AAAAAAAAAAATAPD/AAAAAAAAAAATAPH/AAAAAAAAAAATAPL/AAAAAAAAAAATAPP/AAAAAAAAAAATAPT/AAAAAAAAAAATAPX/AAAAAAAAAAATAPb/AAAAAAAAAAATAPf/AAAAAAAAAAATAPj/AAAAAAAAAAATAPn/AAAAAAAAAAATAPr/AAAAAAAAAAATAPv/AAAAAAAAAAATAPz/AAAAAAAAAAATAP3/AAAAAAAAAAATAP7/AAAAAAAAAAAlAOr/AAAAAAAAAAAlAOv/AAAAAAAAAAAlAOz/AAAAAAAAAAAlAO3/AAAAAAAAAAAlAO7/AAAAAAAAAAAlAO//AAAAAAAAAAAlAPD/AAAAAAAAAAAlAPH/AAAAAAAAAAAlAPL/AAAAAAAAAAAlAPP/AAAAAAAAAAAlAPT/AAAAAAAAAAAlAPX/AAAAAAAAAAAlAPb/AAAAAAAAAAAlAPf/AAAAAAAAAAAlAPj/AAAAAAAAAAAlAPn/AAAAAAAAAAAlAPr/AAAAAAAAAAAlAPv/AAAAAAAAAAAlAPz/AAAAAAAAAAAlAP3/AAAAAAAAAAAlAP7/AAAAAAAAAAAmAOr/AAAAAAAAAAAmAOv/AAAAAAAAAAAmAOz/AAAAAAAAAAAmAO3/AAAAAAAAAAAmAO7/AAAAAAAAAAAmAO//AAAAAAAAAAAmAPD/AAAAAAAAAAAmAPH/AAAAAAAAAAAmAPL/AAAAAAAAAAAmAPP/AAAAAAAAAAAmAPT/AAAAAAAAAAAmAPX/AAAAAAAAAAAmAPb/AAAAAAAAAAAmAPf/AAAAAAAAAAAmAPj/AAAAAAAAAAAmAPn/AAAAAAAAAAAmAPr/AAAAAAAAAAAmAPv/AAAAAAAAAAAmAPz/AAAAAAAAAAAmAP3/AAAAAAAAAAAmAP7/AAAAAAAAAAAnAOr/AAAAAAAAAAAnAOv/AAAAAAAAAAAnAOz/AAAAAAAAAAAnAO3/AAAAAAAAAAAnAO7/AAAAAAAAAAAnAO//AAAAAAAAAAAnAPD/AAAAAAAAAAAnAPH/AAAAAAAAAAAnAPL/AAAAAAAAAAAnAPP/AAAAAAAAAAAnAPT/AAAAAAAAAAAnAPX/AAAAAAAAAAAnAPb/AAAAAAAAAAAnAPf/AAAAAAAAAAAnAPj/AAAAAAAAAAAnAPn/AAAAAAAAAAAnAPr/AAAAAAAAAAAnAPv/AAAAAAAAAAAnAPz/AAAAAAAAAAAnAP3/AAAAAAAAAAAnAP7/AAAAAAAAAAAoAOr/AAAAAAAAAAAoAOv/AAAAAAAAAAAoAOz/AAAAAAAAAAAoAO3/AAAAAAAAAAAoAO7/AAAAAAAAAAAoAO//AAAAAAAAAAAoAPD/AAAAAAAAAAAoAPH/AAAAAAAAAAAoAPL/AAAAAAAAAAAoAPP/AAAAAAAAAAAoAPT/AAAAAAAAAAAoAPX/AAAAAAAAAAAoAPb/AAAAAAAAAAAoAPf/AAAAAAAAAAAoAPj/AAAAAAAAAAAoAPn/AAAAAAAAAAAoAPr/AAAAAAAAAAAoAPv/AAAAAAAAAAAoAPz/AAAAAAAAAAAoAP3/AAAAAAAAAAAoAP7/AAAAAAAAAAApAOr/AAAAAAAAAAApAOv/AAAAAAAAAAApAOz/AAAAAAAAAAApAO3/AAAAAAAAAAApAO7/AAAAAAAAAAApAO//AAAAAAAAAAApAPD/AAAAAAAAAAApAPH/AAAAAAAAAAApAPL/AAAAAAAAAAApAPP/AAAAAAAAAAApAPT/AAAAAAAAAAApAPX/AAAAAAAAAAApAPb/AAAAAAAAAAApAPf/AAAAAAAAAAApAPj/AAAAAAAAAAApAPn/AAAAAAAAAAApAPr/AAAAAAAAAAApAPv/AAAAAAAAAAApAPz/AAAAAAAAAAApAP3/AAAAAAAAAAApAP7/AAAAAAAAAAAqAOr/AAAAAAAAAAAqAOv/AAAAAAAAAAAqAOz/AAAAAAAAAAAqAO3/AAAAAAAAAAAqAO7/AAAAAAAAAAAqAO//AAAAAAAAAAAqAPD/AAAAAAAAAAAqAPH/AAAAAAAAAAAqAPL/AAAAAAAAAAAqAPP/AAAAAAAAAAAqAPT/AAAAAAAAAAAqAPX/AAAAAAAAAAAqAPb/AAAAAAAAAAAqAPf/AAAAAAAAAAAqAPj/AAAAAAAAAAAqAPn/AAAAAAAAAAAqAPr/AAAAAAAAAAAqAPv/AAAAAAAAAAAqAPz/AAAAAAAAAAAqAP3/AAAAAAAAAAAqAP7/AAAAAAAAAAArAOr/AAAAAAAAAAArAOv/AAAAAAAAAAArAOz/AAAAAAAAAAArAO3/AAAAAAAAAAArAO7/AAAAAAAAAAArAO//AAAAAAAAAAArAPD/AAAAAAAAAAArAPH/AAAAAAAAAAArAPL/AAAAAAAAAAArAPP/AAAAAAAAAAArAPT/AAAAAAAAAAArAPX/AAAAAAAAAAArAPb/AAAAAAAAAAArAPf/AAAAAAAAAAArAPj/AAAAAAAAAAArAPn/AAAAAAAAAAArAPr/AAAAAAAAAAArAPv/AAAAAAAAAAArAPz/AAAAAAAAAAArAP3/AAAAAAAAAAArAP7/AAAAAAAAAAAsAOr/AAAAAAAAAAAsAOv/AAAAAAAAAAAsAOz/AAAAAAAAAAAsAO3/AAAAAAAAAAAsAO7/AAAAAAAAAAAsAO//AAAAAAAAAAAsAPD/AAAAAAAAAAAsAPH/AAAAAAAAAAAsAPL/AAAAAAAAAAAsAPP/AAAAAAAAAAAsAPT/AAAAAAAAAAAsAPX/AAAAAAAAAAAsAPb/AAAAAAAAAAAsAPf/AAAAAAAAAAAsAPj/AAAAAAAAAAAsAPn/AAAAAAAAAAAsAPr/AAAAAAAAAAAsAPv/AAAAAAAAAAAsAPz/AAAAAAAAAAAsAP3/AAAAAAAAAAAsAP7/AAAAAAAAAAAtAOr/AAAAAAAAAAAtAOv/AAAAAAAAAAAtAOz/AAAAAAAAAAAtAO3/AAAAAAAAAAAtAO7/AAAAAAAAAAAtAO//AAAAAAAAAAAtAPD/AAAAAAAAAAAtAPH/AAAAAAAAAAAtAPL/AAAAAAAAAAAtAPP/AAAAAAAAAAAtAPT/AAAAAAAAAAAtAPX/AAAAAAAAAAAtAPb/AAAAAAAAAAAtAPf/AAAAAAAAAAAtAPj/AAAAAAAAAAAtAPn/AAAAAAAAAAAtAPr/AAAAAAAAAAAtAPv/AAAAAAAAAAAtAPz/AAAAAAAAAAAtAP3/AAAAAAAAAAAtAP7/AAAAAAAAAAAuAOr/AAAAAAAAAAAuAOv/AAAAAAAAAAAuAOz/AAAAAAAAAAAuAO3/AAAAAAAAAAAuAO7/AAAAAAAAAAAuAO//AAAAAAAAAAAuAPD/AAAAAAAAAAAuAPH/AAAAAAAAAAAuAPL/AAAAAAAAAAAuAPP/AAAAAAAAAAAuAPT/AAAAAAAAAAAuAPX/AAAAAAAAAAAuAPb/AAAAAAAA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")
 enabled = false
 tile_set = SubResource("TileSet_tbgi4")
 occlusion_enabled = false
@@ -1172,123 +1185,125 @@ script = ExtResource("3_sugp2")
 player = NodePath("../Player")
 selection_pointer_scene = ExtResource("4_jyhfs")
 
-[node name="Columbia Info Areas" type="Node2D" parent="." unique_id=470338605]
+[node name="Columbia" type="Node2D" parent="." unique_id=885501867]
+
+[node name="Columbia Info Areas" type="Node2D" parent="Columbia" unique_id=470338605]
 y_sort_enabled = true
 
-[node name="ADI" parent="Columbia Info Areas" unique_id=1997803310 instance=ExtResource("6_tefeu")]
+[node name="ADI" parent="Columbia/Columbia Info Areas" unique_id=1997803310 instance=ExtResource("6_tefeu")]
 position = Vector2(409, -99)
 info_text = "ADI (Application Development Initiative) is Columbia's largest CS club on campus! I'm a part of the Education Committee, which means I help plan initiatives like CodeCollab and Mentorship for over 70 participants each. I've met so many talented participants as well as coworkers here."
 info_name = "ADI Edu Committee"
 
-[node name="CollisionShape2D" parent="Columbia Info Areas/ADI" index="0" unique_id=1083559723]
+[node name="CollisionShape2D" parent="Columbia/Columbia Info Areas/ADI" index="0" unique_id=1083559723]
 position = Vector2(0, -1)
-shape = SubResource("RectangleShape2D_y57op")
+shape = SubResource("RectangleShape2D_ygd8o")
 
-[node name="EdgeSparksIdle" parent="Columbia Info Areas/ADI" index="1" unique_id=1083559732]
+[node name="EdgeSparksIdle" parent="Columbia/Columbia Info Areas/ADI" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
 emission_normals = PackedVector2Array()
 emission_colors = PackedColorArray()
 
-[node name="EdgeSparksActive" parent="Columbia Info Areas/ADI" index="2" unique_id=1083559733]
+[node name="EdgeSparksActive" parent="Columbia/Columbia Info Areas/ADI" index="2" unique_id=1083559733]
 emission_points = PackedVector2Array()
 emission_normals = PackedVector2Array()
 emission_colors = PackedColorArray()
 
-[node name="Pulse" parent="Columbia Info Areas/ADI" index="4" unique_id=1083559734]
+[node name="Pulse" parent="Columbia/Columbia Info Areas/ADI" index="4" unique_id=1083559734]
 autoplay = &"pulse"
 
-[node name="Rebecca" type="AnimatedSprite2D" parent="Columbia Info Areas/ADI" unique_id=1284817069]
+[node name="Rebecca" type="AnimatedSprite2D" parent="Columbia/Columbia Info Areas/ADI" unique_id=1284817069]
 position = Vector2(-14, 1)
 sprite_frames = SubResource("SpriteFrames_cjqg0")
 autoplay = "default"
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Columbia Info Areas/ADI" unique_id=1761047951]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Columbia/Columbia Info Areas/ADI" unique_id=1761047951]
 position = Vector2(12, 1)
 sprite_frames = SubResource("SpriteFrames_t8vo6")
 autoplay = "default"
 flip_h = true
 
-[node name="TA" parent="Columbia Info Areas" unique_id=1889179071 instance=ExtResource("6_tefeu")]
+[node name="TA" parent="Columbia/Columbia Info Areas" unique_id=1889179071 instance=ExtResource("6_tefeu")]
 position = Vector2(569, -99)
 info_text = "I've been an SSL (Summer Student Leader) for the summer program SHAPE. Over 6 weeks, I taught my own class as well as ChemE and Data Structures to high school, and have refined my own approach on creating engaging yet educational experiences."
 info_name = "Teaching"
 
-[node name="CollisionShape2D" parent="Columbia Info Areas/TA" index="0" unique_id=1083559723]
-shape = SubResource("RectangleShape2D_mlv25")
+[node name="CollisionShape2D" parent="Columbia/Columbia Info Areas/TA" index="0" unique_id=1083559723]
+shape = SubResource("RectangleShape2D_2s0kr")
 
-[node name="EdgeSparksIdle" parent="Columbia Info Areas/TA" index="1" unique_id=1083559732]
+[node name="EdgeSparksIdle" parent="Columbia/Columbia Info Areas/TA" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
 emission_normals = PackedVector2Array()
 emission_colors = PackedColorArray()
 
-[node name="EdgeSparksActive" parent="Columbia Info Areas/TA" index="2" unique_id=1083559733]
+[node name="EdgeSparksActive" parent="Columbia/Columbia Info Areas/TA" index="2" unique_id=1083559733]
 emission_points = PackedVector2Array()
 emission_normals = PackedVector2Array()
 emission_colors = PackedColorArray()
 
-[node name="Pulse" parent="Columbia Info Areas/TA" index="4" unique_id=1083559734]
+[node name="Pulse" parent="Columbia/Columbia Info Areas/TA" index="4" unique_id=1083559734]
 autoplay = &"pulse"
 
-[node name="Sprite2D" type="Sprite2D" parent="Columbia Info Areas/TA" unique_id=676324708]
+[node name="Sprite2D" type="Sprite2D" parent="Columbia/Columbia Info Areas/TA" unique_id=676324708]
 position = Vector2(1, -1)
 texture = ExtResource("14_ty1g6")
 
-[node name="Lab" parent="Columbia Info Areas" unique_id=902380975 instance=ExtResource("6_tefeu")]
+[node name="Lab" parent="Columbia/Columbia Info Areas" unique_id=902380975 instance=ExtResource("6_tefeu")]
 position = Vector2(489, -100)
 info_text = "I am a Research Assistant at CEAL (Computer-Enabled Abilities Lab), an HCI lab on campus. I was a Summer@SEAS Fellow in 2026, receiving a stipend to do research in helping blind/low vision people enjoy art via audiohaptic feedback and creating a game to learn various programming concepts."
 info_name = "CEAL Lab"
 
-[node name="CollisionShape2D" parent="Columbia Info Areas/Lab" index="0" unique_id=1083559723]
-shape = SubResource("RectangleShape2D_a82wo")
+[node name="CollisionShape2D" parent="Columbia/Columbia Info Areas/Lab" index="0" unique_id=1083559723]
+shape = SubResource("RectangleShape2D_xaipn")
 
-[node name="EdgeSparksIdle" parent="Columbia Info Areas/Lab" index="1" unique_id=1083559732]
+[node name="EdgeSparksIdle" parent="Columbia/Columbia Info Areas/Lab" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
 emission_normals = PackedVector2Array()
 emission_colors = PackedColorArray()
 
-[node name="EdgeSparksActive" parent="Columbia Info Areas/Lab" index="2" unique_id=1083559733]
+[node name="EdgeSparksActive" parent="Columbia/Columbia Info Areas/Lab" index="2" unique_id=1083559733]
 emission_points = PackedVector2Array()
 emission_normals = PackedVector2Array()
 emission_colors = PackedColorArray()
 
-[node name="Pulse" parent="Columbia Info Areas/Lab" index="4" unique_id=1083559734]
+[node name="Pulse" parent="Columbia/Columbia Info Areas/Lab" index="4" unique_id=1083559734]
 autoplay = &"pulse"
 
-[node name="Jpjacob" type="Sprite2D" parent="Columbia Info Areas/Lab" unique_id=630404924]
+[node name="Jpjacob" type="Sprite2D" parent="Columbia/Columbia Info Areas/Lab" unique_id=630404924]
 z_index = 1
 y_sort_enabled = true
 position = Vector2(8, 11)
 texture = ExtResource("14_vc5cj")
 
-[node name="Art board" type="AnimatedSprite2D" parent="Columbia Info Areas/Lab" unique_id=1137681956]
+[node name="Art board" type="AnimatedSprite2D" parent="Columbia/Columbia Info Areas/Lab" unique_id=1137681956]
 z_index = 1
 y_sort_enabled = true
 position = Vector2(-5, -14)
 sprite_frames = SubResource("SpriteFrames_nvyfr")
 autoplay = "default"
 
-[node name="WE" parent="Columbia Info Areas" unique_id=270574156 instance=ExtResource("6_tefeu")]
+[node name="WE" parent="Columbia/Columbia Info Areas" unique_id=270574156 instance=ExtResource("6_tefeu")]
 position = Vector2(409, -180)
 info_text = "I am a first clarinet in CUWE (Columbia Uni Wind Ensemble) as well as its Webmaster/Board member. I love playing my clarinet and this club provides me a way to continue making music. Plus, the people I met here are great :)"
 info_name = "Wind Ensemble"
 
-[node name="CollisionShape2D" parent="Columbia Info Areas/WE" index="0" unique_id=1083559723]
-shape = SubResource("RectangleShape2D_gdvew")
+[node name="CollisionShape2D" parent="Columbia/Columbia Info Areas/WE" index="0" unique_id=1083559723]
+shape = SubResource("RectangleShape2D_ndrjj")
 
-[node name="EdgeSparksIdle" parent="Columbia Info Areas/WE" index="1" unique_id=1083559732]
+[node name="EdgeSparksIdle" parent="Columbia/Columbia Info Areas/WE" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
 emission_normals = PackedVector2Array()
 emission_colors = PackedColorArray()
 
-[node name="EdgeSparksActive" parent="Columbia Info Areas/WE" index="2" unique_id=1083559733]
+[node name="EdgeSparksActive" parent="Columbia/Columbia Info Areas/WE" index="2" unique_id=1083559733]
 emission_points = PackedVector2Array()
 emission_normals = PackedVector2Array()
 emission_colors = PackedColorArray()
 
-[node name="Pulse" parent="Columbia Info Areas/WE" index="4" unique_id=1083559734]
+[node name="Pulse" parent="Columbia/Columbia Info Areas/WE" index="4" unique_id=1083559734]
 autoplay = &"pulse"
 
-[node name="CPUParticles2D" type="CPUParticles2D" parent="Columbia Info Areas/WE" unique_id=778969842]
+[node name="CPUParticles2D" type="CPUParticles2D" parent="Columbia/Columbia Info Areas/WE" unique_id=778969842]
 texture = ExtResource("7_eb6dy")
 emission_shape = 3
 emission_rect_extents = Vector2(10.59, 13.82)
@@ -1298,42 +1313,42 @@ gravity = Vector2(0, -20)
 initial_velocity_min = 32.79
 initial_velocity_max = 65.57
 
-[node name="Sophia" type="AnimatedSprite2D" parent="Columbia Info Areas/WE" unique_id=779897920]
+[node name="Sophia" type="AnimatedSprite2D" parent="Columbia/Columbia Info Areas/WE" unique_id=779897920]
 position = Vector2(-11, -11)
 scale = Vector2(1.2, 1.2)
 sprite_frames = SubResource("SpriteFrames_pbjbi")
 autoplay = "default"
 frame_progress = 0.36937574
 
-[node name="Max" type="AnimatedSprite2D" parent="Columbia Info Areas/WE" unique_id=2107119572]
+[node name="Max" type="AnimatedSprite2D" parent="Columbia/Columbia Info Areas/WE" unique_id=2107119572]
 position = Vector2(10, 4)
 scale = Vector2(1.3, 1.3)
 sprite_frames = SubResource("SpriteFrames_32gr6")
 autoplay = "default"
 frame_progress = 0.42754683
 
-[node name="Wushu" parent="Columbia Info Areas" unique_id=908644531 instance=ExtResource("6_tefeu")]
+[node name="Wushu" parent="Columbia/Columbia Info Areas" unique_id=908644531 instance=ExtResource("6_tefeu")]
 position = Vector2(490, -181)
 info_text = "I'm a part of Columbia Wushu! This is something I started in college, and although I'm not great, I've become so much more flexible and also it looks tough. Plus, the community is really like a family - JJ's dinners always go hard."
 info_name = "Wushu"
 
-[node name="CollisionShape2D" parent="Columbia Info Areas/Wushu" index="0" unique_id=1083559723]
-shape = SubResource("RectangleShape2D_kjtvk")
+[node name="CollisionShape2D" parent="Columbia/Columbia Info Areas/Wushu" index="0" unique_id=1083559723]
+shape = SubResource("RectangleShape2D_ih3m7")
 
-[node name="EdgeSparksIdle" parent="Columbia Info Areas/Wushu" index="1" unique_id=1083559732]
+[node name="EdgeSparksIdle" parent="Columbia/Columbia Info Areas/Wushu" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
 emission_normals = PackedVector2Array()
 emission_colors = PackedColorArray()
 
-[node name="EdgeSparksActive" parent="Columbia Info Areas/Wushu" index="2" unique_id=1083559733]
+[node name="EdgeSparksActive" parent="Columbia/Columbia Info Areas/Wushu" index="2" unique_id=1083559733]
 emission_points = PackedVector2Array()
 emission_normals = PackedVector2Array()
 emission_colors = PackedColorArray()
 
-[node name="Pulse" parent="Columbia Info Areas/Wushu" index="4" unique_id=1083559734]
+[node name="Pulse" parent="Columbia/Columbia Info Areas/Wushu" index="4" unique_id=1083559734]
 autoplay = &"pulse"
 
-[node name="AlexChen" type="AnimatedSprite2D" parent="Columbia Info Areas/Wushu" unique_id=1107926795]
+[node name="AlexChen" type="AnimatedSprite2D" parent="Columbia/Columbia Info Areas/Wushu" unique_id=1107926795]
 position = Vector2(-15, -15)
 scale = Vector2(1.5, 1.5)
 sprite_frames = SubResource("SpriteFrames_dxwp7")
@@ -1344,7 +1359,7 @@ speed = 18.0
 jump_force = -150.0
 gravity = 600.0
 
-[node name="AngelaHe" type="AnimatedSprite2D" parent="Columbia Info Areas/Wushu" unique_id=1905889791]
+[node name="AngelaHe" type="AnimatedSprite2D" parent="Columbia/Columbia Info Areas/Wushu" unique_id=1905889791]
 position = Vector2(7, 14)
 scale = Vector2(1.2, 1.2)
 sprite_frames = SubResource("SpriteFrames_0r61b")
@@ -1355,60 +1370,60 @@ GRAVITY = 600.0
 JUMP_FORCE = -200.0
 UPWARD_NUDGE = -100.0
 
-[node name="Sprite2D" type="Sprite2D" parent="Columbia Info Areas/Wushu" unique_id=1029182158]
+[node name="Sprite2D" type="Sprite2D" parent="Columbia/Columbia Info Areas/Wushu" unique_id=1029182158]
 position = Vector2(-15, 10)
 texture = ExtResource("9_85g3d")
 
-[node name="Game Dev" parent="Columbia Info Areas" unique_id=553752884 instance=ExtResource("6_tefeu")]
+[node name="Game Dev" parent="Columbia/Columbia Info Areas" unique_id=553752884 instance=ExtResource("6_tefeu")]
 position = Vector2(569, -180)
 info_text = "I'm the co-chair of Columbia's Game Dev club under Columbia Gaming. As you can clearly tell from this website, I love making games and try to instill this love into other people via initiatives like LionJam and Game Incubator."
 info_name = "Game Dev"
 
-[node name="CollisionShape2D" parent="Columbia Info Areas/Game Dev" index="0" unique_id=1083559723]
-shape = SubResource("RectangleShape2D_xrs0c")
+[node name="CollisionShape2D" parent="Columbia/Columbia Info Areas/Game Dev" index="0" unique_id=1083559723]
+shape = SubResource("RectangleShape2D_11yus")
 
-[node name="EdgeSparksIdle" parent="Columbia Info Areas/Game Dev" index="1" unique_id=1083559732]
+[node name="EdgeSparksIdle" parent="Columbia/Columbia Info Areas/Game Dev" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
 emission_normals = PackedVector2Array()
 emission_colors = PackedColorArray()
 
-[node name="EdgeSparksActive" parent="Columbia Info Areas/Game Dev" index="2" unique_id=1083559733]
+[node name="EdgeSparksActive" parent="Columbia/Columbia Info Areas/Game Dev" index="2" unique_id=1083559733]
 emission_points = PackedVector2Array()
 emission_normals = PackedVector2Array()
 emission_colors = PackedColorArray()
 
-[node name="Pulse" parent="Columbia Info Areas/Game Dev" index="4" unique_id=1083559734]
+[node name="Pulse" parent="Columbia/Columbia Info Areas/Game Dev" index="4" unique_id=1083559734]
 autoplay = &"pulse"
 
-[node name="Rimi" type="AnimatedSprite2D" parent="Columbia Info Areas/Game Dev" unique_id=1977454353]
+[node name="Rimi" type="AnimatedSprite2D" parent="Columbia/Columbia Info Areas/Game Dev" unique_id=1977454353]
 position = Vector2(-15, -14)
 scale = Vector2(1.2, 1.2)
 sprite_frames = SubResource("SpriteFrames_tlrmy")
 autoplay = "default"
 frame_progress = 0.18412414
 
-[node name="John" type="AnimatedSprite2D" parent="Columbia Info Areas/Game Dev" unique_id=1412017826]
+[node name="John" type="AnimatedSprite2D" parent="Columbia/Columbia Info Areas/Game Dev" unique_id=1412017826]
 position = Vector2(11.000001, -14.000003)
 scale = Vector2(1.7, 1.7)
 sprite_frames = SubResource("SpriteFrames_6snvl")
 autoplay = "default"
 frame_progress = 0.33035958
 
-[node name="Lionjam" type="Sprite2D" parent="Columbia Info Areas/Game Dev" unique_id=820636651]
+[node name="Lionjam" type="Sprite2D" parent="Columbia/Columbia Info Areas/Game Dev" unique_id=820636651]
 position = Vector2(1, 12)
 scale = Vector2(0.045359213, 0.045359213)
 texture = ExtResource("17_dp3eg")
 
-[node name="Floating Books" type="Node2D" parent="." unique_id=114509376]
+[node name="Floating Books" type="Node2D" parent="Columbia" unique_id=114509376]
 y_sort_enabled = true
 
-[node name="Fall25_special" parent="Floating Books" unique_id=1085379062 instance=ExtResource("18_book")]
+[node name="Fall25_special" parent="Columbia/Floating Books" unique_id=1085379062 instance=ExtResource("18_book")]
 position = Vector2(282, -4)
 info_text = "Accelerated Physics- honestly been the hardest course I've ever taken. I rethought my studying strategy and grew as an academic, and I bonded with my comrades from doing the homeworks and studying together.
 Data Structures in Java - the classic CS course. Here I met Professor Borowski, someone I look up to as a professor and have gotten to know through Office Hours a lot."
 info_name = "Fall 25 Highlights"
 
-[node name="Fall25" parent="Floating Books" unique_id=1206571187 instance=ExtResource("18_book")]
+[node name="Fall25" parent="Columbia/Floating Books" unique_id=1206571187 instance=ExtResource("18_book")]
 position = Vector2(306, 11)
 info_text = "GPA: 4.186 (Dean's List) | Credits: 19.5
 Multivariable Calculus - A+ (4 credits)
@@ -1418,13 +1433,13 @@ Art of Engineering - A (4 credits)
 Accelerated Physics (Mechanics) - A (4.5 credits)"
 info_name = "Fall 2025"
 
-[node name="Spring26_special" parent="Floating Books" unique_id=685159395 instance=ExtResource("18_book")]
+[node name="Spring26_special" parent="Columbia/Floating Books" unique_id=685159395 instance=ExtResource("18_book")]
 position = Vector2(330, -4)
 info_text = "Probability for Engineers - I did extremely well in this class, getting the highest score in the class.
 Columbia Build Lab - I worked as a Backup Algorithmic Engineer intern, optimizing many algorithms and working closely with Klee to create faster and stable architecture. I also dipped my toes into real collaborative teamwork, and got to know Docker."
 info_name = "Spr. 26 Highlights"
 
-[node name="Spring26" parent="Floating Books" unique_id=1199785628 instance=ExtResource("18_book")]
+[node name="Spring26" parent="Columbia/Floating Books" unique_id=1199785628 instance=ExtResource("18_book")]
 position = Vector2(354, 11)
 info_text = "GPA: 4.051 (Dean's List) | Credits: 22.5
 Chem Lab - A (3 credits)
@@ -1437,12 +1452,12 @@ Physics E&M 1600 - A+ (3.5 credits)
 "
 info_name = "Spring 2026"
 
-[node name="Fall26_special" parent="Floating Books" unique_id=798268166 instance=ExtResource("18_book")]
+[node name="Fall26_special" parent="Columbia/Floating Books" unique_id=798268166 instance=ExtResource("18_book")]
 position = Vector2(376, -4)
 info_text = "Hasn't happened yet..."
 info_name = "Fall 26 Highlights"
 
-[node name="Fall26" parent="Floating Books" unique_id=540498555 instance=ExtResource("18_book")]
+[node name="Fall26" parent="Columbia/Floating Books" unique_id=540498555 instance=ExtResource("18_book")]
 position = Vector2(400, 11)
 info_text = "Plan | Credits: 22
 Discrete Math (4 credits)
@@ -1458,12 +1473,12 @@ AI
 Computer Graphics"
 info_name = "Fall 2026"
 
-[node name="Spring27_special" parent="Floating Books" unique_id=735415474 instance=ExtResource("18_book")]
+[node name="Spring27_special" parent="Columbia/Floating Books" unique_id=735415474 instance=ExtResource("18_book")]
 position = Vector2(423, -4)
 info_text = "Hasn't happened yet..."
 info_name = "Spr. 27 Highlights"
 
-[node name="Spring27" parent="Floating Books" unique_id=1710933797 instance=ExtResource("18_book")]
+[node name="Spring27" parent="Columbia/Floating Books" unique_id=1710933797 instance=ExtResource("18_book")]
 position = Vector2(447, 11)
 info_text = "2 Area Foundational Courses
 Partial Diff Eqs
@@ -1471,50 +1486,132 @@ CS Theory
 Non-Technical Elective"
 info_name = "Spring 2027"
 
-[node name="Fall27_special" parent="Floating Books" unique_id=949918807 instance=ExtResource("18_book")]
+[node name="Fall27_special" parent="Columbia/Floating Books" unique_id=949918807 instance=ExtResource("18_book")]
 position = Vector2(530, -3)
 info_text = "Hasn't happened yet..."
 info_name = "Fall 27 Highlights"
 
-[node name="Fall27" parent="Floating Books" unique_id=254686768 instance=ExtResource("18_book")]
+[node name="Fall27" parent="Columbia/Floating Books" unique_id=254686768 instance=ExtResource("18_book")]
 position = Vector2(554, 12)
 info_text = "Global Core
 CS Electives
 Business electives"
 info_name = "Fall 2027"
 
-[node name="Spring28_special" parent="Floating Books" unique_id=881361768 instance=ExtResource("18_book")]
+[node name="Spring28_special" parent="Columbia/Floating Books" unique_id=881361768 instance=ExtResource("18_book")]
 position = Vector2(578, -3)
 info_text = "Hasn't happened yet..."
 info_name = "Spr. 28 Highlights"
 
-[node name="Spring28" parent="Floating Books" unique_id=467965618 instance=ExtResource("18_book")]
+[node name="Spring28" parent="Columbia/Floating Books" unique_id=467965618 instance=ExtResource("18_book")]
 position = Vector2(602, 12)
 info_text = "May graduate this year instead!
 More CS Electives"
 info_name = "Spring 2028"
 
-[node name="Fall28_special" parent="Floating Books" unique_id=1025842540 instance=ExtResource("18_book")]
+[node name="Fall28_special" parent="Columbia/Floating Books" unique_id=1025842540 instance=ExtResource("18_book")]
 position = Vector2(624, -3)
 info_text = "Hasn't happened yet..."
 info_name = "Fall 28 Highlights"
 
-[node name="Fall28" parent="Floating Books" unique_id=971606818 instance=ExtResource("18_book")]
+[node name="Fall28" parent="Columbia/Floating Books" unique_id=971606818 instance=ExtResource("18_book")]
 position = Vector2(648, 12)
 info_text = "More APMA + Writing courses
 CS Masters Courses"
 info_name = "Fall 2028"
 
-[node name="Spring29_special" parent="Floating Books" unique_id=1996952149 instance=ExtResource("18_book")]
+[node name="Spring29_special" parent="Columbia/Floating Books" unique_id=1996952149 instance=ExtResource("18_book")]
 position = Vector2(671, -3)
 info_text = "Hasn't happened yet..."
 info_name = "Spr. 29 Highlights"
 
-[node name="Spring29" parent="Floating Books" unique_id=900148765 instance=ExtResource("18_book")]
+[node name="Spring29" parent="Columbia/Floating Books" unique_id=900148765 instance=ExtResource("18_book")]
 position = Vector2(695, 12)
 info_text = "More APMA + Writing courses
 CS Masters Courses"
 info_name = "Spring 2029"
+
+[node name="Trees" type="Node2D" parent="Columbia" unique_id=1514192632]
+y_sort_enabled = true
+
+[node name="Tree" type="Sprite2D" parent="Columbia/Trees" unique_id=432159892]
+position = Vector2(248, 3)
+texture = ExtResource("26_2wyq8")
+offset = Vector2(0, -16)
+
+[node name="Tree2" type="Sprite2D" parent="Columbia/Trees" unique_id=329581998]
+position = Vector2(231, 20)
+texture = ExtResource("26_2wyq8")
+offset = Vector2(0, -16)
+
+[node name="Tree3" type="Sprite2D" parent="Columbia/Trees" unique_id=1774386740]
+position = Vector2(262, 20)
+texture = ExtResource("26_2wyq8")
+offset = Vector2(0, -16)
+
+[node name="Tree4" type="Sprite2D" parent="Columbia/Trees" unique_id=440872664]
+position = Vector2(711, 5)
+texture = ExtResource("26_2wyq8")
+offset = Vector2(0, -16)
+
+[node name="Tree5" type="Sprite2D" parent="Columbia/Trees" unique_id=1386074025]
+position = Vector2(739, 5)
+texture = ExtResource("26_2wyq8")
+offset = Vector2(0, -16)
+
+[node name="Tree6" type="Sprite2D" parent="Columbia/Trees" unique_id=1814185618]
+position = Vector2(726, 19)
+texture = ExtResource("26_2wyq8")
+offset = Vector2(0, -16)
+
+[node name="Ethan" type="Sprite2D" parent="Columbia" unique_id=511533567]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(229.00002, -46.000004)
+scale = Vector2(1.2509379, 1.2509379)
+texture = ExtResource("30_gdvew")
+
+[node name="Eian" type="Sprite2D" parent="Columbia" unique_id=1075052665]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(466.00003, -49)
+scale = Vector2(1.2509379, 1.2509379)
+texture = ExtResource("31_ksmap")
+
+[node name="Chris" type="Sprite2D" parent="Columbia" unique_id=868555399]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(450, -151)
+scale = Vector2(1.2509379, 1.2509379)
+texture = ExtResource("32_ygd8o")
+
+[node name="Jason" type="Sprite2D" parent="Columbia" unique_id=819650447]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(623, -45)
+scale = Vector2(1.2509379, 1.2509379)
+texture = ExtResource("33_2s0kr")
+
+[node name="Nathan" type="Sprite2D" parent="Columbia" unique_id=515079075]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(508.00003, 51)
+scale = Vector2(1.2509379, 1.2509379)
+texture = ExtResource("34_xaipn")
+
+[node name="Jayden" type="Sprite2D" parent="Columbia" unique_id=1286044639]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(282, 44.999996)
+scale = Vector2(1.2509379, 1.2509379)
+texture = ExtResource("35_ndrjj")
+
+[node name="CustomPerson" parent="Columbia" unique_id=1165735229 instance=ExtResource("36_ygd8o")]
+position = Vector2(134, -124)
+skin_color = Color(1, 0.908, 0.31, 1)
+hair_color = Color(0, 0, 0, 1)
+shirt_color = Color(1, 0, 0, 1)
+pants_color = Color(0, 0.4500003, 1, 1)
 
 [node name="Contact" type="Node2D" parent="." unique_id=243520510]
 y_sort_enabled = true
@@ -1561,39 +1658,6 @@ collision_mask = 1
 link_url = "https://discord.com/users/695290142721572935"
 logo_texture = ExtResource("25_2wyq8")
 
-[node name="Trees" type="Node2D" parent="." unique_id=1514192632]
-y_sort_enabled = true
-
-[node name="Tree" type="Sprite2D" parent="Trees" unique_id=432159892]
-position = Vector2(248, 3)
-texture = ExtResource("26_2wyq8")
-offset = Vector2(0, -16)
-
-[node name="Tree2" type="Sprite2D" parent="Trees" unique_id=329581998]
-position = Vector2(231, 20)
-texture = ExtResource("26_2wyq8")
-offset = Vector2(0, -16)
-
-[node name="Tree3" type="Sprite2D" parent="Trees" unique_id=1774386740]
-position = Vector2(262, 20)
-texture = ExtResource("26_2wyq8")
-offset = Vector2(0, -16)
-
-[node name="Tree4" type="Sprite2D" parent="Trees" unique_id=440872664]
-position = Vector2(711, 5)
-texture = ExtResource("26_2wyq8")
-offset = Vector2(0, -16)
-
-[node name="Tree5" type="Sprite2D" parent="Trees" unique_id=1386074025]
-position = Vector2(739, 5)
-texture = ExtResource("26_2wyq8")
-offset = Vector2(0, -16)
-
-[node name="Tree6" type="Sprite2D" parent="Trees" unique_id=1814185618]
-position = Vector2(726, 19)
-texture = ExtResource("26_2wyq8")
-offset = Vector2(0, -16)
-
 [node name="Arcade" type="Node2D" parent="." unique_id=54294915]
 
 [node name="Tv" type="Sprite2D" parent="Arcade" unique_id=969707999]
@@ -1620,7 +1684,7 @@ link = "https://youtube.com/@frankanator"
 
 [node name="CollisionShape2D" parent="Arcade/InfoAreas/Yt" index="0" unique_id=1083559723]
 position = Vector2(7, 0.75)
-shape = SubResource("RectangleShape2D_xljpf")
+shape = SubResource("RectangleShape2D_b6ruc")
 
 [node name="EdgeSparksIdle" parent="Arcade/InfoAreas/Yt" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -1643,7 +1707,7 @@ link = "https://frankanator8.itch.io/farewell-tomorrow"
 
 [node name="CollisionShape2D" parent="Arcade/InfoAreas/FarewellTmrw" index="0" unique_id=1083559723]
 position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_j4bwh")
+shape = SubResource("RectangleShape2D_155or")
 
 [node name="EdgeSparksIdle" parent="Arcade/InfoAreas/FarewellTmrw" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -1666,7 +1730,7 @@ link = "https://frankanator8.itch.io/rotating-squared"
 
 [node name="CollisionShape2D" parent="Arcade/InfoAreas/RotSq" index="0" unique_id=1083559723]
 position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_ksmap")
+shape = SubResource("RectangleShape2D_vtx2l")
 
 [node name="EdgeSparksIdle" parent="Arcade/InfoAreas/RotSq" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -1689,7 +1753,7 @@ link = "https://github.com/Frankanator8/hexicast"
 
 [node name="CollisionShape2D" parent="Arcade/InfoAreas/Hexicast" index="0" unique_id=1083559723]
 position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_ygd8o")
+shape = SubResource("RectangleShape2D_63lxy")
 
 [node name="EdgeSparksIdle" parent="Arcade/InfoAreas/Hexicast" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -1711,7 +1775,7 @@ info_name = "Under Construction"
 
 [node name="CollisionShape2D" parent="Arcade/InfoAreas/Construction!" index="0" unique_id=1083559723]
 position = Vector2(2.5, 6)
-shape = SubResource("RectangleShape2D_2s0kr")
+shape = SubResource("RectangleShape2D_fjhjs")
 
 [node name="EdgeSparksIdle" parent="Arcade/InfoAreas/Construction!" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -1751,7 +1815,7 @@ info_name = "Amazon"
 
 [node name="CollisionShape2D" parent="Experiences/Amazon" index="0" unique_id=1083559723]
 position = Vector2(20, -1)
-shape = SubResource("RectangleShape2D_xaipn")
+shape = SubResource("RectangleShape2D_bfu41")
 
 [node name="EdgeSparksIdle" parent="Experiences/Amazon" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -1773,7 +1837,7 @@ info_name = "Morgan Stanley"
 
 [node name="CollisionShape2D" parent="Experiences/Morgan Stanley" index="0" unique_id=1083559723]
 position = Vector2(24, 0)
-shape = SubResource("RectangleShape2D_ndrjj")
+shape = SubResource("RectangleShape2D_r4ag1")
 
 [node name="EdgeSparksIdle" parent="Experiences/Morgan Stanley" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -1795,7 +1859,7 @@ info_name = "Point72"
 
 [node name="CollisionShape2D" parent="Experiences/Point72" index="0" unique_id=1083559723]
 position = Vector2(24, 0)
-shape = SubResource("RectangleShape2D_ih3m7")
+shape = SubResource("RectangleShape2D_v0wtd")
 
 [node name="EdgeSparksIdle" parent="Experiences/Point72" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -1817,7 +1881,7 @@ info_name = "Ramp"
 
 [node name="CollisionShape2D" parent="Experiences/Ramp" index="0" unique_id=1083559723]
 position = Vector2(24, 0)
-shape = SubResource("RectangleShape2D_11yus")
+shape = SubResource("RectangleShape2D_sgvw8")
 
 [node name="EdgeSparksIdle" parent="Experiences/Ramp" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -1847,7 +1911,7 @@ info_name = "Languages!"
 
 [node name="CollisionShape2D" parent="Fun/Languages" index="0" unique_id=1083559723]
 position = Vector2(28, -1)
-shape = SubResource("RectangleShape2D_b6ruc")
+shape = SubResource("RectangleShape2D_6nfnn")
 
 [node name="EdgeSparksIdle" parent="Fun/Languages" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -1892,7 +1956,7 @@ info_name = "Fav Game"
 
 [node name="CollisionShape2D" parent="Fun/Deltarune/Info" index="0" unique_id=1083559723]
 position = Vector2(114.5, -1.25)
-shape = SubResource("RectangleShape2D_155or")
+shape = SubResource("RectangleShape2D_4ue30")
 
 [node name="EdgeSparksIdle" parent="Fun/Deltarune/Info" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -1931,7 +1995,7 @@ info_name = "Fav Show"
 
 [node name="CollisionShape2D" parent="Fun/Steins;Gate/Info" index="0" unique_id=1083559723]
 position = Vector2(105, -5.75)
-shape = SubResource("RectangleShape2D_vtx2l")
+shape = SubResource("RectangleShape2D_k42av")
 
 [node name="EdgeSparksIdle" parent="Fun/Steins;Gate/Info" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -1960,7 +2024,7 @@ info_name = "Fav Book"
 
 [node name="CollisionShape2D" parent="Fun/1984/Info" index="0" unique_id=1083559723]
 position = Vector2(105, -1.25)
-shape = SubResource("RectangleShape2D_63lxy")
+shape = SubResource("RectangleShape2D_gr8w0")
 
 [node name="EdgeSparksIdle" parent="Fun/1984/Info" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -1991,7 +2055,7 @@ info_name = "Ado"
 
 [node name="CollisionShape2D" parent="Fun/Music/Ado/Info" index="0" unique_id=1083559723]
 position = Vector2(3, 0)
-shape = SubResource("RectangleShape2D_fjhjs")
+shape = SubResource("RectangleShape2D_673bd")
 
 [node name="EdgeSparksIdle" parent="Fun/Music/Ado/Info" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -2020,7 +2084,7 @@ info_name = "Ado"
 
 [node name="CollisionShape2D" parent="Fun/Music/Brunomars/Info" index="0" unique_id=1083559723]
 position = Vector2(3, 0)
-shape = SubResource("RectangleShape2D_bfu41")
+shape = SubResource("RectangleShape2D_akjxb")
 
 [node name="EdgeSparksIdle" parent="Fun/Music/Brunomars/Info" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -2049,7 +2113,7 @@ info_name = "Toby Fox"
 
 [node name="CollisionShape2D" parent="Fun/Music/Tobyfox/Info" index="0" unique_id=1083559723]
 position = Vector2(3, 0)
-shape = SubResource("RectangleShape2D_r4ag1")
+shape = SubResource("RectangleShape2D_vrx01")
 
 [node name="EdgeSparksIdle" parent="Fun/Music/Tobyfox/Info" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -2078,7 +2142,7 @@ info_name = "KPop"
 
 [node name="CollisionShape2D" parent="Fun/Music/Aespa/Info" index="0" unique_id=1083559723]
 position = Vector2(3, 0)
-shape = SubResource("RectangleShape2D_v0wtd")
+shape = SubResource("RectangleShape2D_1uevf")
 
 [node name="EdgeSparksIdle" parent="Fun/Music/Aespa/Info" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -2143,7 +2207,7 @@ info_name = "Running!"
 
 [node name="CollisionShape2D" parent="Fun/Runner/Runner2" index="0" unique_id=1083559723]
 position = Vector2(106, -7)
-shape = SubResource("RectangleShape2D_sgvw8")
+shape = SubResource("RectangleShape2D_tc087")
 
 [node name="EdgeSparksIdle" parent="Fun/Runner/Runner2" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -2165,7 +2229,7 @@ info_name = "Subway"
 
 [node name="CollisionShape2D" parent="Fun/Subway" index="0" unique_id=1083559723]
 position = Vector2(108, -6)
-shape = SubResource("RectangleShape2D_6nfnn")
+shape = SubResource("RectangleShape2D_73205")
 
 [node name="EdgeSparksIdle" parent="Fun/Subway" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -2191,13 +2255,13 @@ autoplay = "default"
 [node name="Blog" parent="Intro" unique_id=1689162469 instance=ExtResource("50_j2jfr")]
 z_index = 1
 y_sort_enabled = true
-position = Vector2(105, 20)
+position = Vector2(89, 35)
 collision_layer = 1
 collision_mask = 1
 link_url = "https://blog.hanyangliu.dev"
 
 [node name="CollisionShape2D" parent="Intro/Blog" index="0" unique_id=1689162471]
-shape = SubResource("CircleShape2D_4ue30")
+shape = SubResource("CircleShape2D_0tljd")
 
 [node name="Sprite" parent="Intro/Blog" index="1" unique_id=1689162472]
 y_sort_enabled = true
@@ -2264,7 +2328,7 @@ frame_progress = 0.9171081
 
 [node name="Ripples" parent="Intro" unique_id=1586471006 instance=ExtResource("58_rippl")]
 z_index = -1
-material = SubResource("ShaderMaterial_k42av")
+material = SubResource("ShaderMaterial_mgpkq")
 position = Vector2(33, -27)
 texture = ExtResource("59_rplmk")
 
@@ -2293,7 +2357,7 @@ info_name = "About Me"
 
 [node name="CollisionShape2D" parent="Intro/About Me" index="0" unique_id=1083559723]
 position = Vector2(-5, 4.5)
-shape = SubResource("RectangleShape2D_gr8w0")
+shape = SubResource("RectangleShape2D_xmrkg")
 
 [node name="EdgeSparksIdle" parent="Intro/About Me" index="1" unique_id=1083559732]
 emission_points = PackedVector2Array()
@@ -2306,6 +2370,40 @@ emission_normals = PackedVector2Array()
 emission_colors = PackedColorArray()
 
 [node name="Pulse" parent="Intro/About Me" index="4" unique_id=1083559734]
+autoplay = &"pulse"
+
+[node name="Scroll" parent="Intro" unique_id=1689163470 instance=ExtResource("67_mlv25")]
+z_index = 1
+position = Vector2(-23, 34)
+link_url = "https://hanyangliu.dev/resume.pdf"
+
+[node name="Skills" type="Sprite2D" parent="Intro" unique_id=1610134639]
+z_index = 1
+position = Vector2(-23, -84)
+texture = ExtResource("68_a82wo")
+
+[node name="InfoArea" parent="Intro/Skills" unique_id=208671178 instance=ExtResource("6_tefeu")]
+position = Vector2(1, 2)
+info_text = "Languages: Python, Java, C#, C++, C, HTML/CSS, MatLab, JS/Javascript
+
+Frameworks/Tools: FastAPI, Uvicorn, AWS/Amazon Web Services, Flask, Next.JS, React, Unity, Godot, Qt, Git, Github, Matplotlib, OpenCV"
+info_name = "Skills"
+
+[node name="CollisionShape2D" parent="Intro/Skills/InfoArea" index="0" unique_id=1083559723]
+position = Vector2(6, 6)
+shape = SubResource("RectangleShape2D_wvlrk")
+
+[node name="EdgeSparksIdle" parent="Intro/Skills/InfoArea" index="1" unique_id=1083559732]
+emission_points = PackedVector2Array()
+emission_normals = PackedVector2Array()
+emission_colors = PackedColorArray()
+
+[node name="EdgeSparksActive" parent="Intro/Skills/InfoArea" index="2" unique_id=1083559733]
+emission_points = PackedVector2Array()
+emission_normals = PackedVector2Array()
+emission_colors = PackedColorArray()
+
+[node name="Pulse" parent="Intro/Skills/InfoArea" index="4" unique_id=1083559734]
 autoplay = &"pulse"
 
 [node name="Lights" type="Node2D" parent="." unique_id=1916616372]
@@ -2655,12 +2753,12 @@ texture = ExtResource("65_glow")
 
 [connection signal="timeout" from="Intro/Frank/CursorDelay" to="Intro/Frank" method="_on_cursor_delay_timeout"]
 
-[editable path="Columbia Info Areas/ADI"]
-[editable path="Columbia Info Areas/TA"]
-[editable path="Columbia Info Areas/Lab"]
-[editable path="Columbia Info Areas/WE"]
-[editable path="Columbia Info Areas/Wushu"]
-[editable path="Columbia Info Areas/Game Dev"]
+[editable path="Columbia/Columbia Info Areas/ADI"]
+[editable path="Columbia/Columbia Info Areas/TA"]
+[editable path="Columbia/Columbia Info Areas/Lab"]
+[editable path="Columbia/Columbia Info Areas/WE"]
+[editable path="Columbia/Columbia Info Areas/Wushu"]
+[editable path="Columbia/Columbia Info Areas/Game Dev"]
 [editable path="Arcade/InfoAreas/Yt"]
 [editable path="Arcade/InfoAreas/FarewellTmrw"]
 [editable path="Arcade/InfoAreas/RotSq"]
@@ -2683,3 +2781,4 @@ texture = ExtResource("65_glow")
 [editable path="Intro/Blog"]
 [editable path="Intro/Frank/DescriptionBox"]
 [editable path="Intro/About Me"]
+[editable path="Intro/Skills/InfoArea"]

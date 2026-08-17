@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://bqx7n2custper"]
+
+[ext_resource type="Script" uid="uid://bucn5jpsra34t" path="res://scripts/custom_person.gd" id="1_cperson"]
+[ext_resource type="Texture2D" uid="uid://bsvr0p2w8y36h" path="res://assets/people/custom/pants.png" id="3_pants"]
+[ext_resource type="Texture2D" uid="uid://bbbdaan8kdugd" path="res://assets/people/custom/shirtskin.png" id="4_shirtskin"]
+[ext_resource type="Texture2D" uid="uid://cyy5fp2305yra" path="res://assets/people/custom/shirt.png" id="5_shirt"]
+[ext_resource type="Texture2D" uid="uid://3mph4537qe3d" path="res://assets/people/custom/face.png" id="6_face"]
+[ext_resource type="Texture2D" uid="uid://ddexpu1tw1752" path="res://assets/people/custom/hair.png" id="7_hair"]
+
+[sub_resource type="Animation" id="Animation_walk"]
+resource_name = "walk"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:pose")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.3, 0.45),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 0, 2]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_walk"]
+_data = {
+&"walk": SubResource("Animation_walk")
+}
+
+[node name="CustomPerson" type="Node2D"]
+y_sort_enabled = true
+script = ExtResource("1_cperson")
+
+[node name="Pants" type="Sprite2D" parent="."]
+texture = ExtResource("3_pants")
+offset = Vector2(0, -8)
+hframes = 15
+
+[node name="Shirt" type="Sprite2D" parent="."]
+texture = ExtResource("5_shirt")
+offset = Vector2(0, -8)
+hframes = 5
+
+[node name="ShirtSkin" type="Sprite2D" parent="."]
+texture = ExtResource("4_shirtskin")
+offset = Vector2(0, -8)
+hframes = 15
+
+[node name="Face" type="Sprite2D" parent="."]
+texture = ExtResource("6_face")
+offset = Vector2(0, -8)
+hframes = 5
+
+[node name="Hair" type="Sprite2D" parent="."]
+texture = ExtResource("7_hair")
+offset = Vector2(0, -8)
+hframes = 5
+
+[node name="Walk" type="AnimationPlayer" parent="."]
+libraries/ = SubResource("AnimationLibrary_walk")
