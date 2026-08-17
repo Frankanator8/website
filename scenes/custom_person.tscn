@@ -30,7 +30,6 @@ _data = {
 }
 
 [node name="CustomPerson" type="Node2D"]
-y_sort_enabled = true
 script = ExtResource("1_cperson")
 
 [node name="Pants" type="Sprite2D" parent="."]

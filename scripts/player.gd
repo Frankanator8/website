@@ -6,12 +6,12 @@ extends Node2D
 var is_moving: bool = false
 var last_tile_coords: Vector2i = Vector2i(-999, -999)
 
-@onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
+@onready var person: Node2D = $Person
 @onready var walking_particles: CPUParticles2D = $WalkingParticles
 @onready var nav_agent: NavigationAgent2D = $NavigationAgent2D
 
 func _ready():
-	animated_sprite.play("idle")
+	person.walking = false
 	walking_particles.target_tilemap = target_tilemap
 	
 	# Configure agent thresholds if needed
@@ -44,16 +44,16 @@ func move_self_to(delta):
 	var direction: Vector2 = (next_path_position - global_position).normalized()
 	
 	if direction.x != 0:
-		animated_sprite.flip_h = direction.x < 0
+		person.flip_x = direction.x < 0
 		
 	global_position += direction * speed * delta
 
 func stop_moving():
 	is_moving = false
-	animated_sprite.play("idle")
+	person.walking = false
 
 # Public method to be called by the Selection Pointer or Input Manager
 func set_move_target(global_pos: Vector2):
 	nav_agent.target_position = global_pos
 	is_moving = true
-	animated_sprite.play("walking")
+	person.walking = true
