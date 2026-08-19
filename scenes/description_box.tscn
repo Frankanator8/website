@@ -8,7 +8,14 @@
 [node name="DescriptionBox" type="Node2D" unique_id=2011282897]
 script = ExtResource("1_fu8b5")
 
-[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=770534813]
+[node name="DrawLayer" type="CanvasLayer" parent="." unique_id=2011282898]
+visible = false
+layer = 20
+follow_viewport_enabled = true
+
+[node name="WorldRoot" type="Node2D" parent="DrawLayer" unique_id=2011282899]
+
+[node name="NinePatchRect" type="NinePatchRect" parent="DrawLayer/WorldRoot" unique_id=770534813]
 offset_right = 260.0
 offset_bottom = 182.0
 scale = Vector2(0.5, 0.5)
@@ -18,7 +25,7 @@ patch_margin_top = 22
 patch_margin_right = 22
 patch_margin_bottom = 22
 
-[node name="Label" type="RichTextLabel" parent="." unique_id=1728494475]
+[node name="Label" type="RichTextLabel" parent="DrawLayer/WorldRoot" unique_id=1728494475]
 offset_left = 13.0
 offset_top = 12.0
 offset_right = 117.0
