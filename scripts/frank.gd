@@ -12,6 +12,10 @@ extends AnimatedSprite2D
 @export var dialogue_box: Node2D
 ## Click hint that shows a moment after Frank talks.
 @export var cursor: CanvasItem
+## Clicks are dead until Frank has walked up, so his intro always plays.
+@export var selector: Node
+## Teleport points, dark until Frank heads off on his own.
+@export var quick_points: Node
 
 @onready var cursor_delay: Timer = $CursorDelay
 
@@ -19,6 +23,12 @@ var armed: bool = false
 var leaving: bool = false
 var greeting: bool = false
 var tutorial_done: bool = false
+
+func _ready() -> void:
+	if selector:
+		selector.set_process_unhandled_input(false)
+	for point in _quicks():
+		point.active = false
 
 func _process(delta: float) -> void:
 	# First click means the player already gets it, so drop the tutorial.
@@ -39,6 +49,8 @@ func _process(delta: float) -> void:
 		elif armed:
 			leaving = true
 			target = final_spot
+			for point in _quicks():
+				point.reveal()
 
 	var start: Vector2 = position
 	var to_target: Vector2 = target - position
@@ -59,8 +71,15 @@ func _process(delta: float) -> void:
 	if not greeting and not tutorial_done and armed and not leaving and position.is_equal_approx(target):
 		_start_greeting()
 
+func _quicks() -> Array:
+	if quick_points == null:
+		return []
+	return quick_points.get_children().filter(func(point): return point.has_method("reveal"))
+
 func _start_greeting() -> void:
 	greeting = true
+	if selector:
+		selector.set_process_unhandled_input(true)
 	if dialogue_box:
 		dialogue_box.display_dialogue()
 		dialogue_box.show()

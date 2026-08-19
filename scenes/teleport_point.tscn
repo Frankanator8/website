@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dtelepoint01"]
+
+[ext_resource type="Script" uid="uid://btelepuak2m4" path="res://scripts/teleport_point.gd" id="2_tppoint"]
+[ext_resource type="PackedScene" uid="uid://ctarrowscn42" path="res://scenes/target_arrow.tscn" id="3_tparrow"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_zone"]
+resource_local_to_scene = true
+size = Vector2(900, 600)
+
+[node name="TeleportPoint" type="Node2D" unique_id=1669873331]
+script = ExtResource("2_tppoint")
+
+[node name="ShowZone" type="Area2D" parent="." unique_id=886734992]
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ShowZone" unique_id=835005794]
+shape = SubResource("RectangleShape2D_zone")
+debug_color = Color(1, 0.85, 0.2, 0.15)
+
+[node name="TargetArrow" parent="." node_paths=PackedStringArray("target") instance=ExtResource("3_tparrow")]
+target = NodePath("..")

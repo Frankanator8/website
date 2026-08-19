@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://ctarrowscn42"]
+
+[ext_resource type="Texture2D" uid="uid://b8x0ntr3rdelt" path="res://assets/arrow.png" id="1_arrow"]
+[ext_resource type="Script" uid="uid://btarrow7x3la" path="res://scripts/target_arrow.gd" id="2_arrow"]
+[ext_resource type="FontFile" uid="uid://ud3epr0pr2u4" path="res://assets/font/Jersey25-Regular.ttf" id="3_arrowfont"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_holdbg"]
+bg_color = Color(0.09, 0.09, 0.1, 0.7)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0.35)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_holdfill"]
+bg_color = Color(1, 1, 1, 0.85)
+
+[node name="TargetArrow" type="CanvasLayer" unique_id=753783445]
+layer = 10
+script = ExtResource("2_arrow")
+hold_time = 1.0
+
+[node name="Marker" type="Control" parent="." unique_id=708638109]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 88.0
+offset_bottom = 88.0
+mouse_filter = 2
+
+[node name="HitButton" type="Button" parent="Marker" unique_id=1583499755]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+flat = true
+
+[node name="Arrow" type="TextureRect" parent="Marker/HitButton" unique_id=1946888309]
+modulate = Color(1, 1, 1, 0.40392157)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(44, 44)
+mouse_filter = 2
+texture = ExtResource("1_arrow")
+expand_mode = 1
+
+[node name="HoldBar" type="ProgressBar" parent="Marker" unique_id=1571352562]
+visible = false
+layout_mode = 1
+offset_top = 99.0
+offset_right = 88.0
+offset_bottom = 110.0
+mouse_filter = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_holdbg")
+theme_override_styles/fill = SubResource("StyleBoxFlat_holdfill")
+max_value = 1.0
+show_percentage = false
+
+[node name="NameLabel" type="Label" parent="Marker" unique_id=1632773957]
+layout_mode = 1
+offset_left = -80.0
+offset_top = 114.0
+offset_right = 168.0
+offset_bottom = 162.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.87058824)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_arrowfont")
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HoldTimer" type="Timer" parent="Marker" unique_id=1632773956]
+wait_time = 2.0
+one_shot = true
