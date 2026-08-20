@@ -1,23 +1,7 @@
 @font-face {
-  font-family: 'Open Sans';
-  src: url('../assets/fonts/OpenSans-Variable.woff2') format('woff2-variations');
-  font-weight: 300 800;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url('../assets/fonts/OpenSans-Italic-Variable.woff2') format('woff2-variations');
-  font-weight: 300 800;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Cabin';
-  src: url('../assets/fonts/Cabin-Variable.woff2') format('woff2-variations');
-  font-weight: 400 700;
+  font-family: 'Jersey 15';
+  src: url('../assets/fonts/Jersey15-Regular.ttf') format('truetype');
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -29,9 +13,9 @@
   --text: #f0e4dc;
   --muted: #b09a95;
   --accent: #f0a860;
-  --font-display: 'Cabin', system-ui, sans-serif;
-  --font-body: 'Open Sans', system-ui, sans-serif;
-  --font-mono: 'Menlo', 'Consolas', monospace;
+  --font-display: 'Jersey 15', monospace;
+  --font-body: 'Jersey 15', monospace;
+  --font-mono: 'Jersey 15', monospace;
   --measure: 68ch;
   --measure-wide: 52rem;
 }
