@@ -109,3 +109,9 @@ autoplay = "pulse"
 [node name="DescriptionBox" parent="." unique_id=1478694801 instance=ExtResource("1_p73ki")]
 visible = false
 z_index = 1000
+
+[node name="Hover" type="Control" parent="." unique_id=1083559735]
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+mouse_default_cursor_shape = 2

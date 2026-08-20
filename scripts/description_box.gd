@@ -2,7 +2,7 @@ extends Node2D
 
 @export_multiline var dialogue_text: String = "Default Dialogue Text" : set = set_dialogue_text
 @export var show_one_by_one: bool = true
-@export var type_speed: float = 0.05 # Time in seconds per character
+@export var type_speed: float = 0.025 # Time in seconds per character
 
 # DrawLayer is CanvasLayer 20: above arrows (10), below the link popup (100).
 # A hidden Node2D does not hide a child CanvasLayer, so this script keeps them
@@ -19,6 +19,7 @@ func _ready() -> void:
 	_is_ready = true
 	set_process(false)
 	visibility_changed.connect(_sync_draw_layer)
+	label.meta_clicked.connect(_on_meta_clicked)
 	_sync_draw_layer()
 	display_dialogue()
 
@@ -67,6 +68,9 @@ func display_dialogue() -> void:
 	else:
 		label.text = dialogue_text
 		label.visible_characters = -1 # Shows all characters
+
+func _on_meta_clicked(meta: Variant) -> void:
+	LinkConfirm.ask(str(meta))
 
 # Optional helper function to skip the animation and show all text immediately
 func skip_animation() -> void:

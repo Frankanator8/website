@@ -34,7 +34,7 @@ func _ready() -> void:
 	description_box.hide()
 	description_box.top_level = true
 	if "type_speed" in description_box:
-		description_box.type_speed = 0.01
+		description_box.type_speed = 0.005
 
 	# Start still: bob only, no frame animation until selected or the player is close
 	animated_sprite.stop()
