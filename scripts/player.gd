@@ -5,6 +5,10 @@ extends Node2D
 
 var is_moving: bool = false
 var last_tile_coords: Vector2i = Vector2i(-999, -999)
+# Web export: the nav map is empty until the first physics frame syncs it,
+# so hold any click-to-move target until then.
+var nav_map_ready: bool = false
+var pending_target: Variant = null
 
 @onready var person: Node2D = $Person
 @onready var walking_particles: CPUParticles2D = $WalkingParticles
@@ -21,8 +25,16 @@ func _ready():
 	# Configure agent thresholds if needed
 	nav_agent.path_desired_distance = 4.0
 	nav_agent.target_desired_distance = 4.0
+	
+	await get_tree().physics_frame
+	nav_map_ready = true
+	if pending_target != null:
+		set_move_target(pending_target)
+		pending_target = null
 
-func _process(delta):
+# Navigation must run on the physics tick: the agent's map only syncs there,
+# and querying it from _process desyncs on the web export's erratic frame rate.
+func _physics_process(delta):
 	if is_moving:
 		if not nav_agent.is_navigation_finished():
 			move_self_to(delta)
@@ -45,12 +57,14 @@ func get_cell_coords_from_position(pos: Vector2) -> Vector2i:
 
 func move_self_to(delta):
 	var next_path_position: Vector2 = nav_agent.get_next_path_position()
-	var direction: Vector2 = (next_path_position - global_position).normalized()
+	var direction: Vector2 = next_path_position - global_position
 	
 	if direction.x != 0:
 		person.flip_x = direction.x < 0
-		
-	global_position += direction * speed * delta
+	
+	# move_toward can never overshoot the waypoint, so a laggy frame
+	# (big delta) can't make the player orbit a path point forever.
+	global_position = global_position.move_toward(next_path_position, speed * delta)
 
 func stop_moving():
 	is_moving = false
@@ -58,6 +72,9 @@ func stop_moving():
 
 # Public method to be called by the Selection Pointer or Input Manager
 func set_move_target(global_pos: Vector2):
+	if not nav_map_ready:
+		pending_target = global_pos
+		return
 	nav_agent.target_position = global_pos
 	is_moving = true
 	person.walking = true
