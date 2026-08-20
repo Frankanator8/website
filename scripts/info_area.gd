@@ -15,11 +15,16 @@ const RANGE_ALPHA_ACTIVE: float = 1.0
 # One spark seed every few pixels, so density follows the area's size
 const EDGE_POINT_SPACING: float = 2.0
 
+# Brushing past the edge of a zone flickers the box - re-entering this fast
+# keeps the typing where it was instead of starting the text over
+const RETYPE_GRACE: float = 1.0
+
 # Every area the player currently stands in - only the closest one shows its box
 static var _areas_in_range: Array = []
 
 @onready var description_box: Node2D = $DescriptionBox
 @onready var base_shape: CollisionShape2D = $CollisionShape2D
+@onready var hover: Control = $Hover
 @onready var border: Node2D = $Border
 @onready var range_indicator: Line2D = $Border/RangeIndicator
 @onready var pulse: AnimationPlayer = $Pulse
@@ -27,24 +32,24 @@ static var _areas_in_range: Array = []
 @onready var sparks_active: CPUParticles2D = $EdgeSparksActive
 
 var _player_in_range: bool = false
-var _mouse_over: bool = false
 var _ring_tween: Tween
+var _hidden_at: float = -RETYPE_GRACE
+var _shown_text: String = ""
 
 func _ready() -> void:
 	_setup_indicator()
 
 	body_entered.connect(_on_body_entered)
 	body_exited.connect(_on_body_exited)
-	mouse_entered.connect(_on_mouse_entered)
-	mouse_exited.connect(_on_mouse_exited)
-	input_event.connect(_on_input_event)
+	hover.gui_input.connect(_on_hover_gui_input)
+	_sync_hover_input()
 
 	description_box.hide()
 	description_box.top_level = true
 
 	# Assuming type_speed is a custom variable on your DescriptionBox script
 	if "type_speed" in description_box:
-		description_box.type_speed = 0.01
+		description_box.type_speed = 0.005
 
 func _exit_tree() -> void:
 	_areas_in_range.erase(self)
@@ -60,9 +65,13 @@ func _setup_indicator() -> void:
 	if not shape is RectangleShape2D:
 		push_warning("InfoArea %s needs a RectangleShape2D to draw its range" % name)
 		border.hide()
+		hover.hide()
 		sparks_idle.emitting = false
 		sparks_active.emitting = false
 		return
+
+	hover.position = base_shape.position - shape.size / 2.0
+	hover.size = shape.size
 
 	var half: Vector2 = shape.size / 2.0
 	var corners := PackedVector2Array([
@@ -118,6 +127,7 @@ func _on_body_entered(body: Node2D) -> void:
 		_areas_in_range.append(self)
 	_fade_ring(RANGE_ALPHA_ACTIVE)
 	sparks_active.emitting = true
+	_sync_hover_input()
 
 func _on_body_exited(body: Node2D) -> void:
 	if not body.is_in_group("player"):
@@ -126,7 +136,7 @@ func _on_body_exited(body: Node2D) -> void:
 	_areas_in_range.erase(self)
 	_fade_ring(RANGE_ALPHA_IDLE)
 	sparks_active.emitting = false
-	_set_link_cursor(false)
+	_sync_hover_input()
 
 # Border and idle glow brighten together, so entering reads as one change
 func _fade_ring(alpha: float) -> void:
@@ -160,40 +170,39 @@ func _refresh_box() -> void:
 		return
 
 	if should_show:
-		var formatted_text := "[b]" + info_name + "[/b]\n" + info_text
+		var title := "[b]" + info_name + "[/b]"
 		if not link.is_empty():
-			formatted_text += "\n[i]click to open[/i]"
+			# default_color on the box is black, so [url] alone would not read as a link
+			title = "[url=%s][color=#3b82f6]%s[/color][/url]" % [link, title]
+		var formatted_text := title + "\n" + info_text
 
-		if description_box.has_method("set_dialogue_text"):
+		var same_text := formatted_text == _shown_text
+		var still_warm: bool = (_now() - _hidden_at) < RETYPE_GRACE
+		if not (same_text and still_warm) and description_box.has_method("set_dialogue_text"):
 			description_box.set_dialogue_text(formatted_text)
+		_shown_text = formatted_text
 
 		_place_description_box()
 		description_box.show()
 	else:
+		_hidden_at = _now()
 		description_box.hide()
 
-func _on_mouse_entered() -> void:
-	_mouse_over = true
-	_set_link_cursor(true)
+func _now() -> float:
+	return Time.get_ticks_msec() / 1000.0
 
-func _on_mouse_exited() -> void:
-	_mouse_over = false
-	_set_link_cursor(false)
-
-func _set_link_cursor(wanted: bool) -> void:
-	if link.is_empty():
-		return
-	if wanted and _mouse_over and _player_in_range:
-		Input.set_default_cursor_shape(Input.CURSOR_POINTING_HAND)
+# Same pattern as mailbox: a Control over the shape, so the click beats walk
+func _sync_hover_input() -> void:
+	if link.is_empty() or not _player_in_range:
+		hover.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	else:
-		Input.set_default_cursor_shape(Input.CURSOR_ARROW)
+		hover.mouse_filter = Control.MOUSE_FILTER_STOP
 
-func _on_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
+func _on_hover_gui_input(event: InputEvent) -> void:
 	if link.is_empty() or not _player_in_range:
 		return
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		LinkConfirm.ask(link)
-		get_viewport().set_input_as_handled()
 
 func _place_description_box() -> void:
 	var inverse := get_viewport().get_canvas_transform().affine_inverse()

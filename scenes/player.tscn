@@ -21,12 +21,13 @@ shape = SubResource("RectangleShape2D_3vyb7")
 
 [node name="Person" parent="." unique_id=288486248 instance=ExtResource("2_person")]
 hair_color = Color(0, 0, 0, 1)
-shirt_color = Color(0.38823529, 0.60784316, 1, 1)
-pants_color = Color(0.18823529, 0.37647059, 0.50980392, 1)
+shirt_color = Color(0.3882353, 0.60784316, 1, 1)
+pants_color = Color(0.18823528, 0.3764706, 0.5098039, 1)
 
 [node name="WalkingParticles" parent="." unique_id=1317731350 instance=ExtResource("3_qhqgy")]
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=965580072]
+debug_path_custom_color = Color(1, 0, 0, 1)
 
 [node name="AudioListener2D" type="AudioListener2D" parent="." unique_id=1295591201]
 current = true
