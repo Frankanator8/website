@@ -13,7 +13,7 @@ export default function Layout() {
         </Link>
         <nav>
           <a href="mailto:hanyangfliu@gmail.com">email</a>
-          <a href="https://hanyangliu.dev">← back to game</a>
+          <a href="https://hanyangliu.dev">← back to hanyangliu.dev</a>
         </nav>
       </header>
       <main>

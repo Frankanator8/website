@@ -23,7 +23,7 @@ Two separate things live here:
 
 - Source in `blog/src/`, built output committed to `blog/dist/` — run
   `npm run build` in `blog/` and commit `dist/` after any source change.
-- Posts are markdown in `blog/posts/`, artwork in `blog/media/`.
+- Posts are HTML in `blog/posts/`, artwork in `blog/media/`.
 - Colours come from CSS custom properties in `src/styles/tokens.css`. Change
   the token, not the call site.
 - Background is `src/components/OceanBackground.jsx` — a 192×108 canvas drawn
