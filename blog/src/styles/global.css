@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: var(--font-size-root);
+}
+
 body {
   margin: 0;
   background: var(--bg);
@@ -329,6 +333,20 @@ main {
 
 .post-body > :last-child {
   margin-bottom: 0;
+}
+
+.post-body ol,
+.post-body ul {
+  padding-left: 1.5em;
+}
+
+.post-body h2 {
+  text-decoration: underline;
+}
+
+.post-body img {
+  width: auto;
+  height: auto;
 }
 
 @media (prefers-reduced-motion: reduce) {

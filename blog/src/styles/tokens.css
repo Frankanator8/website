@@ -16,6 +16,7 @@
   --font-display: 'Jersey 15', monospace;
   --font-body: 'Jersey 15', monospace;
   --font-mono: 'Jersey 15', monospace;
+  --font-size-root: 125%;
   --measure: 68ch;
   --measure-wide: 52rem;
 }

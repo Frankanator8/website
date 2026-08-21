@@ -1,9 +1,7 @@
 import { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
 import { getPost } from '../posts.js';
-import CodeBlock from './CodeBlock.jsx';
+import CardArt from './CardArt.jsx';
 
 export default function Post() {
   const { slug } = useParams();
@@ -28,10 +26,7 @@ export default function Post() {
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
       >
-        <div className="post-card-art">
-          {post.image && <img className="post-card-still" src={post.image} alt="" />}
-          {post.gif && <img className="post-card-gif" src={post.gif} alt="" />}
-        </div>
+        <CardArt image={post.image} gif={post.gif} active={hovered} />
         <div className="post-hero-text">
           <h1>{post.title}</h1>
           {post.date && (
@@ -42,11 +37,7 @@ export default function Post() {
           {post.description && <p className="post-description">{post.description}</p>}
         </div>
       </header>
-      <div className="post-body">
-        <ReactMarkdown remarkPlugins={[remarkGfm]} components={{ code: CodeBlock }}>
-          {post.content}
-        </ReactMarkdown>
-      </div>
+      <div className="post-body" dangerouslySetInnerHTML={{ __html: post.content }} />
       <p>
         <Link to="/">← all posts</Link>
       </p>

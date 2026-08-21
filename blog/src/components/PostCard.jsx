@@ -1,32 +1,20 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import CardArt from './CardArt.jsx';
 
 export default function PostCard({ post }) {
-  // The gif is only fetched once the card has been hovered, then kept mounted
-  // so later hovers cross-fade instantly.
-  const [gifLoaded, setGifLoaded] = useState(false);
   const [hovered, setHovered] = useState(false);
-
-  const activate = () => {
-    setHovered(true);
-    setGifLoaded(true);
-  };
 
   return (
     <Link
       to={`/post/${post.slug}`}
       className={`post-card${hovered ? ' is-hovered' : ''}`}
-      onMouseEnter={activate}
+      onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      onFocus={activate}
+      onFocus={() => setHovered(true)}
       onBlur={() => setHovered(false)}
     >
-      <div className="post-card-art">
-        {post.image && <img className="post-card-still" src={post.image} alt="" />}
-        {post.gif && gifLoaded && (
-          <img className="post-card-gif" src={post.gif} alt="" />
-        )}
-      </div>
+      <CardArt image={post.image} gif={post.gif} active={hovered} />
       <div className="post-card-text">
         <h2>{post.title}</h2>
         {post.date && (
