@@ -72,6 +72,11 @@ func _ready() -> void:
 	marker.hide()
 	hold_bar.hide()
 
+	# Portrait phones turn the camera 90 degrees so the world stays landscape.
+	# A plain CanvasLayer ignores that, so the arrows have to turn with it.
+	get_viewport().size_changed.connect(_match_screen)
+	_match_screen()
+
 # The owner may hand the player over after _ready, so grab the sprite here
 func set_player(value: Node2D) -> void:
 	player = value
@@ -105,18 +110,31 @@ func set_arrow_color(value: Color) -> void:
 	var arrow_alpha := arrow_color.a * arrow.modulate.a
 	name_label.modulate = Color(arrow_color, clampf(lerpf(arrow_alpha, 1.0, 0.35), 0.0, 1.0))
 
+# Portrait layer is landscape-sized, so layout uses the swapped axes
+func _layout_size(view_size: Vector2) -> Vector2:
+	if view_size.y > view_size.x:
+		return Vector2(view_size.y, view_size.x)
+	return view_size
+
+func _match_screen() -> void:
+	var view: Vector2 = get_viewport().get_visible_rect().size
+	if view.y > view.x:
+		transform = Transform2D(-PI / 2.0, Vector2(0.0, view.y))
+	else:
+		transform = Transform2D()
+
 # Merging needs every arrow's spot at once, so the first one drives them all
 func _process(_delta: float) -> void:
 	if _arrows.is_empty() or _arrows[0] != self:
 		return
 
-	var view_size: Vector2 = get_viewport().get_visible_rect().size
+	var layout_size: Vector2 = _layout_size(get_viewport().get_visible_rect().size)
 	var leaders: Array = []
 
 	for other in _arrows:
 		if not other.is_node_ready():
 			continue
-		other._measure(view_size)
+		other._measure(layout_size)
 		if not other._wants_show:
 			other._hide_marker()
 			continue
@@ -137,18 +155,18 @@ func _process(_delta: float) -> void:
 			other._hide_marker()
 
 	for leader in leaders:
-		leader._draw_marker(view_size)
+		leader._draw_marker(layout_size)
 
 # Where this arrow wants to sit this frame, before any merging
-func _measure(view_size: Vector2) -> void:
+func _measure(layout_size: Vector2) -> void:
 	_group.clear()
 	_wants_show = false
 	if not enabled or not is_instance_valid(target):
 		return
 
-	# Screen space, so the 90 degree portrait camera needs no special case
-	var screen_pos: Vector2 = get_viewport().get_canvas_transform() * target.global_position
-	var bounds := Rect2(Vector2.ONE * edge_margin, view_size - Vector2.ONE * edge_margin * 2.0)
+	# Layer space, after _match_screen turns this overlay with the camera
+	var screen_pos: Vector2 = transform.affine_inverse() * (get_viewport().get_canvas_transform() * target.global_position)
+	var bounds := Rect2(Vector2.ONE * edge_margin, layout_size - Vector2.ONE * edge_margin * 2.0)
 	if hide_when_on_screen and bounds.has_point(screen_pos):
 		return
 
