@@ -1207,7 +1207,7 @@ y_sort_enabled = true
 
 [node name="ADI" parent="Columbia/Columbia Info Areas" unique_id=1997803310 instance=ExtResource("6_tefeu")]
 position = Vector2(409, -99)
-info_text = "ADI (Application Development Initiative) is Columbia's largest CS club on campus! I'm a part of the Education Committee, which means I help plan initiatives like CodeCollab and Mentorship for over 70 participants each. I've met so many talented participants as well as coworkers here."
+info_text = "ADI (Application Development Initiative) is Columbia's largest CS club on campus! I'm a sublead of the Education Committee, which means I plan the CodeCollab initiative, a semester-long hackathon, for over 70 participants. I've met so many talented participants as well as coworkers here, and have greatly increased my skills in leadership through ADI."
 info_name = "ADI Edu Committee"
 
 [node name="CollisionShape2D" parent="Columbia/Columbia Info Areas/ADI" index="0" unique_id=1083559723]
@@ -1242,7 +1242,7 @@ flip_h = true
 
 [node name="TA" parent="Columbia/Columbia Info Areas" unique_id=1889179071 instance=ExtResource("6_tefeu")]
 position = Vector2(569, -99)
-info_text = "I've been an SSL (Summer Student Leader) for the summer program SHAPE. Over 6 weeks, I taught my own class as well as ChemE and Data Structures to high school, and have refined my own approach on creating engaging yet educational experiences."
+info_text = "I'm currently a TA for both Data Structures in Java and Probability for Engineers, strengthening my own foundations while answering students' questions. I've also been an Summer Student Leader for the SHAPE program, teaching ChemE, Data Structures, and Game Dev to high school students, and have refined my own approach on creating engaging yet educational experiences."
 info_name = "Teaching"
 
 [node name="CollisionShape2D" parent="Columbia/Columbia Info Areas/TA" index="0" unique_id=1083559723]
@@ -1351,7 +1351,7 @@ frame_progress = 0.42754683
 
 [node name="Wushu" parent="Columbia/Columbia Info Areas" unique_id=908644531 instance=ExtResource("6_tefeu")]
 position = Vector2(490, -181)
-info_text = "I'm a part of Columbia Wushu! This is something I started in college, and although I'm not great, I've become so much more flexible and also it looks tough. Plus, the community is really like a family - JJ's dinners always go hard."
+info_text = "I'm a part of Columbia Wushu! This is something I started in college, and I've become so much more flexible and feel a lot more confident as a result. Plus, the community is really like a family - JJ's dinners always go hard."
 info_name = "Wushu"
 
 [node name="CollisionShape2D" parent="Columbia/Columbia Info Areas/Wushu" index="0" unique_id=1083559723]
@@ -1402,7 +1402,7 @@ texture = ExtResource("9_85g3d")
 
 [node name="Game Dev" parent="Columbia/Columbia Info Areas" unique_id=553752884 instance=ExtResource("6_tefeu")]
 position = Vector2(569, -180)
-info_text = "I'm the co-chair of Columbia's Game Dev club under Columbia Gaming. As you can clearly tell from this website, I love making games and try to instill this love into other people via initiatives like LionJam and Game Incubator."
+info_text = "I'm the co-chair of Columbia's Game Dev club under Columbia Gaming. As you can clearly tell from this website, I love making games and try to instill this love into other people via initiatives like LionJam and Game Incubator. This year, I'm mentoring a team in making a puzzle game!"
 info_name = "Game Dev"
 
 [node name="CollisionShape2D" parent="Columbia/Columbia Info Areas/Game Dev" index="0" unique_id=1083559723]
@@ -1494,13 +1494,8 @@ Discrete Math (4 credits)
 Fundamentals of Comp. Sys. (3 credits)
 Intro to Asian American Literature (3 credits)
 Ordinary Diff. Eqs. (3 credits)
--- May replace with elective --
-Foundations of Optimization (3 credits) 
-Intro to Linguistics (3 credits)
---Electives--
-Natural Language Processing
-AI
-Computer Graphics"
+Artificial Intelligence (3 credits)
+Computer Graphics (3 credits"
 info_name = "Fall 2026"
 
 [node name="Spring27_special" parent="Columbia/Floating Books" unique_id=735415474 instance=ExtResource("18_book")]
